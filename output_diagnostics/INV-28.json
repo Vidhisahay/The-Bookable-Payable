@@ -38,51 +38,93 @@
     {
       "filename": "INV-28.pdf",
       "page_number": 1,
-      "text": "Silverbrook Print\nNorthwind Services Dk Aps Rua do Ouro 40\nAtt.: Sofia Roth 2605 Brondby\nLindenstrasse 3\n2610 Rodovre Telefon +5506340887\nDanmark CVR nr. DK74347584\nSzlger clara.meyer@oakhaven-systems.ost@ster\nKunde CVR Nr. 94368703\nReference\nDerws Ontrenr. AFREGNINGSBILAG\nKundenr. 197218 Faktura 3025139\nSide 1\nFakturadato 28-02-26\nForfaldsdato 30-03-26\nAfregning Februar 2026\nBeskrivelse Antal Enhed Kobspris Moms % Belob\nFraktioner\nBolgepap 10 KG 0,521 25 5,21\nLithium-ion bat. Lowgrade 35 KG 32,427 25 1.134,95\nTree, Klasse A2 100 KG 2,632 25 263,20\nTransport\nLiftbil, Farligt affald 1 STK 25\nTransport 1. enhed liftbil 1 STK 513,00 25 513,00\nTemning 660L minicontainer 1 STK 172,00 25 172,00\nYdelser\nOparbejdning papir / pap 10 KG 0,69 25 6,90\nVermiculite, 100 L, salg 1 STK 355,186 25 355,19\nVejbenyttelsesafgift 1 STK 65,25 25 65,25\nMiljoindberetning 1 STK 119,00 25 119,00\nFakturaadministration 1 STK 200,00 25 200,00\nLejeafregning for februar\nLeje minicont. 660 Itr. m/läs 1 STK 120,00 25 120,00\nLeje minicont. 240 Itr. 3 STK 60,00 25 180,00\nLeje - Plastfad, 120 Itr. 1 STK 156,86 25 156,86\nLeje minicont. 660 Itr. 2 STK 112,00 25 224,00\nLeje Plast stativer 1 STK 67,00 25 67,00\nNENG ann unuue 3.582,56\n",
+      "text": "Silverbrook Print\nNorthwind Services Dk Aps Rua do Ouro 40\nAtt.: Sofia = Roth 2605 Brondby\nLindenstrasse 3\n2610 Rodovre Telefon +5506340887\nDanmark CVR nr. DK74347584\nSeelger clara.meyer@oakhaven-systems.ost@ster\nKunde CVR Nr. 94368703\nReference\nDerss Ordronr. AFREGNINGSBILAG\nKundenr. 197218 Faktura 3025139\nSide 1\nFakturadato 28-02-26\nForfaldsdato 30-03-26\nAfregning Februar 2026\nBeskrivelse Antal Enhed Kobspris Moms % Belob\nFraktioner\nBolgepap 10 KG 0,521 25 5,21\nLithium-ion bat. Lowgrade 35 KG 32,427 25 1.134,95\nTree, Klasse A2 100 KG 2,632 25 263,20\nTransport\nLiftbil, Farligt affald 1 STK 25\nTransport 1. enhed liftbil 1 STK 513,00 25 513,00\nTemning 660L minicontainer 1 STK 172,00 25 172,00\nYdelser\nOparbejdning papir / pap 10 KG 0,69 25 6,90\nVermiculite, 100 L, salg 1 STK 355,186 25 355,19\nVejbenyttelsesafgift 1 STK 65,25 25 65,25\nMiljaindberetning 1 STK 119,00 25 119,00\nFakturaadministration 1 STK 200,00 25 200,00\nLejeafregning for februar\nLeje minicont. 660 Itr. m/las 1 STK 120,00 25 120,00\nLeje minicont. 240 Itr. 3 STK 60,00 25 180,00\nLeje - Plastfad, 120 Itr. 1 STK 156,86 25 156,86\nLeje minicont. 660 Itr. 2 STK 112,00 25 224,00\nLeje Plast stativer 1 STK 67,00 25 67,00\nNENG i vöi i 6 öö n 6 se 3.582,56\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 439370,
-        "ocr_alphanumeric_chars": 953,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 958,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8796,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "113463dcde6be70d30269f450f4198d57871d55d543f337f1274a0eada104c31"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-28.pdf",
       "page_number": 2,
-      "text": "Side 2\n‘Lalt DKK' 3.582,56\n25% moms 895,64\n‘Lalt DKK inkl. moms’ 4.478,20\n| henhold til Affaldsbekendtgorelsen § 78, stk. 5 og 6, overtager vi ansvaret for aflevering af affaldet pa et registreret\ngenanvendelsesanlaeg og indberetning til Affaldsdatasystemet.\nSäfremt betaling ikke sker rettidigt, pälaegges renter og gebyr jf. Samhandelsbetingelser.\nBetalings information\nKortart 71\nBetalings ID 0000003025139 01\nKreditor Nr. 86682469\n+71< 0000003025139 01+86682469 <\n",
+      "text": "Side 2\n‘Lalt DKK* 3.582,56\n25% moms 895,64\n‘Lalt DKK ink!. moms’ 4.478,20\n| henhold til Affaldsbekendtgorelsen § 78, stk. 5 og 6, overtager vi ansvaret for aflevering af affaldet pa et registreret\ngenanvendelsesanlaeg og indberetning til Affaldsdatasystemet.\nSäfremt betaling ikke sker rettidigt, palagges renter og gebyr jf. Samhandelsbetingelser.\nBetalings information\nKortart 71\nBetalings ID 0000003025139 01\nKreditor Nr. 86682469\n+71< 0000003025139 01+86682469 <\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 181549,
-        "ocr_alphanumeric_chars": 379,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 377,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 4448,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "cb8bcf271bf382bd3278ebc7f5fc9b6cfe689de8af1750e3dbd55dbee3b69249"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-28.pdf",
       "page_number": 3,
-      "text": "Side 3\nSpecifikation 3025139\nKobspris eks.\nDato Beskrivelse Antal Enhed Moms Belob\n20-02-2026 Transport 1. enhed liftbil 1 STK 513,000 513,00\n20-02-2026 Tree, Klasse A2 100 KG 2,632 263,20\n23-02-2026 Liftbil, Farligt affald 1 STK 0,000 0,00\n23-02-2026 Lithium-ion bat. Lowgrade 35 KG 32,427 1.134,95\n23-02-2026 Vermiculite, 100 L, salg 1 STK 355,186 355,19\n25-02-2026 Tomning 660L minicontainer 1 STK 172,000 172,00\n25-02-2026 Oparbejdning papir / pap 10 KG 0,690 6,90\n25-02-2026 Bolgepap 10 KG 0,521 5,21\n",
+      "text": "Side 3\nSpecifikation 3025139\nKobspris eks.\nDato Beskrivelse Antal Enhed Moms Belob\n20-02-2026 Transport 1. enhed liftbil 1 STK 513,000 513,00\n20-02-2026 Tree, Klasse A2 100 KG 2,632 263,20\n23-02-2026  Liftbil, Farligt affald 1 STK 0,000 0,00\n23-02-2026  Lithium-ion bat. Lowgrade 35 KG 32,427 1.134,95\n23-02-2026 Vermiculite, 100 L, salg 1 STK 355,186 355,19\n25-02-2026 Tomning 660L minicontainer 1 STK 172,000 172,00\n25-02-2026. Oparbejdning papir / pap 10 KG 0,690 6,90\n25-02-2026 Balgepap 10 KG 0,521 5,21\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 160756,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 387,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 3837,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "b7a8d7a983fe36f39ada376118c0e15056bc5cfd920d95332d4f8243fea20bbf"
+        }
       },
       "error": null
     }
@@ -122,17 +164,17 @@
               {
                 "filename": "INV-28.pdf",
                 "page_number": 1,
-                "text": "Silverbrook Print\nNorthwind Services Dk Aps Rua do Ouro 40\nAtt.: Sofia Roth 2605 Brondby\nLindenstrasse 3\n2610 Rodovre Telefon +5506340887\nDanmark CVR nr. DK74347584\nSzlger clara.meyer@oakhaven-systems.ost@ster\nKunde CVR Nr. 94368703\nReferen"
+                "text": "Silverbrook Print\nNorthwind Services Dk Aps Rua do Ouro 40\nAtt.: Sofia = Roth 2605 Brondby\nLindenstrasse 3\n2610 Rodovre Telefon +5506340887\nDanmark CVR nr. DK74347584\nSeelger clara.meyer@oakhaven-systems.ost@ster\nKunde CVR Nr. 94368703\nRefe"
               },
               {
                 "filename": "INV-28.pdf",
                 "page_number": 2,
-                "text": "Side 2\n‘Lalt DKK' 3.582,56\n25% moms 895,64\n‘Lalt DKK inkl. moms’ 4.478,20\n| henhold til Affaldsbekendtgorelsen § 78, stk. 5 og 6, overtager vi ansvaret for aflevering af affaldet pa et registreret\ngenanvendelsesanlaeg og indberetning til Af"
+                "text": "Side 2\n‘Lalt DKK* 3.582,56\n25% moms 895,64\n‘Lalt DKK ink!. moms’ 4.478,20\n| henhold til Affaldsbekendtgorelsen § 78, stk. 5 og 6, overtager vi ansvaret for aflevering af affaldet pa et registreret\ngenanvendelsesanlaeg og indberetning til Af"
               },
               {
                 "filename": "INV-28.pdf",
                 "page_number": 3,
-                "text": "Side 3\nSpecifikation 3025139\nKobspris eks.\nDato Beskrivelse Antal Enhed Moms Belob\n20-02-2026 Transport 1. enhed liftbil 1 STK 513,000 513,00\n20-02-2026 Tree, Klasse A2 100 KG 2,632 263,20\n23-02-2026 Liftbil, Farligt affald 1 STK 0,000 0,00"
+                "text": "Side 3\nSpecifikation 3025139\nKobspris eks.\nDato Beskrivelse Antal Enhed Moms Belob\n20-02-2026 Transport 1. enhed liftbil 1 STK 513,000 513,00\n20-02-2026 Tree, Klasse A2 100 KG 2,632 263,20\n23-02-2026  Liftbil, Farligt affald 1 STK 0,000 0,0"
               }
             ],
             "alternatives": [],
@@ -187,12 +229,12 @@
               {
                 "filename": "INV-28.pdf",
                 "page_number": 2,
-                "text": "‘Lalt DKK' 3.582,56"
+                "text": "‘Lalt DKK* 3.582,56"
               },
               {
                 "filename": "INV-28.pdf",
                 "page_number": 2,
-                "text": "‘Lalt DKK inkl. moms’ 4.478,20"
+                "text": "‘Lalt DKK ink!. moms’ 4.478,20"
               }
             ],
             "alternatives": [],
@@ -224,7 +266,7 @@
               {
                 "filename": "INV-28.pdf",
                 "page_number": 2,
-                "text": "‘Lalt DKK inkl. moms’ 4.478,20"
+                "text": "‘Lalt DKK ink!. moms’ 4.478,20"
               }
             ],
             "alternatives": [
@@ -331,7 +373,7 @@
                   {
                     "filename": "INV-28.pdf",
                     "page_number": 2,
-                    "text": "‘Lalt DKK inkl. moms’ 4.478,20"
+                    "text": "‘Lalt DKK ink!. moms’ 4.478,20"
                   }
                 ],
                 "alternatives": [],
@@ -351,7 +393,7 @@
                   {
                     "filename": "INV-28.pdf",
                     "page_number": 2,
-                    "text": "‘Lalt DKK inkl. moms’ 4.478,20"
+                    "text": "‘Lalt DKK ink!. moms’ 4.478,20"
                   }
                 ],
                 "alternatives": [],
@@ -463,6 +505,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -519,5 +565,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

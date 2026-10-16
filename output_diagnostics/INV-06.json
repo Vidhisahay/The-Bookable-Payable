@@ -44,34 +44,62 @@
     {
       "filename": "INV-06.pdf",
       "page_number": 1,
-      "text": "Tax Invoice\nNorthwind Services ZA (Pty) Ltd Northwind Services ZA (Pty) Ltd Order No: 75884754\nVAT Reg. N09446639440 Maria Reis Alex Invoice Date: 07/04/2025\nET ‘sara \"aioe pat Tax Invoice No: 8527907727\nInit 7 Blow tand alone building Smart Shopper No: 7353********2127\nM5 Office Park, Unit 7, Block B, TA Bahnhofstrasse 185 Deli D = 5 07/04/2025\nEastman Kadaka tee 20 ee:\nMaitland Cape Town Delivery Time: 08h00-10h00\nCape Town Method: Delivery\n7405 Tel: 8897228016 Personal Shopper: waria Reis Tamm\nCell: 1044935483\nSummary\nSub-total incl. VAT 1,633.98\nDelivery Cost 50.00\nTotal incl. VAT 1,683.98\nVAT Amount 169.83\nSmart Shopper summary\nRands earned this order 8.14\nRands left to spend 206.96\nBank details: crestline Bank , Wynberg, Branch Code 022982 , Account 4026863135\nPlease note that this invoice reflects the final charge for this shop. The amount may differ from the original\nestimated order value due to variable weight items, the addition of shopping bags, and any substitute items\nincluded in this order. Queries? Call our Online Shopping Help on 0860 30 30 30.\nThank you for shopping at www.oakhaven-trading.za\nMeridian Mobility Lid | Jalan Ampang 23087 |Co.Reg.No:6765/218606/15 | VatReg.No:5471258869\nLiquor License: WCP 035808 007095 Page No: 1 of 2\n",
+      "text": "Tax Invoice\nNorthwind Services ZA (Pty) Ltd Northwind Services ZA (Pty) Ltd Order No: 75884754\nVAT Reg. N09446639440 Maria Reis Alex Invoice Date: 07/04/2025\nkätvelaard ‘sara \"aioe pat Tax Invoice No: 8527907727\nInit 7 Blow tand alone building Smart Shopper No: 7353********2127\nM5 Office Park, Unit 7, Block B, TA Bahnhotstrasse 185 Deli D kh 5 07/04/2025\nEastman Kadaka tee 20 Mey ete\nMaitland Cape Town Delivery Time: 08h00-10h00\nCape Town Method: Delivery\n7405 Tel: 8897228016 Personal Shopper: — Maria Reis Tamm\nCell: 1044936483\nSummary\nSub-total incl. VAT 1,633.98\nDelivery Cost 50.00\nTotal incl. VAT 1,683.98\nVAT Amount 169.83\nSmart Shopper summary\nRands earned this order 8.14\nRands left to spend 206.96\nBank details: Grestiine Bank , Wynberg, Branch Code 022982. , Account 4026863135\nPlease note that this invoice reflects the final charge for this shop. The amount may differ from the original\nestimated order value due to variable weight items, the addition of shopping bags, and any substitute items\nincluded in this order. Queries? Call our Online Shopping Help on 0860 30 30 30.\nThank you for shopping at www oakhaven-trading.za\nMeridian Mobility Lid | Jalan Ampang 23087 |Co.Reg.No:6765/218606/15 | VatReg.No:5471258869\nLiquor License: WCP 035808 007095 Page No: 1 of 2\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 451894,
-        "ocr_alphanumeric_chars": 1000,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1014,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8540,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "37857f2b3d40bd925466d0e61e81da1b6ce1991ea8a34cd2c6812f2e886b03dc"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-06.pdf",
       "page_number": 2,
-      "text": "Tax Invoice\nMaria Maria Alex Reis Order No: 75884754\nDelivered incl vat)\nPnp Bananas Box 1.2kg va EA 44.99 44.99\nPnp Banana Loaf 300g 11 EA 24.99 24.99\nLiqui-fruit Breakfast Punch Fruit Juice 171 EA 25.00 25.00\nLiqui-fruit Berry Blaze Juice 11 11 EA 25.00 25.00\nLiqui-fruit Cranberry Cooler Juice 11 191 EA 25.00 25.00\nLiqui-fruit Orange Fruit Juice 11 11 EA 25.00 25.00\nPnp Ripe & Ready Cling Peaches va EA 56.99 56.99\nPnp Red Grapes 500g va EA 39.99 39.99\nPnp White Grapes 500g va EA 39.99 39.99\nNature Valley Crunchy Oats & Honey 11 EA 69.99 69.99\nKellogg's Cocoa & Nutmix Granola 11 EA 72.99 72.99\nKellogg's Cranberry & Linseed Granola 1/1 EA 72.99 72.99\nPringles Salt & Vinegar Potato Chips 171 EA 69.99 69.99\nPringles Sour Cream & Onion Potato Chips 11 EA 69.99 69.99\nPnp Sliced Beef Biltong 300g 11 EA 113.99 113.99\nPnp Roasted & Salted Economy Mixed 11 EA 125.99 125.99\nNuts\nPnp Bakehouse Blueberry Muffins 4 Pack 11 EA 39.99 39.99\nPnp Full Cream Smooth Plain Yoghurt 1kg 2/2 EA 38.99 77.98\nPnp Granola 750g 111 EA 57.99 57.99\nPnp Berry Muesli Cereal 750g 11 EA 74.99 74.99\nKellogg's Corn Flakes 750g 11 EA 74.99 74.99\nClover Uht Full Cream Long Life 2/2 CS(6) 99.99 199.98\nLittle Bee Honey Squeeze Bottle 1kg 11 EA 159.99 159.99\n* _ Pnp Bakehouse Blueberry Muffins 4 Pack 1 EA 39.99 39.99\nOnline Shopping Bag 4 1.30 5.20\nNot supplied\nPnp Carrot & Pecan Nut Muffin 1/0 EA 0.00 0.00\nMeridian Mobility Lid | Jalan Ampang 23087 |Co.Reg.No‘676si21860615, | VatReg.No‘ss712sea69\nLiquor License: WCP 035808 007095\nPage No: 2 of 2\n",
+      "text": "Tax Invoice\nMaria Maria Alex Reis Order No: 75884754\nDelivered incl vat)\nPnp Bananas Box 1.2kg VAT EA 44.99 44.99\nPnp Banana Loaf 300g 141 EA 24.99 24.99\nLigui-fruit Breakfast Punch Fruit Juice 11 EA 25.00 25.00\nLigui-fruit Berry Blaze Juice 11 11 EA 25.00 25.00\nLigui-fruit Cranberry Cooler Juice 11 11 EA 25.00 25.00\nLigui-fruit Orange Fruit Juice 11 11 EA 25.00 25.00\nPnp Ripe 8 Ready Cling Peaches VARTS EA 56.99 56.99\nPnp Red Grapes 500g VAR EA 39.99 39.99\nPnp White Grapes 500g Vv 11 EA 39.99 39.99\nNature Valley Crunchy Oats & Honey 11 EA 69.99 69.99\nKellogg's Cocoa 8 Nutmix Granola 11 EA 72.99 72.99\nKellogg's Cranberry 8 Linseed Granola 11 EA 72.99 72.99\nPringles Salt 8 Vinegar Potato Chips 11 EA 69.99 69.99\nPringles Sour Cream 8 Onion Potato Chips 11 EA 69.99 69.99\nPnp Sliced Beef Biltong 300g 11 EA 113.99 113.99\nPnp Roasted 8 Salted Economy Mixed 11 EA 125.99 125.99\nNuts\nPnp Bakehouse Blueberry Muffins 4 Pack 11 EA 39.99 39.99\nPnp Full Cream Smooth Plain Yoghurt 1kg 2/2 EA 38.99 77.98\nPnp Granola 750g 11 EA 57.99 57.99\nPnp Berry Muesli Cereal 750g 11 EA 74.99 74.99\nKellogg's Corn Flakes 750g 11 EA 74.99 74.99\nClover Uht Full Cream Long Life 2/2 CS(6) 99.99 199.98\nLittle Bee Honey Squeeze Bottle 1kg 11 EA 159.99 159.99\n*- PnpBakehouse Blueberry Muffins 4 Pack 1 EA 39.99 39.99\nOnline Shopping Bag 4 1.30 5.20\nNot supplied\nPnp Carrot 8 Pecan Nut Muffin 1/0 EA 0.00 0.00\nMeridian Mobility Ltd | Jalan Ampang 23087 |Co.Reg.No‘676si21860615, | VatReg.No:5471258269\nLiquor License: WCP 035808 007095\nPage No: 2 of 2\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 637931,
-        "ocr_alphanumeric_chars": 1169,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1180,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 9611,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "5753021cbfc001b30dada8f0c4d3f2e8a0a1d4efefbd9cb9f9d7ca241af33d08"
+        }
       },
       "error": null
     }
@@ -93,8 +121,7 @@
     ],
     "warnings": [
       "Multiple invoice-like sections were indicated by page classification; review candidate boundaries.",
-      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-      "Supplier name was not explicitly labeled; no name was inferred from the header."
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values."
     ],
     "candidates": [
       {
@@ -106,12 +133,12 @@
               {
                 "filename": "INV-06.pdf",
                 "page_number": 1,
-                "text": "Tax Invoice\nNorthwind Services ZA (Pty) Ltd Northwind Services ZA (Pty) Ltd Order No: 75884754\nVAT Reg. N09446639440 Maria Reis Alex Invoice Date: 07/04/2025\nET ‘sara \"aioe pat Tax Invoice No: 8527907727\nInit 7 Blow tand alone building Smar"
+                "text": "Tax Invoice\nNorthwind Services ZA (Pty) Ltd Northwind Services ZA (Pty) Ltd Order No: 75884754\nVAT Reg. N09446639440 Maria Reis Alex Invoice Date: 07/04/2025\nkätvelaard ‘sara \"aioe pat Tax Invoice No: 8527907727\nInit 7 Blow tand alone build"
               },
               {
                 "filename": "INV-06.pdf",
                 "page_number": 2,
-                "text": "Tax Invoice\nMaria Maria Alex Reis Order No: 75884754\nDelivered incl vat)\nPnp Bananas Box 1.2kg va EA 44.99 44.99\nPnp Banana Loaf 300g 11 EA 24.99 24.99\nLiqui-fruit Breakfast Punch Fruit Juice 171 EA 25.00 25.00\nLiqui-fruit Berry Blaze Juice"
+                "text": "Tax Invoice\nMaria Maria Alex Reis Order No: 75884754\nDelivered incl vat)\nPnp Bananas Box 1.2kg VAT EA 44.99 44.99\nPnp Banana Loaf 300g 141 EA 24.99 24.99\nLigui-fruit Breakfast Punch Fruit Juice 11 EA 25.00 25.00\nLigui-fruit Berry Blaze Juic"
               }
             ],
             "alternatives": [],
@@ -124,7 +151,7 @@
               {
                 "filename": "INV-06.pdf",
                 "page_number": 1,
-                "text": "ET ‘sara \"aioe pat Tax Invoice No: 8527907727"
+                "text": "kätvelaard ‘sara \"aioe pat Tax Invoice No: 8527907727"
               }
             ],
             "alternatives": [],
@@ -153,16 +180,28 @@
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Meridian Mobility Ltd",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 2,
+                "text": "Meridian Mobility Ltd"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Liquor License: WCP 035808 007095, Page No: 2 of 2",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 2,
+                "text": "Liquor License: WCP 035808 007095, Page No: 2 of 2"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -182,15 +221,35 @@
           },
           "printed_gross_total": {
             "value": null,
-            "status": "missing",
-            "evidence": [],
-            "alternatives": [],
-            "note": null
+            "status": "conflicting",
+            "evidence": [
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 1,
+                "text": "Sub-total incl. VAT 1,633.98"
+              },
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 1,
+                "text": "Total incl. VAT 1,683.98"
+              }
+            ],
+            "alternatives": [
+              "1633.98",
+              "1683.98"
+            ],
+            "note": "More than one distinct printed amount matches this total label."
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "1633.98",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 1,
+                "text": "Sub-total incl. VAT 1,633.98"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -212,12 +271,18 @@
                 "filename": "INV-06.pdf",
                 "page_number": 1,
                 "text": "VAT Amount 169.83"
+              },
+              {
+                "filename": "INV-06.pdf",
+                "page_number": 2,
+                "text": "Pnp Bananas Box 1.2kg VAT EA 44.99 44.99"
               }
             ],
             "alternatives": [
               "1633.98",
               "1683.98",
-              "169.83"
+              "169.83",
+              "44.99"
             ],
             "note": "Multiple printed tax amounts; no total was explicitly identified."
           },
@@ -228,7 +293,72 @@
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "Liquor License: WCP 035808 007095 Page No: 1 of",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-06.pdf",
+                    "page_number": 1,
+                    "text": "Liquor License: WCP 035808 007095 Page No: 1 of 2"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-06.pdf",
+                    "page_number": 1,
+                    "text": "Liquor License: WCP 035808 007095 Page No: 1 of 2"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
           "taxes": [
             {
               "scope": "header",
@@ -376,42 +506,6 @@
               "scope": "header",
               "kind": "tax",
               "name": {
-                "value": "Vat",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-06.pdf",
-                    "page_number": 1,
-                    "text": "Meridian Mobility Lid | Jalan Ampang 23087 |Co.Reg.No:6765/218606/15 | VatReg.No:5471258869"
-                  },
-                  {
-                    "filename": "INV-06.pdf",
-                    "page_number": 2,
-                    "text": "Meridian Mobility Lid | Jalan Ampang 23087 |Co.Reg.No‘676si21860615, | VatReg.No‘ss712sea69"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
                 "value": "vat",
                 "status": "found",
                 "evidence": [
@@ -438,6 +532,43 @@
                 "alternatives": [],
                 "note": null
               }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-06.pdf",
+                    "page_number": 2,
+                    "text": "Pnp Bananas Box 1.2kg VAT EA 44.99 44.99"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "44.99",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-06.pdf",
+                    "page_number": 2,
+                    "text": "Pnp Bananas Box 1.2kg VAT EA 44.99 44.99"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
             }
           ],
           "charges": [],
@@ -448,8 +579,7 @@
           "review_required": true,
           "warnings": [
             "Multiple invoice-like sections were indicated by page classification; review candidate boundaries.",
-            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-            "Supplier name was not explicitly labeled; no name was inferred from the header."
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values."
           ]
         },
         "master_hints": {
@@ -461,6 +591,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Line 1 item type is not established as a permitted schema value."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -535,5 +669,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

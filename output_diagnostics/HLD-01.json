@@ -28,17 +28,31 @@
     {
       "filename": "HLD-01.pdf",
       "page_number": 1,
-      "text": "=\nใบวางบิล (INVOICE)\nใบวางบิลเลข                                                                                                                  -            จ      °\na                  166751021467                                              บริษัท ซิงค์ ครีเอชัน จํากัด\nชื่องาน / Project:           Staff Impact (May 2026)                                                    เลขที 799/124 หมู่ที 3 ตําบลแพรกษา\nชื่อลูกค้า / Customer: พ๐กกหกส SUPPORT SERVICES (หลแผขดเแพนทซเรบหรดคตธรสมเซระรเหเรฒเภะพหเรสเง0) LIMITED (       )\nที่อยู่ / Address:            เลขที่ 8 อาคารทีวัน ชั้นที่ 16 ห้องเลขที่ 16-103 16-104 16-105               จังหวัดสมุทรปราการ 10280\n(ซอยสุขุมวิท 40 ถนนสุขุมวิท แขวงพระโขนง เขตคลองเดย                 ผู้ประสานงาน : คุณวุฒิพงษ์ แบ่งลาภ\nกรุงเทพมหานคร                                                  เบอร์โทร : 5901619152\nเลขประจําตัวผู้เสียภาษี : 4053930153035                                E-mail: jonas.silva@larkspur-technologies.com\nโทร / Tel:                                                                                                    หมายเลขผู้เสียภาษี\nแฟกซ์ / Fax:                                                                      0 1055 56100 87 9\nลําดับ                                  รายการ                                  จํานวน                  ราคาต่อหน่วย                    จํานวนเงิน\nITEM                             DEQGKGDFIYT                           QUANTITY                UNIT PRICE                    AMOUNT\nThe detail are as below:-\n\n1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}\nTotal\nMANAGEMENT FEE 9%\nTOTAL (INCLUDING AGENCY FEE)\nVat 7 %\nGRAND TOTAL (INCLUDING VAT)                                                                                          | 8,397.36]\nภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44\nจํานวนเงินที่ต้องซําระ (TOTAL PAYMENT)                                                                                   | ว88161.92|\nบาท / BAHT                                             แปดพันหนึ่งร้อยหกสิบเอ็ดบาทเก้าสิบสองสตางค์\n\n1\n2\nจํากัต\n4699417904\n3                                                jonas.silva@larkspur-technologies.com\nAPPROVED BY                                                                            PRESENTED BY\n 0                                                             (Managing Director)\n",
+      "text": "Qu1wila (INVOICE)\nur wilaan 2 e y A\nKa s16675902/467 usin dea attiadu aia\ndav7u / Project: staff Impact (May 2026) Lawl 799/124 wail 3 duaunsnen\naan / Customer: — |rorthwind SUPPORT SERVICES (THAILANIIPUNATEISU RGR SE BURP STSesDaNR BFAD) LIMITED ( )\nar / Address: kaud 8 avansvidu Jud 16 Wavraudd 16-103 16-104 16-105 Hswiaanmalsinrs 10280\ndauayuin 40 quugyuin umowselrus iuAARDNAU fsearwarw : manada uivern\n[nsamWUWIUAS kuaims :5901619152\nkauusrandadi Aun : 4053930153035 E-mail: jonas.silvaiarkspur-technologies.com\nins / Tel: wngmaadtdumi\nluvinal / Fax: 0 1055 56100 879\nadu KA WU mardavuru amnušu\nITEM DEQGKGDFIYT QUANTITY UNIT PRICE AMOUNT\nThe detail are as below:-\n\n1 Staff 2 Units X 6 Days 12 600.00] 7,200.00}\nIMANAGEMENT FEE 9%\nTOTAL (INCLUDING AGENCY FEE)\nVat 7 %\nGRAND TOTAL (INCLUDING VAT) 8,397.36\nmäin ni Anu 3% (WITHHOLDING TAX) E\nuvutšutislavni 5: (TOTAL PAYMENT) [000 g16192]\njim / BAHT mlamuvüvsauvnäutõaummmtäuaavaäa das\n\n4699417904\n3 jonas. siva@larkspur-technologies.com\nAPPROVED BY PRESENTED BY\n“süsi (Managing Director)\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 683474,
-        "ocr_alphanumeric_chars": 856,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 822,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12140,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "fadfa2007077a1a8bac976f929953ef87c8b5e4a9b0549bfe6b101a79085ff09"
+        }
       },
       "error": null
     }
@@ -67,7 +81,7 @@
               {
                 "filename": "HLD-01.pdf",
                 "page_number": 1,
-                "text": "=\nใบวางบิล (INVOICE)\nใบวางบิลเลข                                                                                                                  -            จ      °\na                  166751021467"
+                "text": "Qu1wila (INVOICE)\nur wilaan 2 e y A\nKa s16675902/467 usin dea attiadu aia\ndav7u / Project: staff Impact (May 2026) Lawl 799/124 wail 3 duaunsnen\naan / Customer: — |rorthwind SUPPORT SERVICES (THAILANIIPUNATEISU RGR SE BURP STSesDaNR BFAD) L"
               }
             ],
             "alternatives": [],
@@ -122,7 +136,7 @@
               {
                 "filename": "HLD-01.pdf",
                 "page_number": 1,
-                "text": "บาท / BAHT                                             แปดพันหนึ่งร้อยหกสิบเอ็ดบาทเก้าสิบสองสตางค์"
+                "text": "jim / BAHT mlamuvüvsauvnäutõaummmtäuaavaäa das"
               }
             ],
             "alternatives": [],
@@ -135,7 +149,7 @@
               {
                 "filename": "HLD-01.pdf",
                 "page_number": 1,
-                "text": "GRAND TOTAL (INCLUDING VAT)                                                                                          | 8,397.36]"
+                "text": "GRAND TOTAL (INCLUDING VAT) 8,397.36"
               }
             ],
             "alternatives": [],
@@ -165,13 +179,13 @@
           "lines": [
             {
               "description": {
-                "value": "Staff 2 Units X 6 Days                                                       12",
+                "value": "Staff 2 Units X 6 Days 12",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                    "text": "1 Staff 2 Units X 6 Days 12 600.00] 7,200.00}"
                   }
                 ],
                 "alternatives": [],
@@ -191,7 +205,7 @@
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                    "text": "1 Staff 2 Units X 6 Days 12 600.00] 7,200.00}"
                   }
                 ],
                 "alternatives": [
@@ -215,7 +229,7 @@
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                    "text": "1 Staff 2 Units X 6 Days 12 600.00] 7,200.00}"
                   }
                 ],
                 "alternatives": [],
@@ -235,7 +249,7 @@
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                    "text": "1 Staff 2 Units X 6 Days 12 600.00] 7,200.00}"
                   }
                 ],
                 "alternatives": [],
@@ -292,7 +306,7 @@
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
+                    "text": "mäin ni Anu 3% (WITHHOLDING TAX) E"
                   }
                 ],
                 "alternatives": [],
@@ -305,22 +319,16 @@
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
+                    "text": "mäin ni Anu 3% (WITHHOLDING TAX) E"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
               "amount": {
-                "value": "235.44",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "HLD-01.pdf",
-                    "page_number": 1,
-                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
                 "note": null
               }
@@ -330,13 +338,13 @@
             {
               "kind": "extra_charge",
               "description": {
-                "value": "MANAGEMENT FEE 9%",
+                "value": "IMANAGEMENT FEE 9%",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "HLD-01.pdf",
                     "page_number": 1,
-                    "text": "MANAGEMENT FEE 9%"
+                    "text": "IMANAGEMENT FEE 9%"
                   }
                 ],
                 "alternatives": [],
@@ -369,6 +377,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -412,9 +424,9 @@
           ]
         },
         "reconciliation": {
-          "erp_gross": "-235.44",
+          "erp_gross": "0.00",
           "printed_gross": "8397.36",
-          "difference": "-8632.80",
+          "difference": "-8397.36",
           "status": "unresolved",
           "reason": "Unresolved because one or more required source values are ambiguous or conflicting."
         }
@@ -423,5 +435,19 @@
     "unresolved_reasons": [
       "Unresolved because one or more required source values are ambiguous or conflicting."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

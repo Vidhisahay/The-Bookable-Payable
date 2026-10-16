@@ -35,34 +35,87 @@
     {
       "filename": "INV-27.pdf",
       "page_number": 1,
-      "text": "Oakhaven Supply Ltd\nLindenstrasse 8\nP.O Box 14108, Nairobi, Kenya 32917ALS55\n00400 KEN\nalex.meyer@oakhaven-supply.ke\nwww.northwind-consulting.ke\nPIN P088353697W\nBILL TO\nNorthwind Support Kenya Ltd KES DATE PLEASE PAY DUE DATE\nRua do Ouro 117, BUILDING : F >\nAZURE 03/06/2025 KES 70,654.30 03/07/2025\nTOWERS, 10TH FLOOR\nRIVERSIDE\nSQUARE RIVERSIDE DRIVE\n00600 Nairobi Kenya\nPIN P221296346U\nACTIVITY TAX Qty RATE AMOUNT\nHandling Out (per CBM) Std 0.2744 500.00 137.20\nHandling Out of POS DEVICES(SUNMI\nV2PRO) on 19th May\n0.00686CBM * 40 units\nTransport Std 1 3,000.00 3,000.00\nTransport of POS devices(SUNMI V2PRO) on 4th April\nTransport Std 1 1,500.00 1,500.00\nTransport of POS DEVICES(SUNMI V2PRO) on 19th\nMay\nStorage charges Std 40.53574 30.00 1,216.07\nStorage charges for POS devices(SUNMI V2PRO) from\n1st to 19th May\n0.00686 CBM* 31 1units*19days\nStorage charges Std 22.30872 30.00 669.26\nStorage charges for POS devices(SUNMI V2PRO) from\n20th to 31st May\n0.00686 CBM* 271units*12days\nStorage charges Std 1,646.2116 30.00 49,386.35\nStorage charges for Food\ndeliverybag(insulated bag) from 1st to 31st May\n0.0297 CBM* 1788 units* 31 days\nStock Management fee Std M 5,000.00 5,000.00\nMonthly stock Management fee\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch: Swissport\nSwift Code: PSDHKIZC\nBank Code: 07000\nKenya Shillings (KES): Account Number 6786517608\nUnited States Dollar (USD): Account Number 8672480023\nEuro (EUR): Account Number 8672480039\n",
+      "text": "Oakhaven Supply Ltd\nLindenstrasse 8\nP.O Box 14108, Nairobi, Kenya 32917ALS55\n00400 KEN\nalex.meyer@oakhaven-supply.ke\nwww.northwind-consulting.ke\nPIN P088353697W\nBILL TO\nNorthwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE\nRua do Ouro 117, BUILDING : F 3\nAZURE 03/06/2025 KES 70,654.30 03/07/2025\nTOWERS, 10TH FLOOR\nRIVERSIDE\nSQUARE RIVERSIDE DRIVE\n00600 Nairobi Kenya\nPIN P221296346U\nACTIVITY TAX atv RATE AMOUNT\nHandling Out (per CBM) Std 0.2744 500.00 137.20\nHandling Out of POS DEVICES(SUNMI\nV2PRO) on 19th May\n0.00686CBM * 40 units\nTransport Std 1 3,000.00 3,000.00\nTransport of POS devices(SUNMI V2PRO) on 4th April\nTransport Std 1 1,500.00 1,500.00\nTransport of POS DEVICES(SUNMI V2PRO) on 19th\nMay\nStorage charges Std 40.53574 30.00 1,216.07\nStorage charges for POS devices(SUNMI V2PRO) from\n1st to 19th May\n0.00686 CBM* 311units*19days\nStorage charges Std 22.30872 30.00 669.26\nStorage charges for POS devices(SUNMI V2PRO) from\n20th to 31st May\n0.00686 CBM* 271units*12days\nStorage charges Std 1,646.2116 30.00 49,386.35\nStorage charges for Food\ndeliverybag(insulated bag) from 1st to 31st May\n0.0297 CBM* 1788 units* 31 days\nStock Management fee Std ft 5,000.00 5,000.00\nMonthly stock Management fee\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch: Swissport\nSwift Code: PSDHKIZC\nBank Code: 07000\nKenya Shillings (KES): Account Number 6786517608\nUnited States Dollar (USD): Account Number 8672480023\nEuro (EUR): Account Number 8672480039\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 680055,
-        "ocr_alphanumeric_chars": 1179,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1181,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 9514,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "6090c000acb9b9efd088803190e92d104fabadb01c4010370677d0b7473f11bb"
+        },
+        "activity_table_ocr": {
+          "ocr_alphanumeric_chars": 1162,
+          "ocr_attempts": [
+            {
+              "attempt": 1,
+              "elapsed_ms": 10288,
+              "outcome": "success",
+              "psm_modes": [
+                6
+              ]
+            }
+          ],
+          "ocr_modes_attempted": [
+            6
+          ],
+          "ocr_page_segmentation_mode": 6,
+          "ocr_retry_count": 0,
+          "status": "found",
+          "text": "Oakhaven Supply Ltd\nLindenstrasse 8\nP.O Box 14108, Nairobi, Kenya 32917ALS55\n00400 KEN\nalex.meyer@oakhaven-supply.ke\nwww.northwind-consulting.ke\nPIN P088353697W\nBILL TO\nNorthwind rt K\nFine romps 1 BULDING “Ki DATE PLEASE PAY DUE DATE\nAZURE 03/06/2025 KES 70,654.30 03/07/2025\nTOWERS, 10TH FLOOR\nRIVERSIDE\nSQUARE RIVERSIDE DRIVE\n00600 Nairobi Kenya\nPIN P221296346U\nACTIVITY TAX QTy RATE AMOUNT\nHandling Out (per CBM) Std 0.2744 500.00 137.20\nHandling Out of POS DEVICES(SUNMI\nV2PRO) on 19th May\n0.00686CBM * 40 units\nTransport Std 1 3,000.00 3,000.00\nTransport of POS devices(SUNMI V2PRO) on 4th April\nTransport Std 1 1,500.00 1,500.00\nTransport of POS DEVICES(SUNMI V2PRO) on 19th\nMay\nStorage charges Std 40.53574 30.00 1,216.07\nStorage charges for POS devices(SUNMI V2PRO) from\n1st to 19th May\n0.00686 CBM* 31 tunits*19days\nStorage charges Std 22.30872 30.00 669.26\nStorage charges for POS devices(SUNMI V2PRO) from\n20th to 31st May\n0.00686 CBM* 271units*12days\nStorage charges Sid 1,646.2116 30.00 49,386.35\nStorage charges for Food\ndeliverybag(insulated bag) from 1st to 31st May\n0.0297 CBM* 1788 units* 31 days\nStock Management fee Std 1 5,000.00 5,000.00\nMonthly stock Management fee\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch: Swissport\nSwift Code: PSDHKIZC\nBank Code: 07000\nKenya Shillings (KES): Account Number 6786517608\nUnited States Dollar (USD): Account Number 8672480023\nEuro (EUR): Account Number 8672480039\n",
+          "psm": 6,
+          "cache": {
+            "status": "hit",
+            "key": "63e5c24353e648df6ee22bf4bd44fcb6dc282565cbdd837bad894406dfbb6546"
+          }
+        }
       },
       "error": null
     },
     {
       "filename": "INV-27.pdf",
       "page_number": 2,
-      "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88\nTAX 9,745.42\nTOTAL 70,654.30\nTORALDUE KES 70,654.30\nTHANK YOU.\nTAX SUMMARY\nRATE TAX NET\nVAT @ 16% 9,745.42 60,908.88\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch: Swissport\nSwift Code: PSDHKIZC\nBank Code: 07000\nKenya Shillings (KES): Account Number 6786517608\nUnited States Dollar (USD): Account Number 8672480023\nEuro (EUR): Account Number 8672480039\n",
+      "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88\nTAX 9,745.42\nTOTAL 70,654.30\nTOIAKOHE KES 70,654.30\nTHANK YOU.\nTAX SUMMARY\nRATE TAX NET\nVAT @ 16% 9,745.42 60,908.88\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch: Swissport\nSwift Code: PSDHKIZC\nBank Code: 07000\nKenya Shillings (KES): Account Number 6786517608\nUnited States Dollar (USD): Account Number 8672480023\nEuro (EUR): Account Number 8672480039\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 223180,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 340,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 2977,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "3c061498351e348a1a8a74b83d2394fb76d10bfa8e0b68fdab6e807076952e5c"
+        }
       },
       "error": null
     }
@@ -83,8 +136,6 @@
       }
     ],
     "warnings": [
-      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-      "Supplier name was not explicitly labeled; no name was inferred from the header.",
       "The Phase 2 document classification is uncertain."
     ],
     "candidates": [
@@ -97,12 +148,12 @@
               {
                 "filename": "INV-27.pdf",
                 "page_number": 1,
-                "text": "Oakhaven Supply Ltd\nLindenstrasse 8\nP.O Box 14108, Nairobi, Kenya 32917ALS55\n00400 KEN\nalex.meyer@oakhaven-supply.ke\nwww.northwind-consulting.ke\nPIN P088353697W\nBILL TO\nNorthwind Support Kenya Ltd KES DATE PLEASE PAY DUE DATE\nRua do Ouro 11"
+                "text": "Oakhaven Supply Ltd\nLindenstrasse 8\nP.O Box 14108, Nairobi, Kenya 32917ALS55\n00400 KEN\nalex.meyer@oakhaven-supply.ke\nwww.northwind-consulting.ke\nPIN P088353697W\nBILL TO\nNorthwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE\nRua do Ouro 11"
               },
               {
                 "filename": "INV-27.pdf",
                 "page_number": 2,
-                "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88\nTAX 9,745.42\nTOTAL 70,654.30\nTORALDUE KES 70,654.30\nTHANK YOU.\nTAX SUMMARY\nRATE TAX NET\nVAT @ 16% 9,745.42 60,908.88\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch:"
+                "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88\nTAX 9,745.42\nTOTAL 70,654.30\nTOIAKOHE KES 70,654.30\nTHANK YOU.\nTAX SUMMARY\nRATE TAX NET\nVAT @ 16% 9,745.42 60,908.88\nAccount Name: Cloverdale Mobility Limited\nBank Name: Larkspur Bank\nBank Branch:"
               }
             ],
             "alternatives": [],
@@ -130,16 +181,28 @@
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Oakhaven Supply Ltd",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-27.pdf",
+                "page_number": 1,
+                "text": "Oakhaven Supply Ltd"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Lindenstrasse 8, P.O Box 14108, Nairobi, Kenya 32917ALS55, 00400 KEN",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-27.pdf",
+                "page_number": 1,
+                "text": "Lindenstrasse 8, P.O Box 14108, Nairobi, Kenya 32917ALS55, 00400 KEN"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -151,50 +214,28 @@
             "note": null
           },
           "currency": {
-            "value": null,
-            "status": "ambiguous",
+            "value": "KES",
+            "status": "found",
             "evidence": [
               {
                 "filename": "INV-27.pdf",
                 "page_number": 1,
-                "text": "United States Dollar (USD): Account Number 8672480023"
-              },
-              {
-                "filename": "INV-27.pdf",
-                "page_number": 1,
-                "text": "Euro (EUR): Account Number 8672480039"
-              },
-              {
-                "filename": "INV-27.pdf",
-                "page_number": 1,
-                "text": "Euro (EUR): Account Number 8672480039"
-              },
-              {
-                "filename": "INV-27.pdf",
-                "page_number": 2,
-                "text": "United States Dollar (USD): Account Number 8672480023"
-              },
-              {
-                "filename": "INV-27.pdf",
-                "page_number": 2,
-                "text": "Euro (EUR): Account Number 8672480039"
-              },
-              {
-                "filename": "INV-27.pdf",
-                "page_number": 2,
-                "text": "Euro (EUR): Account Number 8672480039"
+                "text": "AZURE 03/06/2025 KES 70,654.30 03/07/2025"
               }
             ],
-            "alternatives": [
-              "USD",
-              "EUR"
-            ],
+            "alternatives": [],
             "note": null
           },
           "printed_gross_total": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "70654.30",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-27.pdf",
+                "page_number": 1,
+                "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -212,7 +253,7 @@
             "note": null
           },
           "printed_tax_total": {
-            "value": "60908.88",
+            "value": "9745.42",
             "status": "found",
             "evidence": [
               {
@@ -231,7 +272,694 @@
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "Handling Out (per CBM)",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Handling Out (per CBM) Std 0.2744 500.00 137.20"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Handling Out (per CBM) Std 0.2744 500.00 137.20"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "0.2744",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Handling Out (per CBM) Std 0.2744 500.00 137.20"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "500.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Handling Out (per CBM) Std 0.2744 500.00 137.20"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "137.20",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Handling Out (per CBM) Std 0.2744 500.00 137.20"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Transport",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 3,000.00 3,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "freight",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 3,000.00 3,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 3,000.00 3,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "3000.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 3,000.00 3,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "3000.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 3,000.00 3,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Transport",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 1,500.00 1,500.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "freight",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 1,500.00 1,500.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 1,500.00 1,500.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "1500.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 1,500.00 1,500.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "1500.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Transport Std 1 1,500.00 1,500.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Storage charges",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 40.53574 30.00 1,216.07"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 40.53574 30.00 1,216.07"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "40.53574",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 40.53574 30.00 1,216.07"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "30.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 40.53574 30.00 1,216.07"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "1216.07",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 40.53574 30.00 1,216.07"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Storage charges",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 22.30872 30.00 669.26"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 22.30872 30.00 669.26"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "22.30872",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 22.30872 30.00 669.26"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "30.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 22.30872 30.00 669.26"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "669.26",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Std 22.30872 30.00 669.26"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Storage charges",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Sid 1,646.2116 30.00 49,386.35"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Sid 1,646.2116 30.00 49,386.35"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1646.2116",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Sid 1,646.2116 30.00 49,386.35"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "30.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Sid 1,646.2116 30.00 49,386.35"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "49386.35",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Storage charges Sid 1,646.2116 30.00 49,386.35"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Stock Management fee",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Stock Management fee Std 1 5,000.00 5,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Stock Management fee Std 1 5,000.00 5,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Stock Management fee Std 1 5,000.00 5,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "5000.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Stock Management fee Std 1 5,000.00 5,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "Warehosuing for May 2025 SUBTOTAL 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 2,
+                    "text": "VAT @ 16% 9,745.42 60,908.88"
+                  },
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Northwind Support Kenya Lid KES DATE PLEASE PAY DUE DATE AZURE 03/06/2025 KES 70,654.30 03/07/2025"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "5000.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-27.pdf",
+                    "page_number": 1,
+                    "text": "Stock Management fee Std 1 5,000.00 5,000.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
           "taxes": [
             {
               "scope": "header",
@@ -263,7 +991,7 @@
                 "note": null
               },
               "amount": {
-                "value": "60908.88",
+                "value": "9745.42",
                 "status": "found",
                 "evidence": [
                   {
@@ -277,172 +1005,13 @@
               }
             }
           ],
-          "charges": [
-            {
-              "kind": "freight",
-              "description": {
-                "value": "Transport Std 1 3,000.00 3,000.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport Std 1 3,000.00 3,000.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "3000.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport Std 1 3,000.00 3,000.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "kind": "freight",
-              "description": {
-                "value": "Transport of POS devices(SUNMI V2PRO) on 4th April",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport of POS devices(SUNMI V2PRO) on 4th April"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "kind": "freight",
-              "description": {
-                "value": "Transport Std 1 1,500.00 1,500.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport Std 1 1,500.00 1,500.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "1500.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport Std 1 1,500.00 1,500.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "kind": "freight",
-              "description": {
-                "value": "Transport of POS DEVICES(SUNMI V2PRO) on 19th",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Transport of POS DEVICES(SUNMI V2PRO) on 19th"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "kind": "extra_charge",
-              "description": {
-                "value": "Stock Management fee Std M 5,000.00 5,000.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Stock Management fee Std M 5,000.00 5,000.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "5000.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Stock Management fee Std M 5,000.00 5,000.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "kind": "extra_charge",
-              "description": {
-                "value": "Monthly stock Management fee",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-27.pdf",
-                    "page_number": 1,
-                    "text": "Monthly stock Management fee"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            }
-          ],
+          "charges": [],
           "pages": [
             1,
             2
           ],
           "review_required": true,
           "warnings": [
-            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-            "Supplier name was not explicitly labeled; no name was inferred from the header.",
             "The Phase 2 document classification is uncertain."
           ]
         },
@@ -454,7 +1023,11 @@
             "reason": "No exact payment-term alias was found; dates are not used to infer terms."
           }
         },
-        "output_status": "unresolved_not_emitted",
+        "output_status": "emitted_bookable_payable",
+        "bookability": {
+          "status": "passed",
+          "reason": "Required ERP reconciliation passed."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -489,15 +1062,28 @@
           ]
         },
         "reconciliation": {
-          "status": "unresolved",
-          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
-          "erp_gross": "",
-          "printed_gross": ""
+          "erp_gross": "70654.30",
+          "printed_gross": "70654.30",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
         }
       }
     ],
-    "unresolved_reasons": [
-      "Printed gross is missing, ambiguous, conflicting, or unreadable."
-    ]
+    "unresolved_reasons": []
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

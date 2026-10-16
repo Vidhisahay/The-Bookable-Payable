@@ -62,17 +62,31 @@
     {
       "filename": "INV-23.pdf",
       "page_number": 1,
-      "text": "# EST-259684\nKingsley Supply LIMITED\nRua do Ouro 88\nGhana\nBill To\nCASH CUSTOMER - FedEx\nNorthwind HOLDINGS 5 .\nGhana Estimate Date : 31 Dec 2025\n1 Custom Duties - IAS001 1.00 13,289.19 13,289.19\nCustom Duties\n2 Service Charges - FDX0001 1.00 356.85 356.85\nService Charges\nSub Total 13,646.04\nGETFund (2.5%) 8.92\nNHIL (2.5%) 8.92\nCovid Levy (1%) 3.57\nVAT Output-15 (15%) 56.74\nTotal GHS13,724.19\nNotes\nLooking forward for your business.\nTerms & Conditions\nPLEASE BE INFORMED THAT A DEPOSIT OF GHC13,000 IS REQUIRED TO ENABLE US TO PROCEED WITH THE CUSTOMS DUTY.\nAwb No.7778 8290 8336\nWeight - 6.20 KG\n1\n",
+      "text": "# EST-259684\nKingsley Supply LIMITED\nRua do Ouro 88\nGhana\nBill To\nCASH CUSTOMER - FedEx\nNorthwind HOLDINGS 4, .\nGhana Estimate Date : 31 Dec 2025\n1 Custom Duties - [45001 1.00 13,289.19 13,289.19\nCustom Duties\n2 Service Charges - FDX0001 1.00 356.85 356.85\nService Charges\nSub Total 13,646.04\nGETFund (2.5%) 8.92\nNHIL (2.5%) 8.92\nCovid Levy (1%) 3.57\nVAT Output-15 (15%) 56.74\nTotal GHS13,724.19\nNotes\nLooking forward for your business.\nTerms & Conditions\nPLEASE BE INFORMED THAT A DEPOSIT OF GHC13,000 IS REQUIRED TO ENABLE US TO PROCEED WITH THE CUSTOMS DUTY.\nAwb No.7778 8290 8336\nWeight - 6.20 KG\n1\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 255731,
-        "ocr_alphanumeric_chars": 454,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 453,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 3609,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "643d59ea7955ee74a3aace67837ff20f2c581819c58e4a2a14a94b5a50349d9f"
+        }
       },
       "error": null
     },
@@ -86,12 +100,39 @@
         "ocr_attempted": true,
         "rendered_bytes": 9563,
         "ocr_alphanumeric_chars": 0,
+        "ocr_page_segmentation_mode": 6,
         "ocr_modes_attempted": [
           6,
           11,
           3
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "psm_modes": [
+              6,
+              11,
+              3
+            ],
+            "elapsed_ms": 1549,
+            "outcome": "sparse"
+          },
+          {
+            "attempt": 2,
+            "psm_modes": [
+              6,
+              11,
+              3
+            ],
+            "elapsed_ms": 1488,
+            "outcome": "sparse"
+          }
+        ],
+        "ocr_retry_count": 1,
+        "ocr_cache": {
+          "status": "not_stored",
+          "key": "d399fd7713cfa9bfdc4d90d9e9d1b7d0ca6aeb9eed78eec83caef0b6c234190b"
+        }
       },
       "error": null
     },
@@ -105,63 +146,132 @@
         "ocr_attempted": true,
         "rendered_bytes": 10178,
         "ocr_alphanumeric_chars": 0,
+        "ocr_page_segmentation_mode": 6,
         "ocr_modes_attempted": [
           6,
           11,
           3
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "psm_modes": [
+              6,
+              11,
+              3
+            ],
+            "elapsed_ms": 1562,
+            "outcome": "sparse"
+          },
+          {
+            "attempt": 2,
+            "psm_modes": [
+              6,
+              11,
+              3
+            ],
+            "elapsed_ms": 1473,
+            "outcome": "sparse"
+          }
+        ],
+        "ocr_retry_count": 1,
+        "ocr_cache": {
+          "status": "not_stored",
+          "key": "9b6d55cde8295c05ea7202f9a26bdc7912e1a0218d88247e61e5de5a2db9407a"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-23.pdf",
       "page_number": 4,
-      "text": "12/31/25, 12:39 PM ICUMS\nDuty Calculator\nBOE unit\nTotal tax amount\nTax Ney(A) Last Tax Ncy(B) Relief Tax Ncy(C=A-B) Guarantee Tax Ncy(D=C) Payable Tax Ncy(B)\n13,289.19 13,289.19 0.00 0.00 13,289.19\nTax amount by tax code\nee User Tax Last Tax Relief Tax Guarantee Tax Payable Tax\nDef. Ney(A) Ney(B) Ney(C=A-B) Ney(D=C) Ney(B)\n[01] Import Duty N 2,081.58 2,081.58 0.00 0.00 2,081.58\n[02] Import VAT N 6,950.41 6,950.41 0.00 0.00 6,950.41\n[05] Processing Fee N 0.00 0.00 0.00 0.00 0.00\n[06] ECOWAS Levy N 208.16 208.16 0.00 0.00 208.16\n[32] Network Charge N 159.92 159.92 0.00 0.00 159.92\n[33] Network Charge VAT N 25.19 25.19 0.00 0.00 25.19\n[47] Import NHIL N 1,092.83 1,092.83 0.00 0.00 1,092.83\n[48] Network Charge NHIL N 4.00 4.00 0.00 0.00 4.00\n[56] 1% Withholding Tax on Import N 416.32 416.32 0.00 0.00 416.32\n[72] MoTI e-IDF Fee N 5.00 5.00 0.00 0.00 5.00\n[87] Ghana Export-Import Bank\n(EXIM) Levy N 312.24 312.24 0.00 0.00 312.24\n[88] Ghana Education Trust (GET)\nFund Import Levy N 1,092.83 1,092.83 0.00 0.00 1,092.83\n[89] Network Charge GET Fund Levy N 4.00 4.00 0.00 0.00 4.00\n[93] Inspection Fee N 416.32 416.32 0.00 0.00 416.32\n[98] African Union Import Levy N 83.26 83.26 0.00 0.00 83.26\n[99] COVID-19 Health Recovery Levy N 437.13 437.13 0.00 0.00 437.13\nTax amount by header tax code\nTax Gode User Tax Last Tax Relief Tax Ncy(C=A- Guarantee Tax Payable Tax\nDef. Ney(A) Ncy(B) B) Ncy(D=C) Ncy(B)\n[72] MoTi e-IDF\nFas N 5.00 5.00 0.00 0.00 5.00\nhttps /lcloverdale-services.com 113\n",
+      "text": "12/31/25, 12:39 PM ICUMS\nDuty Calculator\nBOE unit\nTotal tax amount\nTax Ncy(A) Last Tax Ncy(B) Relief Tax Ncy(C=A-B) Guarantee Tax Ncy(D=C) Payable Tax Ncy(B)\n13,289.19 13,289.19 0.00 0.00 13,289.19\nTax amount by tax code\nee User Tax Last Tax Relief Tax Guarantee Tax Payable Tax\nDef. Ney(A) Ncy(B) Ney(C=A-B) Ney(D=C) Ncy(B)\n[01] Import Duty N 2,081.58 2,081.58 0.00 0.00 2,081.58\n[02] Import VAT N 6,950.41 6,950.41 0.00 0.00 6,950.41\n[05] Processing Fee N 0.00 0.00 0.00 0.00 0.00\n[06] ECOWAS Levy N 208.16 208.16 0.00 0.00 208.16\n[32] Network Charge N 159.92 159.92 0.00 0.00 159.92\n[33] Network Charge VAT N 25.19 25.19 0.00 0.00 25.19\n[47] Import NHIL N 1,092.83 1,092.83 0.00 0.00 1,092.83\n[48] Network Charge NHIL N 4.00 4.00 0.00 0.00 4.00\n[56] 1% Withholding Tax on Import N 416.32 416.32 0.00 0.00 416.32\n[72] MoTl e-IDF Fee N 5.00 5.00 0.00 0.00 5.00\n[87] Ghana Export-Import Bank\n(EXIM) Levy N 312.24 312.24 0.00 0.00 312.24\n[88] Ghana Education Trust (GET)\nFund Import Levy N 1,092.83 1,092.83 0.00 0.00 1,092.83\n[89] Network Charge GET Fund Levy N 4.00 4.00 0.00 0.00 4.00\n[93] Inspection Fee N 416.32 416.32 0.00 0.00 416.32\n[98] African Union Import Levy N 83.26 83.26 0.00 0.00 83.26\n[99] COVID-19 Health Recovery Levy N 437.13 437.13 0.00 0.00 437.13\nTax amount by header tax code\n“Tax Gode User Tax Last Tax Relief Tax Ncy(C=A- Guarantee Tax Payable Tax\nDef. Ney(A) Ncy(B) B) Ncy(D=C) Ncy(B)\n[72] MoTi e-IDF\nFas N 5.00 5.00 0.00 0.00 5.00\nhttps://cloverdale-services.com 113\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 542766,
-        "ocr_alphanumeric_chars": 1042,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1041,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8556,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "739b0cf88d875868cb29e90081f3f23477e43c0fcb99b5ba00acd186c7a02fbf"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-23.pdf",
       "page_number": 5,
-      "text": "12/31/25, 12:39 PM ICUMS\nITEM unit\nItem Info. [1]\nTransaction 202512311238\nCalc No Item No 1 HSCode 8525890000\nNo 688642393366\nReference Country\nCN FOB Ncy 39,980.16 CIF Ney 41,631.67\nType Code\nCurrency SiS Exchange os pe oo\nu 11.1056 40D01\nCode Rate\nTax amount by tax code\nGuara\nTax Ney Last Tax Ney Relief\nRegi User Tax men\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty Duty Duty Duty Ney(\nBase Ney( Ney( Ney(\nRate Ney Rate Ney B)\nNey A) Cc) B)\n[01] Import 41,631.6 2,081.5 2,081.5\n40 24 N 5.00 0.00 5.00 0.00 0.00 0.00\nDuty 7 8 8\n[06] ECOWAS 41,631.6\n40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00\nLevy 7\n[56] 1%\n41,631.6\n40 Withholding 24 N 7 1.00 0.00 416.32 1.00 0.00 416.32 0.00 0.00\nTax on Import\n[87] Ghana\nExport-Import 41,631.6\n40 24 N 0.75 0.00 312.24 0.75 0.00 312.24 0.00 0.00\nBank (EXIM) 7\nLevy\n(93]\n41,631.6\n40 Inspection 24 N 7 1.00 0.00 416.32 1.00 0.00 416.32 0.00 0.00\nFee\n[98] African\n‘ 41,631.6\n40 Union Import 24 N 7 0.20 0.00 83.26 0.20 0.00 83.26 0.00 0.00\nLevy\n[47] Import 43,713.2 1,092.8 1,092.8\n40 31 N 2.50 0.00 2.50 0.00 0.00 0.00\nNHIL 5 3 3\n[88] Ghana\nEducation\n43,713.2 1,092.8 1,092.8\n40 Trust (GET) 31 N 5 2.50 0.00 3 2.50 0.00 3 0.00 0.00\nFund Import\nLevy\n40 [99] COVID-19 31 N 43,713.2 1.00 0.00 437.13 1.00 0.00 437.13 0.00 0.00\nHealth 5\nhttps://cloverdale-services.com 2/3\n",
+      "text": "12/31/25, 12:39 PM ICUMS\nITEM unit\nItem Info. [1]\nTransaction 202512311238\nCalc No Item No 1 HSCode 8525890000\nNo 688642393366\nReference Country\nCN FOB Ney 39,980.16 CIF Ney 41,631.67\nType Code\nCurrency SiS Exchange SÖÖ e ÖÖ\nU 11.1056 40D01\nCode Rate\nTax amount by tax code\nGuara\nTax Ney Last Tax Ney Relief\nRegi User Tax mes\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty Duty Duty = Duty Ncy(\nBase Ney( Ney( Ney(\nRate Ney Rate = Noy B)\nNey A) C) B)\n[01] Import 41,631.6 2,081.5 2,081.5\n40 24 N 5.00 0.00 5.00 0.00 0.00 0.00\nDuty 7 8 8\n[06] ECOWAS 41,631.6\n40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00\nLevy 7\n[56] 1%\n41,631.6\n40 Withholding 24 N 7 1.00 0.00 416.32 1.00 0.00 416.32 0.00 0.00\nTax on Import\n[87] Ghana\nExport-Import 41,631.6\n40 24 N 0.75 0.00 312.24 0.75 0.00 312.24 0.00 0.00\nBank (EXIM) 7\nLevy\n(931\n41,631.6\n40 Inspection 24 N 7 1.00 0.00 416.32 1.00 0.00 416.32 0.00 0.00\nFee\n[98] African\nN 41,631.6\n40 Union Import 24 N 7 0.20 0.00 83.26 0.20 0.00 83.26 0.00 0.00\nLevy\n[47] Import 43,713.2 1,092.8 1,092.8\n40 31 N 2.50 0.00 2.50 0.00 0.00 0.00\nNHIL 5 3 3\n[88] Ghana\nEducation\n43,713.2 1,092.8 1,092.8\n40 Trust (GET) 31 N 5 2.50 0.00 3 2.50 0.00 3 0.00 0.00\nFund Import\nLevy\n40 [99] COVID-19 31 N 43,713.2 1.00 0.00 437.13 1.00 0.00 437.13 0.00 0.00\nHealth 5\nhttps://cloverdale-services.com 23\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 530422,
-        "ocr_alphanumeric_chars": 913,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 914,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8151,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "104456d2a8823f5c3b3057a5b13be2d0e0078c5f91d917b14c8e9e97b7caf472"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-23.pdf",
       "page_number": 6,
-      "text": "12/31/25, 12:39 PM ICUMS\nGuara\nTax Ncy Last Tax Ney Relief\nRegi User Tax ntee\negi\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty Duty Duty Duty Ney(\nBase Ney( Ney( Ney(\nRate Ney Rate Ney B)\nNey A) ©) B)\nRecovery\nLevy\n[02] Import 46,336.0 6,950.4 6,950.4\n40 30 N 15.00 0.00 15.00 0.00 0.00 0.00\nVAT 4 1 7\n[32] Network 39,980.1\n40 25 N 0.40 0.00 159.92 0.40 0.00 159.92 0.00 0.00\nCharge 6\n[48] Network\n40 52 N 159.92 2.50 0.00 4.00 2.50 0.00 4.00 0.00 0.00\nCharge NHIL\n[89] Network\n40 Charge GET 52 N 159.92 2.50 0.00 4.00 2.50 0.00 4.00 0.00 0.00\nFund Levy\n[33] Network\n40 33 N 167.92 15.00 0.00 25.19 15.00 0.00 25.19 0.00 0.00\nCharge VAT\n[05]\nA 41,631.6\n40 Processing 24 N 7 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00\nFee\nTotal by item\nTax Ney(A) Relief Tax Ncy(B) Last Tax Ncy(C=A-B) Guarantee Tax Ncy(D) Payable Tax Ncy(C-D)\n13,284.19 0.00 13,284.19 0.00 13,284.19\nhttps://cloverdale-services.com 313\n",
+      "text": "12/31/25, 12:39 PM ICUMS\nGuara\nTax Ncy Last Tax Ney Relief\nRegi User Tax ntee\negi\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty — Duty Duty — Duty Ney(\nBase Ney( Ney( Ney(\nRate Ney Rate Ney B)\nNey A) C) B)\nRecovery\nLevy\n[02] Import 46,336.0 6,950.4 6,950.4\n40 30 N 15.00 0.00 15.00 0.00 0.00 0.00\nVAT 4 1 1\n[32] Network 39,980.1\n40 25 N 0.40 0.00 159.92 0.40 0.00 159.92 0.00 0.00\nCharge 6\n[48] Network\n40 52 N 159.92 2.50 0.00 4.00 2.50 0.00 4.00 0.00 0.00\nCharge NHIL\n[89] Network\n40 ChargeGET 52 N 159.92 2.50 0.00 4.00 2.50 0.00 4.00 0.00 0.00\nFund Levy\n[33] Network\n40 33 N 167.92 15.00 0.00 25.19 15.00 0.00 25.19 0.00 0.00\nCharge VAT\n{05]\nA 41,631.6\n40 Processing 24 N 7 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00\nFee\nTotal by item\nTax Ncy(A) Relief Tax Ncy(B) Last Tax Ncy(C=A-B) Guarantee Tax Ncy(D) Payable Tax Ncy(C-D)\n13,284.19 0.00 13,284.19 0.00 13,284.19\nhttps://cloverdale-services.com 3/3\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 350800,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 615,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 5593,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "8885f7dedd9f3416ea20d2cd3a5c4747843a05035911374f060e23aa4346fe14"
+        }
       },
       "error": null
     }
@@ -216,22 +326,22 @@
               {
                 "filename": "INV-23.pdf",
                 "page_number": 1,
-                "text": "# EST-259684\nKingsley Supply LIMITED\nRua do Ouro 88\nGhana\nBill To\nCASH CUSTOMER - FedEx\nNorthwind HOLDINGS 5 .\nGhana Estimate Date : 31 Dec 2025\n1 Custom Duties - IAS001 1.00 13,289.19 13,289.19\nCustom Duties\n2 Service Charges - FDX0001 1.0"
+                "text": "# EST-259684\nKingsley Supply LIMITED\nRua do Ouro 88\nGhana\nBill To\nCASH CUSTOMER - FedEx\nNorthwind HOLDINGS 4, .\nGhana Estimate Date : 31 Dec 2025\n1 Custom Duties - [45001 1.00 13,289.19 13,289.19\nCustom Duties\n2 Service Charges - FDX0001 1."
               },
               {
                 "filename": "INV-23.pdf",
                 "page_number": 4,
-                "text": "12/31/25, 12:39 PM ICUMS\nDuty Calculator\nBOE unit\nTotal tax amount\nTax Ney(A) Last Tax Ncy(B) Relief Tax Ncy(C=A-B) Guarantee Tax Ncy(D=C) Payable Tax Ncy(B)\n13,289.19 13,289.19 0.00 0.00 13,289.19\nTax amount by tax code\nee User Tax Last Ta"
+                "text": "12/31/25, 12:39 PM ICUMS\nDuty Calculator\nBOE unit\nTotal tax amount\nTax Ncy(A) Last Tax Ncy(B) Relief Tax Ncy(C=A-B) Guarantee Tax Ncy(D=C) Payable Tax Ncy(B)\n13,289.19 13,289.19 0.00 0.00 13,289.19\nTax amount by tax code\nee User Tax Last Ta"
               },
               {
                 "filename": "INV-23.pdf",
                 "page_number": 5,
-                "text": "12/31/25, 12:39 PM ICUMS\nITEM unit\nItem Info. [1]\nTransaction 202512311238\nCalc No Item No 1 HSCode 8525890000\nNo 688642393366\nReference Country\nCN FOB Ncy 39,980.16 CIF Ney 41,631.67\nType Code\nCurrency SiS Exchange os pe oo\nu 11.1056 40D01"
+                "text": "12/31/25, 12:39 PM ICUMS\nITEM unit\nItem Info. [1]\nTransaction 202512311238\nCalc No Item No 1 HSCode 8525890000\nNo 688642393366\nReference Country\nCN FOB Ney 39,980.16 CIF Ney 41,631.67\nType Code\nCurrency SiS Exchange SÖÖ e ÖÖ\nU 11.1056 40D01"
               },
               {
                 "filename": "INV-23.pdf",
                 "page_number": 6,
-                "text": "12/31/25, 12:39 PM ICUMS\nGuara\nTax Ncy Last Tax Ney Relief\nRegi User Tax ntee\negi\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty Duty Duty Duty Ney(\nBase Ney( Ney( Ney(\nRate Ney Rate Ney B)\nNey A) ©) B)\nRecovery\nLevy\n[02] Import 46,336.0 6,950.4"
+                "text": "12/31/25, 12:39 PM ICUMS\nGuara\nTax Ncy Last Tax Ney Relief\nRegi User Tax ntee\negi\nTax Code TBC Tax Tax Tax Tax\nme Def. Duty — Duty Duty — Duty Ney(\nBase Ney( Ney( Ney(\nRate Ney Rate Ney B)\nNey A) C) B)\nRecovery\nLevy\n[02] Import 46,336.0 6,9"
               }
             ],
             "alternatives": [],
@@ -245,9 +355,15 @@
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "2025-12-31",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-23.pdf",
+                "page_number": 1,
+                "text": "Ghana Estimate Date : 31 Dec 2025"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -294,9 +410,15 @@
             "note": null
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "13646.04",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-23.pdf",
+                "page_number": 1,
+                "text": "Sub Total 13,646.04"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -405,7 +527,7 @@
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 5,
-                    "text": "40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00"
+                    "text": "40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00"
                   }
                 ],
                 "alternatives": [],
@@ -425,20 +547,20 @@
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 5,
-                    "text": "40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00"
+                    "text": "40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
               "unit": {
-                "value": "208.16",
+                "value": "20816",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 5,
-                    "text": "40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00"
+                    "text": "40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00"
                   }
                 ],
                 "alternatives": [],
@@ -451,7 +573,7 @@
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 5,
-                    "text": "40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00"
+                    "text": "40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00"
                   }
                 ],
                 "alternatives": [],
@@ -471,7 +593,7 @@
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 5,
-                    "text": "40 24 N 0.50 0.00 208.16 0.50 0.00 20816 0.00 0.00"
+                    "text": "40 24 N 0.50 0.00 20816 0.50 0.00 20816 0.00 0.00"
                   }
                 ],
                 "alternatives": [],
@@ -494,9 +616,15 @@
                 "note": null
               },
               "item_type": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
+                "value": "tax",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-23.pdf",
+                    "page_number": 5,
+                    "text": "40 Withholding 24 N 7 1.00 0.00 416.32 1.00 0.00 416.32 0.00 0.00"
+                  }
+                ],
                 "alternatives": [],
                 "note": null
               },
@@ -1052,6 +1180,70 @@
                 "note": null
               },
               "taxes": []
+            },
+            {
+              "description": {
+                "value": "13,284.19 0.00 13,284.19 0.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-23.pdf",
+                    "page_number": 6,
+                    "text": "13,284.19 0.00 13,284.19 0.00 13,284.19"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "13284.19",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-23.pdf",
+                    "page_number": 6,
+                    "text": "13,284.19 0.00 13,284.19 0.00 13,284.19"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
             }
           ],
           "taxes": [
@@ -1219,44 +1411,13 @@
               "scope": "header",
               "kind": "tax",
               "name": {
-                "value": "ust",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-23.pdf",
-                    "page_number": 4,
-                    "text": "[88] Ghana Education Trust (GET)"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
                 "value": "VAT",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "INV-23.pdf",
                     "page_number": 6,
-                    "text": "VAT 4 1 7"
+                    "text": "VAT 4 1 1"
                   },
                   {
                     "filename": "INV-23.pdf",
@@ -1358,10 +1519,14 @@
             "status": "found",
             "payment_term_id": "Immediate",
             "alias": "cash",
-            "evidence": "Supply LIMITED Rua do Ouro 88 Ghana Bill To CASH CUSTOMER - FedEx Northwind HOLDINGS 5 . Ghan"
+            "evidence": "Supply LIMITED Rua do Ouro 88 Ghana Bill To CASH CUSTOMER - FedEx Northwind HOLDINGS 4, . Gha"
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -1419,12 +1584,6 @@
               "status": "unmatched",
               "reason": "Tax evidence does not uniquely identify a master code.",
               "candidates": []
-            },
-            {
-              "code": "",
-              "status": "unmatched",
-              "reason": "Tax evidence does not uniquely identify a master code.",
-              "candidates": []
             }
           ]
         },
@@ -1439,5 +1598,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

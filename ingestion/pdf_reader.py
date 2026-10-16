@@ -17,6 +17,7 @@ class TesseractOCR:
         self.executable = executable
         self._cached_failure: str | None = None
         self._available_languages: set[str] | None = None
+        self._cache_identities: dict[str, str] = {}
 
     def prepare(self, language: str, timeout: int = 15) -> None:
         """Fail fast once if the executable or requested trained data is unavailable."""
@@ -57,6 +58,31 @@ class TesseractOCR:
     def _language_error(missing: list[str], tessdata_dir: str) -> str:
         return f"Missing Tesseract traineddata for: {', '.join(missing)}; tessdata directory: {tessdata_dir}"
 
+    def cache_identity(self, language: str) -> str:
+        """Fingerprint engine version and requested traineddata for cache keys."""
+        import hashlib
+        import subprocess
+
+        if language in self._cache_identities:
+            return self._cache_identities[language]
+        self.prepare(language)
+        result = subprocess.run([self.executable, "--version"], capture_output=True, text=True,
+                                encoding="utf-8", errors="replace", timeout=15, check=False)
+        if result.returncode:
+            raise RuntimeError(result.stderr.strip() or "Could not determine Tesseract version")
+        parts = [str(Path(self.executable).resolve()), result.stdout.splitlines()[0].strip()]
+        tessdata = Path(getattr(self, "_tessdata_dir", ""))
+        for code in sorted(part.strip() for part in language.split("+") if part.strip()):
+            model = tessdata / f"{code}.traineddata"
+            if model.is_file():
+                digest = hashlib.sha256(model.read_bytes()).hexdigest()
+                parts.append(f"{code}:{digest}")
+            else:
+                parts.append(f"{code}:unresolved-at:{tessdata}")
+        identity = "|".join(parts)
+        self._cache_identities[language] = identity
+        return identity
+
     def recognize(self, image_bytes: bytes, *, language: str = "eng", timeout: int = 120, psm: int = 3) -> str:
         import subprocess
         import tempfile
@@ -92,8 +118,9 @@ class PyMuPDFReader:
     def open(self, path: Path) -> Any:
         return self._fitz.open(path)
 
-    def render_png(self, page: Any) -> bytes:
-        pixmap = page.get_pixmap(matrix=self._fitz.Matrix(self.dpi / 72, self.dpi / 72), alpha=False)
+    def render_png(self, page: Any, *, dpi: int | None = None) -> bytes:
+        render_dpi = dpi or self.dpi
+        pixmap = page.get_pixmap(matrix=self._fitz.Matrix(render_dpi / 72, render_dpi / 72), alpha=False)
         return pixmap.tobytes("png")
 
 

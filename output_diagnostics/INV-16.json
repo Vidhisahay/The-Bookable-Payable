@@ -34,34 +34,62 @@
     {
       "filename": "INV-16.pdf",
       "page_number": 1,
-      "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LOUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.roth@speedwell.com\nTeenuse liik Saadetiste Kogukaal Osade Transpordi- Lisatasud KM Kogusum-\narv arv tasu kokku ma (KM-ga)\nECONOMY SELECT 1 1,00 1 18,87 2,83 4,77 26,47\nKokku 1 1,00 1 18,87 2,83 4,77 26,47\nLisateenuste loetelu Kokku\nFUEL SURCHARGE 2,83\nKokku lisateenuste tasud 2,83\nKM analüüs Kokku\nKood Koodi kirjeldus KM määr Maksustatav summa KM\nA P 22,00% 21,70 4,77\nKokku KM 4,77\nKokku (v.a. KM) KM Kokku (KM-ga)\nMaksetähtaeg: 07-07-25 Kogusumma (EUR) 21,70 4,77 26,47\nSpeedwell Express Estonia AS +372 680 8555 (klienditeenindus) Reg. No.: 10451175 Palume: * märkida oma maksekorraldusele makstava\nBahnhofstrasse 32 +372 680 8455 (raamatupidamine) KMKR EE445462205 arve number ja kuupäev\n11415 Tallinn e-mail alex.keiler@speedwell.com IBAN EE989745485604538087 Rank * märkida saatelehele saatja nimi\nESTONIA www.speedweil.ee E989 72GX868085G8087 Rank\nEE44537654965 1250068\n",
+      "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LÕUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.roth@speedwell.com\nTeenuse liik Saadetiste Kogukaal = Osade Transpordi- = Lisatasud KM Kogusum-\narv arv tasu kokku ma (KM-ga)\nECONOMY SELECT 1 1,00 1 18,87 2,83 4,77 26,47\nKokku 1 1,00 1 18,87 2,83 4,77 26,47\nLisateenuste loetelu Kokku\nFUEL SURCHARGE 2,83\nKokku lisateenuste tasud 2,83\nKM analüüs Kokku\nKood Koodi kirjeldus KM määr Maksustatav summa KM\nA \" 22,00% 21,70 4,77\nKokku KM 4,77\nKokku (v.a. KM) KM Kokku (KM-ga)\nMaksetähtaeg: 07-07-25 Kogusumma (EUR) 21,70 4,77 26,47\nSpeedwell Express Estonia AS +372 680 8555 (klienditeenindus) Reg. No.: 10451175 Palume: * märkida oma maksekorraldusele makstava\nBahnhofstrasse 32 +372 680 8455 (raamatupidamine) KMKR EE445462205 arve number ja kuupäev\n11415 Tallinn e-mail alex keller@speedwell.com IBAN EE989745485604538087 Rank * märkida saatelehele saatja nimi\nESTONIA www.speedwell.ee EIB TAGMAEADEDGO87 Rank\nEE44537654965 1250068\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 353439,
-        "ocr_alphanumeric_chars": 890,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 887,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6900,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "b7bcc71fd35addac7bf647a775383360467cfa4e4d9bcee900b71849653fb9a5"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-16.pdf",
       "page_number": 2,
-      "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumber kuupaev liik (Kg) arv hind kirjeldus nuste ma\ntasud (KM-ga)\n6757799188 STK-EEO03-25-00250 04-06-25 MHN, MANNHEIM WAW, WARSAW ECONOMY 1,00 V 1 18,87 415A 23,02\n0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45\nMaria Haas Jonas Weber\nGartenweg 6 Lindenstrasse 20\nLOCATION IS ON THE BASEMENT OF BUIL PL-01-940, Warsaw\nDE-68165, MANNHEIM\n26,47\nVahesumma teenuse järgi - ECONOMY SELECT 1,00 1 18,87 283 477 26,47\nKokku: EUR: 1,00 1 18,87 2,83 an 26,47\nA = Kliendi poolt arvutatud tegelik kaal V = Kliendi poolt arvutatud mahukaal 8 = DHLI poolt arvutatud tegelik kaal W = DHLi poolt arvutatud mahukaal M=sega\n",
+      "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse = Kaal Osade Standard- Lisateenuste Lisatee- = KM/kood Kogusum-\nnumber kuupäev liik (kg) arv hind kirjeldus nuste ma\ntasud (KM-ga)\n6757799188 STK-EE003-25-00250 04-06-25 . MHN, MANNHEIM WAW, WARSAW ECONOMY 1,00 V 1 18,87 A ISA 23,02\n0 NORTARERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 283 O62A 345\nMaria Haas Jonas Weber\nGartenweg 6 Lindenstrasse 20\nLOCATION IS ON THE BASEMENT OF BUIL PL-01-940, Warsaw\nDE-68165, MANNHEIM\n26,47\nVahesumma teenuse järgi - ECONOMY SELECT 1,00 1 18,87 283 477 26,47\nKokku: EUR: 1,00 1 18.87 283 477 26,47\nA = Kliendi poolt arvutatud tegelik kal V = Kliendi poolt arvutatud mahukaal 8 = DHL poolt arvutatud tegelik kaal W = DHLi pooltarvutatud mahukaal M=sega\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 225976,
-        "ocr_alphanumeric_chars": 703,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 704,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 5991,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "7a15148f4220839f797901b011a448a5c26f26653fb3d538929521e463c944ce"
+        }
       },
       "error": null
     }
@@ -81,9 +109,7 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [
-      "Supplier name was not explicitly labeled; no name was inferred from the header."
-    ],
+    "warnings": [],
     "candidates": [
       {
         "fields": {
@@ -94,12 +120,12 @@
               {
                 "filename": "INV-16.pdf",
                 "page_number": 1,
-                "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LOUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.ro"
+                "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LÕUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.ro"
               },
               {
                 "filename": "INV-16.pdf",
                 "page_number": 2,
-                "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumbe"
+                "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse = Kaal Osade Standard- Lisateenuste Lisatee- = KM/kood Kogusum-"
               }
             ],
             "alternatives": [],
@@ -146,16 +172,28 @@
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Northwind Operations OU",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "VANA-LÕUNA TN 15 Kliendikood: 952774062, 10134 TALLINN Reg. number: 27044945, ESTONIA Arve kuupäev: 09-06-25, Lehekülgede arv: 1/2",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "VANA-LÕUNA TN 15 Kliendikood: 952774062, 10134 TALLINN Reg. number: 27044945, ESTONIA Arve kuupäev: 09-06-25, Lehekülgede arv: 1/2"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -178,23 +216,35 @@
               {
                 "filename": "INV-16.pdf",
                 "page_number": 2,
-                "text": "Kokku: EUR: 1,00 1 18,87 2,83 an 26,47"
+                "text": "Kokku: EUR: 1,00 1 18.87 283 477 26,47"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "printed_gross_total": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "26.47",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg: 07-07-25 Kogusumma (EUR) 21,70 4,77 26,47"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "26.47",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 2,
+                "text": "Vahesumma teenuse järgi - ECONOMY SELECT 1,00 1 18,87 283 477 26,47"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -230,7 +280,7 @@
                   {
                     "filename": "INV-16.pdf",
                     "page_number": 1,
-                    "text": "Teenuse liik Saadetiste Kogukaal Osade Transpordi- Lisatasud KM Kogusum-"
+                    "text": "Teenuse liik Saadetiste Kogukaal = Osade Transpordi- = Lisatasud KM Kogusum-"
                   },
                   {
                     "filename": "INV-16.pdf",
@@ -255,7 +305,7 @@
                   {
                     "filename": "INV-16.pdf",
                     "page_number": 2,
-                    "text": "Saatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-"
+                    "text": "Saatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse = Kaal Osade Standard- Lisateenuste Lisatee- = KM/kood Kogusum-"
                   },
                   {
                     "filename": "INV-16.pdf",
@@ -352,28 +402,22 @@
             {
               "kind": "extra_charge",
               "description": {
-                "value": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45",
+                "value": "0 NORTARERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 283 O62A 345",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "INV-16.pdf",
                     "page_number": 2,
-                    "text": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45"
+                    "text": "0 NORTARERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 283 O62A 345"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
               "amount": {
-                "value": "3.45",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-16.pdf",
-                    "page_number": 2,
-                    "text": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
                 "note": null
               }
@@ -384,9 +428,7 @@
             2
           ],
           "review_required": true,
-          "warnings": [
-            "Supplier name was not explicitly labeled; no name was inferred from the header."
-          ]
+          "warnings": []
         },
         "master_hints": {
           "buyer": {},
@@ -397,6 +439,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 1 has a type outside the permitted schema values."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -438,14 +484,28 @@
         },
         "reconciliation": {
           "status": "unresolved",
-          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
           "erp_gross": "",
-          "printed_gross": ""
+          "printed_gross": "26.47"
         }
       }
     ],
     "unresolved_reasons": [
-      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

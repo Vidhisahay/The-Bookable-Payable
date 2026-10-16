@@ -10,7 +10,7 @@ from .models import DocumentClassification, PageClassification, PageRecord
 
 _CUES: dict[str, tuple[tuple[str, ...], ...]] = {
     "credit_memo": (
-        ("credit memo", "credit note", "credit invoice", "gutschrift", "avoir", "nota de credito", "nota de crédito", "nota di credito", "stornorechnung"),
+        ("credit memo", "credit note", "credit invoice", "gutschrift", "avoir", "nota de credito", "nota de crédito", "nota di credito", "stornorechnung", "kreeditarve"),
         ("amount credited", "credit amount", "credited", "crédito", "crédit"),
     ),
     "debit_note": (
@@ -64,6 +64,8 @@ def _score(text: str) -> tuple[str, float, list[str]]:
     # than the generic word "invoice" in that same title.
     if re.search(r"\bcustoms\s+detailed\s+invoice\b", normalized):
         return "supporting_document", 0.95, ["customs detailed invoice"]
+    if re.search(r"\bkreeditarve\b", normalized):
+        return "credit_memo", 0.95, ["kreeditarve"]
     scores: Counter[str] = Counter()
     evidence: dict[str, list[str]] = {}
     for category, cue_groups in _CUES.items():

@@ -28,31 +28,62 @@
     {
       "filename": "DU-09.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "FORM\n1. Donations and Charitable Contributions (in money or in kind without considerations)\n2. Contributions\nE [Kayo TEES\n[we Regional Sales Manager| ovx/ut [Sales\nteci Sota\na HESSE\nSponsorship\n\" Singular sponsor for Friday night Welcome, Jazz and cocktail 2 hour\nPrimary logo on our website advertising Hearing Healthcare Conference\nAdvertising via Constant Contact (x 4 ads) \" Logo on lanyards and/or name tags \" Logo on drink tickets\n[21 Donation (tax deductible) in Money [0 Donation (tax deductible) In Kind\n[7 charitabie Contributions in Money [charitable Contributions in Kind\nEEA a am ae\ntamme a 81995000\ncurrency:\nAdditional documents: Attach draft of Contract/Donation/Contribution and/or disclosure letter and other relevant document.\nIs there any conflict between the personal interests of the requester or any other °=eployee involved and \"Business\nHas the recipient requested cash, offshore payments or any other unusual method of payment or has he or she proposed any\nHas the recipient offered to guarantee the success ofa SSE for a contract or a OS=\\REquest or has the recipient suggested\nHas any “ewepresentative - to the best of your knowledge - already made a commitment to the recipient, either verbally or in\nwriting, to participate in this activity? Dives fXjno\nFO GS\nRequestor\nDavid Vidal Name / Date\n[Approve DiReiject\nLocal Management Group CFO\nName / Date Name / Date\nDi Approve DiReject Approve DiReject\nGroup Compliance Officer Group CEO\nName / Date Name / Date\nApprove DO teject Approve DO Reject\nRemarks/ Reasons for rejection:\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1261,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 13046,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "e338a3d63dab7d176a14fc2fc9a8169ce85e1b3c3435e42e4b2f4125cb37fe19"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-09.pdf",
       "page_number": 2,
-      "text": "From: maria.novak@cadence.com\nSent: Wednesday, March 18, 2U26 1:23:2/ PM\nTo: USA clara.roth@cadence.com\nCe:\nSubject: FW: David Yea! shared CADENC'Donations and Sponsorship Form (Internal Document)\" with you 4F-538013\nAttachments: image (3).png; ©A0ENdBonations and Sponsorship Form_SCHAS KB 1.pdf, cADENdBonations and Sponsorship Form_SCHAS KB. pdf\nBest Regards,\nElena Keller\nPTP Americas — Helpdesk\nHalden Cybergate Tower 2\nMandaluyong, 1554 Metro Manila, Philippines\nEmail: maria.novak@cadence.com\nWonderful for All\nRestricted\n",
+      "text": "From: maria.novak@cadence.com\nSent: Wednesday, March 18, 2026 1:23:2/ PM\nTo: USA clara.roth@cadence.com\nCe:\nSubject: FW: David Vital shared caoencDonations and Sponsorship Form (Intemal Document)\" with you 4F-538013\nAttachments: image (3).png; cavEndBonations and Sponsorship Form SCHAS KB 1.pdf, cADENdBonations and Sponsorship Form SCHAS KB.pdf\nBest Regards,\nElena Keller\nPTP Americas — Helpdesk\nHalden Cybergate Tower 2\nMandaluyong, 1554 Metro Manila, Philippines\nEmail: maria.novak@cadence.com\nWonderful for All\nRestricted\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 283147,
-        "ocr_alphanumeric_chars": 422,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 424,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 4073,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "a7037484927f030fc90698fc8648318078536044132c9e6255fc96967d609a48"
+        }
       },
       "error": null
     }
@@ -77,5 +108,19 @@
     "unresolved_reasons": [
       "not_a_confirmed_payable_document:uncertain"
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

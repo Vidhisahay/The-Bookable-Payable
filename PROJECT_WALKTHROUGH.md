@@ -50,7 +50,7 @@ From the project root, install the Python dependency and run tests:
 Run all PDFs with the documented configuration:
 
 ```cmd
-.venv\Scripts\python.exe -m ingestion.dataset_cli documents --output-dir output --diagnostics-dir output_diagnostics --page-timeout-seconds 12
+.venv\Scripts\python.exe -m ingestion.dataset_cli documents --output-dir output --diagnostics-dir output_diagnostics
 ```
 
 The generation command overwrites matching output and diagnostics files; inspect/back up them before intentionally running it. This walkthrough's audit did not run the generation command.

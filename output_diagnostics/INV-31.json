@@ -135,7 +135,7 @@
               {
                 "filename": "INV-31.pdf",
                 "page_number": 1,
-                "text": "Invoice Number: 39015"
+                "text": "Invoice Number:  39015 39015"
               }
             ],
             "alternatives": [],
@@ -367,6 +367,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -404,5 +408,19 @@
     "unresolved_reasons": [
       "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

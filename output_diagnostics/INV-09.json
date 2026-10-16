@@ -40,33 +40,64 @@
     {
       "filename": "INV-09.pdf",
       "page_number": 1,
-      "text": "ARVE\nKuupäev Date Kliendinr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES166 EDOEREEEREEES\n‘Arve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OU EE398766194\nLindon 15 Maksetähtaeg Due Date\nindenstrasse\nEE-10134 TALLINN 26108127\nViide maksmisel Payment reference\n210020201117683950\nmaria.tamm@northwind.eu\nMeie vilde Our ref. Veovahend Vehicle Saatmise kuupäev Departure date\nTLLFW19939 /TLL9386486 2025 / 06 / 06\nSaatja viide Shipper Reference Tarneklausel Terms of delivery Saabumise kuupäev Arrival date\nPTGGM351961374 001 Ismir 2025 / 06 / 06\nVastuvötja Consignee\nNorthwi@PERATIONS\nFrielas business park, PT-2660 Frielas\nKood Code Tekst Notes KM VAT % Neto summa Net amount\n752 Import duties 0 31889.09\n751 Customs VAT 0 5878.23\ni Valuuta Currency Kokku Total\nEUR 37767.32\n3 Arve tähtajaks mittetasumisel on Cloverdale Tradäkßigus nöuda vilvist 0,1% tasumata summast iga maksetähtpäeva ületanud päeva eest. Lisandub\nvilvisarve valjastamise tasu 40 eurot.\nCloverdale Tradihns the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies\nt for every interest invoicing.\nNeto summa Net amount KMalus VATC.A _Kälbemaks VAT amount Valuuta Currency Kokku Total\n37767.32 0.00 0.00 EUR 37767.32\nCloverdale Trading\n10112, Gartenweg 13 . Harju county ESTONIA tel:\nAriregistri nr., Trade reg. No.: 15116864\nKM reg. nr., VAT reg. No.: EE418070965\nE-mail, E-post: luis.roth@ ashford-<istribution.com\nPangad, Banks:\nOakhaven BaflE516678092588562155 , BIC: SZWGVJOV\nRedwater BaiiE319931502108360825 „BIC: USQNDC2G\n",
+      "text": "ARVE\nKuupäev Date Kilendi nr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES 166 EOLATASHEESS\nArve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OÜ EE398766194\nLindon 15 Maksetähtaeg Due Date\nindenstrasse\nEE-10134 TALLINN 26108127\nViide maksmisel Payment reference\n210020201117683950\nmaria.tamm@northwind.eu\nMeie viide Our ref. Veovahend Vehicle Saatmise kuupäev Departure date\nTLLFW19939 — /TLL9386486 2025 / 06 / 06\nSaatja viide Shipper Reference Tameklausel Terms of delivery Saabumise kuupäev Arrival date\nPTGGM351961374 001 Ismir 2025 / 06 / 06\nVastuvõtja Consignee\nNorthwi@PERATIONS\nFrielas business park, PT-2660 Frielas\nKood Code Tekst Notes KM VAT % Neto summa Net amount\n752 Import duties 0 31889.09\n751 Customs VAT 0 5878.23\ni Valuuta Currency Kokku Total\nEUR 37767.32\n3 Arve tähtajaks mittetasumisel on Cloverdale Tradik®igus nõuda viivist 0,1% tasumata summast iga maksetähtpäeva ületanud päeva eest. Lisandub\nviivisarve väljastamise tasu 40 eurot.\nCloverdale Tradihas the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies\nE for every interest invoicing.\nNeto summa Net amount KMalus VATC.A — Käibemaks VAT amount Valuuta Currency Kokku Total\n37767.32 0.00 0.00 EUR 37767.32\nCloverdale Trading\n10112, Gartenweg 13 . Harju county ESTONIA tel:\nÄriregistri nr., Trade reg. No.: 15116864\nKM reg. nr., VAT reg. No.: EE418070965\nE-mail, E-post: luis.roth@ ashford-<istribution.com\nPangad, Banks:\nOakhaven BaflE516678092588562155 , BIC: SZWGvyov\nRedwater BaiiE319931502108360825 , BIC: USQNDC2G\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 423788,
-        "ocr_alphanumeric_chars": 1325,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1322,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 11253,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "1ecd4681cce7c126b3efef369040e43fab7bd9004c883a2e9514ec0b440e4d54"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-09.pdf",
       "page_number": 2,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Blackpine Services S.A NRL : 3217PT6557408317495996\nESTANCIA ADUANEIRA : PT423029 Tipo Declaragäo -EU A) N° Ad. -1 Total Vis - 156 Processo N° - 1693 de 05/05/2025\nN° Aceitagäo : 9752PT76913459517321 de 05/05/2025 N° Provisorio : 356960/2025 Conta N°:\nExpedidor : Oakhaven Technologies LTD Pais: TR\nDestinatario : Northwind OPERATIONS PT NIF : 198709709\nInc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000\nPeso Bruto : 4.882,800 Peso Liquido : 3.884,400 Valor Aduaneiro Total : 65.750,710 CM : 002615000000\nLocalizagäo (C30) : DTP95621713004PT MT18: 30 / 76GPC174 MT21: 30/ BE\n(E rae annan [eest | AA [USue [PO] runs Vator adie [ Avotanente |\nEEE [40 [| A A E 6.875.000\n(EJ ET KT A [6 | 8876,23 EEE\n[aso | osmsone | 485 — | 1080.09 | oonsses 20253 |\njest si [oss = [ |\n(E ÕE TAA AASA KEELES\nLTT A AKA KAKA\nET\n[ezor_eowo Cid 02028 |\na AKA EET\nÜKS AAA KAA A\na AKA EEE\n(EE CII KKK\n(ESL CL KKK E\nÜHELE CAA KAKA\nES CAA. KAKA E\nÜKT CAA TE\ns jsrreemo ST\n[ozis feerr oniem TR Dieses OO | | |\n[wore CE KK EEE\nToi ago\nTrinta e sete mil setecentos e sessenta e sete euros e trinta e dois céntimos 37.767,32\nGIDWIN - Desenvolvido por Meridian Distribution Ldkicenciado a: Nordis - Transitärios, S.A\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 902,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 24901,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "f4e8a81c97333768e69f2b694a37e9bd0a31cec6b38f3a271ad75a8bf3bdb4d5"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
@@ -85,8 +116,8 @@
       }
     ],
     "warnings": [
-      "Some pages have missing or failed text extraction: [2].",
       "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "Supplier name was not explicitly labeled; no name was inferred from the header.",
       "The Phase 2 document classification is uncertain."
     ],
     "candidates": [
@@ -99,7 +130,12 @@
               {
                 "filename": "INV-09.pdf",
                 "page_number": 1,
-                "text": "ARVE\nKuupäev Date Kliendinr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES166 EDOEREEEREEES\n‘Arve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OU EE398766194\nLindon 15 Maksetähtaeg Due"
+                "text": "ARVE\nKuupäev Date Kilendi nr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES 166 EOLATASHEESS\nArve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OÜ EE398766194\nLindon 15 Maksetähtaeg Due"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 2,
+                "text": "Blackpine Services S.A NRL : 3217PT6557408317495996\nESTANCIA ADUANEIRA : PT423029 Tipo Declaragäo -EU A) N° Ad. -1 Total Vis - 156 Processo N° - 1693 de 05/05/2025\nN° Aceitagäo : 9752PT76913459517321 de 05/05/2025 N° Provisorio : 356960/202"
               }
             ],
             "alternatives": [],
@@ -112,7 +148,7 @@
               {
                 "filename": "INV-09.pdf",
                 "page_number": 1,
-                "text": "Kuupäev Date Kliendinr. Client No, Arve nr. Invoice No."
+                "text": "Kuupäev Date Kilendi nr. Client No, Arve nr. Invoice No."
               }
             ],
             "alternatives": [],
@@ -120,42 +156,42 @@
           },
           "invoice_date": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "due_date": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "supplier_name": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "supplier_vat_id": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "currency": {
-            "value": "EUR",
-            "status": "found",
+            "value": null,
+            "status": "ambiguous",
             "evidence": [
               {
                 "filename": "INV-09.pdf",
@@ -165,46 +201,189 @@
               {
                 "filename": "INV-09.pdf",
                 "page_number": 1,
-                "text": "Cloverdale Tradihns the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies"
+                "text": "Cloverdale Tradihas the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies"
               },
               {
                 "filename": "INV-09.pdf",
                 "page_number": 1,
                 "text": "37767.32 0.00 0.00 EUR 37767.32"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 2,
+                "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
               }
             ],
-            "alternatives": [],
+            "alternatives": [
+              "EUR",
+              "CNY"
+            ],
             "note": null
           },
           "printed_gross_total": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "printed_subtotal": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "printed_tax_total": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "5878.23",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "751 Customs VAT 0 5878.23"
+              }
+            ],
             "alternatives": [],
-            "note": null
+            "note": "Single printed header tax amount; no tax total label was present."
           },
           "purchase_order_number": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "37767.32 0.00 0.00 EUR",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "37767.32 0.00 0.00 EUR 37767.32"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "37767.32",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "37767.32 0.00 0.00 EUR 37767.32"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Äriregistri nr., Trade reg. No.:",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Äriregistri nr., Trade reg. No.: 15116864"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "15116864",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Äriregistri nr., Trade reg. No.: 15116864"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
           "taxes": [
             {
               "scope": "header",
@@ -216,43 +395,7 @@
                   {
                     "filename": "INV-09.pdf",
                     "page_number": 1,
-                    "text": "‘Arve maksja Payer of invoice Reg. nr. VAT reg. no."
-                  },
-                  {
-                    "filename": "INV-09.pdf",
-                    "page_number": 1,
-                    "text": "Neto summa Net amount KMalus VATC.A _Kälbemaks VAT amount Valuuta Currency Kokku Total"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "iva",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-09.pdf",
-                    "page_number": 1,
-                    "text": "Saatja viide Shipper Reference Tarneklausel Terms of delivery Saabumise kuupäev Arrival date"
+                    "text": "Arve maksja Payer of invoice Reg. nr. VAT reg. no."
                   }
                 ],
                 "alternatives": [],
@@ -345,17 +488,78 @@
                 "alternatives": [],
                 "note": null
               }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Käibemaks",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Neto summa Net amount KMalus VATC.A — Käibemaks VAT amount Valuuta Currency Kokku Total"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
             }
           ],
-          "charges": [],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 2,
+                    "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "6875.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 2,
+                    "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
           "pages": [
             1,
             2
           ],
           "review_required": true,
           "warnings": [
-            "Some pages have missing or failed text extraction: [2].",
             "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "Supplier name was not explicitly labeled; no name was inferred from the header.",
             "The Phase 2 document classification is uncertain."
           ]
         },
@@ -368,6 +572,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -430,5 +638,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

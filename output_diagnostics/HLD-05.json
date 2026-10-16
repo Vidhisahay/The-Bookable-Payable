@@ -1,22 +1,30 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
+    "category": "invoice",
+    "confidence": 0.55,
     "uncertain": true,
-    "evidence": [],
+    "evidence": [
+      "fatura",
+      "iva"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
         "category": "uncertain",
         "confidence": 0.0,
-        "evidence": []
+        "evidence": [
+          "iva"
+        ]
       },
       {
         "page_number": 2,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "fatura",
+          "iva"
+        ]
       }
     ],
     "mixed_document": false,
@@ -28,34 +36,68 @@
     {
       "filename": "HLD-05.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "7769922058 12/06/2026\n856/AT\ni ORIGINAL PT668715865\n| Northwind Support Services PT Unipessoal, Lda\ni Sede Social Parnu mnt 224\nphothmtöd Support Services PT Unipessoal, Lda Portugal\nH Parnu mnt 224\nPortugal\nš\nkd\näüäääää Northwind Parkside\n1500-510 Lisboa Portugal\nsenna Os artigos faturados foram colocados ä disposigäo do adc\nCödigo Designacao ESC. Quant. UN\n9 la IEC i Unitärio = “TT Prom Com 7 ineidencia %\n1279010 SAGRES Branca Gfa Tab 6x1L PT 4 40 TAB 14,76 590,40 54,080 46,40 317,51 23\n1080009 — HEINEKEN Barril OW 5L PT 5 6 BAR 24,53 147,18 61,240 7.26 64,31 23\n1270001 SAGRES Branca Gfa Tab 4(6x25cl) PT 201a 4 1 TAB 24,96 24,96 63,500 1,16 10,27 23\n1170003 SAGRES Branca Gfa Cxa 20x25cl PT 201a 4 9 CRT 20,80 187,20 66,290 8,64 71,75 23\n1405109 CASTELLO Original Gfa SW 4(6x25cl) 404a (3 7 PAK 20,40 142,80 60,530 56,36 13\n1402053 = LUSO PET SW 6x1,5L SDR ) 27. PAK 6,72 181,44 65,110 63,30 13\nDepösito SDR 162. UND 0,10 16,20\n1400113. LUSO PET SW 4(6x50cl) SDR 0 4. PAK 14,64 58,56 44,040 32,77. 13\nDepösito SDR 96 UND 0,10 9,60\nESC. IEC / Plato Taxa [HL Litros Valor Iliguido: 1.796,54 Arredondamento 0.00\n4Supa 7<=11 19.29 331,00 63,96 Desc, Prom.: = 1.04960 Sub-Total c/ IVA: 1.01214\nSSupa 11<=13 24,13 90,00 an Desc. Com.:% 0,00 Caucionamento: 0,00\n7 Superior a 15 3385 792 268 Base de Incidéncia: 835,27 Encargos: 0,00\nTotal Valor IEC 88,33 IVA Total: 176,87 Retencao: 0,00\nWA 13% 19,82 Depösito SDR* 25,80\nIVA 23% 157,05\n“IEC jä iguidado através de DIC Global\n© pagamento deste documento deverä ser efectuado para a conta bancäria abaixo referida. junto do Meridian Bank\nAEF 1240-05022 184 Conta Bancäria: IBAN: PT21 1539 2140 3828 5688 3452 2; SWIFT: RBSEALECAPY Produtor Embalagens: PT17196575 —\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1298,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12272,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "7b97f55e95e784213234639479242292d0c1e79d81dc03d32f64bcb0442f9f57"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "HLD-05.pdf",
       "page_number": 2,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "ATCUD:JFZTW2XY-7769922058\n7769922058 12/06/2026 54634-386-26-3530238 3800148153\n856/AT\n*\nA a = Esc. Preco Descontos % Base IVA\ni Codigo Designacao IEC Quant. UN Unitario Valor Pics: ‘Com IEC Incidencia 7 %\nš 1100143 DECVAKUGZK Gfa Cxa 4(6x33cl) ES 7 1 CRT 48,00 48,00 56,600 2,68 23,51 23\nErrsoos HEINEKEN Gfa Cxa 18x25cl PT 5 4 CRT 18,72 74,88 57,150 4,36 36,45 23\n| sme HEINEKEN Gfa Tab 4(6x25c1) PT 5 7 TAB 24,96 174,72 53,930 10,15 90,64 23\n3\n1470000 SAGRES Branca Gfa SW 2(10x25cl) PT201a 4 8 PAK 20,80 166,40 63,510 7,68 68,40 23\nSub-total 835,27\n\nNo prego liquido constante desta fatura poderdo incidir pagamentos e/ou descontos melhor identificados em acordos celebrados entre ambas as partes, tabelas de precos e/ou condicdes de venda em vigor, direta ou\n\nexclusivamente relacionados com a transagäo dos produtos, determinäveis quanto ao produto, quantidade e periodo de vigéncia, nos termos do disposto no artigo 5* do Decreto-lei n.\" 166/2013, de 27 de Dezembro.\n\nSobre estes prod outros descontos e/ou contrapartidas decorrentes daqueles acordos, nos termos do relerido ar ade pela gestäo dos residuos de embalagens foi\n\ntransferida para a Blackpine Systems Mais informagöes, incluindo os valores das prestacdes financeiras fixadas a favor daguela, em www.fairmont-partners.pt\n\njonas.berg@meridian-systems.com e jonas lind@brightside-supply.cr *\nA\n*Valor de Depösito näo sujeito a IVA — Dec. Lei n? 152-D/2017, de 11/12\n© pagamento deste documento deverä ser efectuado para a conta bancäria abaixo referida, junto do Meridian Bank\nREF 1240-082022184 Conta Bancäria: IBAN: PT21 1539 2140 3828 5688 3452 2; SWIFT: RBSEALECAPY Produtor Embalagens: PT17196575 ore\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1322,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12084,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "d5675a5110a27fe6b44b73b61ce36010b6813ecf22fe0d8c56463187e4dc9ef5"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "excluded_reason": null,
     "review_required": true,
     "page_scope": [
       {
@@ -69,10 +111,467 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [],
-    "candidates": [],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 1,
+                "text": "7769922058 12/06/2026\n856/AT\ni ORIGINAL PT668715865\n| Northwind Support Services PT Unipessoal, Lda\ni Sede Social Parnu mnt 224\nphothmtöd Support Services PT Unipessoal, Lda Portugal\nH Parnu mnt 224\nPortugal\nš\nkd\näüäääää Northwind Parkside"
+              },
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 2,
+                "text": "ATCUD:JFZTW2XY-7769922058\n7769922058 12/06/2026 54634-386-26-3530238 3800148153\n856/AT\n*\nA a = Esc. Preco Descontos % Base IVA\ni Codigo Designacao IEC Quant. UN Unitario Valor Pics: ‘Com IEC Incidencia 7 %\nš 1100143 DECVAKUGZK Gfa Cxa 4(6x3"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Sobre estes prod outros descontos e/ou",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 2,
+                "text": "Sobre estes prod outros descontos e/ou"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "conflicting",
+            "evidence": [
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 1,
+                "text": "4Supa 7<=11 19.29 331,00 63,96 Desc, Prom.: = 1.04960 Sub-Total c/ IVA: 1.01214"
+              },
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 2,
+                "text": "Sub-total 835,27"
+              }
+            ],
+            "alternatives": [
+              "1.01214",
+              "835.27"
+            ],
+            "note": "More than one distinct printed amount matches this total label."
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 1,
+                "text": "4Supa 7<=11 19.29 331,00 63,96 Desc, Prom.: = 1.04960 Sub-Total c/ IVA: 1.01214"
+              },
+              {
+                "filename": "HLD-05.pdf",
+                "page_number": 1,
+                "text": "IVA 23% 157,05"
+              }
+            ],
+            "alternatives": [
+              "1.01214",
+              "157.05"
+            ],
+            "note": "Multiple printed tax amounts; no total was explicitly identified."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "4Supa 7<=11 19.29 331,00 63,96 Desc, Prom.: = 1.04960 Sub-Total c/ IVA: 1.01214"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "1.01214",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "4Supa 7<=11 19.29 331,00 63,96 Desc, Prom.: = 1.04960 Sub-Total c/ IVA: 1.01214"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "withholding",
+              "name": {
+                "value": "IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "Total Valor IEC 88,33 IVA Total: 176,87 Retencao: 0,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "0.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "Total Valor IEC 88,33 IVA Total: 176,87 Retencao: 0,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "IVA 23% 157,05"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "23",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "IVA 23% 157,05"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "157.05",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 1,
+                    "text": "IVA 23% 157,05"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 2,
+                    "text": "A a = Esc. Preco Descontos % Base IVA"
+                  },
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 2,
+                    "text": "*Valor de Depösito näo sujeito a IVA — Dec. Lei n? 152-D/2017, de 11/12"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "discount",
+              "description": {
+                "value": "A a = Esc. Preco Descontos % Base IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 2,
+                    "text": "A a = Esc. Preco Descontos % Base IVA"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "No prego liquido constante desta fatura poderdo incidir pagamentos e/ou descontos melhor identificados em acordos celebrados entre ambas as partes, tabelas de precos e/ou condicdes de venda em vigor, direta ou",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 2,
+                    "text": "No prego liquido constante desta fatura poderdo incidir pagamentos e/ou descontos melhor identificados em acordos celebrados entre ambas as partes, tabelas de precos e/ou condicdes de venda em vigor, direta ou"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "Sobre estes prod outros descontos e/ou contrapartidas decorrentes daqueles acordos, nos termos do relerido ar ade pela gestäo dos residuos de embalagens foi",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-05.pdf",
+                    "page_number": 2,
+                    "text": "Sobre estes prod outros descontos e/ou contrapartidas decorrentes daqueles acordos, nos termos do relerido ar ade pela gestäo dos residuos de embalagens foi"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 2 has a type outside the permitted schema values."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "PT_230_IVA",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

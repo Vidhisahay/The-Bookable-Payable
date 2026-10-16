@@ -152,7 +152,7 @@ def match_tax(tax: TaxItem, candidate: PayableCandidate, supplier: Match, master
     if supplier.status == "matched":
         row = next((s for s in masters.suppliers if str(s.get("supplier_id")) == supplier.code), None)
         country = str((row or {}).get("country", "")).upper()
-    type_aliases = {"vat": "VAT", "iva": "IVA", "gst": "GST", "sst": "SST", "nhil": "NHIL", "getfund": "GETFL", "getfl": "GETFL", "covid": "COVID", "cst": "CST", "wht": "WHT", "withholding tax": "WHT", "moms": "MOMS", "hst": "HST", "use tax": "USE", "np": "NP"}
+    type_aliases = {"vat": "VAT", "käibemaks": "VAT", "iva": "IVA", "gst": "GST", "sst": "SST", "nhil": "NHIL", "getfund": "GETFL", "getfl": "GETFL", "covid": "COVID", "cst": "CST", "wht": "WHT", "withholding tax": "WHT", "moms": "MOMS", "hst": "HST", "use tax": "USE", "np": "NP"}
     inferred_type = next((code for alias, code in type_aliases.items() if alias in rawname), "")
     hits = [row for row in masters.taxes if rate is not None and Decimal(str(row.get("rate"))) == rate
             and (not country or row.get("country", "").upper() == country)
@@ -178,7 +178,7 @@ def _tax_json(tax: TaxItem, candidate: PayableCandidate, supplier: Match, master
 
 def _tax_type(name: Any) -> str:
     value = _norm(name)
-    for alias, code in (("withholding", "WHT"), ("gst", "GST"), ("sst", "SST"), ("iva", "IVA"), ("nhil", "NHIL"), ("getfl", "GETFL"), ("covid", "COVID"), ("cst", "CST"), ("moms", "MOMS"), ("hst", "HST"), ("mwst", "VAT"), ("ust", "VAT"), ("vat", "VAT")):
+    for alias, code in (("withholding", "WHT"), ("gst", "GST"), ("sst", "SST"), ("iva", "IVA"), ("nhil", "NHIL"), ("getfl", "GETFL"), ("covid", "COVID"), ("cst", "CST"), ("moms", "MOMS"), ("hst", "HST"), ("käibemaks", "VAT"), ("mwst", "VAT"), ("ust", "VAT"), ("vat", "VAT")):
         if alias in value:
             return code
     return ""

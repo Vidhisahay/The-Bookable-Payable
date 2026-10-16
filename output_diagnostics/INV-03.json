@@ -2,20 +2,27 @@
   "document_error": null,
   "classification": {
     "category": "invoice",
-    "confidence": 0.55,
-    "uncertain": true,
+    "confidence": 0.95,
+    "uncertain": false,
     "evidence": [
       "amount due",
       "invoice",
       "invoice number",
+      "subtotal",
+      "tax invoice",
       "vat"
     ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "tax invoice",
+          "subtotal",
+          "vat"
+        ]
       },
       {
         "page_number": 2,
@@ -38,38 +45,69 @@
     {
       "filename": "INV-03.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Invoice Date Cloverdale Print Ltd\nTAX INVOICE 25 May 2025 Bahnhotstasse 9\nr Bahnhofstrasse 9\nNorthwind Services ZA (PtyYN@: 9446639440 - Maria Kask INV-75162461 Tel: 301 266 7428\nEmail:\nPO-ZA218-81-057014 anja.lind@silverbrook-services.za\nWeb:\n3590736231 www.blackpine-systems.za\nVAT: 3590736231\nItem Description Quantity Unit Price VAT Amount ZAR\nItem14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78\nSubtotal 7,434.78\nTOTAL VAT 1,115.22\nTOTAL ZAR 8,550.00\nDue Date: 8 Jun 2025\nThank you for supporting We Clean It All\nlean It All Banking Details:\nOakhŽRANBRWRG, BRANCH CODE 506467, ACCOUNT NUMBER 42354079285\nTerms of Service\n- Please note that we pride ourselves in prompt delivery, efficient cleaning 8 competitive prices.\n- We use specialized chemicals and eguipment to ensure effective cleaning.\n- Please note that with heavily soiled premises the price may increase ( advised by management)\n- Some stains are permanently ingrained on certain surface types and will be communicated to the client.\n- We cannot be held liable for existing chemical stains on surfaces as well as any other permanent stains.\n- The premises will be analysed and discussed with the client prior to the commencement of the job\n- We Clean It All cc reguires a 50% deposit with the balance payable on completion.\n- Queries to be forwarded / addressed with We Clean It All cc within 48 hours of job completion.\n- Items not listed under description are an additional cost on reguest.\nCarpet clean\nCompany Registration No: 8976/781226/23 . Registered Office: PO Box 5230, Cresta, Johannesburg, Gauteng, 2118, South Africa.\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1300,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 9960,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "06d5000a4f3b410653616401a03b32ed098417ee3acc7a56158c41783eb99df2"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "INV-03.pdf",
       "page_number": 2,
-      "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number Be\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind@silverbrook-services.za Amount Enclosed\nWeb: www.blackpine-systems.za \"Erte the eriount vou are baie Eh\nVAT: 3590736231 inter the amount you are paying above\nCompany Registration No: 8976/781226/23 . Registered Office: PO Box 5230, Cresta, Johannesburg, Gauteng, 2118, South Africa.\n",
+      "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number TA\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind Osilverbrook-services.za Amount Enclosed\nWeb: www.blackpine-systems.za \"Erte the eriount vou are KAKA SON\nVAT: 3590736231 nter the amount you are paying above\nCompany Registration No: 8976/781226/23 . Registered Office: PO Box 5230, Cresta, Johannesburg, Gauteng, 2118, South Africa.\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 173889,
-        "ocr_alphanumeric_chars": 397,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 398,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 3913,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "d0b51730b5fdb3c40ade57fb1205b0e5320f295eeb1da08b1f70d852e1a2d320"
+        }
       },
       "error": null
     }
   ],
   "extraction": {
     "excluded_reason": null,
-    "review_required": true,
+    "review_required": false,
     "page_scope": [
       {
         "page_number": 1,
@@ -82,11 +120,7 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [
-      "Some pages have missing or failed text extraction: [1].",
-      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-      "The Phase 2 document classification is uncertain."
-    ],
+    "warnings": [],
     "candidates": [
       {
         "fields": {
@@ -96,65 +130,110 @@
             "evidence": [
               {
                 "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Cloverdale Print Ltd\nTAX INVOICE 25 May 2025 Bahnhotstasse 9\nr Bahnhofstrasse 9\nNorthwind Services ZA (PtyYN@: 9446639440 - Maria Kask INV-75162461 Tel: 301 266 7428\nEmail:\nPO-ZA218-81-057014 anja.lind@silverbrook-services.za\nW"
+              },
+              {
+                "filename": "INV-03.pdf",
                 "page_number": 2,
-                "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number Be\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind@silverbrook-services.za Amou"
+                "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number TA\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind Osilverbrook-services.za Amo"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "invoice_number": {
-            "value": "Be",
+            "value": "TA",
             "status": "found",
             "evidence": [
               {
                 "filename": "INV-03.pdf",
                 "page_number": 2,
-                "text": "To: Cloverdale Print Ltd Invoice Number Be"
+                "text": "To: Cloverdale Print Ltd Invoice Number TA"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "2025-05-25",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Cloverdale Print Ltd TAX INVOICE 25 May 2025 Bahnhotstasse 9"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "due_date": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "2025-06-08",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Due Date: 8 Jun 2025"
+              },
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 2,
+                "text": "Tel: 301 266 7428 Due Date 8 Jun 2025"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "Cloverdale Print Ltd",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Cloverdale Print Ltd"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "TAX INVOICE 25 May 2025 Bahnhotstasse 9, r Bahnhofstrasse 9, Northwind Services ZA (PtyYN@: 9446639440 - Maria Kask INV-75162461 Tel: 301 266 7428",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "TAX INVOICE 25 May 2025 Bahnhotstasse 9, r Bahnhofstrasse 9, Northwind Services ZA (PtyYN@: 9446639440 - Maria Kask INV-75162461 Tel: 301 266 7428"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_vat_id": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "currency": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "ZAR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Item Description Quantity Unit Price VAT Amount ZAR"
+              },
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "TOTAL ZAR 8,550.00"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -172,27 +251,160 @@
             "note": null
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "7434.78",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "Subtotal 7,434.78"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "printed_tax_total": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "1115.22",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 1,
+                "text": "TOTAL VAT 1,115.22"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "purchase_order_number": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "Item14607 Contract Office cleaning - Contract",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "7434.78",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "7434.78",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-03.pdf",
+                        "page_number": 1,
+                        "text": "Item Description Quantity Unit Price VAT Amount ZAR"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "15",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-03.pdf",
+                        "page_number": 1,
+                        "text": "Item14607 Contract Office cleaning - Contract 1.00 7,434.78 15% 7,434.78"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
+            }
+          ],
           "taxes": [
             {
               "scope": "header",
@@ -203,8 +415,13 @@
                 "evidence": [
                   {
                     "filename": "INV-03.pdf",
+                    "page_number": 1,
+                    "text": "VAT: 3590736231"
+                  },
+                  {
+                    "filename": "INV-03.pdf",
                     "page_number": 2,
-                    "text": "VAT: 3590736231 inter the amount you are paying above"
+                    "text": "VAT: 3590736231 nter the amount you are paying above"
                   }
                 ],
                 "alternatives": [],
@@ -231,12 +448,8 @@
             1,
             2
           ],
-          "review_required": true,
-          "warnings": [
-            "Some pages have missing or failed text extraction: [1].",
-            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-            "The Phase 2 document classification is uncertain."
-          ]
+          "review_required": false,
+          "warnings": []
         },
         "master_hints": {
           "buyer": {},
@@ -247,6 +460,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -277,19 +494,43 @@
               "status": "unmatched",
               "reason": "Tax evidence does not uniquely identify a master code.",
               "candidates": []
+            },
+            {
+              "code": "",
+              "status": "ambiguous",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": [
+                "ZAF_150_VAT",
+                "TAX024"
+              ]
             }
           ]
         },
         "reconciliation": {
+          "erp_gross": "0.00",
+          "printed_gross": "8550.00",
+          "difference": "-8550.00",
           "status": "unresolved",
-          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
-          "erp_gross": "",
-          "printed_gross": "8550.00"
+          "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
         }
       }
     ],
     "unresolved_reasons": [
-      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+      "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

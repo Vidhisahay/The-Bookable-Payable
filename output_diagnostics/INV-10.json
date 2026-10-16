@@ -22,17 +22,31 @@
     {
       "filename": "INV-10.pdf",
       "page_number": 1,
-      "text": "Arvenr.: 18533\nKuupäev: 25.03.2026\nMaksja: Northwind Operations OU Kliendi nr: 5207\nRua do Ouro 15 Tingimused: 30 pv neto\na nur Tähtaeg: 24.04.2026\n10134 maakon Viivis: 0,5% piievas\nKontaktisik: Marco Lind\nMaksja KMKR nr: EE398766194\nKauba Kauba nimetus Ühik Kogus % Hind Summa\nkood\n001 17/03 Toitlustus kord 1 479,28 479,28\nYM Umardus 1 -0,01 -0,01\nKokku: 479,27\nSumma sönadega: Br\nKäibemaks 24%: 115,03\nViissada üheksakümmend neli ja 30\n5 Tasuda: 594,30\nAllkiri:\nLarkspur Print OU Kontakt: +190 2609 0057 A/a: EE684837406967098266\nJalan Ampang 60 KMKR nr: EE755780626 Harbor Savings\nj aosa Reg.nr.:77060059 SWIFT XYQXPY30\nTallinn\nHarju maakond\n10412\n",
+      "text": "Arvenr.: 18533\nKuupäev: 25.03.2026\nMaksja: Northwind Operations OU Kliendi nr: 5207\nRua do Ouro 15 Tingimused: 30 pv neto\njajaa koni Tähtaeg: 24.04.2026\n10154 maakon Viivis: 0,5% päevas\nKontaktisik: Marco Lind\nMaksja KMKR nr: EE398766194\nKauba Kauba nimetus Ühik Kogus % Hind Summa\nkood\n001 17/03 Toitlustus kord 1 479,28 479,28\nYM Ümardus 1 -0,01 -0,01\nKokku: 479,27\nSumma sõnadega: vöi\nKäibemaks 24%: 115,03\nViissada üheksakümmend neli ja 30\n| Tasuda: 594,30\nAllkiri:\nLarkspur Print OÜ Kontakt: +190 2609 0057 A/a: EE684837406967098266\nJalan Ampang 60 KMKR nr:EE755780626 Harbor Savings\n| aosa Reg.nr.:77060059 SWIFT XYQXPY30\nTallinn\nHarju maakond\n10412\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 327595,
-        "ocr_alphanumeric_chars": 512,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 515,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 4590,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "93b5b2ec15bae917545dc50817e30f15cc73149fd59414cfc09938d079babdc2"
+        }
       },
       "error": null
     }
@@ -52,5 +66,19 @@
     "unresolved_reasons": [
       "not_a_confirmed_payable_document:uncertain"
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

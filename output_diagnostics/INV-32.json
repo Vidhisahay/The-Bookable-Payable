@@ -72,15 +72,9 @@
             "note": null
           },
           "invoice_number": {
-            "value": "72",
-            "status": "found",
-            "evidence": [
-              {
-                "filename": "INV-32.pdf",
-                "page_number": 1,
-                "text": "Invoice No: 72"
-              }
-            ],
+            "value": null,
+            "status": "missing",
+            "evidence": [],
             "alternatives": [],
             "note": null
           },
@@ -92,18 +86,12 @@
                 "filename": "INV-32.pdf",
                 "page_number": 1,
                 "text": "Date: 06/05/2018"
-              },
-              {
-                "filename": "INV-32.pdf",
-                "page_number": 1,
-                "text": "Due Date: 06/19/2018"
               }
             ],
             "alternatives": [
-              "06/05/2018",
-              "2018-06-19"
+              "06/05/2018"
             ],
-            "note": null
+            "note": "Day/month order cannot be determined."
           },
           "due_date": {
             "value": "2018-06-19",
@@ -290,6 +278,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -327,5 +319,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

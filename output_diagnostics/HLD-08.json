@@ -30,17 +30,31 @@
     {
       "filename": "HLD-08.pdf",
       "page_number": 1,
-      "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell: 168 377 9578\nDate 19/05/2026\nCloverdale Partners CC\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Zi\n4300\nVat No:2731114415 Document No 162547\nDeliver to\nHigh Street 1\nMeridian Technologies ExT1\nA Division of meridian Print LTD Johannesburg, GP 1401\nMeridian Print LTD\nP.O.Box 13385\nJacobs 4026\nVendor Number 432145\nAccount Your Reference Tax Exempt Tax Reference Sales Code\nTGB001 9267418170 N 7414745407 APOO1 Exclusive\nCode Description Quantity Unit Unit Price Disc% Tax Nett Price\nTGB001/531 Hall's Smooth Fruit Punch 1lt M 337521 468.0 1000 276.74 15.00% R129,514.32\nWT037912\nCG\nSub Total 129,514.32\nmanner | ase |\nReceived in good order\nSigned. Date. BE Total R148,941.47\nSilverbrook Distribution Lid\n",
+      "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell : 168 377 9578\nDate 19/05/2026\nCloverdale Partners CO\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Oe ———————|\n4300\nVat N0:2731114415 Document No 162547\nDeliver to\nHigh Sireet 1\nMeridian Technologies EXT1\nA Division of Meridian Print LTD Johannesburg, GP 1401\nMeridian Print LTD\nP.O.Box 13385\nJacobs 4026\nVendor Number 432145\nAccount Your Reference Tax Exempt Tax Reference Sales Code\nTGB001 9267418170 N 7414745407 AP001 Exclusive\nCode Description Quantity Unit Unit Price Disc% Tax Nett Price\nTGB001/531 Hall's Smooth Fruit Punch 1lt M 337521 468.0 1000 276.74 15.00% R129,514.32\nWT037912\nCG\nSub Total R129,514.32\nTT\nReceived in good order\nSigned. Date. M Total R148,941.47\nSilverbrook Distribution Lid\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 279331,
-        "ocr_alphanumeric_chars": 619,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 612,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6368,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "686d969232d7bae35eff352c42b9263121073c5bd0ce3b2e9fee84652f908682"
+        }
       },
       "error": null
     }
@@ -68,7 +82,7 @@
               {
                 "filename": "HLD-08.pdf",
                 "page_number": 1,
-                "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell: 168 377 9578\nDate 19/05/2026\nCloverdale Partners CC\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Zi\n4300\nVat No:2731114415 Document No 162547\nDeliver to\nHigh Street 1\nMeri"
+                "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell : 168 377 9578\nDate 19/05/2026\nCloverdale Partners CO\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Oe ———————|\n4300\nVat N0:2731114415 Document No 162547\nDeliver to\nHigh Sir"
               }
             ],
             "alternatives": [],
@@ -116,15 +130,9 @@
             "note": null
           },
           "supplier_vat_id": {
-            "value": "2731114415 Document No 162547",
-            "status": "found",
-            "evidence": [
-              {
-                "filename": "HLD-08.pdf",
-                "page_number": 1,
-                "text": "Vat No:2731114415 Document No 162547"
-              }
-            ],
+            "value": null,
+            "status": "missing",
+            "evidence": [],
             "alternatives": [],
             "note": null
           },
@@ -143,9 +151,15 @@
             "note": null
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "514.32",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-08.pdf",
+                "page_number": 1,
+                "text": "Sub Total R129,514.32"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -164,7 +178,39 @@
             "note": null
           },
           "lines": [],
-          "taxes": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Vat",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-08.pdf",
+                    "page_number": 1,
+                    "text": "Vat N0:2731114415 Document No 162547"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
           "charges": [],
           "pages": [
             1
@@ -183,6 +229,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -207,7 +257,14 @@
             "business_unit_code": "",
             "location_code": ""
           },
-          "taxes": []
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
         },
         "reconciliation": {
           "status": "unresolved",
@@ -220,5 +277,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

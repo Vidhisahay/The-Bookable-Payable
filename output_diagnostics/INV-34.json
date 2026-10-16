@@ -130,31 +130,23 @@
               {
                 "filename": "INV-34.pdf",
                 "page_number": 1,
-                "text": "Invoice Number I220-127612"
+                "text": "Invoice Number I220-127612 Issue Date"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "ambiguous",
+            "value": "2015-06-20",
+            "status": "found",
             "evidence": [
-              {
-                "filename": "INV-34.pdf",
-                "page_number": 1,
-                "text": "Due Date 27/06/2015"
-              },
               {
                 "filename": "INV-34.pdf",
                 "page_number": 1,
                 "text": "Issue Date 20/06/2015"
               }
             ],
-            "alternatives": [
-              "2015-06-27",
-              "2015-06-20"
-            ],
+            "alternatives": [],
             "note": null
           },
           "due_date": {
@@ -294,37 +286,6 @@
               "scope": "header",
               "kind": "tax",
               "name": {
-                "value": "iva",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-34.pdf",
-                    "page_number": 1,
-                    "text": "Zycus Infotech Private Limited"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
                 "value": "GST",
                 "status": "found",
                 "evidence": [
@@ -382,6 +343,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -412,12 +377,6 @@
               "status": "unmatched",
               "reason": "Tax evidence does not uniquely identify a master code.",
               "candidates": []
-            },
-            {
-              "code": "",
-              "status": "unmatched",
-              "reason": "Tax evidence does not uniquely identify a master code.",
-              "candidates": []
             }
           ]
         },
@@ -432,5 +391,19 @@
     "unresolved_reasons": [
       "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

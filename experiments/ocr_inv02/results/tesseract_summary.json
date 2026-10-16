@@ -1,0 +1,199 @@
+{
+  "pdf": "C:\\Users\\vidhi\\Desktop\\Zycus\\candidate_kit-2\\candidate_kit-2\\documents\\INV-02.pdf",
+  "tesseract_version": "tesseract 5.5.2",
+  "language": "eng+est",
+  "render_dpi": 160,
+  "page_timeout_seconds_per_psm": 180,
+  "pages": [
+    {
+      "page_number": 1,
+      "png_bytes": 409551,
+      "psm_runs": [
+        {
+          "psm": 6,
+          "seconds": 20.915,
+          "error": null,
+          "alnum_chars": 1027,
+          "line_count": 39,
+          "checks": {
+            "invoice_9972_907": true,
+            "date_18_03_2026": true,
+            "due_01_04_2026": true,
+            "currency_euro": true,
+            "subtotal_538_60": true,
+            "discount_48_09": true,
+            "net_490_51": true,
+            "vat_117_72": true,
+            "gross_608_23": true,
+            "line_extensions_hits": 8,
+            "all_eight_extensions": true,
+            "alnum_chars": 1027
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        },
+        {
+          "psm": 11,
+          "seconds": 7.031,
+          "error": null,
+          "alnum_chars": 1025,
+          "line_count": 109,
+          "checks": {
+            "invoice_9972_907": true,
+            "date_18_03_2026": true,
+            "due_01_04_2026": true,
+            "currency_euro": true,
+            "subtotal_538_60": true,
+            "discount_48_09": true,
+            "net_490_51": true,
+            "vat_117_72": true,
+            "gross_608_23": true,
+            "line_extensions_hits": 8,
+            "all_eight_extensions": true,
+            "alnum_chars": 1025
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        },
+        {
+          "psm": 3,
+          "seconds": 8.201,
+          "error": null,
+          "alnum_chars": 1030,
+          "line_count": 112,
+          "checks": {
+            "invoice_9972_907": true,
+            "date_18_03_2026": true,
+            "due_01_04_2026": true,
+            "currency_euro": true,
+            "subtotal_538_60": true,
+            "discount_48_09": true,
+            "net_490_51": true,
+            "vat_117_72": true,
+            "gross_608_23": true,
+            "line_extensions_hits": 8,
+            "all_eight_extensions": true,
+            "alnum_chars": 1030
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        }
+      ],
+      "best": {
+        "psm": 3,
+        "alnum_chars": 1030,
+        "checks": {
+          "invoice_9972_907": true,
+          "date_18_03_2026": true,
+          "due_01_04_2026": true,
+          "currency_euro": true,
+          "subtotal_538_60": true,
+          "discount_48_09": true,
+          "net_490_51": true,
+          "vat_117_72": true,
+          "gross_608_23": true,
+          "line_extensions_hits": 8,
+          "all_eight_extensions": true,
+          "alnum_chars": 1030
+        },
+        "text_file": "tesseract_page1_psm3.txt"
+      }
+    },
+    {
+      "page_number": 2,
+      "png_bytes": 70322,
+      "psm_runs": [
+        {
+          "psm": 6,
+          "seconds": 1.139,
+          "error": null,
+          "alnum_chars": 146,
+          "line_count": 5,
+          "checks": {
+            "invoice_9972_907": false,
+            "date_18_03_2026": false,
+            "due_01_04_2026": false,
+            "currency_euro": false,
+            "subtotal_538_60": false,
+            "discount_48_09": false,
+            "net_490_51": false,
+            "vat_117_72": false,
+            "gross_608_23": false,
+            "line_extensions_hits": 0,
+            "all_eight_extensions": false,
+            "alnum_chars": 146
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        },
+        {
+          "psm": 11,
+          "seconds": 1.826,
+          "error": null,
+          "alnum_chars": 146,
+          "line_count": 6,
+          "checks": {
+            "invoice_9972_907": false,
+            "date_18_03_2026": false,
+            "due_01_04_2026": false,
+            "currency_euro": false,
+            "subtotal_538_60": false,
+            "discount_48_09": false,
+            "net_490_51": false,
+            "vat_117_72": false,
+            "gross_608_23": false,
+            "line_extensions_hits": 0,
+            "all_eight_extensions": false,
+            "alnum_chars": 146
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        },
+        {
+          "psm": 3,
+          "seconds": 1.526,
+          "error": null,
+          "alnum_chars": 146,
+          "line_count": 5,
+          "checks": {
+            "invoice_9972_907": false,
+            "date_18_03_2026": false,
+            "due_01_04_2026": false,
+            "currency_euro": false,
+            "subtotal_538_60": false,
+            "discount_48_09": false,
+            "net_490_51": false,
+            "vat_117_72": false,
+            "gross_608_23": false,
+            "line_extensions_hits": 0,
+            "all_eight_extensions": false,
+            "alnum_chars": 146
+          },
+          "rss_mb_before": null,
+          "rss_mb_after": null
+        }
+      ],
+      "best": {
+        "psm": 6,
+        "alnum_chars": 146,
+        "checks": {
+          "invoice_9972_907": false,
+          "date_18_03_2026": false,
+          "due_01_04_2026": false,
+          "currency_euro": false,
+          "subtotal_538_60": false,
+          "discount_48_09": false,
+          "net_490_51": false,
+          "vat_117_72": false,
+          "gross_608_23": false,
+          "line_extensions_hits": 0,
+          "all_eight_extensions": false,
+          "alnum_chars": 146
+        },
+        "text_file": "tesseract_page2_psm6.txt"
+      }
+    }
+  ],
+  "process_rss_mb_start": null,
+  "process_rss_mb_end": null
+}

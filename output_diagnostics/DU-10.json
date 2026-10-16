@@ -30,17 +30,31 @@
     {
       "filename": "DU-10.pdf",
       "page_number": 1,
-      "text": "Department Accounts\nNorkwind Dercag Ac ante Credit Note No.: 5900366703\nJalan Ampang 157\nJalan Ampang 175\nLondon SE1 4GT\nUNITED KINGDOM Date : 15/04/2026 Page 1\nCustomer No. + 7470922788\nSales Person: : David Tamm Lind\nE-Mail Sales Person : marco.silva@ashford-media.com\nDelivery Address Your Reference: : Jonas Costa\nJonas Costa Invoice No. + 0394289238\nNorthwind Services UK Limited Currency in : GBP\nJalan Ampang 207 VAT Registration No. : GB726874417\n211 Old St\nLondon EC1V 9NR\nUNITED KINGDOM\nAlex Kask | REF-11966\nProduct Reference No. Quantity Unit VAT Unit Price Net Amount\n4582314 952-000091 6 20% 457.24 2,743.44\nLogitech Tap Scheduler Touch Controller\n4541892 939-001950 2 20% 743.35 1,486.70\nLogitech Tap Touch Controller Cat5e Kit\ncredit invoice 0394289238\nfailed delivery\nNet Amount GBP 4,230.14\nVAT 20 % 846.03\nTotal Amount GBP 5,076.17\nTerms of Payment: Within 30 days of invoice date\nBlackpine Consulting Limited Registered in England Managing Director GB73ETPB85770231331598 larclays 6: GB73ETPBBS770231331598 larclays |\nPamu mnt 50 Reg no.: 5383241 Lena Kask 1 Churchill Place Swit: FOLBA1!\nBahnhofstrasse 65 London\nChippenham VAT:GB447324473 EI45HP Account Number: 10890769\nSN14 0GF EORI: GB952288503357 ‚Sort Code:20-04-67\nSales: 59725 626556 Accounts: 59725 626556 ‘sofia.vidal@northwind-services.com www.larkspur-distribution.uk\n",
+      "text": "Department Accounts\nMochrie Serov Ac mld Credit Note No.: 5900366703\nJalan Ampang 157\nJalan Ampang 175\nLondon SE1 4GT\nUNITED KINGDOM Date : 15/04/2026 Page 1\nCustomer No. + 7470922788\nSales Person: : David = Tamm Lind\nE-Mail Sales Person : marco.silva@ashtord-media.com\nDelivery Address Your Reference: t Jonas Costa\nJonas Costa Invoice No. + 0394289238\nNorthwind Services UK Limited Currency in : GBP\nJalan Ampang 207 VAT Registration No. : G8726874417\n211 Old St\nLondon EC1V 9NR\nUNITED KINGDOM\nAlex Kask | REF-11966\nProduct Reference No. Auantity Unit VAT Unit Price Net Amount\n4582314 952-000091 6 20% 457.24 2,743.44\nLogitech Tap Scheduler Touch Controller\n4541892 939-001950 2 20% 743.35 1,486.70\nLogitech Tap Touch Controller Cat5e Kit\ncredit invoice 0394289238\nfailed delivery\nNet Amount GBP 4,230.14\nVAT 20 % 846.03\nTotal Amount GBP 5,076.17\nTerms of Payment: Within 30 days of invoice date\nBlackpine Consulting Limited Registered in England Managing Director (6B73ETPB85770231331598 larclays tt GB73ETPB85770231331598 larclays |\nParmu mnt 50 Reg no.: 5383241 Lena Kask 1 Churchill Place Swift: XFOLBOI1\nBahnhofstrasse 65 London\nChippenham VAT:GB447324473 14 5HP Account Number:10890769\nSN14 OGF EORI: GB952288503357 Sort Code:20-04-67\nSales: 59725 626556 Accounts: 59725 626556 ‘sofia.vidal@northwind-services.com  www.larkspur-distribution.uk\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 393956,
-        "ocr_alphanumeric_chars": 1095,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1097,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8776,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "664d12922e5e17c975c523808027adf603a65460047d93e9557db23bd458186d"
+        }
       },
       "error": null
     }
@@ -68,7 +82,7 @@
               {
                 "filename": "DU-10.pdf",
                 "page_number": 1,
-                "text": "Department Accounts\nNorkwind Dercag Ac ante Credit Note No.: 5900366703\nJalan Ampang 157\nJalan Ampang 175\nLondon SE1 4GT\nUNITED KINGDOM Date : 15/04/2026 Page 1\nCustomer No. + 7470922788\nSales Person: : David Tamm Lind\nE-Mail Sales Person :"
+                "text": "Department Accounts\nMochrie Serov Ac mld Credit Note No.: 5900366703\nJalan Ampang 157\nJalan Ampang 175\nLondon SE1 4GT\nUNITED KINGDOM Date : 15/04/2026 Page 1\nCustomer No. + 7470922788\nSales Person: : David = Tamm Lind\nE-Mail Sales Person :"
               }
             ],
             "alternatives": [],
@@ -81,7 +95,7 @@
               {
                 "filename": "DU-10.pdf",
                 "page_number": 1,
-                "text": "Norkwind Dercag Ac ante Credit Note No.: 5900366703"
+                "text": "Mochrie Serov Ac mld Credit Note No.: 5900366703"
               }
             ],
             "alternatives": [],
@@ -122,13 +136,13 @@
             "note": null
           },
           "supplier_vat_id": {
-            "value": "GB726874417",
+            "value": "G8726874417",
             "status": "found",
             "evidence": [
               {
                 "filename": "DU-10.pdf",
                 "page_number": 1,
-                "text": "Jalan Ampang 207 VAT Registration No. : GB726874417"
+                "text": "Jalan Ampang 207 VAT Registration No. : G8726874417"
               }
             ],
             "alternatives": [],
@@ -203,83 +217,261 @@
             "alternatives": [],
             "note": null
           },
-          "lines": [],
-          "taxes": [
+          "lines": [
             {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
+              "description": {
+                "value": "Logitech Tap Scheduler Touch Controller",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-10.pdf",
                     "page_number": 1,
-                    "text": "VAT 20 % 846.03"
+                    "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "rate": {
-                "value": "20",
+              "item_type": {
+                "value": "goods",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-10.pdf",
                     "page_number": 1,
-                    "text": "VAT 20 % 846.03"
+                    "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "amount": {
-                "value": "846.03",
+              "quantity": {
+                "value": "6",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-10.pdf",
                     "page_number": 1,
-                    "text": "VAT 20 % 846.03"
+                    "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
                   }
                 ],
                 "alternatives": [],
                 "note": null
-              }
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "457.24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "Product Reference No. Auantity Unit VAT Unit Price Net Amount"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "2743.44",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "DU-10.pdf",
+                        "page_number": 1,
+                        "text": "Product Reference No. Auantity Unit VAT Unit Price Net Amount"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "20",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "DU-10.pdf",
+                        "page_number": 1,
+                        "text": "4582314 952-000091 6 20% 457.24 2,743.44 Logitech Tap Scheduler Touch Controller"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
             },
             {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
+              "description": {
+                "value": "Logitech Tap Touch Controller Cat5e Kit",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-10.pdf",
                     "page_number": 1,
-                    "text": "Chippenham VAT:GB447324473 EI45HP Account Number: 10890769"
+                    "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "rate": {
+              "item_type": {
+                "value": "goods",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
                 "value": null,
                 "status": "missing",
                 "evidence": [],
                 "alternatives": [],
                 "note": null
               },
-              "amount": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
+              "unit_price": {
+                "value": "743.35",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
+                  }
+                ],
                 "alternatives": [],
                 "note": null
-              }
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "Product Reference No. Auantity Unit VAT Unit Price Net Amount"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "1486.70",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-10.pdf",
+                    "page_number": 1,
+                    "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "DU-10.pdf",
+                        "page_number": 1,
+                        "text": "Product Reference No. Auantity Unit VAT Unit Price Net Amount"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "20",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "DU-10.pdf",
+                        "page_number": 1,
+                        "text": "4541892 939-001950 2 20% 743.35 1,486.70 Logitech Tap Touch Controller Cat5e Kit"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
             }
           ],
+          "taxes": [],
           "charges": [],
           "pages": [
             1
@@ -298,7 +490,11 @@
             "evidence": "Amount GBP 5,076.17 Terms of Payment: Within 30 days of invoice date Blackpine Consulting Limited"
           }
         },
-        "output_status": "unresolved_not_emitted",
+        "output_status": "emitted_bookable_payable",
+        "bookability": {
+          "status": "passed",
+          "reason": "Required ERP reconciliation passed."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -331,23 +527,36 @@
               "candidates": []
             },
             {
-              "code": "",
-              "status": "unmatched",
-              "reason": "Tax evidence does not uniquely identify a master code.",
+              "code": "GB_200_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
               "candidates": []
             }
           ]
         },
         "reconciliation": {
-          "status": "unresolved",
-          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
-          "erp_gross": "",
-          "printed_gross": "5076.17"
+          "erp_gross": "5076.17",
+          "printed_gross": "5076.17",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
         }
       }
     ],
-    "unresolved_reasons": [
-      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
-    ]
+    "unresolved_reasons": []
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

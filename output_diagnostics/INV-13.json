@@ -1,16 +1,20 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
-    "uncertain": true,
-    "evidence": [],
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": false,
+    "evidence": [
+      "arve"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
       }
     ],
     "mixed_document": false,
@@ -22,20 +26,37 @@
     {
       "filename": "INV-13.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "=\nPi\n—\na\nMaksja: Northwind Services EE OÜ Arve 1410\nRua do Ouro 15 Kuupäev: 30.04.2026\n10134 Kesklinna linnaosa, Tallinn, Harju maakond Tasumistingimus: 30 päeva\nKMKR: EE258627691 Tasumistähtaeg: 30.05.2026\nKontaktisik: Viivis: 0%\nSaaja: Northwind Services EE OU Lahetusaeg:\nRua do Ouro 15\n10134 Kesklinna linnaosa, Tallinn, Harju maakond\nKommentaar: Parking services 2026-04\nLeheküla: 1/2\nKood Nimetus Kogus Ühik Hind Summa KM%\n1 Parking fee EUROPARK 1 63 479.69 63479.69 24\n1 Parking fee EUROPARK discount 20% 1 12695.94 -12695.94 24\n1 Parking fee EUROPARK success fee 1 3 173.98 3173.98 24\n1 Parking fee EUROPARK Ulemiste City H Garage, zone 335 1 234.86 234.86 24\n1 Parking fee EUROPARK KESKLINN 1 13 528.54 13 528.54 0\n1 Parking fee EUROPARK SÜDALINN 1 8 897.68 8 897.68 0\n1 Parking start fee EUROPARK 1 6 976.80 6976.80 24\n1 Parking fee ÜHISTEENUSED OPEN AREA 1 21 380.06 21 380.06 24\n1 Parking fee ÜHISTEENUSED OPEN AREA discount 20% -1 4 276.01 -4 276.01 24\n1 Parking fee ÜHISTEENUSED OPEN AREA success fee 1 1069.00 1069.00 24\n1 Parking fee ÜHISTEENUSED TARTU 1 875.10 875.10 0\n1 Parking start fee ÜHISTEENUSED 1 1939.80 1939.80 24\n1 Parking fee AVALIKUD TEENUSED 1 1075.86 1075.86 24\n1 Parking fee AVALIKUD TEENUSED discount 20% -1 215.17 -215.17 24\n1 Parking fee AVALIKUD TEENUSED success fee 1 53.79 53.79 24\n1 Parking start fee AVALIKUD TEENUSED 1 119.00 119.00 24\n1 Parking fee Snabb 1 20 711.63 20 711.63 24\n1 Parking fee Snabb discount 1 2 946.89 -2 946.89 24\n1 Parking fee Snabb success fee 1 736.70 736.70 24\ni! Parking fee Snabb with special price 1 1952.18 1952.18 24\n1 Parking fee Snabb special price for Norihdiseount -1 1108.87 -1108.87.. 24\n1 Parking fee Snabb special price for Nonneuacess fee 1 160.85 160.85 24\n1 Parking start fee Snabb 1 2 379.20 2379.20 24\n1 Parking fee Mahtra 5 / Mahtra 27 1 50.00 50.00 24\n1 Parking fee Mahtra 5 / Mahtra 27 success fee 1 12.50 12.50 24\nArve koostas: Martin Vidal KM% Neto KM Kokku\nE-mail: luis.kask@brightside-trading.me 0% 23 301.32 0.00 23 301.32\n24% 104 263.02 25 023.12 129 286.14\n127 564.34 25 023.12 152 587.46\nTasuda (EUR): 152 587.46\nCloverdale Supply OÜ E-post: maria meyer@brightside-services. me Oakhaven BärE978205278750080990\nReg. nr: 75689514 Telefon: + 389 389 67 97 SWIFTIBIC: xyoxPy30\nKMKR nr: EE085819779\nAadress: High Street 64 . Eesti\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1793,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 15160,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "dcced464d6b418527c9030ce71b82202d2c3a1b3ca86c70963b826f170baee41"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "excluded_reason": null,
     "review_required": true,
     "page_scope": [
       {
@@ -45,9 +66,362 @@
       }
     ],
     "warnings": [],
-    "candidates": [],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "=\nPi\n—\na\nMaksja: Northwind Services EE OÜ Arve 1410\nRua do Ouro 15 Kuupäev: 30.04.2026\n10134 Kesklinna linnaosa, Tallinn, Harju maakond Tasumistingimus: 30 päeva\nKMKR: EE258627691 Tasumistähtaeg: 30.05.2026\nKontaktisik: Viivis: 0%\nSaaja: No"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": "2026-04-30",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "Rua do Ouro 15 Kuupäev: 30.04.2026"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Saaja: Northwind Services EE OU",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "Saaja: Northwind Services EE OU"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": "Rua do Ouro 15, 10134 Kesklinna linnaosa, Tallinn, Harju maakond, Kommentaar: Parking services 2026-04, Leheküla: 1/2",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "Rua do Ouro 15, 10134 Kesklinna linnaosa, Tallinn, Harju maakond, Kommentaar: Parking services 2026-04, Leheküla: 1/2"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "EE085819779",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "KMKR nr: EE085819779"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-13.pdf",
+                "page_number": 1,
+                "text": "Tasuda (EUR): 152 587.46"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "Kood Nimetus Kogus Ühik Hind Summa KM%"
+                  },
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "Arve koostas: Martin Vidal KM% Neto KM Kokku"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "discount",
+              "description": {
+                "value": "1 Parking fee EUROPARK discount 20% 1 12695.94 -12695.94 24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee EUROPARK discount 20% 1 12695.94 -12695.94 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "-12695.94",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee EUROPARK discount 20% 1 12695.94 -12695.94 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "1 Parking fee ÜHISTEENUSED OPEN AREA discount 20% -1 4 276.01 -4 276.01 24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee ÜHISTEENUSED OPEN AREA discount 20% -1 4 276.01 -4 276.01 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "-4276.01",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee ÜHISTEENUSED OPEN AREA discount 20% -1 4 276.01 -4 276.01 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "1 Parking fee AVALIKUD TEENUSED discount 20% -1 215.17 -215.17 24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee AVALIKUD TEENUSED discount 20% -1 215.17 -215.17 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "-215.17",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee AVALIKUD TEENUSED discount 20% -1 215.17 -215.17 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "1 Parking fee Snabb discount 1 2 946.89 -2 946.89 24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee Snabb discount 1 2 946.89 -2 946.89 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "-2946.89",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-13.pdf",
+                    "page_number": 1,
+                    "text": "1 Parking fee Snabb discount 1 2 946.89 -2 946.89 24"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": []
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 1 has a type outside the permitted schema values."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

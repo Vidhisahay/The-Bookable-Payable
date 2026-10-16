@@ -2,9 +2,10 @@
   "document_error": null,
   "classification": {
     "category": "invoice",
-    "confidence": 0.55,
-    "uncertain": true,
+    "confidence": 0.72,
+    "uncertain": false,
     "evidence": [
+      "amount due",
       "invoice",
       "vat"
     ],
@@ -20,9 +21,12 @@
       },
       {
         "page_number": 2,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "invoice",
+          "amount due"
+        ]
       }
     ],
     "mixed_document": false,
@@ -34,33 +38,64 @@
     {
       "filename": "INV-20.pdf",
       "page_number": 1,
-      "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 a.\nustomer num\nOur reference person 8008\nReference person na Costa Switzerland\nOrder reference\nDelivery address Mina Costa Norm CH, 13,\nCH-8126 Zumikon\nVAT ID CHE-726.894. 710.\nType of delivery Shipping\nPayment terms 20 Days net\nCurrency CHF\nDescription Article number Dispatch Quantit VAT Price excl. Price incl. Amount excl. Amount incl.\nKing King Tony Cap 1/2 & quot Torx tip with T45x60mm 35605506 16.02.2026 8.10% 11.19 12.10 11.19 12.10\nhole\n24 Months Warranty (2/16/2026 - 2/16/2028)\nTotal amount 11.19 12.10\nTotal amount includes the following VAT:\nVAT 8.10% 0.91\nBilling amount 12.10\nDispatch Upon receiving your product, please make sure it is correct and complete and check it for damage. Any deficiencies need to be\nreported within five calendar days from collection resp. delivery date via your personal customer account in the online shop.\nGeneral Our general terms and conditions apply.\nWarranty services This document serves as a warranty receipt for the service centre. Further warranty information and the address of the service\ncentre are available in your customer account. Please send returns to the stated address only.\n",
+      "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 Es\nustomer numi\nOur reference person 8008\nReference person mina Costa Switzerland\nOrder reference\nDelivery address tina Costa Hori CH, 13,\nCH-8126 Zumikon\nVATID (CHE-726.894 710\nType of delivery Shipping\nPayment terms 20 Days net\nCurrency CHF\nDescription Article number Dispatch = Ouantit VAT Price excl. Price incl. Amount excl. Amount incl.\nKing King Tony Cap 1/2 & quot Torx tip with T45x60mm — 35605506 16.02.2026 8.10% 11.19 12.10 11.19 12.10\nhole\n24 Months Warranty (2/16/2026 - 2/16/2028)\nTotal amount 11.19 12.10\nTotal amount includes the following VAT:\nVAT 8.10% 0.91\nBilling amount 12.10\nDispatch Upon receiving your product, please make sure it is correct and complete and check it for damage. Any deficiencies need to be\nreported within five calendar days from collection resp. delivery date via your personal customer account in the online shop.\nGeneral Our general terms and conditions apply.\nWarranty services This document serves as a warranty receipt for the service centre. Further warranty information and the address of the service\ncentre are available in your customer account. Please send returns to the stated address only.\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 394477,
-        "ocr_alphanumeric_chars": 1029,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1033,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6938,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "dd7591816987d8ac23fe7cd3f7ba646025f17e3d81e70cb7fb56e0fcc9493172"
+        }
       },
       "error": null
     },
     {
       "filename": "INV-20.pdf",
       "page_number": 2,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Elektra ‘Avenida Central 60\n8005 Zurich\nUse the payment information below.\nBank payment\nThis information can be used to make the payment via online banking or directly at your bank branch. Please do not forget to state the reference number.\nFor the benefit of Fairmont Technologies AG\nFinancial institution Mandkan Bank\nIBAN\nBIC\nPayment purpose Invoice 20122801\nAmount due CHF 12.10\nSA SS ASSASSIN ren ECE S SEEM Een eeebeeeUenecUoR Ne rEeEEERECUEE\nEmpfangsschein *® Zahiteil Konto / Zahlbar an\ni CH70 anna AMN 8577 2176 5\nKonto / Zahibar an 1\nCH70 3000 0001 8577 2176 ' Elektra Sislkdd\nElektra Elektra AG H | Me rte (A\nAvenida Central 60 HI a ioe ane Loe\n8005 a A Ta ae\nH a Ar EA E, Aa Referenz\nReferenz ' Eh =\n94 00002 00785 61470 07566 80923 ' oes i a we 09400002 00785 61470 07566 80923\nMA oP\nZahibar durch | hele = bt Led | Zahibar durch\nNorthwind CH sa | ye pa Northwind CH sari\nMarket Road 26 M n-i A ia T; aT gt ral Market Road 26\nKa kt 7\n' kink aka 5\ni A t A\n| Geter\nWährung = Betrag | Währung Betrag\nCHF 12.10 | CHE 12.10\nAnnahmesteile '\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 810,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12201,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "4fa1c6146ac4c8add432327b7d955d993e770b8a990059bc19decc8421a3f5d3"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
@@ -79,9 +114,7 @@
       }
     ],
     "warnings": [
-      "Some pages have missing or failed text extraction: [2].",
-      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-      "The Phase 2 document classification is uncertain."
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values."
     ],
     "candidates": [
       {
@@ -93,7 +126,12 @@
               {
                 "filename": "INV-20.pdf",
                 "page_number": 1,
-                "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 a.\nustomer num\nOur reference person 8008\nReference person na Costa Switzerland\nOrder reference\nDelivery"
+                "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 Es\nustomer numi\nOur reference person 8008\nReference person mina Costa Switzerland\nOrder reference\nDelive"
+              },
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 2,
+                "text": "Elektra ‘Avenida Central 60\n8005 Zurich\nUse the payment information below.\nBank payment\nThis information can be used to make the payment via online banking or directly at your bank branch. Please do not forget to state the reference number."
               }
             ],
             "alternatives": [],
@@ -101,30 +139,22 @@
           },
           "invoice_number": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "conflicting",
+            "value": "2026-02-16",
+            "status": "found",
             "evidence": [
               {
                 "filename": "INV-20.pdf",
                 "page_number": 1,
                 "text": "Invoice date 16.02.2026 Northwind CH sari"
-              },
-              {
-                "filename": "INV-20.pdf",
-                "page_number": 1,
-                "text": "Due date 08.03.2026 Nee Costa"
               }
             ],
-            "alternatives": [
-              "2026-02-16",
-              "08.03.2026"
-            ],
+            "alternatives": [],
             "note": null
           },
           "due_date": {
@@ -143,29 +173,29 @@
             "note": "Day/month order cannot be determined."
           },
           "supplier_name": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "For the benefit of Fairmont Technologies AG",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 2,
+                "text": "For the benefit of Fairmont Technologies AG Financial institution Mandkan Bank IBAN"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "supplier_vat_id": {
-            "value": "CHE-726",
-            "status": "found",
-            "evidence": [
-              {
-                "filename": "INV-20.pdf",
-                "page_number": 1,
-                "text": "VAT ID CHE-726.894. 710."
-              }
-            ],
+            "value": null,
+            "status": "missing",
+            "evidence": [],
             "alternatives": [],
             "note": null
           },
@@ -175,8 +205,8 @@
             "evidence": [
               {
                 "filename": "INV-20.pdf",
-                "page_number": 1,
-                "text": "Currency CHF"
+                "page_number": 2,
+                "text": "Amount due CHF 12.10"
               }
             ],
             "alternatives": [],
@@ -190,6 +220,11 @@
                 "filename": "INV-20.pdf",
                 "page_number": 1,
                 "text": "Total amount 11.19 12.10"
+              },
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 2,
+                "text": "Amount due CHF 12.10"
               }
             ],
             "alternatives": [],
@@ -197,26 +232,161 @@
           },
           "printed_subtotal": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
           "printed_tax_total": {
-            "value": null,
-            "status": "unreadable",
-            "evidence": [],
+            "value": "0.91",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "VAT 8.10% 0.91"
+              }
+            ],
             "alternatives": [],
-            "note": null
+            "note": "Single printed header tax amount; no tax total label was present."
           },
           "purchase_order_number": {
             "value": null,
-            "status": "unreadable",
+            "status": "missing",
             "evidence": [],
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "King King Tony Cap 1/2 & quot Torx tip with T45x60mm — 35605506 16.02.2026 8.10% 11.19 12.10 11.19",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "King King Tony Cap 1/2 & quot Torx tip with T45x60mm — 35605506 16.02.2026 8.10% 11.19 12.10 11.19 12.10"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "12.10",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "King King Tony Cap 1/2 & quot Torx tip with T45x60mm — 35605506 16.02.2026 8.10% 11.19 12.10 11.19 12.10"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Billing amount",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "Billing amount 12.10"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "12.10",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "Billing amount 12.10"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
           "taxes": [
             {
               "scope": "header",
@@ -293,9 +463,7 @@
           ],
           "review_required": true,
           "warnings": [
-            "Some pages have missing or failed text extraction: [2].",
-            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
-            "The Phase 2 document classification is uncertain."
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values."
           ]
         },
         "master_hints": {
@@ -307,6 +475,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Line 1 item type is not established as a permitted schema value."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -341,15 +513,30 @@
           ]
         },
         "reconciliation": {
+          "erp_gross": "0.91",
+          "printed_gross": "12.10",
+          "difference": "-11.19",
           "status": "unresolved",
-          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
-          "erp_gross": "",
-          "printed_gross": "12.10"
+          "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
         }
       }
     ],
     "unresolved_reasons": [
-      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+      "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

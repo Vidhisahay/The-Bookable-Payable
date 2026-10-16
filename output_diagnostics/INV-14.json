@@ -34,17 +34,31 @@
     {
       "filename": "INV-14.pdf",
       "page_number": 1,
-      "text": "Invoice Date Silverbrook Media Limited\nTAX | N VO | C E 01 May 2026 Attention: Finance\n2nd Floor\nNorthwind Services UK Ltd Invoice Number Parnu mnt 117\nRua do Ouro 175 INV-1587 Parnu mnt 26\nTaper Studio London\nLondon Reference Middlesex\nSE1 4GT June 2026 -Kadakatee119 - NIIRY\nNorthwitahagement Fee UNITED KINGDOM\nVAT Number\n474927490\nUTR Number\n18823 19423\nDescription Quantity Unit Price VAT Amount GBP\n2nd Floor\nManagement Fee for June 2026 1.00 14,620.18 20% 14,620.18\nBusiness Rates for June 2026 1.00 9,987.50 No VAT 9,987.50\nUtilities for June 2026 1.00 1,435.00 20% 1,435.00\nSubtotal 26,042.68\nTotal No VAT 0.00\nTotal VAT 20% 3,211.04\nInvoice Total GBP 29,253.72\nTotal Net Payments GBP 0.00\nAmount Due GBP 29,253.72\nDue Date: 31 May 2026\nBank name: Meridian Bank\nSort code: 20-41-50\nAccount number: 21823016\nSwift code: SKYYOU10\nIBAN: GB84 FAQA 54689987784014\nCompany Registration No: 43214229. Registered Office: 2nd Floor, Parnu mnt 117, Pamu mnt 26 „London, Middlesex, N1 9RY, United Kingdom\n",
+      "text": "Invoice Date Silverbrook Media Limited\nTAX | N VO | C E 01 May 2026 Attention: Finance\n2nd Floor\nNorthwind Services UK Ltd Invoice Number Parnu mnt 117\nRua do Ouro 175 INV-1587 Parnu mnt 26\nTaper Studio London\nLondon Reference Middlesex\nSE1 4GT June 2026 - Kadaka tee119 - = NI9RY\nNorthwitahagement Fee UNITED KINGDOM\nVAT Number\n474927490\nUTR Number\n18823 19423\nDescription Quantity Unit Price VAT Amount GBP\n2nd Floor\nManagement Fee for June 2026 1.00 14,620.18 20% 14,620.18\nBusiness Rates for June 2026 1.00 9,987.50 No VAT 9,987.50\nUtilities for June 2026 1.00 1,435.00 20% 1,435.00\nSubtotal 26,042.68\nTotal No VAT 0.00\nTotal VAT 20% 3,211.04\nInvoice Total GBP 29,253.72\nTotal Net Payments GBP 0.00\nAmount Due GBP 29,253.72\nDue Date: 31 May 2026\nBank name: Meridian Bank\nSort code: 20-41-50\nAccount number: 21823016\nSwift code: SKYYOU10\nIBAN: GB84 FAQA 54689987784014\nCompany Registration No: 43214229. Registered Office: 2nd Floor, Parnu mnt 117. ,Pamumnt26 »London, Middlesex, N1 9RY, United Kingdom\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 327375,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 791,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6031,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "190ae490bef6bfb0181119063280c70cb5aaae8c24a709e2c3ea329941cf6dc9"
+        }
       },
       "error": null
     }
@@ -79,29 +93,41 @@
             "note": null
           },
           "invoice_number": {
-            "value": "Parnu",
+            "value": "INV-1587",
             "status": "found",
             "evidence": [
               {
                 "filename": "INV-14.pdf",
                 "page_number": 1,
-                "text": "Northwind Services UK Ltd Invoice Number Parnu mnt 117"
+                "text": "Northwind Services UK Ltd Invoice Number Parnu mnt 117 Rua do Ouro 175 INV-1587 Parnu mnt 26 Taper Studio London"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "2026-05-01",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-14.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Silverbrook Media Limited TAX | N VO | C E 01 May 2026 Attention: Finance"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "due_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "2026-05-31",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-14.pdf",
+                "page_number": 1,
+                "text": "Due Date: 31 May 2026"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -130,21 +156,6 @@
             "value": "GBP",
             "status": "found",
             "evidence": [
-              {
-                "filename": "INV-14.pdf",
-                "page_number": 1,
-                "text": "Description Quantity Unit Price VAT Amount GBP"
-              },
-              {
-                "filename": "INV-14.pdf",
-                "page_number": 1,
-                "text": "Invoice Total GBP 29,253.72"
-              },
-              {
-                "filename": "INV-14.pdf",
-                "page_number": 1,
-                "text": "Total Net Payments GBP 0.00"
-              },
               {
                 "filename": "INV-14.pdf",
                 "page_number": 1,
@@ -205,131 +216,10 @@
             "alternatives": [],
             "note": null
           },
-          "lines": [],
-          "taxes": [
+          "lines": [
             {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "9987.50",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Total No VAT 0.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "0.00",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Total No VAT 0.00"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            },
-            {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Total VAT 20% 3,211.04"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "rate": {
-                "value": "20",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Total VAT 20% 3,211.04"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "amount": {
-                "value": "3211.04",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-14.pdf",
-                    "page_number": 1,
-                    "text": "Total VAT 20% 3,211.04"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              }
-            }
-          ],
-          "charges": [
-            {
-              "kind": "extra_charge",
               "description": {
-                "value": "Management Fee for June 2026 1.00 14,620.18 20% 14,620.18",
+                "value": "Management Fee for June 2026",
                 "status": "found",
                 "evidence": [
                   {
@@ -341,7 +231,40 @@
                 "alternatives": [],
                 "note": null
               },
-              "amount": {
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Management Fee for June 2026 1.00 14,620.18 20% 14,620.18"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Management Fee for June 2026 1.00 14,620.18 20% 14,620.18"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
                 "value": "14620.18",
                 "status": "found",
                 "evidence": [
@@ -353,9 +276,367 @@
                 ],
                 "alternatives": [],
                 "note": null
-              }
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Subtotal 26,042.68"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Invoice Total GBP 29,253.72"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Amount Due GBP 29,253.72"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "14620.18",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Management Fee for June 2026 1.00 14,620.18 20% 14,620.18"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Description Quantity Unit Price VAT Amount GBP"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "20",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Management Fee for June 2026 1.00 14,620.18 20% 14,620.18"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
+            },
+            {
+              "description": {
+                "value": "Business Rates for June 2026",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "9987.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Subtotal 26,042.68"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Invoice Total GBP 29,253.72"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Amount Due GBP 29,253.72"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "9987.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Description Quantity Unit Price VAT Amount GBP"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "0",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": "0",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Business Rates for June 2026 1.00 9,987.50 No VAT 9,987.50"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
+            },
+            {
+              "description": {
+                "value": "Utilities for June 2026",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Utilities for June 2026 1.00 1,435.00 20% 1,435.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Utilities for June 2026 1.00 1,435.00 20% 1,435.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "1435.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Utilities for June 2026 1.00 1,435.00 20% 1,435.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Subtotal 26,042.68"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Invoice Total GBP 29,253.72"
+                  },
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Amount Due GBP 29,253.72"
+                  }
+                ],
+                "alternatives": [],
+                "note": "The source explicitly itemizes line extensions summing to its subtotal, then states header tax and gross equal subtotal plus tax."
+              },
+              "printed_total": {
+                "value": "1435.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-14.pdf",
+                    "page_number": 1,
+                    "text": "Utilities for June 2026 1.00 1,435.00 20% 1,435.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Description Quantity Unit Price VAT Amount GBP"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "20",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-14.pdf",
+                        "page_number": 1,
+                        "text": "Utilities for June 2026 1.00 1,435.00 20% 1,435.00"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
             }
           ],
+          "taxes": [],
+          "charges": [],
           "pages": [
             1
           ],
@@ -373,6 +654,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -399,16 +684,20 @@
           },
           "taxes": [
             {
-              "code": "",
-              "status": "unmatched",
-              "reason": "Tax evidence does not uniquely identify a master code.",
+              "code": "GB_200_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
               "candidates": []
             },
             {
               "code": "",
-              "status": "unmatched",
+              "status": "ambiguous",
               "reason": "Tax evidence does not uniquely identify a master code.",
-              "candidates": []
+              "candidates": [
+                "DE_000_RC",
+                "EST_000_VAT",
+                "GB_000_VAT"
+              ]
             },
             {
               "code": "GB_200_VAT",
@@ -419,15 +708,30 @@
           ]
         },
         "reconciliation": {
-          "status": "unresolved",
-          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
-          "erp_gross": "",
-          "printed_gross": "29253.72"
+          "erp_gross": "29253.72",
+          "printed_gross": "29253.72",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
         }
       }
     ],
     "unresolved_reasons": [
-      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+      "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

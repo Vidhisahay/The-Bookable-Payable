@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "engine_version": "3.7.0",
+  "model_load_seconds": 89.599,
+  "pages": [
+    {
+      "page": 1,
+      "input": "experiments\\ocr_inv02\\results\\page1_dpi160.png",
+      "error": "NotImplementedError('(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\\\paddle\\\\fluid\\\\framework\\\\new_executor\\\\instruction\\\\onednn\\\\onednn_instruction.cc:118)\\n')",
+      "seconds": 2.378
+    },
+    {
+      "page": 2,
+      "input": "experiments\\ocr_inv02\\results\\page2_dpi160.png",
+      "error": "NotImplementedError('(Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at ..\\\\paddle\\\\fluid\\\\framework\\\\new_executor\\\\instruction\\\\onednn\\\\onednn_instruction.cc:118)\\n')",
+      "seconds": 2.07
+    }
+  ],
+  "error": null
+}

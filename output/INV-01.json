@@ -8,7 +8,7 @@
       "invoice_type": "INVOICE",
       "currency": "EUR",
       "supplier": {
-        "name": "",
+        "name": "Northwind Operations OU",
         "supplier_id": "",
         "address": "",
         "vat_id": "EE398766194"

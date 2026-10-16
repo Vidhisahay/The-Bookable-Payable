@@ -9,6 +9,7 @@ from typing import Any
 
 from .autodraft_pipeline import AutodraftPipeline
 from .cli import write_json_line
+from .ocr_cache import OCR_CACHE_VERSION, OCR_PROCESSING_VERSION
 from .pipeline import IngestionConfig, IngestionPipeline, enumerate_pdfs
 
 
@@ -68,9 +69,13 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("directory", nargs="?", type=Path, default=Path("documents"))
     parser.add_argument("--files", nargs="*", help="process these exact PDF basenames only")
     parser.add_argument("--no-ocr", action="store_true", help="native text only")
-    parser.add_argument("--ocr-language", default="eng+deu")
+    parser.add_argument("--ocr-language", default="eng+est")
     parser.add_argument("--page-timeout-seconds", type=int, default=60,
                         help="shared OCR time budget per page, including segmentation retries")
+    parser.add_argument("--ocr-retries", type=int, default=1,
+                        help="bounded retries after timeout/failure (0-3; default 1)")
+    parser.add_argument("--ocr-cache-dir", type=Path, default=Path(".cache/ocr_pages"),
+                        help="persistent successful page OCR cache")
     parser.add_argument("--pages", type=_parse_pages,
                         help="process only these 1-based pages (for example 3,6-11)")
     parser.add_argument("--ocr-psm", type=_parse_psm, default=(6, 11, 3),
@@ -79,8 +84,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="PDF render resolution for OCR")
     parser.add_argument("--summary", action="store_true", help="emit field/evidence summary instead of full page text")
     args = parser.parse_args(argv)
-    if args.page_timeout_seconds < 1 or args.ocr_dpi < 72:
-        parser.error("--page-timeout-seconds must be positive and --ocr-dpi at least 72")
+    if args.page_timeout_seconds < 1 or args.ocr_dpi < 72 or not 0 <= args.ocr_retries <= 3:
+        parser.error("--page-timeout-seconds must be positive, --ocr-dpi at least 72, and --ocr-retries between 0 and 3")
     paths = enumerate_pdfs(args.directory)
     if args.files is not None:
         selected: list[Path] = []
@@ -101,7 +106,8 @@ def main(argv: list[str] | None = None) -> int:
 
     config = IngestionConfig(ocr_enabled=not args.no_ocr, ocr_language=args.ocr_language,
                              ocr_timeout_seconds=args.page_timeout_seconds,
-                             ocr_page_segmentation_modes=args.ocr_psm, render_dpi=args.ocr_dpi)
+                             ocr_page_segmentation_modes=args.ocr_psm, render_dpi=args.ocr_dpi,
+                             ocr_retries=args.ocr_retries, ocr_cache_directory=args.ocr_cache_dir)
     pipeline = AutodraftPipeline(ingestion=IngestionPipeline(
         config, progress=lambda message: print(f"  {message}", file=sys.stderr, flush=True)))
     results = []
@@ -109,6 +115,16 @@ def main(argv: list[str] | None = None) -> int:
     for index, path in enumerate(paths, start=1):
         print(f"[{index}/{len(paths)}] {path.name}", file=sys.stderr)
         result = pipeline.process_file(path, page_numbers=args.pages)
+        result["diagnostics"]["run_configuration"] = {
+            "ocr_language": args.ocr_language,
+            "page_timeout_seconds": args.page_timeout_seconds,
+            "ocr_retries": args.ocr_retries,
+            "ocr_psm": list(args.ocr_psm),
+            "ocr_dpi": args.ocr_dpi,
+            "ocr_cache_directory": str(args.ocr_cache_dir),
+            "ocr_cache_version": OCR_CACHE_VERSION,
+            "ocr_processing_version": OCR_PROCESSING_VERSION,
+        }
         results.append(_summary(result) if args.summary else result)
         classification = result["diagnostics"]["classification"]
         methods: dict[str, int] = {}

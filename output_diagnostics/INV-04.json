@@ -34,24 +34,38 @@
     {
       "filename": "INV-04.pdf",
       "page_number": 1,
-      "text": "Invoice Date Larkspur Distribution Meridian Print\nTAX | NVO | C E 30 Apr 2025 Larkspur Distribution Meridian Print\nGartenweg 173\nNorthwind Services ZA (Pty) Meridian Print Ltd INV7097292303 F04, Kiepersol House\nRua do Ouro 5 Bahnhofstrasse 300\nUnit 7, Block B INV7097292303 Darrenwood\nGartenweg 60 Gauteng\nMaitland 2195\nWESTERN CAPE CAPE TOWN 7405 BERTEERE South Africa\nSOUTH AFRICA\nVAT Number: 9446639440\nDescription Quantity Unit Price VAT Amount ZAR\nStandard Criminal Verification 133.00 129.00 15% 17,157.00\nSubtotal 17,157.00\nTOTAL VAT 2,573.55\nTOTAL ZAR 19,730.55\nLess Amount Credited 13,110.00\nAMOUNT DUE ZAR 6,620.55\nDue Date: 31 May 2025\nOakhaven Distribution Meridian Print Ltd\nRedwater Bank\nBranch: Sand\nBranch Number -\nAccount 897530172\nSWIFT: SYEWTNPV\nPlease use your invoice number as reference when making payment.\nCompany Registration No: 3268/558090/90 . Registered Office: Gartenweg 173 ,F04, Kiepersol House, Bahnhofstrasse 30Oarrenwood, Johannesburg, Gauteng,\n2195, South Africa.\n",
+      "text": "Invoice Date Larkspur Distribution Meridian Print\nTAX | NVO | C E 30 Apr 2025 Larkspur Distribution Meridian Print\nGartenweg 173\nNorthwind Services ZA (Pty) Meridian Print Ltd INV7097292303 F04, Kiepersol House\nRua do Ouro 5 Bahnhofstrasse 300\nUnit 7, Block B INV7097292303 Darrenwood\nGartenweg 60 Gauteng\nMaitland 2195\nWESTERN CAPE CAPE TOWN 7405 SN IBEEST South Africa\nSOUTH AFRICA\nVAT Number: 9446639440\nDescription Quantity Unit Price VAT Amount ZAR\nStandard Criminal Verification 133.00 129.00 15% 17,157.00\nSubtotal 17,157.00\nTOTAL VAT 2,573.55\nTOTAL ZAR 19,730.55\nLess Amount Credited 13,110.00\nAMOUNT DUE ZAR 6,620.55\nDue Date: 31 May 2025\nOakhaven Distribution Meridian Print Ltd\nRedwater Bank\nBranch: Sand\nBranch Number -\nAccount 897530172\nSWIFT: SYEWTNPV\nPlease use your invoice number as reference when making payment.\nCompany Registration No: 3268/558090/90 . Registered Office: Gartenweg 173 ,F04,Kiepersol House, Bahnhofstrasse 30Oarrenwood, Johannesburg, Gauteng,\n2195, South Africa.\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 365429,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 818,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6612,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "79b646243e3c2be4e4e4503b259f02c121d4cba233346515d5acff6484e6f7c4"
+        }
       },
       "error": null
     }
   ],
   "extraction": {
     "excluded_reason": null,
-    "review_required": true,
+    "review_required": false,
     "page_scope": [
       {
         "page_number": 1,
@@ -59,9 +73,7 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [
-      "Supplier name was not explicitly labeled; no name was inferred from the header."
-    ],
+    "warnings": [],
     "candidates": [
       {
         "fields": {
@@ -92,30 +104,54 @@
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "2025-04-30",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-04.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Larkspur Distribution Meridian Print TAX | NVO | C E 30 Apr 2025 Larkspur Distribution Meridian Print"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "due_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "2025-05-31",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-04.pdf",
+                "page_number": 1,
+                "text": "Due Date: 31 May 2025"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Northwind Services ZA (Pty) Meridian Print Ltd",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-04.pdf",
+                "page_number": 1,
+                "text": "Northwind Services ZA (Pty) Meridian Print Ltd"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "supplier_address": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Rua do Ouro 5 Bahnhofstrasse 300, Unit 7, Block B INV7097292303 Darrenwood, Gartenweg 60 Gauteng, Maitland 2195",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-04.pdf",
+                "page_number": 1,
+                "text": "Rua do Ouro 5 Bahnhofstrasse 300, Unit 7, Block B INV7097292303 Darrenwood, Gartenweg 60 Gauteng, Maitland 2195"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -201,54 +237,129 @@
             "alternatives": [],
             "note": null
           },
-          "lines": [],
-          "taxes": [
+          "lines": [
             {
-              "scope": "header",
-              "kind": "tax",
-              "name": {
-                "value": "VAT",
+              "description": {
+                "value": "Standard Criminal Verification",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "INV-04.pdf",
                     "page_number": 1,
-                    "text": "TOTAL VAT 2,573.55"
+                    "text": "Standard Criminal Verification 133.00 129.00 15% 17,157.00"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "rate": {
+              "item_type": {
                 "value": null,
                 "status": "missing",
                 "evidence": [],
                 "alternatives": [],
                 "note": null
               },
-              "amount": {
-                "value": "2573.55",
+              "quantity": {
+                "value": "133.00",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "INV-04.pdf",
                     "page_number": 1,
-                    "text": "TOTAL VAT 2,573.55"
+                    "text": "Standard Criminal Verification 133.00 129.00 15% 17,157.00"
                   }
                 ],
                 "alternatives": [],
                 "note": null
-              }
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "129.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-04.pdf",
+                    "page_number": 1,
+                    "text": "Standard Criminal Verification 133.00 129.00 15% 17,157.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "17157.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-04.pdf",
+                    "page_number": 1,
+                    "text": "Standard Criminal Verification 133.00 129.00 15% 17,157.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": [
+                {
+                  "scope": "line",
+                  "kind": "tax",
+                  "name": {
+                    "value": "VAT",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-04.pdf",
+                        "page_number": 1,
+                        "text": "Description Quantity Unit Price VAT Amount ZAR"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "rate": {
+                    "value": "15",
+                    "status": "found",
+                    "evidence": [
+                      {
+                        "filename": "INV-04.pdf",
+                        "page_number": 1,
+                        "text": "Standard Criminal Verification 133.00 129.00 15% 17,157.00"
+                      }
+                    ],
+                    "alternatives": [],
+                    "note": null
+                  },
+                  "amount": {
+                    "value": null,
+                    "status": "missing",
+                    "evidence": [],
+                    "alternatives": [],
+                    "note": null
+                  }
+                }
+              ]
             }
           ],
+          "taxes": [],
           "charges": [],
           "pages": [
             1
           ],
-          "review_required": true,
-          "warnings": [
-            "Supplier name was not explicitly labeled; no name was inferred from the header."
-          ]
+          "review_required": false,
+          "warnings": []
         },
         "master_hints": {
           "buyer": {},
@@ -259,6 +370,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Line 1 item type is not established as a permitted schema value."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -286,22 +401,40 @@
           "taxes": [
             {
               "code": "",
-              "status": "unmatched",
+              "status": "ambiguous",
               "reason": "Tax evidence does not uniquely identify a master code.",
-              "candidates": []
+              "candidates": [
+                "ZAF_150_VAT",
+                "TAX024"
+              ]
             }
           ]
         },
         "reconciliation": {
+          "erp_gross": "0.00",
+          "printed_gross": "6620.55",
+          "difference": "-6620.55",
           "status": "unresolved",
-          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
-          "erp_gross": "",
-          "printed_gross": "6620.55"
+          "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
         }
       }
     ],
     "unresolved_reasons": [
-      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+      "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

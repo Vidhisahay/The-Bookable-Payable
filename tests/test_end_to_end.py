@@ -64,8 +64,190 @@ class EndToEndTests(unittest.TestCase):
         self.assertEqual(payable["payment_term_id"], "Net_10")
         self.assertEqual(result["diagnostics"]["extraction"]["candidates"][0]["reconciliation"]["status"], "passed")
 
+    def test_activity_table_and_separate_tax_summary_reconcile_without_duplicate_charges(self):
+        text = """TAX INVOICE
+Supplier Name: Oakhaven Supply Ltd
+BILL TO
+DATE PLEASE PAY DUE DATE
+Nairobi Kenya
+03/06/2025 KES 70,654.30 03/07/2025
+ACTIVITY TAX atv RATE AMOUNT
+Handling Out (per CBM) Std 0.2744 500.00 137.20
+Transport Std 1 3,000.00 3,000.00
+Transport Std 1 1,500.00 1,500.00
+Storage charges Std 40.53574 30.00 1,216.07
+Storage charges Std 22.30872 30.00 669.26
+Storage charges Sid 1,646.2116 30.00 49,386.35
+Stock Management fee Std 1 5,000.00 5,000.00
+SUBTOTAL 60,908.88
+TAX SUMMARY
+RATE TAX NET
+VAT @ 16% 9,745.42 60,908.88
+TOTAL DUE KES 70,654.30
+United States Dollar (USD): Account Number 8672480023
+Euro (EUR): Account Number 8672480039
+"""
+        result = self.run_text([text])
+        self.assertEqual(len(result["accounting"]["payables"]), 1)
+        payable = result["accounting"]["payables"][0]
+        self.assertEqual(payable["currency"], "KES")
+        self.assertEqual(payable["supplier"]["name"], "Oakhaven Supply Ltd")
+        self.assertEqual(payable["supplier"]["supplier_id"], "")
+        self.assertEqual(payable["invoice_number"], "")
+        self.assertEqual(payable["invoice_date"], "")
+        self.assertEqual(payable["gross_total"], "70654.30")
+        self.assertEqual(payable["subtotal"], "60908.88")
+        self.assertEqual(payable["total_tax_amount"], "9745.42")
+        self.assertEqual(len(payable["line_items"]), 7)
+        self.assertEqual(payable["taxes"][0]["tax_amount"], "9745.42")
+        self.assertEqual(payable["taxes"][0]["tax_rate"], "16")
+        self.assertEqual(payable["freight_charges"], "")
+        self.assertEqual(payable["extra_charges"], "")
+        self.assertEqual(result["diagnostics"]["extraction"]["candidates"][0]["reconciliation"]["erp_gross"], "70654.30")
+
+    def test_page_ocr_cache_replay_keeps_accounting_payload_unchanged(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            path = root / "fixture.pdf"
+            path.write_bytes(b"stable scanned fixture")
+            config = IngestionConfig(ocr_timeout_seconds=5, ocr_page_segmentation_modes=(6,),
+                                     ocr_cache_directory=root / "ocr-cache")
+            generated = []
+            for ocr in (FakeOCR(INVOICE), FakeOCR("cached text must be used")):
+                pipeline = AutodraftPipeline(
+                    ingestion=IngestionPipeline(config, FakeReader([FakePage("")]), ocr),
+                    masters=MasterData.load("master_data"),
+                )
+                generated.append(pipeline.process_file(path))
+            self.assertEqual(generated[0]["accounting"], generated[1]["accounting"])
+            self.assertEqual(generated[0]["accounting"]["payables"][0]["gross_total"], "119.00")
+            self.assertEqual(generated[1]["diagnostics"]["pages"][0]["evidence"]["ocr_cache"]["status"], "hit")
+            self.assertEqual(generated[1]["diagnostics"]["extraction"]["candidates"][0]["reconciliation"]["status"], "passed")
+
+    def test_native_column_table_uses_bounded_ocr_and_recovers_oracle_payable(self):
+        native = """Oracle America, Inc.
+500 Oracle Parkway
+Redwood Shores, CA 94065
+United States
+INVOICE
+Federal Tax ID: 94-2805249
+INVOICE NUMBER
+44273107
+INVOICE DATE
+18-Jun-2018
+YOUR P.O. NUMBER
+1000021496
+PAYMENT TERMS
+30 NET
+DUE DATE
+18-Jul-2018
+BILL TO:
+AmeriHealth Caritas Services
+ITEM
+NO.
+DESCRIPTION
+QTY/
+NO. OF USERS
+TAX
+EXTENDED
+AMOUNT
+1
+Managed Cloud Services - Computer and Administration Services -
+Managed Cloud Services - Additional Services 18-JUL-2018 :
+17-OCT-2018
+11
+N
+91,580.50
+SUBTOTAL
+TAX
+TOTAL(USD)
+91,580.50
+0.00
+91,580.50
+"""
+        table_ocr = """Oracle America, Inc. INVOICE
+500 Oracle Parkway Federal Tax ID: 94-2805249
+Redwood Shores, CA 94065 INVOICE NUMBER 44273107
+United States 18-Jun-2018
+ITEM QTY/ EXTENDED
+1 Managed Cloud Services - Computer and Administration Services - Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018 1 N 91,580.50
+SUBTOTAL TOTAL(USD)
+91,580.50 91,580.50
+"""
+        result = self.run_text([native], ocr=FakeOCR(table_ocr))
+        payable = result["accounting"]["payables"][0]
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(payable["invoice_number"], "44273107")
+        self.assertEqual(payable["invoice_date"], "2018-06-18")
+        self.assertEqual(payable["due_date"], "2018-07-18")
+        self.assertEqual(payable["currency"], "USD")
+        self.assertEqual(payable["supplier"]["name"], "Oracle America, Inc.")
+        self.assertEqual(payable["supplier"]["address"], "500 Oracle Parkway, Redwood Shores, CA 94065, United States")
+        self.assertEqual(payable["supplier"]["vat_id"], "")
+        self.assertEqual(payable["po_number"], "1000021496")
+        self.assertEqual(payable["payment_term_id"], "Net_30")
+        self.assertEqual(payable["subtotal"], "91580.50")
+        self.assertEqual(payable["total_tax_amount"], "0.00")
+        self.assertEqual(payable["line_items"][0]["quantity"], "1")
+        self.assertIn("Managed Cloud Services - Additional Services", payable["line_items"][0]["description"])
+        self.assertIn("17-OCT-2018", payable["line_items"][0]["description"])
+        self.assertEqual(payable["line_items"][0]["unit_price"], "91580.50")
+        self.assertEqual(payable["line_items"][0]["total"], "91580.50")
+        self.assertEqual(candidate["reconciliation"]["erp_gross"], "91580.50")
+        self.assertEqual(candidate["bookability"]["status"], "passed")
+        self.assertEqual(result["diagnostics"]["pages"][0]["evidence"]["table_ocr"]["status"], "found")
+
+    def test_product_reference_credit_table_keeps_line_vat_and_supplier_vat_scope(self):
+        text = """Credit Note No.: 5900366703
+Date: 15/04/2026
+Customer: Northwind Services UK Limited
+VAT Registration No.: G8726874417
+Currency in: GBP
+Product Reference No. Quantity Unit VAT Unit Price Net Amount
+4582314 952-000091 6 20% 457.24 2,743.44
+Logitech Tap Scheduler Touch Controller
+4541892 939-001950 2 20% 743.35 1,486.70
+Logitech Tap Touch Controller Cat5e Kit
+Net Amount GBP 4,230.14
+VAT 20 % 846.03
+Total Amount GBP 5,076.17
+Terms of Payment: Within 30 days of invoice date
+Blackpine Consulting Limited Registered in England
+Parmu mnt 50
+VAT: GB447324473 14 5HP Account Number: 123456
+"""
+        result = self.run_text([text])
+        payable = result["accounting"]["payables"][0]
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(payable["invoice_type"], "CREDIT_MEMO")
+        self.assertEqual(payable["invoice_number"], "5900366703")
+        self.assertEqual(payable["currency"], "GBP")
+        self.assertEqual(payable["supplier"]["name"], "Blackpine Consulting Limited")
+        self.assertEqual(payable["supplier"]["vat_id"], "GB447324473")
+        self.assertEqual(payable["gross_total"], "5076.17")
+        self.assertEqual(payable["subtotal"], "4230.14")
+        self.assertEqual(payable["total_tax_amount"], "846.03")
+        self.assertEqual(payable["taxes"], [])
+        self.assertEqual(len(payable["line_items"]), 2)
+        self.assertEqual(payable["line_items"][0]["quantity"], "6")
+        self.assertEqual(payable["line_items"][0]["unit_price"], "457.24")
+        self.assertEqual(payable["line_items"][0]["total"], "2743.44")
+        self.assertEqual(payable["line_items"][0]["taxes"][0]["tax_rate"], "20")
+        self.assertEqual(payable["line_items"][1]["quantity"], "2")
+        self.assertEqual(candidate["reconciliation"]["erp_gross"], "5076.17")
+        self.assertEqual(candidate["reconciliation"]["status"], "passed")
+        self.assertEqual(candidate["bookability"]["status"], "passed")
+
+    def test_unambiguous_invoice_date_resolves_day_first_due_date_on_same_page(self):
+        text = INVOICE.replace("2026-01-01", "16.02.2026").replace("2026-01-11", "08.03.2026")
+        result = self.run_text([text])
+        fields = result["diagnostics"]["extraction"]["candidates"][0]["fields"]
+        self.assertEqual(fields["invoice_date"]["value"], "2026-02-16")
+        self.assertEqual(fields["due_date"]["value"], "2026-03-08")
+
     def test_explicit_german_plus_vat_wording_establishes_net_price(self):
-        text = """Rechnung Nr.: INV-PLUS
+        text = """Supplier Name: Example Supplier
+Rechnung Nr.: INV-PLUS
 Rechnungsdatum: 02.02.2026
 Pos Beschreibung Einzelpreis Menge Gesamtpreis
 1 Projektmanagement 73,00 EUR 4 Std. 292,00 EUR
@@ -79,7 +261,8 @@ Endbetrag 292,00 EUR"""
         self.assertEqual(candidate["reconciliation"]["erp_gross"], "292.00")
 
     def test_reverse_charge_context_is_not_emitted_as_an_untyped_tax(self):
-        text = """Rechnung Nr.: INV-PLUS
+        text = """Supplier Name: Example Supplier
+Rechnung Nr.: INV-PLUS
 Rechnungsdatum: 02.02.2026
 Pos Beschreibung Einzelpreis Menge Gesamtpreis
 1 Projektmanagement 73,00 EUR 4 Std. 292,00 EUR
@@ -91,6 +274,53 @@ Endbetrag 292,00 EUR"""
         self.assertEqual(len(taxes), 1)
         self.assertEqual(taxes[0]["tax_type"], "VAT")
         self.assertEqual(taxes[0]["tax_name"], "MwSt")
+
+    def test_estonian_total_labels_extract_printed_gross_and_subtotal(self):
+        text = """Supplier Name: Example Supplier
+Arve #9972-907
+Kuupäev 18-03-2026
+Summa ilma käibemaksuta €490,51
+Käibemaks 24% €117,72
+Summa koos käibemaksuga €608,23"""
+        result = self.run_text([text])
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(candidate["fields"]["printed_subtotal"]["value"], "490.51")
+        self.assertEqual(candidate["fields"]["printed_gross_total"]["value"], "608.23")
+
+    def test_estonian_billed_rows_ignore_kit_breakdown_and_keep_transport_as_line(self):
+        text = """Supplier Name: Example Supplier
+Arve #9972-907
+Kuupäev 18-03-2026
+Hind Kokku käibemaksuta
+9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00
+1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60
+2x Aktiivkõlar NOVA Veritas 12 24 tundi €20,00
+2x Aktiivsubwoofer Nova Veritas 18S 24 tundi €28,00
+1x Linnasisene transport Fikseeritud €50,00 €50,00
+2x Tehnik 3 tundi €84,00 €168,00
+Vahesumma €538,60
+Allahindlus 15 % €48,09
+Summa ilma käibemaksuta €490,51
+Käibemaks 24% €117,72
+Summa koos käibemaksuga €608,23"""
+        result = self.run_text([text])
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        lines = candidate["fields"]["lines"]
+        self.assertEqual(len(lines), 4)
+        self.assertEqual(lines[1]["description"]["value"], "Aktiivkõlar Veritas 8000 komplekt")
+        self.assertEqual(lines[1]["quantity"]["value"], "1")
+        self.assertEqual(lines[1]["unit_price"]["value"], "103.60")
+        self.assertEqual(lines[1]["printed_total"]["value"], "103.60")
+        self.assertEqual(lines[2]["description"]["value"], "Linnasisene transport")
+        self.assertEqual(lines[2]["quantity"]["value"], "1")
+        self.assertEqual(lines[2]["unit_price"]["value"], "50.00")
+        technician = lines[3]
+        self.assertEqual(technician["quantity"]["value"], "2")
+        self.assertEqual(technician["unit_price"]["value"], "84.00")
+        self.assertEqual(technician["printed_total"]["value"], "168.00")
+        self.assertFalse(any(charge["kind"] == "freight" for charge in candidate["fields"]["charges"]))
+        discount = next(charge for charge in candidate["fields"]["charges"] if charge["kind"] == "discount")
+        self.assertEqual(discount["amount"]["value"], "48.09")
 
     def test_ocr_dependent_invoice_retains_ocr_provenance(self):
         result = self.run_text([""], ocr=FakeOCR(INVOICE))
@@ -174,11 +404,12 @@ Endbetrag 292,00 EUR"""
         result = self.run_text([unknown])
         self.assertEqual(result["accounting"]["payables"][0]["supplier"]["supplier_id"], "")
 
-        credit = """Kreeditarve arvele nr. 6265
+        credit = """Supplier Name: Example Supplier
+Kreeditarve arvele nr. 6265
 Invoice date: 2025-03-16
 Arve kokku -100.00 EUR
 Description Quantity Unit price excl VAT Total
-1 credit adjustment 1 EA -100.00 -100.00 EUR
+1 credit service adjustment 1 EA -100.00 -100.00 EUR
 """
         result = self.run_text([credit])
         self.assertEqual(result["accounting"]["payables"][0]["invoice_type"], "CREDIT_MEMO")
@@ -200,6 +431,69 @@ Description Quantity Unit price excl VAT Total
         candidate = result["diagnostics"]["extraction"]["candidates"][0]
         self.assertEqual(candidate["reconciliation"]["status"], "unresolved")
 
+    def test_missing_supplier_identity_blocks_booking(self):
+        text = """TAX INVOICE
+Invoice number: INV-UNIDENTIFIED
+Invoice date: 2026-01-01
+Description Quantity Unit price excl VAT Total
+1 service 1 EA 100.00 100.00 EUR
+Grand total EUR 100.00"""
+        result = self.run_text([text])
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(candidate["reconciliation"]["status"], "passed")
+        self.assertEqual(candidate["reconciliation"]["erp_gross"], "100.00")
+        self.assertEqual(candidate["bookability"]["status"], "unresolved")
+        self.assertIn("Neither supplier name nor supplier VAT ID", candidate["bookability"]["reason"])
+        self.assertEqual(result["accounting"]["payables"], [])
+
+    def test_source_supported_supplier_vat_id_allows_missing_name_without_master_match(self):
+        text = INVOICE.replace("Supplier Name: Phocus Direct Communication GmbH\n", "")
+        text = text.replace("Supplier Address: Lina-Ammon-Strasse 19b, 90471 Nurnberg, DE\n", "")
+        text = text.replace("DE209177122", "EE398766194")
+        result = self.run_text([text])
+        payable = result["accounting"]["payables"][0]
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(payable["supplier"]["name"], "")
+        self.assertEqual(payable["supplier"]["vat_id"], "EE398766194")
+        self.assertEqual(payable["supplier"]["supplier_id"], "")
+        self.assertEqual(candidate["matches"]["supplier"]["status"], "unmatched")
+        self.assertEqual(candidate["reconciliation"]["erp_gross"], "119.00")
+        self.assertEqual(candidate["bookability"]["status"], "passed")
+
+    def test_bank_remittance_identity_allows_unmatched_supplier_code_when_arithmetic_is_supported(self):
+        text = """TAX INVOICE
+Invoice number: INV-BANK-700
+Invoice date: 2026-01-01
+Description Quantity Unit price excl VAT Total
+1 consulting service 1 EA 100.00 100.00 EUR
+Grand total EUR 100.00
+Meridian Logistics OÜ
+High Street 4, Tartumaa 50703
+Oakhaven Bank IBAN: EE682389839721862212"""
+        result = self.run_text([text])
+        payable = result["accounting"]["payables"][0]
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(payable["supplier"]["name"], "Meridian Logistics OÜ")
+        self.assertEqual(payable["supplier"]["supplier_id"], "")
+        self.assertEqual(candidate["matches"]["supplier"]["status"], "unmatched")
+        self.assertEqual(candidate["reconciliation"]["status"], "passed")
+        self.assertEqual(candidate["bookability"]["status"], "passed")
+
+    def test_unknown_line_item_enum_is_not_emitted(self):
+        text = """TAX INVOICE
+Invoice number: INV-UNKNOWN-TYPE
+Invoice date: 2026-01-01
+Supplier Name: Example Supplier
+Description Quantity Unit price excl VAT Total
+1 special adjustment 1 EA 100.00 100.00 EUR
+Grand total EUR 100.00"""
+        result = self.run_text([text])
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(candidate["reconciliation"]["status"], "passed")
+        self.assertEqual(candidate["bookability"]["status"], "unresolved")
+        self.assertIn("item type", candidate["bookability"]["reason"])
+        self.assertEqual(result["accounting"]["payables"], [])
+
     def test_ocr_timeout_is_explicit(self):
         class SlowOCR(FakeOCR):
             def recognize(self, *_args, **_kwargs):
@@ -209,6 +503,7 @@ Description Quantity Unit price excl VAT Total
         self.assertEqual(page["extraction_method"], "ocr_timeout")
         self.assertIn("timed out", page["error"])
         self.assertEqual(page["evidence"]["ocr_modes_attempted"], [6])
+        self.assertNotIn("ocr_attempt_errors", page["evidence"])
 
     def test_json_encoding_is_valid_utf8_with_multilingual_ocr(self):
         result = {"text": "dotless ı; Estonian õ ä ö ü; Thai ใบวางบิล"}

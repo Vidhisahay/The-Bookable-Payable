@@ -1,16 +1,24 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
-    "uncertain": true,
-    "evidence": [],
+    "category": "invoice",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "gst",
+      "invoice",
+      "invoice no"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "invoice no",
+          "gst"
+        ]
       }
     ],
     "mixed_document": false,
@@ -22,20 +30,37 @@
     {
       "filename": "INV-33.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF\n$ Account Project No / | Amount ($) Contact Person's) Aps ing Olt a \" s\nNo Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14\n50401002 | 4244286 eo. Cost Gentrel GL: F2AGEKE [S00 002\n°\n= (Zale Wei NOTIGNS INT'L PTE. LTD.\n| 1 (Passenger Development www.AD-Natlons.com\nLo gi Airport Group (Singapore) Pto Lid o—~\nREGISTRATION NO, 53057406C RELEN ON\n| — ——-. _ 4 \\\nEN 2\nINVOICE (Page 01 of 01) FIN (EXP)\nChangi Airport Group (S) Pte Ltd\nPO Box 168 Invoice No. : ADIPL/INV/070/17\nSingapore Changi Airport Date : 8th June 2017\nSingapore 918146\nYour P.O. No. :\nTel : 6541 2374 Our D.O. No. :\nFax : 65425390 Job Ref. =: CAG/ST/8074/06/17\nAttn : Ms. Jacqueline Hia Terms : C.O.D\nQuantity [Unie Price | Amount |\n[PROJECT : Pillar Signage Panel For Shi\nCoach Bay (Lot No. 8)\nProcess : Supply of 2mm thick clear poly-carbonate sheet with reverse\nblack color base & install onto existing pillar with A3 size\ndigital print Matt lamination onto panel surface. Please\nnote; driling work is applicable for this job (Day Work).\n*Excluding any dismantling work.\nPanel Size = ; 500mm(W) x 500mm(H) 01 pc\n|Remarks = : Design 8 Ready FA for production aré scnnitratenotcaal\n: Future replacement of A3 size shuttle schedule per pc @.S$70. pe — |\n|! - am | —\n* Please kindly endorse and scan via dmail back to us once you have received this Invoice. Thank you |_| Total | $250.00 |\n* Cheque payment is to be issued to : AD NOTIONS INT'L PTE LTD i\nJacgueline Hia opment) ° A\nAssociate (Passénga- Dey / 4\naaa tp jahi õpe Orr INT'L PTE. LTD. ( x\nCustomer's Signatur company Stamp Authorised Signature )\nAD NOTIONS (t(wr't PTE. LTO\n20 Sin Ming Lane Midview City #08-61 Singapore 573968\nt: (465) 6515 1516 f: 465) 6515 1517 — «: Sales ZAQ-Notions.com\nInnovative Design Solutions\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1335,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 16089,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "d31e14462b1c94f149e8912504e7f5fac7b8c56f71dcf7218884870de04ab2cd"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "excluded_reason": null,
     "review_required": true,
     "page_scope": [
       {
@@ -44,10 +69,227 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [],
-    "candidates": [],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF\n$ Account Project No / | Amount ($) Contact Person's) Aps ing Olt a \" s\nNo Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14\n50401002 | 4244286 eo. Cost Gentrel"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "ADIPL/INV/070/17",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "PO Box 168 Invoice No. : ADIPL/INV/070/17"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "GBP",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "GST",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-33.pdf",
+                    "page_number": 1,
+                    "text": "No Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

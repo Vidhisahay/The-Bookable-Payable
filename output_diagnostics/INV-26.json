@@ -1,16 +1,22 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
+    "category": "invoice",
+    "confidence": 0.55,
     "uncertain": true,
-    "evidence": [],
+    "evidence": [
+      "invoice",
+      "subtotal"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "invoice",
+          "subtotal"
+        ]
       },
       {
         "page_number": 2,
@@ -31,37 +37,68 @@
     {
       "filename": "INV-26.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "SALES\nPage 1 of 2\nrear et Sr re\nrowers | SON BHO 7083639185) econ\nncn 21 ramen |\nMi Valley City, Lingkaran Syed Putra 47810 JAVA\n59200 Kuala Lumpur\nMalaysia. Malaysia\nTet momen Fax 603 6150 0766\nCompany Registration No:\nSST Registration No. messessnesa\nBil-to Customer No.\nSST Registration No.\nQuotation No. vasar\nDocument Date 09/02/2025\nPayment Terms Instant Transfer\nDue Date\nNo. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)\n1 Mc WIPES 2 1420 2840 2840\n2 (VG M-CITV) 5x905 2 1095 2190 2190\n3 PEEL FRESH MANGO 1L 2 690 1380 1380\n4 NOI MIXED ROOT CHIPS 656 2 360 720 720\ns POP ‘SWEET N SALTY 1206 4 15:90 63.60 63.60\n6 (8/AKGI 1 720 720 720\n7 CHINA SHINE ‘GRAPE 5006, 2 1180 2360 2360\n8 (CHIPS SALT N 1426 2 15:50 3100 3100\n9 TONG NUT Mix HONEY 1406M ; 17.00 3400 2400\n10 1506 2 1220 2440 2440\n\" cy 2F SHARE BAG 10X17G 2 1210 2420 2420\n12 BAR 1386 2 1520 3040 3040\n3 CREAM 3006 1 595 595 595\n“ CEO WHITE 5006 1 490 490 490\n15 DAIRY THICK & 1506 6 950 5700 57.00\n16 CAFE OAT MILK 3006 2 2850 5700 57:00\n” GREEK HT 1606 2 1260 2520 2520\n18 THINS (CHIPS SOUR CREAM & 1756 2 1590 3180 3180\n19 2 900 1800 1800\n20 GLICO PRETZ SWEET CORN 316 4 200 800 8.00\n21 CAMPBELLS INST WILD SOUP 3X16.86 6 545 3270 3270\n2 PREGO MAC TIG s 485 2425 2425\nE LAYS CHIPS 1706 2 1460 2920 2920\n2 1206 1 1050 1050 1050\n25 WHITE 3 2190 6570 6570\n2 HONEY TEA 11506 1 4485 4485 4485\n2 ORG CHIA SEEDS 2006 1 1990 1990 1990\n28 ant GREEN TEA 2 1260 2520 2520\n2 DRIED a 1306 2 660 1320 1320\nTA\n31 (BUY 2 @RM68.80) Liss 1 33.88 3388 3388\n32 GREEK FIT PASSIONFRUIT 1606 1 1260 1260 1260\n33 GREEK em 1606. 1 1260 1260 1260\n\" BAG 10 020 200 200\n35 BAG 4 050 200 200\n‘Subtotal 87353\nInvoice Discount Amount -\nDelivery Fee Amount a\nTotal Excl. SST 873.53\nSST Amount -\nRounding\nTotal incl. SST 27353\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1365,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12018,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "11e2c29e53107e87433f56dac80f6db4aaef8d74b4c959a679884afa4f6e928d"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "INV-26.pdf",
       "page_number": 2,
-      "text": "SALES\nPage 2 of 2\nsc Pt ae\nern sy son an ree 18) wann!\nvum vun ı\n‘Mid Valley City Uingkaran Syed Putra 47810 Jaya\n59200 Kuala Lumpur\nMalaysia Malaysia\nTot momen Fa 603 61500766\nCompany Registration No.\nSST Registration No. muzmsrune\nBil-to Customer No.\nSST Registration No.\nQuotation No. wien\nDocument Date oayoz/202s\nPayment Terms Instant Transfer\nDue Date\nTotal Amount in Words : EIGHT THREE AND FIFTY THREE SEN ONLY.\n‘SST Amount Specification\nF Invoice\n‘SST Identifier sst% Gross Amount Base Discount SST Base ‘SST Amount\nse ——n\nKDOON 000 87353 000 000 87353 000\nTotal un53 000 0.00 un53 0.00\nNowe\n1. For Online transfer, please remit the payment to the following account number.\nBank: Crestinw Bark\nCurrent/Vietual Bank Account No:\n2.All cheques should be crossed and made payaove to Gown nun se\n3. Goods sold are nether returnable nor refundable Otherwise a cancellation fee 20% on purchase price will be imposed.\nUser Name\n‘This is system generated. No signature required\n",
+      "text": "SALES\nPage 2 of 2\nsc Pt ae\nern sy son 10 emased sence}\nta ta\n‘Mid Valley City Lingkaran Syed Putra 47810 JAVA\n59200 Kuala Lumpur\nMalaysia Malaysia\nTot momen  Fac60361500766\nCompany Registration No”\nSST Registration No. masessnazee\nBil-to Customer No.\nSST Registration No.\nQuotation No. vaas\nDocument Date osyo2/2025\nPayment Terms Instant Transfer\nDue Date\nTotal Amount in Words : EIGHT THREE AND FIFTY THREE SEN ONLY.\nSST Amount Specification\nä Invoice\nSST identifier sst% Gross Amount Base Discount SST Base SST Amount\nse ASD aaa\nKDOON 0.00 87353 000 000 87353 0.00\nTotal ms 0.00 0.00 ms 0.00\nNowe\n1. For Online transfer, please remit the payment to the following account number.\nBank: Grein Bark\nCurrent/Virtual Bank Account No:\n2.All cheques should be crossed and made payaove to Gown rerum se\n3. Goods sold are neither returnable nor refundable Otherwise a cancellation fee 20% on purchase price will be imposed.\nUser Name\n‘This i system generated. No signature required\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 339300,
-        "ocr_alphanumeric_chars": 781,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 783,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 7999,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "b7ea143c5da12e0edc6123f4789da4faf9bebc6309f069914d0cd1550946cb70"
+        }
       },
       "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "excluded_reason": null,
     "review_required": true,
     "page_scope": [
       {
@@ -75,10 +112,650 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [],
-    "candidates": [],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-26.pdf",
+                "page_number": 1,
+                "text": "SALES\nPage 1 of 2\nrear et Sr re\nrowers | SON BHO 7083639185) econ\nncn 21 ramen |\nMi Valley City, Lingkaran Syed Putra 47810 JAVA\n59200 Kuala Lumpur\nMalaysia. Malaysia\nTet momen Fax 603 6150 0766\nCompany Registration No:\nSST Registration No."
+              },
+              {
+                "filename": "INV-26.pdf",
+                "page_number": 2,
+                "text": "SALES\nPage 2 of 2\nsc Pt ae\nern sy son 10 emased sence}\nta ta\n‘Mid Valley City Lingkaran Syed Putra 47810 JAVA\n59200 Kuala Lumpur\nMalaysia Malaysia\nTot momen  Fac60361500766\nCompany Registration No”\nSST Registration No. masessnazee\nBil-to Cu"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-26.pdf",
+                "page_number": 1,
+                "text": "Document Date 09/02/2025"
+              }
+            ],
+            "alternatives": [
+              "09/02/2025"
+            ],
+            "note": "Day/month order cannot be determined."
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "\" cy 2F SHARE BAG 10X17G 2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" cy 2F SHARE BAG 10X17G 2 1210 2420 2420"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1210",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" cy 2F SHARE BAG 10X17G 2 1210 2420 2420"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "2420",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" cy 2F SHARE BAG 10X17G 2 1210 2420 2420"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "tax_inclusive",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "No. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "2420",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" cy 2F SHARE BAG 10X17G 2 1210 2420 2420"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "“ CEO WHITE",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "“ CEO WHITE 5006 1 490 490 490"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "5006",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "“ CEO WHITE 5006 1 490 490 490"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "1490490",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "“ CEO WHITE 5006 1 490 490 490"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "tax_inclusive",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "No. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "490",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "“ CEO WHITE 5006 1 490 490 490"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "” GREEK HT 1606 2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "” GREEK HT 1606 2 1260 2520 2520"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1260",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "” GREEK HT 1606 2 1260 2520 2520"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "2520",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "” GREEK HT 1606 2 1260 2520 2520"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "tax_inclusive",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "No. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "2520",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "” GREEK HT 1606 2 1260 2520 2520"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "E LAYS CHIPS 1706 2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "E LAYS CHIPS 1706 2 1460 2920 2920"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1460",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "E LAYS CHIPS 1706 2 1460 2920 2920"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "2920",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "E LAYS CHIPS 1706 2 1460 2920 2920"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "tax_inclusive",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "No. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "2920",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "E LAYS CHIPS 1706 2 1460 2920 2920"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "\" BAG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" BAG 10 020 200 200"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "10020",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" BAG 10 020 200 200"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "200",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" BAG 10 020 200 200"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "tax_inclusive",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "No. Location Description Qty, UOM_——Unit Price Gross Amount Discount sst Amount (MYR)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "200",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "\" BAG 10 020 200 200"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [],
+          "charges": [
+            {
+              "kind": "discount",
+              "description": {
+                "value": "Invoice Discount Amount -",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 1,
+                    "text": "Invoice Discount Amount -"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "SST identifier sst% Gross Amount Base Discount SST Base SST Amount",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-26.pdf",
+                    "page_number": 2,
+                    "text": "SST identifier sst% Gross Amount Base Discount SST Base SST Amount"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": []
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

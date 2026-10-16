@@ -6,26 +6,36 @@
     "uncertain": true,
     "evidence": [
       "cargo pg",
-      "in-non-payment"
+      "in-non-payment",
+      "shipment cartage advice"
     ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "amount due",
+          "gst"
+        ]
       },
       {
         "page_number": 2,
         "category": "uncertain",
         "confidence": 0.0,
-        "evidence": []
+        "evidence": [
+          "amount due",
+          "gst"
+        ]
       },
       {
         "page_number": 3,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "supporting_document",
+        "confidence": 0.55,
+        "evidence": [
+          "shipment cartage advice"
+        ]
       },
       {
         "page_number": 4,
@@ -52,15 +62,19 @@
       },
       {
         "page_number": 7,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "receipt",
+        "confidence": 0.55,
+        "evidence": [
+          "receipt"
+        ]
       },
       {
         "page_number": 8,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "receipt",
+        "confidence": 0.55,
+        "evidence": [
+          "receipt"
+        ]
       },
       {
         "page_number": 9,
@@ -87,7 +101,7 @@
         "evidence": []
       }
     ],
-    "mixed_document": false,
+    "mixed_document": true,
     "possible_document_starts": [],
     "potential_multiple_documents": false,
     "multiple_document_evidence": []
@@ -96,199 +110,394 @@
     {
       "filename": "DU-03.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Blueharbor Logistics & Services\nOriginal\nCTA ee A\nCadence PTE. LTD. invoice 74. Nov 0534\n08-08 18 TAI Due 3 16.Jan.2026\nParmu mnt 18\n539775\nPayment terms: 60 Days Net\nCredit Party Cadence PTE. LTD.\n08-08 18 TAI\nParnu mnt 18\n539775\nCustomer No\nTotal Amount Due\nCondition Rate Base Total(USD)\nee valges 5 ei\nNet value 1,040.06\n0% GST on sales 0.00 % 1,040.06 0.00\nAmount Due 1,040.06\nHAWB\nSold to cosence PTE LTD\nPOL: Hamburg Place of Receipt: Hamburg\nPOD: Singapore Place of Delivery: Singapore SHPR: Povex DISTRIBUTION GMBH 8 CO KG\nETD: S2tov-s008 ETA: 16:ov-700 Cadence PTE. LTD.\nof Qty UoM Curr Unit Price ROE Total(USD)\n1 International Freight 567.000 KG USD 1.28 1.00000 725.76\n2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70\n3 Documentation 1.000 EA USD 45.00 1.00000 45.00\nFee\n4 Delivery 567.000 KG USD 0.04 1.00000 22.68\n5 Pick-up 567.000 KG USD 0.18 1.00000 102.06\n6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50\nExport\nReg. No. , GST Reg. No. M2-0029161-1\nPage lof 2\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 751,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 10286,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "a9ce03a97acc2b4cdcd083980dfa29ba44eb3aca0a54bb1567e3bfa7dafbb646"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 2,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Blueharbor Logistics & Services\na ____0107892268\nItem wtry vom -turr Unit Price KUE TOLAILUSU)\n7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00\n8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00\nImport\n9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00\n10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36\nHandling\n1,040.06\nUi A AA a II II iÜŽŽ—JõÕ90õ\nCondition Rate Base Value Total(USD\nNet value 1,040.06\n0% GST on sales 0.00 % 1,040.06 0.00\nAmount Due 1,040.06\nConversion to SGD for Tax purpose only\nCondition Rate Base Total(SGD)\nValue\nC1) EKEK\nNet value 1,350.55\n0% GST on sales 0.00 % 1,350.55 0.00\nTotal Amount Due (SGD) 1,350.55\n* Payment in USD: The And Banking Account no:\n+ Payment Ref: By, Payn trans jana Te ; Pte. Ltd\n1 Bluebarhor Logistics & Services singapore eha On LOgisues: 6: Services: Singapore te. Ltd.\nLinen muurcss. wafa.silva@blueharbor.com (ää A P\n* This is an Eletuvimuny yeiimrummu uscunent and authorised is not reguired.\nBlueharbor Logistics 8 Services Singapore Pte. Ltd.\nBrightside Trading Pte. Ltd\nChangi Airfreight Centre\nGartenweg 7\nCargo Agents Building E\n819834 Singapore\nTelephone: Fy 3388, Fax: 3\nReg. No. , GST Reg. No. M2-0029161-1\nPage 2 of 2\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 919,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12599,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "b60607a8e883c064c0b54aafe23afac2e1d6f6c2eee46b9a5abf81d363a6bf94"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 3,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "N AAI\nShipment Cartage Advice\nPage 1 of 1\nJob\nRriahtside Print PTF | TD va\nCARGO D Telepticns (to\n918116 Fax No\nDate 13-Nov-25 12:04\n| DAS eR\n|Polvex DISTRIBUTION GMBH & CO.KG * D\nParnu mnt 35\nSatay meses\nLeal\nBlueharbor Logistics & Services Singapore Pie. Ltd al AT\n119 CARGO ROAD, CARGO 1 |C/0 Yusen Logistics (Singapore) Pte Ltd\n+403-01/02 819454 SGSIN |30 Tuas Avenue 13 LA [5 pm\n|\nCFS Reference: Carrier Booking Reference:\n|\nMar a Date: | Estimated Delivery: 17-Nov-25 15:00\nLaut Free Day of Storage || Detivory Required By: 17-Nov-25 15:00\n[ ++ see ER), 0 CTN (INNER) 567.0 KG 567.0KG 0\nKOT a ÜNDGS — STACKABILTY\n5 PLT 567.0 KG 3.360 M3 100 120 140 CM\ncacao —\nP2H-AT\n-NOT RESTRICTED-\nRouting\nMode Flight / Date Carrier Load Discharge ETD ETA\nAR KL8410 / 12-Nov CASS KLM ROYAL DUTCH DEHAM NLAMS — 12-Nov-25 22:59 13-Nov-25 07:59\nA KL835 / 13-Nov CASS KLM ROYAL DUTCH NLAMS — SGSIN — 13-Nov-2520:40 14-Nov-25 16:15\nON 17/11/25 TOTHE = ADDRESS. |\nYours Sincerely, 0\nluis.haas(Oblueharbor.com\n.Biveharbor Logistics 8 Services Singapore Pte. Lt\nLndenstasse 1\nrot, Quarter\n408535\nFax:\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 806,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 10474,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "2731201c1d4a2a8b454bb8516779d6747a8c99476f9ebe86a3713a5bc90b463c"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 4,
-      "text": "CARGO PG : 1 OF 2\nTYPE : IN-NON-PAYMENT\nTYPE 3 SES/\nCadence PTE. LTD. 81/79/6$2u\nTOTAL GROSS WT/UNIT : 567.000/KGM\nTOTAL OUTER PACK/UNIT: 2/PKG\nEXPORTER: TOT DUT : S$ 0.00\nTOT DUT PAYABLE: S$ 0.00\nTOT OTHER TAX : S$ 0.00\nTOTAL GST AMT : S$ 722.76\nAGENT: TOTAL = S$ 0.00\nCARGO TYPE: OTHER NON-CONTAINERIZED\nIN IDENTIFIER:\nNO: KL835\nPORT OF LOADING/NEXT PORT OF CALL: OBL/MAWB NO :\nPORT OF DISCHARGE/FINAL PORT OF CALL DATE : 14/11/2025\nOU IDENTIFIER:\nOF FINAL H\nNO:\nPTE.LTD\nDATE :\nAGENT: NO:\nPLACE OF RELEASE: PLACE OF RECEIPT:\nFITZ MAJOR\ncz ME\nNO: CODE (CPC) :\nREF: 20251112 1178\n",
+      "text": "CARGO PG : 1 OF 2\nTYPE : IN-NON-PAYMENT\nTYPE 3 SES/\nCadence PTE. LTD. 81/79/6Gzv\nTOTAL GROSS WT/UNIT : 567.000/KGM\nTOTAL OUTER PACK/UNIT: 2/PKG\nEXPORTER: TOT DUT : S$ 0.00\nTOT DUT PAYABLE: S$ 0.00\nTOT OTHER TAX : S$ 0.00\nTOTAL GST AMT : S$ 722.76\nAGENT: TOTAL : S$ 0.00\nCARGO TYPE: OTHER NON-CONTAINERIZED\nIN IDENTIFIER:\nNO: KL835\nPORT OF LOADING/NEXT PORT OF CALL: OBL/MAWB NO :\nPORT OF DISCHARGE/FINAL PORT OF CALL DATE : 14/11/2025\nOU IDENTIFIER:\nOF FINAL H\nNO:\nPLE: LEID\nDATE :\nAGENT: NO:\nPLACE OF RELEASE: PLACE OF RECEIPT:\nFITZ MAJOR\nCZ ME\nNO: CODE (CPC) :\nREF: 20251112 1178\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 350502,
-        "ocr_alphanumeric_chars": 414,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 416,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 4818,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "376545f56084c6ba5f69f88181a106ee71f9c013b342a543f42ff7f0b6c5e9d9"
+        }
       },
       "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 5,
-      "text": "CARGO PG: 20F 2\nNO t zumummummummmmmmmmmmum\n(CONTINUATION PAGE)\nS/NO HS CODE LOT NO LOT NO\nCTY OF BRAND NAME MODEL\nIN HAWB/HUCR/HBL OUT HAWB/HUCR/HBL\nPACKING/GOODS_ DERKxacavmu HS & UNIT\nCIF/FOB VALUE (S$)\nGST (S$)\nMANUFACTURER'S NAME\n01 39033090\nDE NA\nP2H-AT RED 0.5500 TNE\n8030.70\n722.76\nTRADER'S\nINV NO:2279433-82704896\nAna Coste\nNO UNAUTHORISED ADDITION/AMENDMENT TO THIS MAY BE MADE AFTER\nNAME OF Blueharbor | & PTE.LTD.\nNAME Ania Vidal\nCODE :\nTEL NO : 65769148\na\nz01 - BY CUSTOMS.\nGA - BY TO THE IMPORTER, i\nAGENT OR/AND THE WITH THE\nFOR THE TO BE VALID. To WITH IS AN OFFENCE.\nTX  - THE GOODS IN THIS ARE IMPORTED/EXPORTED BY A\nMA - THE GOODS AND THIS WITH INVOICES, BL/AWB, ETC MUST BE\nFOR AT A FREE TRADE ZONE 'OUT' GATE,\nTRAIN/WOODLANDS/TUAS IT Is TO THE 'GREEN LANE' AT\nTHE TIME OF CLEARANCE, OR A OR AS INSTRUCTED.\nA6 - IF THE IS NOT USED, IT MUST BE OR RE-VALIDATED NOT LATER\nTHAN 24 HOURS AFTER ITS EXPIRY.\nEEE - END OF CARGO PERMIT.\nREF: 20251112 1178\n",
+      "text": "CARGO PG: 20F 2\nNO A ========5============sz=\n(CONTINUATION PAGE)\nS/NO HS CODE LOT NO LOT NO\nCTY OF BRAND NAME MODEL\nIN HAWB/HUCR/HBL OUT HAWB/HUCR/HBL\nPACKING/GOODS DERKXacAvMU HS & UNIT\nCIF/FOB VALUE (S$)\nGST (S$)\nMANUFACTURER'S NAME\n01 39033090\nDE NA\nP2H-AT RED 0.5500 TNE\n8030.70\n722.76\nTRADER'S\nINV NO:2279433-82704896\noja Costa\nNO UNAUTHORISED ADDITION/AMENDMENT TO THIS MAY BE MADE AFTER\nNAME OF Blueharbor | 8 PTE.LTD.\nNAME ‘ne Vidal\nCODE :\nTEL NO : 65769148\na\nzol — BY CUSTOMS.\nGA BY TO THE IMPORTER, ä\nAGENT OR/AND THE WITH THE\nFOR THE TO BE VALID. TO WITH IS AN OFFENCE.\nTX - THE GOODS IN THIS ARE IMPORTED/EXPORTED BY A\nMA - THE GOODS AND THIS WITH INVOICES, BL/AWB, ETC MUST BE\nFOR AT A FREE TRADE ZONE 'OUT' GATE,\nTRAIN/WOODLANDS/TUAS IT 18 TO THE 'GREEN LANE' AT\nTHE TIME OF CLEARANCE, OR A OR AS INSTRUCTED.\nA6 -— IF THE IS NOT USED, IT MUST BE OR RE-VALIDATED NOT LATER\nTHAN 24 HOURS AFTER ITS EXPIRY.\nEEE - END OF CARGO PERMIT.\nREF: 20251112 1178\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 532925,
-        "ocr_alphanumeric_chars": 725,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 705,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 7916,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "b8442d3b8e249923b396f0017ee2735cfafebcdcd7b11a363284ae390833cb4d"
+        }
       },
       "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 6,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Powex DISTRIBUTION | | House Air _ aybill\nGMBH 8 CO.KG by Aldwin INTERNATIONAL GMBH\nLindensrasse 35 Avenida Coral 7\n20095, HAMBURG,\nHH 20539 DE\nTe\nConsignee's Name and Address. Consignee's Account Number This agreed that the nnnde herein are accepted in apparent good order and condition (except as\nnoted) for carriage TO THE OF ON THE ALL\n(Cadence PTE. LTD. GOODS MAY BE BY ANY OTHER MEANS ROAD OR ANY OTHER\nINSTRUCTIONS ARE GIVEN BY THE SHIPPER, AND\nTHAT THE MAYBE VIA\nRua do Ouro 18 WHICH THE DEEMS APPROPRIATE. THE SHIPPER'S IS DRAWN TO THE\nOF LIABILITY. Shipper mav increase such limitation of\nliability by a higher value for carriage and paying a supplemental if required.\n539775 SG\nTE\nPa\nTents TATA Code\n‘Airport of Departure (Addr. of First Carrer) and Requested Routing Relerance Number\nTa by [eres |_Wival [Over] Value for Carriage ‘Value for Customs\nul x Üsna] | [eunled KL om | nov |\nRipon of sens “Amount of insurance TT Cartier offers Insurance, and such Insurance 1s\nrequested in accordance wih the condivonsthereo, indicate amount to be\nHandling Information 11.11.2025 16:20 || SPX BY XRY DE/RA/00169-02 BY DE/RA/00095-06 man)\nNOT “e A\n‘SCI\nRate Class\nEidi s =\nPreces indi. Dimensions or Volume)\nAGP tom\n2 567.0/K] a 567.0 As Agreed| |NOVODUR P2H-AT\n-NOT RESTRICTED-\nkkk HS Codes: 39033000\nORDER NO. DIMS 100x120x140 CM x 2\nPART NO. 03153934 | VOL 3.360 M3\nITA 440162 — 82704896\n\\ Pepa 77 wea tole — 7\nMENG ae\n[Shipper cortifies that the particulars on the face hereof are correct and that insotar as any part of the consignment\n[contains dangerous aoods. such part is properly by name and is in proper condition for carriage by air according to the\nRegulations.\ntsitaati hs\nFi\nINTERNATIONAL AS AGENT E ala\nExecuted on (date) at (place) of Issuing Carrier or its Agent\nST ragesal Destnaton_7 | Toa Gotect anges 7\npa 1 AUDA\nat\nOriginal 2 - (for Consignee)\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1458,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 15268,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "5855140787b3e8da78ac465affcc3c1db3679db8f0639ff4bc047d85e19f5dca"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 7,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "CARRIERS’ OF\nIf the carriage involves an ultimate DEHvzcKRPvE or stop in a country other than the country of departure, the Montreal Convention or the Warsaw\nConvention may be applicable to the liability of the Carrier in respect of loss of, damage or delay to cargo. Carrier's limitation of liability in accordance\nwith those Conventions shall be as set forth in subparagraph 4 unless a higher value is\nOF\n1. In this contract and the Notices appearing hereon: 6.6.1 For cargo accepted for carriage, the Warsaw Convention and the Montreal Convention\npermit shipper to increase the limitation of liability by a higher value for carriage and\nincludes the air carrier issuing this air waybill and all carriers that carry or undertake = payinga supplemental it required.\nto carry the cargo or perform any other services related to such carriage.\n6.2 In carriage to which neither the Warsaw Convention nor the Montreal Convention applies\nRIGHT (SDA) is a Special Drawing Right as define by the Inernational Cartier shal, in accordance wit the procedures set forth in is general conditions ol carriage and\nMonetary Fund. applicable tariffs, permit shipper to increase the of liability by a higher value for\ncarriage and paying a supplemental if so required.\nmeans whichever of the following instruments is applicable to the\ncontract of carriage: 7./7.1 in cases of loss of, damage or delay to part of the cargo, the weight to be taken into account\nin determining Carriers limit of liability shall be only the weight of the package or packages\nthe Convention for the Unification of Certain Rules Relating to Internationa! Carriage by Air, concerned.\nsigned at Warsaw, 12 October 1929;\n\n7.2 Notwithstanding any other provisions, for “foreign air transportation” as defined by the U.S.\nthat Convention as amended at The Hague on 28 September 1955; Transportation Code:\nthat Convention as amended at The Hague 1955 and by Montreal Protocol No. 1, 2, or 4 7.21 in the case of loss of, damage or delay to a shipment, the weight to be used in determining\n(1975) as the case may be. Carrier's limit of liability shall be the weight which is used to determine the for carriage of\n\nsuch shipment; and\n\nmeans the Convention for the Unification of Certain Rules for\nInternational Carriage by Air, done at Montreal on 28 May 1999. 7.2.2 in the case of loss of, damage or delay to a part of a shipment, the shipment weight in 7.2.1\nshall be prorated fo the packages covered by the same ait waybil whose value i afecad by the\n2.2.1 Carriage is subject to the rules relating to liability established by the Warsaw Convention loss, damage or delay. The weight applicable in the case of loss or damage to one or more articles\nor the Montreal Convention unless such carriage is not “international carriage” as defined by = inapackage shall be the weight of the entire package.\nthe applicable Conventions.\n\n8. Any exclusion or limitation of liability applicable to Carrier shall apply to Carrier's agents,\n22 To the extent not in conflict with the foregoing, carriage and other related services employees, and representatives and to any person whose aircraft or equipment is used by Carrier\nperformed by each Carrier are subject to: for carriage and such person's agents, employees and representatives.\n\n2.2.1 applicable laws and government regulations; 9. Gamier undertakes to complete the cariage with reasonable dispatch. Where permited by\napplicable laws, tariffs and government regulations, Carrier may use altemative carriers, aircraft or\n\n2.2.2 provisions contained in the air waybill, Carrier's conditions of carriage and related rules, = modes of transport without notice but with due regard to the interests of the shipper. Carrier is\n\nregulations, and timetables (but not the times of departure and arrival stated therein) and = authorised by the shipper to select the routing and all intermediate stopping places that it deems\n\napplicable tariffs of such Carrier, which are made part hereof, and which may be inspected at appropriate or to change or deviate from the routing shown on the face hereof.\n\nany airports or other cargo sales offices from which it operates regular services. When carriage\n\nis to/from the USA, the shipper and the consignee are entitled, upon request, to receive a free = 10. Receipt by the person entitled to delivery of the cargo without complaint shall be prima facie\n\ncopy of the Carrier's conditions of carriage. The Carrier's conditions of carriage include, but are = evidence that the cargo has been delivered in good condition and in accordance with the contract\n\nnot limited to: of carriage.\n\n2.2.2.1 limits on the Carrier's liability for loss, damage or delay of goods, includ jle or 10.1 In the case of loss of, damage or delay to cargo a written int must be made to Carrier\n\nPerishable goods; E kaa kii by ine person erailed to dstvery. Such complaint mist be made:\n\n2.2.2.2 claims restrictions, including time periods within which shippers or consignees must file. = 10.1.1 in the case of damage to the cargo, immediately alter discovery of the damage and at the\n\na claim or bring an action against the Carrier for its acts or omissions, or those of its agents; latest within 14 days from the date of receipt of the cargo;\n\n2.2.2.3 rights, if any, of the Carrier to change the terms of the contract; 10.1.2 in the case of delay, within 21 days from the date on which the cargo was placed at the\ndisposal of the person entitled to delivery.\n\n2.2.2.4 rules about Carrier's right to refuse to carry;\n\n10.1.3 in the case of non-delivery of the cargo, within 120 days from the date of issue of the air\n2.2.2.5 rights of the Carrier and limitations concerning delay or failure to perform service, waybill, or if an air waybill has not been issued, within 120 days from the date of receipt of the\nincluding schedule substitution of alternate Cartier or aircraft and rerouting. ‘cargo for transportation by the Carrier.\n\n3. The agreed stopping places (which may be altered by Carrier in case of necessity) are those = 10.2 Such complaint may be made to the Carrier whose air waybill was Used, or to the first Carrier\nplaces, except the place of departure and place of DEMvzcxreveset forth on the face hereof or or to the last Carrier or to the Carrier, which performed the carriage during which the loss, damage\nshown’ in Carrier's timetables as scheduled stopping places for the route. Carriage to be or delay took place.\n\nperformed hereunder by several successive Carriers is regarded as a single operation.\n\n10.3 Unless a written complaint is made within the time limits specified in 10.1 no action may be\n4. For carriage to which the Montreal Convention does not apply, Carrier's liability limitation for brought against Carrier.\ncargo lost, damaged or delayed shall be 26 SDRs per kilogram unless a greater per kilogram\nmonetary mit ie provided in any applicable Convention or in Carrier's tars or general 10.4 Any rights to damages against Carer shall be extinguished unless an action is brought within\nconditions of carriage. two years from the date of arrival at the DEHVzcxReYEor from the date on which the aircraft ought to\n\nhave artived, or from the date on which tne carnage stopped.\n\n5/5.1 Except when the Carrier has extended credit to the consianee without the written\n\nconsent of the shipper, the shioper guarantees payment of all for the carriage due in = 11. Shipper shall comply with all applicable laws and government regulations of any country to or\n\naccordance with Carrier's tariff, conditions of carriage and relatec reguations, applicable laws = from which the cargo may be carried, including those relating to the packing, carriage or delivery of\n\n(including national laws implementing the Warsaw Convention and the Montreal Convention), the cargo, and shall furnish such information and attach such documents to the air waybill as may\n\ngovernment regulations, orders and requirements. be necessary to comply with such laws and regulations. Carrier is not liable to shipper and shipper\nshall indemnify Carrier for loss or expense due to shipper’s failure to comply with this provision.\n\n5.2 When no part of the consignment is delivered. a claim with respect to such consignment will\n\nbe considered even though transportation thereon are unpaid. 12. No agent. employee or representatve of Cartier has authorty 10 ater, modify or waive any\nprovisions of this contract.\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 6766,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 45503,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "ecba45a839df4b652651515064779001128e23252eae9ec471503e266ee889ec"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 8,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Powex DISTRIBUTION | | House Air _ aybill\nGMBH 8 CO.KG Aldwin INTERNATIONAL GMBH\nLindensrasse 35 Avenida Cental 7\n20095, HAMBURG,\nHH 20539 DE\nTE\nConsignee's Name and Address. Consignee's Account Number Received in Good Order and Condition\nCadence PTE.LTD. aan\na piace) on taatenme)\nRua do Ouro 18\nratta aaa\n539775 SG\nTE\nPa\n‘Agent's IATA Code [Account No.\n‘Airport of Departure (Addr. of First Carrer) and Requested Routing Relerance Number\nTa by by [eres |_Wival [Over] ‘Value for Carriage Valve for Customs\nul x Üsna] | [eunled KL om | nov |\nRipon of sens “Amount of insurance TT Cartier offers Insurance, and such Insurance 1s\nrequested in accordance with the conditions thereof, indicate amount to be\nHandling Information 11.11.2025 16:20 || SPX BY XRY DE/RA/00169-02 BY DE/RA/00095-06\n\"NOT = MRN:\n‘SCI\nGross Rate Class\nEET\nPreces indi. Dimensions or Volume)\nAge ae\n2 567.0/K] a 567.0 As Agreed| |NOVODUR P2H-AT\n-NOT RESTRICTED-\nMarks: HS Codes: 39033000\n| ORDER NO. DIMS 100x120x140 CM x 2\nPART NO. 03153934 | VOL 3.360 M3\nITA 440162 — 82704896\nYad 7 M = 7\nMENG ae\n[Shipper cortifies that the particulars on the face hereof are correct and that insotar as any part of the consignment\n(A [contains dangerous goods, such part is properly by name and is in proper condition for carriage by air according to the\napplicable Dangerous Goods Regulations.\n,\n(et el INTERNATIONAL AS AGENT Upsses\nExecuted on (date) at (pace) of leuing Canter or ts Agent\nCopy 4 - (Delivery Receipt)\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1139,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12341,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "1fe2a51f2f229a265bfe1d25c28377a9a80f29373209c9aa87877da264cd6f57"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 9,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Powex DISTRIBUTION | | House Air _ aybill\nGMBH 8 CO.KG Aldwin INTERNATIONAL GMBH\nLndonsass0 35 Avenida Cental 7\n20095, HAMBURG,\nHH 20539 DE\nTE\nConsignee's Name and Address Consignee’s Account Number\nCadence PTE. LTD.\nRua do Ouro 18\n539775 SG\nTE\nPa\n‘Agent's IATA Code [Account No.\n‘Airport of Departure (Addr. of First Carrer) and Requested Routing Relerance Number\nTa by [EKS MAMA [oie | Value for Carriage ‘Value for Customs\nla a swf] | fee om | nev |\nRipon of sens “Amount of insurance TT Cartier offers Insurance, and such Insurance 1s\nrequested in accordance with the conditions thereof, indicate amount to be\nHandling Information 11.11.2025 16:20 || SPX BY XRY DE/RA/00169-02 BY DE/RA/00095-06\n“NOT “ MRN:\n‘SCI\nRate Class\nS| * fe - =\nPisces {incl. Dimensions or Volume)\nnee ae\n2 567.0|K| a 567.0 As Agreed| [NOVODUR P2H-AT\n-NOT RESTRICTED-\nMarks: HS Codes: 39033000\nORDER NO. DIMS 100x120x140 CM x 2\nPART NO. 03153934 | VOL 3.360 M3\nITA 440162 — 82704896\nX= Prepaid 7 \\_Weight Xo Collect 7\nMENG ae\n[Shipper cortifies that the particulars on the face hereof are correct and that insofar as any part of the consignment\n(A [contains dangerous goods, such part is properly by name and is in proper condition for carriage by air according to the\nt aus Goods Regulations.\nAL DW [INE AS AGENT VA\nf3 EC\nFi\nINTERNATIONAL AS AGENT Ühe\nExecuted on (date) at (place) of Issuing Carrier or its Agent\n\\ Charges at Destination _/7 No Total Collect Charges 7\npa JARED\ni\nCopy 5 - (Extra Copy)\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1131,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 13031,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "fe66bcc53447f57b8efedef62e4111bc27e8d5605ac5b52646990efe88d1d54e"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 10,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Powex DISTRIBUTION | | House Air _ aybill\nGMBH 8 CO.KG Aldwin INTERNATIONAL GMBH\nLndensrasse 35 Avenida Cont?\n20095, HAMBURG,\nHH 20539 DE\nTE\nConsignee's Name and Address Consignee’s Account Number\nCadence PTE. LTD.\nRua do Ouro 18\n539775 SG\nTE\nPa\n‘Agent's IATA Code [Account No.\n‘Airport of Departure (Addr. of First Carrer) and Requested Routing Relerance Number\nTa by [EKS MAMA [oie | Value for Carriage ‘Value for Customs\nla a swf] | fee om | nev |\nRipon of sens “Amount of insurance TT Cartier offers Insurance, and such Insurance 1s\nrequested in accordance with the conditions thereof, indicate amount to be\nHandling Information 11.11.2025 16:20 || SPX BY XRY DE/RA/00169-02 BY DE/RA/00095-06\n“NOT “ MRN:\n‘SCI\nRate Class\nS| * fe - =\nPisces {incl. Dimensions or Volume)\nnee oat\n2 567.0|K| a 567.0 As Agreed| [NOVODUR P2H-AT\n-NOT RESTRICTED-\nMarks: HS Codes: 39033000\nORDER NO. DIMS 100x120x140 CM x 2\nPART NO. 03153934 | VOL 3.360 M3\nITA 440162 — 82704896\nX= Prepaid 7 \\_Weight Xo Collect 7\ni li\n[Shipper cortifies that the particulars on the face hereof are correct and that insofar as any part of the consignment\n(A [contains dangerous goods, such part is properly by name and is in proper condition for carriage by air according to the\nt us Goods Regulations.\nAL DWINE AS AGENT VA\nf3 EC\nA\nINTERNATIONAL AS AGENT Ühe\nExecuted on (date) at (place) of Issuing Carrier or its Agent\n\\ Charges at Destination _/7 No Total Collect Charges 7\nll ieee eel aa\nx\nCopy 6 - (Extra Copy)\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1129,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 13168,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "56e42dfb3e78e91a424fe7c13df75ca084bd25040c6249bf9a414e1a09b5e38e"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 11,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Powex DISTRIBUTION | | House Air _ aybill\nGMBH 8 CO.KG Aldwin INTERNATIONAL GMBH\nLindorsrasse 35 Avenida Cental 7\n20095, HAMBURG,\nHH 20539 DE\nTe\nConsignee's Name and Address. Consignee's Account Number Itis agreed that the aoods herein are accepted in apparent good order and condition (except as\nnoted) for carriage TO THE OF ON THE ALL\nCadence PTE. LTD. GOODS MAY BE BY ANY OTHER MEANS ROAD OR ANY OTHER\nINSTRUCTIONS ARE GIVEN BY THE SHIPPER, AND\nTHAT THE MAYBE VIA INTERMEDIATE\nRua do Ouro 18 WHICH THE DEEMS APPROPRIATE. THE IS DRAWN TO THE\nOF LIABILITY. Shipper may increase such limitation of\nliability by a higher value for carriage and paying a supplemental if required.\n539775 SG\nTE\nPa\n‘Agent's IATA Code [Account No.\n23-4 7534/2015\n‘Airport of Departure (Addr. of First Carrier) and Routing Reterence Number\nterws:rca | |\nTa by [EKS MAMA [oie | Value for Carriage ‘Value for Customs\nlaus) sm fia) | Jewe KIT avo =\nRipon of sens “Amount of insurance TT Cartier offers Insurance, and such Insurance 1s\nrequested in accordance withthe conditions thereof. indicate amount to be\nHandling Information 11.11.2025 16:20 || SPX BY XRY DE/RA/00169-02 BY DE/RA/00095-06 MEN\n“NOT p ;\n‘SCI\nRate Class\nEidi s =\nPreces indi. Dimensions or Volume)\nROP tem No\n2 567.0]k| a 567.0 As Agreed| |NOVODUR P2H-AT\n-NOT RESTRICTED-\nMKS HS Codes: 39033000\nORDER NO. DIMS 100x120x140 CM x 2\nPART NO. 03153934 | VOL 3.360 M3\nTA 440162 — 82704896\nead 7 Vea No tate\nEA ae\n[Shipper cortifies that the particulars on the face hereof are correct and that insotar as any part of the consignment\n(A [contains dangerous goods, such part is properly by name and is in proper condition for carriage by air according to the\njapplicable Dangerous Goods Regulations.\n7)\nINTERNATIONAL AS AGENT (al\nExecuted on (date) at (place) of Issuing Carrier or its Agent\nKraas. Destnaton_ 7 | Toa Colect ranges 7\nell eel cell AUDA\nat\nCopy 7 - (Extra Copy)\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1488,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 16143,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "39e3cf0b6bdad010b8ab52d71e9aeac490d1c6d26c2ce9e2e6bc2a26c60f2595"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "DU-03.pdf",
       "page_number": 12,
-      "text": "Date : 10/28/2025\nOrder no.\nCadence PTE. LTD.\nHigh Street 18\n#08-08, 539775 Singapore\nAttn: Tan\nEmail: clara.lind@cadence.com\nUNIT PRICE TOTAL\nP2H-AT EUR 8.18 EUR 4,499.00\nPolvex (FAR EAST) LTD\n>, 9\n(St 228 2\nKY HE HIE 4\nLNT TRS,\n",
+      "text": "Date : 10/28/2025\nOrder no.\nCadence PTE. LTD.\nHigh Street 18\n#08-08, 539775 Singapore\nAttn: Tan\nEmail: clara.lind@cadence.com\nUNIT PRICE TOTAL\nP2H-AT EUR 8.18 EUR 4,499.00\nPolvex (FAR EAST) LTD\n>, 9\n(30 tun A)\nKY HE HIE es\nLVT ROSI,\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 240627,
-        "ocr_alphanumeric_chars": 165,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 167,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 2539,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "31477892fc15c0a8c4e249597423a5c97a53fde61518f49b4dafbeb91d58b7b7"
+        }
       },
       "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:supporting_document",
-    "review_required": false,
+    "excluded_reason": null,
+    "review_required": true,
     "page_scope": [
       {
         "page_number": 1,
-        "included": false,
-        "reason": "Uncertain page outside an identified payable section."
+        "included": true,
+        "reason": "Explicit invoice page."
       },
       {
         "page_number": 2,
-        "included": false,
-        "reason": "Uncertain page outside an identified payable section."
+        "included": true,
+        "reason": "Uncertain page retained as a possible continuation before the next explicit document boundary."
       },
       {
         "page_number": 3,
         "included": false,
-        "reason": "Uncertain page outside an identified payable section."
+        "reason": "Explicit supporting_document page ends the payable section."
       },
       {
         "page_number": 4,
@@ -308,12 +517,12 @@
       {
         "page_number": 7,
         "included": false,
-        "reason": "Uncertain page outside an identified payable section."
+        "reason": "Explicit receipt page ends the payable section."
       },
       {
         "page_number": 8,
         "included": false,
-        "reason": "Uncertain page outside an identified payable section."
+        "reason": "Explicit receipt page ends the payable section."
       },
       {
         "page_number": 9,
@@ -336,206 +545,990 @@
         "reason": "Uncertain page outside an identified payable section."
       }
     ],
-    "warnings": [],
-    "candidates": [],
-    "unresolved_reasons": [
-      "not_a_confirmed_payable_document:supporting_document"
-    ]
-  },
-  "targeted_reviews": [
-    {
-      "pages": [
-        {
-          "filename": "DU-03.pdf",
-          "page_number": 1,
-          "text": "Blueharbor Logistics & Services\nOriginal\nCTA ee er\nCadence PTE. LTD. invoice 74. Nov 0534\n08-08 18 TAI Due 3 16.Jan.2026\nParnu mnt 18\n539775\nPayment terms: 60 Days Net\nCredit Party Cadence PTE LTD.\n08-08 18 TAI\nParnu mnt 18\n539775\nCustomer No\nTotal Amount Due\nCondition Rate Base Total(USD)\nee ee ee\nNet value 1,040.06\n0% GST on sales 0.00 % 1,040.06 0.00\nAmount Due 1,040.06\nHAWB\nSold to cosence PTE LTD\nPOL: Hamburg Place of Receipt: Hamburg\nPOD: Singapore Place of Delivery: Singapore SHPR: Povex DISTRIBUTION GMBH & CO.KG.\nETD: S2tov-s008 ETA: 16:ov-700 Cadence PTE. LTD.\nof Qty UoM Curr Unit Price ROE Total(USD)\n1 International Freight 567.000 KG USD 1.28 1.00000 725.76\n2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70\n3 Documentation 1.000 EA USD 45.00 1.00000 45.00\nFee\n4 Delivery 567.000 KG USD 0.04 1.00000 22.68\n5 Pick-up 567.000 KG USD 0.18 1.00000 102.06\n6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50\nExport\nReg. No. , GST Reg. No. M2-0029161-1\nPage lof 2\n",
-          "extraction_method": "ocr",
-          "evidence": {
-            "native_alphanumeric_chars": 0,
-            "ocr_attempted": true,
-            "rendered_bytes": 496195,
-            "ocr_alphanumeric_chars": 745,
-            "ocr_modes_attempted": [
-              6
-            ],
-            "ocr_page_segmentation_mode": 6
-          },
-          "error": null
-        },
-        {
-          "filename": "DU-03.pdf",
-          "page_number": 2,
-          "text": "Blueharbor Logistics & Services\na ____0107892268\nItem yy vom xurr Jnit Price KUE lotalusvy\n7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00\n8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00\nImport\n9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00\n10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36\nHandling\n1,040.06\ner\nCondition Rate Base Value Total(USD\nNet value 1,040.06\n0% GST on sales 0.00 % 1,040.06 0.00\nAmount Due 1,040.06\nConversion to SGD for Tax purpose only\nCondition Rate Base Total(SGD)\nValue\n(SED) 2\nNet value 1,350.55\n0% GST on sales 0.00 % 1,350.55 0.00\nTotal Amount Due (SGD) 1,350.55\n* Payment in USD: The And Banking Arcount no:\n+ Payment Ref: By, Payn trans seine Te ; Pte. Ltd\n1 Blueharhor Logistics & Services singapore ear On LOgisues: 6: Services: Singapore te. Ltd.\nLinen nuuıe>>. udra.silva@blueharbor.com ie 2 P\n* This is an elecuvsmuny yormeruwe uscunent and authorised is not required.\nBlueharbor Logistics & Services Singapore Pte. Ltd.\nBrightside Trading Pte. Ltd\nChangi Airfreight Centre\nGartenweg 7\nCargo Agents Building E\n819834 Singapore\nTelephone: Fy 3388, Fax: 3\nReg. No. , GST Reg. No. M2-0029161-1\nPage 2 of 2\n",
-          "extraction_method": "ocr",
-          "evidence": {
-            "native_alphanumeric_chars": 0,
-            "ocr_attempted": true,
-            "rendered_bytes": 607537,
-            "ocr_alphanumeric_chars": 895,
-            "ocr_modes_attempted": [
-              6
-            ],
-            "ocr_page_segmentation_mode": 6
-          },
-          "error": null
-        }
-      ],
-      "classification": {
-        "category": "invoice",
-        "confidence": 0.55,
-        "uncertain": true,
-        "evidence": [
-          "amount due",
-          "gst",
-          "invoice"
-        ],
-        "page_classifications": [
-          {
-            "page_number": 1,
-            "category": "invoice",
-            "confidence": 0.84,
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
             "evidence": [
-              "invoice",
-              "amount due",
-              "gst"
-            ]
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 1,
+                "text": "Blueharbor Logistics & Services\nOriginal\nCTA ee A\nCadence PTE. LTD. invoice 74. Nov 0534\n08-08 18 TAI Due 3 16.Jan.2026\nParmu mnt 18\n539775\nPayment terms: 60 Days Net\nCredit Party Cadence PTE. LTD.\n08-08 18 TAI\nParnu mnt 18\n539775\nCustomer"
+              },
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 2,
+                "text": "Blueharbor Logistics & Services\na ____0107892268\nItem wtry vom -turr Unit Price KUE TOLAILUSU)\n7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00\n8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00\nImport\n9 Carrier Manifest Filing"
+              }
+            ],
+            "alternatives": [],
+            "note": null
           },
-          {
-            "page_number": 2,
-            "category": "uncertain",
-            "confidence": 0.0,
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "USD",
+            "status": "found",
             "evidence": [
-              "amount due",
-              "gst"
-            ]
-          }
-        ],
-        "mixed_document": false,
-        "possible_document_starts": [],
-        "potential_multiple_documents": false,
-        "multiple_document_evidence": []
-      },
-      "extraction": {
-        "excluded_reason": null,
-        "review_required": true,
-        "page_scope": [
-          {
-            "page_number": 1,
-            "included": true,
-            "reason": "No explicit non-payable page boundary was classified."
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 2,
+                "text": "* Payment in USD: The And Banking Account no:"
+              }
+            ],
+            "alternatives": [],
+            "note": null
           },
-          {
-            "page_number": 2,
-            "included": true,
-            "reason": "No explicit non-payable page boundary was classified."
-          }
-        ],
-        "warnings": [
-          "Supplier name was not explicitly labeled; no name was inferred from the header.",
-          "The Phase 2 document classification is uncertain."
-        ],
-        "candidates": [
-          {
-            "fields": {
-              "document_type": {
-                "value": "invoice",
+          "printed_gross_total": {
+            "value": "1040.06",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 1,
+                "text": "Amount Due 1,040.06"
+              },
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 2,
+                "text": "Amount Due 1,040.06"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "0.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-03.pdf",
+                "page_number": 1,
+                "text": "0% GST on sales 0.00 % 1,040.06 0.00"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "International Freight",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-03.pdf",
                     "page_number": 1,
-                    "text": "Blueharbor Logistics & Services\nOriginal\nCTA ee er\nCadence PTE. LTD. invoice 74. Nov 0534\n08-08 18 TAI Due 3 16.Jan.2026\nParnu mnt 18\n539775\nPayment terms: 60 Days Net\nCredit Party Cadence PTE LTD.\n08-08 18 TAI\nParnu mnt 18\n539775\nCustomer"
-                  },
-                  {
-                    "filename": "DU-03.pdf",
-                    "page_number": 2,
-                    "text": "Blueharbor Logistics & Services\na ____0107892268\nItem yy vom xurr Jnit Price KUE lotalusvy\n7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00\n8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00\nImport\n9 Carrier Manifest Filing 1.0"
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "invoice_number": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "invoice_date": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "due_date": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "supplier_name": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "supplier_address": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "supplier_vat_id": {
-                "value": null,
-                "status": "missing",
-                "evidence": [],
-                "alternatives": [],
-                "note": null
-              },
-              "currency": {
-                "value": "USD",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "DU-03.pdf",
-                    "page_number": 2,
-                    "text": "* Payment in USD: The And Banking Arcount no:"
-                  }
-                ],
-                "alternatives": [],
-                "note": null
-              },
-              "printed_gross_total": {
-                "value": "1040.06",
+              "item_type": {
+                "value": "freight",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-03.pdf",
                     "page_number": 1,
-                    "text": "Amount Due 1,040.06"
-                  },
-                  {
-                    "filename": "DU-03.pdf",
-                    "page_number": 2,
-                    "text": "Amount Due 1,040.06"
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
                   }
                 ],
                 "alternatives": [],
                 "note": null
               },
-              "printed_subtotal": {
+              "quantity": {
+                "value": "567.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "KG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "1.28",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "725.76",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Origin Terminal Handling",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
                 "value": null,
                 "status": "missing",
                 "evidence": [],
                 "alternatives": [],
                 "note": null
               },
-              "printed_tax_total": {
+              "quantity": {
+                "value": "567.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "KG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "0.10",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "56.70",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "2. Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Documentation",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "EA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "45.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "45.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Delivery",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "567.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "KG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "0.04",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "22.68",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Pick-up",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "567.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "KG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "0.18",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "102.06",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Customs Deyrwoxoew =",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "EA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "7.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "7.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "6 Customs Deyrwoxoew = - 1.000 EA USD 7.50 1.00000 7.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Origin Documentation",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "EA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "15.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "15.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Customs oeswoxoew —",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "EA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "15.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "15.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "8 Customs oeswoxoew — - 1.000 EA USD 15.00 1.00000 15.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Carrier Manifest Filing",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "EA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "5.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "5.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "venvacxrpve = Terminal",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "567.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "KG",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "0.08",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "45.36",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "10 venvacxrpve = Terminal 567.000 KG USD 0.08 1.00000 45.36"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "GST",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "0% GST on sales 0.00 % 1,040.06 0.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "0",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "0% GST on sales 0.00 % 1,040.06 0.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
                 "value": "0.00",
                 "status": "found",
                 "evidence": [
@@ -546,1039 +1539,183 @@
                   }
                 ],
                 "alternatives": [],
-                "note": "Single printed header tax amount; no tax total label was present."
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "GST",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "Reg. No. , GST Reg. No. M2-0029161-1"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
               },
-              "purchase_order_number": {
+              "rate": {
                 "value": null,
                 "status": "missing",
                 "evidence": [],
                 "alternatives": [],
                 "note": null
               },
-              "lines": [
-                {
-                  "description": {
-                    "value": "International Freight",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "567.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "KG",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "1.28",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "725.76",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Origin Terminal Handling",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "567.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "KG",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "0.10",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "56.70",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "2 Origin Terminal Handling 567.000 KG USD 0.10 1.00000 56.70"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Documentation",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "1.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "EA",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "45.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "45.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "3 Documentation 1.000 EA USD 45.00 1.00000 45.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Delivery",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "567.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "KG",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "0.04",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "22.68",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "4 Delivery 567.000 KG USD 0.04 1.00000 22.68"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Pick-up",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "567.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "KG",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "0.18",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "102.06",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "5 Pick-up 567.000 KG USD 0.18 1.00000 102.06"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Customs beswoxdew",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "1.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "EA",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "7.50",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "7.50",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "6 Customs beswoxdew  - 1.000 EA USD 7.50 1.00000 7.50"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Origin Documentation",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "1.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "EA",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "15.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "15.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "7 Origin Documentation 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Customs bEstwoxmew",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "1.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "EA",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "15.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "15.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "8 Customs bEstwoxmew  - 1.000 EA USD 15.00 1.00000 15.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "Carrier Manifest Filing",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "1.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "EA",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "5.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "5.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "9 Carrier Manifest Filing 1.000 EA USD 5.00 1.00000 5.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                },
-                {
-                  "description": {
-                    "value": "venvacxrpve Terminal",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "item_type": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "quantity": {
-                    "value": "567.000",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit": {
-                    "value": "KG",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "unit_price": {
-                    "value": "0.08",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "price_basis": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": "The table does not state whether prices include tax."
-                  },
-                  "printed_total": {
-                    "value": "45.36",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "10 venvacxrpve Terminal 567.000 KG USD 0.08 1.00000 45.36"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "taxes": []
-                }
-              ],
-              "taxes": [
-                {
-                  "scope": "header",
-                  "kind": "tax",
-                  "name": {
-                    "value": "GST",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "0% GST on sales 0.00 % 1,040.06 0.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "rate": {
-                    "value": "0",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "0% GST on sales 0.00 % 1,040.06 0.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "amount": {
-                    "value": "0.00",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "0% GST on sales 0.00 % 1,040.06 0.00"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  }
-                },
-                {
-                  "scope": "header",
-                  "kind": "tax",
-                  "name": {
-                    "value": "GST",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "Reg. No. , GST Reg. No. M2-0029161-1"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "rate": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "amount": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  }
-                }
-              ],
-              "charges": [
-                {
-                  "kind": "freight",
-                  "description": {
-                    "value": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "amount": {
-                    "value": "725.76",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 1,
-                        "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  }
-                },
-                {
-                  "kind": "freight",
-                  "description": {
-                    "value": "Changi Airfreight Centre",
-                    "status": "found",
-                    "evidence": [
-                      {
-                        "filename": "DU-03.pdf",
-                        "page_number": 2,
-                        "text": "Changi Airfreight Centre"
-                      }
-                    ],
-                    "alternatives": [],
-                    "note": null
-                  },
-                  "amount": {
-                    "value": null,
-                    "status": "missing",
-                    "evidence": [],
-                    "alternatives": [],
-                    "note": null
-                  }
-                }
-              ],
-              "pages": [
-                1,
-                2
-              ],
-              "review_required": true,
-              "warnings": [
-                "Supplier name was not explicitly labeled; no name was inferred from the header.",
-                "The Phase 2 document classification is uncertain."
-              ]
-            },
-            "master_hints": {
-              "buyer": {},
-              "payment_term": {
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76",
                 "status": "found",
-                "payment_term_id": "Net_60",
-                "alias": "60 days",
-                "evidence": ".Jan.2026 Parnu mnt 18 539775 Payment terms: 60 Days Net Credit Party Cadence PTE LTD. 08-08 18 T"
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "725.76",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 1,
+                    "text": "1 International Freight 567.000 KG USD 1.28 1.00000 725.76"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
               }
             },
-            "output_status": "unresolved_not_emitted",
-            "matches": {
-              "supplier": {
-                "code": "",
-                "status": "unmatched",
-                "reason": "No defensible supplier match in master data.",
-                "candidates": []
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Changi Airfreight Centre",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-03.pdf",
+                    "page_number": 2,
+                    "text": "Changi Airfreight Centre"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
               },
-              "po": {
-                "code": "",
-                "status": "insufficient_evidence",
-                "reason": "No explicit PO number was extracted.",
-                "candidates": []
-              },
-              "payment_term": {
-                "code": "Net_60",
-                "status": "matched",
-                "reason": "Exact normalized payment-term alias.",
-                "candidates": []
-              },
-              "buyer": {
-                "company_code": "",
-                "business_unit_code": "",
-                "location_code": ""
-              },
-              "taxes": [
-                {
-                  "code": "SG_000_GST",
-                  "status": "matched",
-                  "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
-                  "candidates": []
-                },
-                {
-                  "code": "",
-                  "status": "unmatched",
-                  "reason": "Tax evidence does not uniquely identify a master code.",
-                  "candidates": []
-                }
-              ]
-            },
-            "reconciliation": {
-              "erp_gross": "725.76",
-              "printed_gross": "1040.06",
-              "difference": "-314.30",
-              "status": "unresolved",
-              "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
             }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "found",
+            "payment_term_id": "Net_60",
+            "alias": "60 days",
+            "evidence": ".Jan.2026 Parmu mnt 18 539775 Payment terms: 60 Days Net Credit Party Cadence PTE. LTD. 08-08 18"
           }
-        ],
-        "unresolved_reasons": [
-          "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
-        ]
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "Net_60",
+            "status": "matched",
+            "reason": "Exact normalized payment-term alias.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "SG_000_GST",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "erp_gross": "725.76",
+          "printed_gross": "1040.06",
+          "difference": "-314.30",
+          "status": "unresolved",
+          "reason": "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
+        }
       }
-    }
-  ]
+    ],
+    "unresolved_reasons": [
+      "Unresolved because a line price is not evidenced as tax-exclusive net price, as required by the schema."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
 }

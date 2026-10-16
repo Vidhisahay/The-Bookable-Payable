@@ -36,14 +36,40 @@
       "extraction_method": "native_text",
       "evidence": {
         "native_alphanumeric_chars": 1145,
-        "ocr_attempted": false
+        "ocr_attempted": false,
+        "table_ocr_attempted": true,
+        "table_ocr": {
+          "ocr_alphanumeric_chars": 897,
+          "ocr_attempts": [
+            {
+              "attempt": 1,
+              "elapsed_ms": 8137,
+              "outcome": "success",
+              "psm_modes": [
+                6
+              ]
+            }
+          ],
+          "ocr_modes_attempted": [
+            6
+          ],
+          "ocr_page_segmentation_mode": 6,
+          "ocr_retry_count": 0,
+          "status": "found",
+          "text": "Page 1 of 1\nOracle America, Inc. INVOICE\n500 Oracle Parkway Federal Tax ID: 94-2805249\nRedwood Shores, CA 94065 INVOICE NUMBER 44273107\nUnited States 18-Jun-2078\nYOUR P.O. NUMBER 1000021496\n30 NET\n18-Jul-2018\nsome |\nBILL TO: PAYMENT INSTRUCTIONS:\nAmeriHealth Caritas Services REFERENCE 44273107 ON YOUR REMITTANCE\nAttention: Accounts Payable\n200 Stevens Drive MAIL CHECKS TO: Oracle America, Inc.\nPhiladelphia, PA 19113 P.O. Box 203448\nUnited States Dallas TX 75320-3448\nWIRE TRANSFERS TO: WELLS FARGO BANK\nABA 121000248\nACCT 4522-020841\nSHIP TO:\nAmerihealth Caritas Health Plan\n200 Stevens Dr\nAmhss 1000- Corp Shared Services\nPhiladelphia, PA 19113\nUnited States\nFOR BILLING QUESTIONS, CALL: (888) 803-7414 OR EMAIL: COLLECTIONS_US @ORACLE.COM\nSettelmeyer, Jacob 14724557 Attention: Accounts Payable Amerihealth Caritas Health Plan\nITEM QTY/ EXTENDED\n1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50\nManaged Cloud Services - Additional Services 18-JUL-2018 :\n17-OCT-2018\nSUBTOTAL TOTAL(USD)\n91,580.50 91,580.50\nCredits/Adjustments\nOutstanding Balance as of 27-Jun-2018 91,580.50\n",
+          "psm": 6,
+          "cache": {
+            "status": "hit",
+            "key": "b7a8d1053de22e03a7f863c549258f4f496108baf4c4ceb9322bddbd5c238336"
+          }
+        }
       },
       "error": null
     }
   ],
   "extraction": {
     "excluded_reason": null,
-    "review_required": true,
+    "review_required": false,
     "page_scope": [
       {
         "page_number": 1,
@@ -51,9 +77,7 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [
-      "Supplier name was not explicitly labeled; no name was inferred from the header."
-    ],
+    "warnings": [],
     "candidates": [
       {
         "fields": {
@@ -77,52 +101,70 @@
               {
                 "filename": "INV-36.pdf",
                 "page_number": 1,
-                "text": "INVOICE NUMBER 44273107"
+                "text": "INVOICE NUMBER 44273107 INVOICE DATE"
               }
             ],
             "alternatives": [],
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
-            "alternatives": [],
-            "note": null
-          },
-          "due_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
-            "alternatives": [],
-            "note": null
-          },
-          "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
-            "alternatives": [],
-            "note": null
-          },
-          "supplier_address": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
-            "alternatives": [],
-            "note": null
-          },
-          "supplier_vat_id": {
-            "value": "94-2805249",
+            "value": "2018-06-18",
             "status": "found",
             "evidence": [
               {
                 "filename": "INV-36.pdf",
                 "page_number": 1,
-                "text": "Federal Tax ID: 94-2805249"
+                "text": "INVOICE DATE 18-Jun-2018"
               }
             ],
             "alternatives": [],
             "note": null
+          },
+          "due_date": {
+            "value": "2018-07-18",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "DUE DATE 18-Jul-2018"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Oracle America, Inc.",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "Oracle America, Inc."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": "500 Oracle Parkway, Redwood Shores, CA 94065, United States",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "500 Oracle Parkway, Redwood Shores, CA 94065, United States"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": "A Federal Tax ID is printed, but it is not labeled as a VAT ID."
           },
           "currency": {
             "value": "USD",
@@ -138,53 +180,175 @@
             "note": null
           },
           "printed_gross_total": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "91580.50",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "TOTAL(USD) 91,580.50"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "printed_subtotal": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "91580.50",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "SUBTOTAL 91,580.50"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "printed_tax_total": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "0.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "TAX 0.00"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
           "purchase_order_number": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "1000021496",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "YOUR P.O. NUMBER 1000021496"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
-          "lines": [],
+          "lines": [
+            {
+              "description": {
+                "value": "Managed Cloud Services - Computer and Administration Services - Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50 Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50 Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "users",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "QTY/ NO. OF USERS"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "91580.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50 Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018"
+                  }
+                ],
+                "alternatives": [],
+                "note": "Equals the printed extended amount because printed quantity is 1."
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "ITEM QTY/ EXTENDED Page 1 of 1\nOracle America, Inc.\nINVOICE\nFederal Tax ID: 94-2805249\nINVOICE NUMBER\n44273107\nINVOICE DATE\n18-Jun-2018\nYOUR P.O. NUMBER\n1000021496\nPAYMENT TERMS\n30 NET\nDUE DATE\n18-Jul-2018\nCUSTOMER REF\n500 Oracle Parkway\nRedwood Shores, CA 94065\nUnited States\nNOT OFD\nSPECIAL INSTRUCTIONS:\n N\n  \nSUBTOTAL\nTAX\nTOTAL(USD)\n91,580.50\n0.00\n91,580.50\nLess Payments\n0.00\nCredits/Adjustments\n0.00\nOutstanding Balance as of 27-Jun-2018\n91,580.50\n \nBILL TO :\nAmeriHealth Caritas Services\nAttention: Accounts Payable \n200 Stevens Drive\nPhiladelphia, PA 19113\nUnited States\nSHIP TO :\nAmerihealth Caritas Health Plan\n200 Stevens Dr\nAmhss 1000- Corp Shared Services\nPhiladelphia, PA  19113\nUnited States\n                                 PAYMENT INSTRUCTIONS:\n   REFERENCE      44273107             ON YOUR REMITTANCE\nMAIL CHECKS TO:\nOracle America, Inc.\nP.O. Box  203448\nDallas TX 75320-3448\nWIRE TRANSFERS TO:\nWELLS FARGO BANK\nABA     121000248\nACCT  4522-020841\nRegular Invoice\nFOR BILLING QUESTIONS, CALL: (888) 803-7414 OR EMAIL: COLLECTIONS_US@ORACLE.COM\nOKS_CONTRACTS001Oracle America, Inc.P.O. Box  203448DallasTX75320-3448\nORACLE SALESPERSON\nORACLE ORDER \nNUMBER\nCUSTOMER CONTACT\nEND USER\nSettelmeyer, Jacob\n14724557\n Attention: Accounts Payable\nAmerihealth Caritas Health Plan\nITEM\nNO.\nDESCRIPTION\nQTY/\nNO.  OF USERS\nTAX\nEXTENDED \nAMOUNT\n1\nManaged Cloud Services - Computer and Administration Services - \nManaged Cloud Services - Additional Services 18-JUL-2018 : \n17-OCT-2018\n11\nN\n91,580.50\n; tax marker N"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "91580.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-36.pdf",
+                    "page_number": 1,
+                    "text": "1 Managed Cloud Services - Computer and Administration Services - 1 N 91,580.50 Managed Cloud Services - Additional Services 18-JUL-2018 : 17-OCT-2018"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
           "taxes": [],
           "charges": [],
           "pages": [
             1
           ],
-          "review_required": true,
-          "warnings": [
-            "Supplier name was not explicitly labeled; no name was inferred from the header."
-          ]
+          "review_required": false,
+          "warnings": []
         },
         "master_hints": {
           "buyer": {},
           "payment_term": {
-            "status": "missing",
-            "matches": [],
-            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+            "status": "found",
+            "payment_term_id": "Net_30",
+            "alias": "net 30",
+            "evidence": "18 YOUR P.O. NUMBER 1000021496 PAYMENT TERMS 30 NET DUE DATE 18-Jul-2018 CUSTOMER REF 500 Oracle"
           }
         },
-        "output_status": "unresolved_not_emitted",
+        "output_status": "emitted_bookable_payable",
+        "bookability": {
+          "status": "passed",
+          "reason": "Required ERP reconciliation passed."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -195,13 +359,13 @@
           "po": {
             "code": "",
             "status": "insufficient_evidence",
-            "reason": "No explicit PO number was extracted.",
+            "reason": "PO cannot be linked to supplier until supplier identity is resolved.",
             "candidates": []
           },
           "payment_term": {
-            "code": "",
-            "status": "insufficient_evidence",
-            "reason": "Candidate model has no explicit payment-term text.",
+            "code": "Net_30",
+            "status": "matched",
+            "reason": "Exact normalized payment-term alias.",
             "candidates": []
           },
           "buyer": {
@@ -212,15 +376,28 @@
           "taxes": []
         },
         "reconciliation": {
-          "status": "unresolved",
-          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
-          "erp_gross": "",
-          "printed_gross": ""
+          "erp_gross": "91580.50",
+          "printed_gross": "91580.50",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
         }
       }
     ],
-    "unresolved_reasons": [
-      "Printed gross is missing, ambiguous, conflicting, or unreadable."
-    ]
+    "unresolved_reasons": []
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

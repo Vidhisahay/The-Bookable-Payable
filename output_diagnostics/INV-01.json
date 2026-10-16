@@ -28,24 +28,38 @@
     {
       "filename": "INV-01.pdf",
       "page_number": 1,
-      "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\n‚Account Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen unseres gemeinsamen Projektes \"Unterstützung Standortakquise NORTHWetde-/Abstellstationen\"\nerlauben wir uns folgende Rechnung zu stellen.\nPos Beschreibung Einzelpreis Menge Gesamtpreis\n1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €\n2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €\nLiefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme 438,00 €\nzzgl. 0 % MwSt 0,00€\nEndbetrag 438,00 €\nBitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der aufgeführten Bankverbindungen.\nVat ID: EE398766194\nReverse Charge\nWir bedanken uns für Ihr Vertrauen und freuen uns auf eine weiterhin erfolgreiche Zusammenarbeit.\nE_Danhniinn Annahan:\n: Rechnung\neisen per Code:\n2quem Code mit der Banking-App scannen.\n",
+      "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\nAccount Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen unseres gemeinsamen Projektes \"Unterstützung Standortakquise NORTHWetde-/Abstellstationen\"\nerlauben wir uns folgende Rechnung zu stellen.\nPos Beschreibung Einzelpreis © Menge Gesamtpreis\n1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €\n2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €\nLiefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme 438,00 €\nzzgl. 0% MwSt 0,00 €\nEndbetrag 438,00 €\nBitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der autgeführten Bankverbindungen.\nVat ID: EE398766194\nReverse Charge\nWir bedanken uns fir Ihr Vertrauen und freuen uns auf eine weiterhin erfolgreiche Zusammenarbeit.\nE Danhniina Anaahan:\n: Rechnung\neisen per Code:\n2quem Code mit der Banking-App scannen.\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 346126,
+        "ocr_attempted": false,
         "ocr_alphanumeric_chars": 820,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6764,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "403609f7a3e3627f93c1977fe07f2e338ed39a66255b6aa3b20cdd822c60cb5e"
+        }
       },
       "error": null
     }
   ],
   "extraction": {
     "excluded_reason": null,
-    "review_required": true,
+    "review_required": false,
     "page_scope": [
       {
         "page_number": 1,
@@ -53,9 +67,7 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [
-      "Supplier name was not explicitly labeled; no name was inferred from the header."
-    ],
+    "warnings": [],
     "candidates": [
       {
         "fields": {
@@ -66,7 +78,7 @@
               {
                 "filename": "INV-01.pdf",
                 "page_number": 1,
-                "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\n‚Account Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen u"
+                "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\nAccount Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen un"
               }
             ],
             "alternatives": [],
@@ -105,16 +117,22 @@
               {
                 "filename": "INV-01.pdf",
                 "page_number": 1,
-                "text": "Bitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der aufgeführten Bankverbindungen."
+                "text": "Bitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der autgeführten Bankverbindungen."
               }
             ],
             "alternatives": [],
             "note": null
           },
           "supplier_name": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "Northwind Operations OU",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -160,7 +178,7 @@
               {
                 "filename": "INV-01.pdf",
                 "page_number": 1,
-                "text": "zzgl. 0 % MwSt 0,00€"
+                "text": "zzgl. 0% MwSt 0,00 €"
               },
               {
                 "filename": "INV-01.pdf",
@@ -203,7 +221,7 @@
               {
                 "filename": "INV-01.pdf",
                 "page_number": 1,
-                "text": "zzgl. 0 % MwSt 0,00€"
+                "text": "zzgl. 0% MwSt 0,00 €"
               }
             ],
             "alternatives": [],
@@ -290,7 +308,7 @@
                   {
                     "filename": "INV-01.pdf",
                     "page_number": 1,
-                    "text": "zzgl. 0 % MwSt"
+                    "text": "zzgl. 0% MwSt"
                   }
                 ],
                 "alternatives": [],
@@ -384,7 +402,7 @@
                   {
                     "filename": "INV-01.pdf",
                     "page_number": 1,
-                    "text": "zzgl. 0 % MwSt"
+                    "text": "zzgl. 0% MwSt"
                   }
                 ],
                 "alternatives": [],
@@ -417,7 +435,7 @@
                   {
                     "filename": "INV-01.pdf",
                     "page_number": 1,
-                    "text": "zzgl. 0 % MwSt 0,00€"
+                    "text": "zzgl. 0% MwSt 0,00 €"
                   }
                 ],
                 "alternatives": [],
@@ -430,7 +448,7 @@
                   {
                     "filename": "INV-01.pdf",
                     "page_number": 1,
-                    "text": "zzgl. 0 % MwSt 0,00€"
+                    "text": "zzgl. 0% MwSt 0,00 €"
                   }
                 ],
                 "alternatives": [],
@@ -443,7 +461,7 @@
                   {
                     "filename": "INV-01.pdf",
                     "page_number": 1,
-                    "text": "zzgl. 0 % MwSt 0,00€"
+                    "text": "zzgl. 0% MwSt 0,00 €"
                   }
                 ],
                 "alternatives": [],
@@ -455,10 +473,8 @@
           "pages": [
             1
           ],
-          "review_required": true,
-          "warnings": [
-            "Supplier name was not explicitly labeled; no name was inferred from the header."
-          ]
+          "review_required": false,
+          "warnings": []
         },
         "master_hints": {
           "buyer": {},
@@ -469,6 +485,10 @@
           }
         },
         "output_status": "emitted_bookable_payable",
+        "bookability": {
+          "status": "passed",
+          "reason": "Required ERP reconciliation passed."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -520,5 +540,19 @@
       }
     ],
     "unresolved_reasons": []
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

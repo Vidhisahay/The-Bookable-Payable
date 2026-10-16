@@ -1,22 +1,28 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
-    "uncertain": true,
-    "evidence": [],
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": false,
+    "evidence": [
+      "arve"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
       },
       {
         "page_number": 2,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
       }
     ],
     "mixed_document": false,
@@ -28,35 +34,69 @@
     {
       "filename": "INV-02.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Northwind Technology OU Meridian Logistics OÜ\nMarket Road 15 Avenida Central 22\nHarjumaa 50106 Tartu linn\n10134 Tallinn Estonia\nEstonia\ndavid jind@northwind.eu tomas. vidal@ashtord-partners.ee\nTelefon Oakhaven Bank: EE682389839721862212\n+59444464164\nKuupäev 18-03-2026\nProjektijuht\nMaksetähtaeg 01-04-2026\nElena Moreau ~ lena.keller@larkspur-technologies.ce\nTellimus #2287\nVäljastamine = 13-03-2026 12:00\nTagastamine 16-03-2026 12:00\nArve #9972-907\nHind Kokku käibemaksuta\n9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00\n1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00\n2x Pioneer CDJ-3000 24 tundi €45,00 €90,00\n1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00\n1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00\nKaasas must seelik\n1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60\n2x Aktiivkõlar NOVA Veritas 12 24 tundi €20,00\n2x Aktiivsubwoofer Nova Veritas 18S 24 tundi €28,00\n4x Toitejuhe 24 tundi €0,10\n2x Kõlari statiiv K&M ring lock vahepost (pikk) 24 tundi €3,60\n2x XLR kaabel 10m 24 tundi €0,00\n2x XLR kaabel 3m 24 tundi €0,00\n3x Pikendusjuhe 5m 24 tundi €0,00\n1x Linnasisene transport Fikseeritud €50,00 €50,00\n2x Tehnik 3 tundi €84,00 €168,00\nVahesumma €538,60\nAllahindlus 15 % €48,09\nSumma ilma käibemaksuta €490,51\nKäibemaks 24% €117,72\nSumma koos käibemaksuga 608,23\nTasumata €608,23\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1027,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 9556,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "57b2b474f0b4aadeb119b7e87db624e699c7df07d332773388c3d2c981a344d7"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     },
     {
       "filename": "INV-02.pdf",
       "page_number": 2,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "Makse selgitusse lisada arve number.\nTäname Teid õigeaegselt tasutud arve eest!\nMeridian Logistics OÜ\n\nHigh Street 4 , Tartumaa 50703\n\nOakhaven Bank IBAN: EE682389839721862212\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 146,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 1587,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "781b167a0c039755516eee2e670c0ebb0b5229778c4e3a3400e50898222dcc8a"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
-    "review_required": true,
+    "excluded_reason": null,
+    "review_required": false,
     "page_scope": [
       {
         "page_number": 1,
@@ -70,9 +110,1095 @@
       }
     ],
     "warnings": [],
-    "candidates": [],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Northwind Technology OU Meridian Logistics OÜ\nMarket Road 15 Avenida Central 22\nHarjumaa 50106 Tartu linn\n10134 Tallinn Estonia\nEstonia\ndavid jind@northwind.eu tomas. vidal@ashtord-partners.ee\nTelefon Oakhaven Bank: EE682389839721862212\n+59"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 2,
+                "text": "Makse selgitusse lisada arve number.\nTäname Teid õigeaegselt tasutud arve eest!\nMeridian Logistics OÜ\n\nHigh Street 4 , Tartumaa 50703\n\nOakhaven Bank IBAN: EE682389839721862212"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "9972-907",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Arve #9972-907"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": "2026-03-18",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Kuupäev 18-03-2026"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": "2026-04-01",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg 01-04-2026"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Northwind Technology OU",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Northwind Technology OU"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": "High Street 4 , Tartumaa 50703",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 2,
+                "text": "High Street 4 , Tartumaa 50703"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x Aktiivkõlar NOVA Veritas 12 24 tundi €20,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x Aktiivsubwoofer Nova Veritas 18S 24 tundi €28,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "4x Toitejuhe 24 tundi €0,10"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x Kõlari statiiv K&M ring lock vahepost (pikk) 24 tundi €3,60"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x XLR kaabel 10m 24 tundi €0,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x XLR kaabel 3m 24 tundi €0,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "3x Pikendusjuhe 5m 24 tundi €0,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "2x Tehnik 3 tundi €84,00 €168,00"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Vahesumma €538,60"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Allahindlus 15 % €48,09"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Summa ilma käibemaksuta €490,51"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Käibemaks 24% €117,72"
+              },
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Tasumata €608,23"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "608.23",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Summa koos käibemaksuga 608,23"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": "538.60",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Vahesumma €538,60"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "117.72",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-02.pdf",
+                "page_number": 1,
+                "text": "Käibemaks 24% €117,72"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "Led Bar FOS Luminus BAR",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "goods",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "9",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "6.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "54.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "9x Led Bar FOS Luminus BAR 24 tundi €6,00 €54,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Meremiin ADJ Starburst",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "10.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "10.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Meremiin ADJ Starburst 24 tundi €10,00 €10,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Pioneer CDJ-3000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "goods",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "45.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "90.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Pioneer DJM-900 NXS2 mixer",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "goods",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "45.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "45.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Pioneer DJM-900 NXS2 mixer 24 tundi €45,00 €45,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "DJ laud 2m x0,5m h=1m",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "18.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "18.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x DJ laud 2m x0,5m h=1m 1 päev €18,00 €18,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Aktiivkõlar Veritas 8000 komplekt",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "103.60",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "103.60",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Aktiivkõlar Veritas 8000 komplekt 24 tundi €103,60 €103,60"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Linnasisene transport",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "freight",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "1",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "50.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "50.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Tehnik",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Tehnik 3 tundi €84,00 €168,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Tehnik 3 tundi €84,00 €168,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Tehnik 3 tundi €84,00 €168,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "84.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Tehnik 3 tundi €84,00 €168,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Hind Kokku käibemaksuta"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "168.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "2x Tehnik 3 tundi €84,00 €168,00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Käibemaks",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Käibemaks 24% €117,72"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "24",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Käibemaks 24% €117,72"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "117.72",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Käibemaks 24% €117,72"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "discount",
+              "description": {
+                "value": "Allahindlus 15 % €48,09",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Allahindlus 15 % €48,09"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "48.09",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-02.pdf",
+                    "page_number": 1,
+                    "text": "Allahindlus 15 % €48,09"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": false,
+          "warnings": []
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Line 2 item type is not established as a permitted schema value."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "EST_240_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "erp_gross": "608.23",
+          "printed_gross": "608.23",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Line 2 item type is not established as a permitted schema value."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

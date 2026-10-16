@@ -30,6 +30,8 @@ _CONFIRMED_NONPAYABLE_CATEGORIES = {
     "payment_reminder", "delivery_note", "statement", "purchase_order", "receipt",
     "remittance", "quotation", "contract", "timesheet", "supporting_document", "debit_note",
 }
+_SCHEMA_ITEM_TYPES = {"GOODS", "SERVICE", "FREIGHT", "TAX"}
+_SCHEMA_TAX_TYPES = {"VAT", "GST", "WHT", "SST", "IVA", "NHIL", "GETFL", "COVID", "CST", "MOMS", "HST"}
 
 
 def _json_value(value: Any) -> Any:
@@ -65,6 +67,20 @@ def _candidate_diagnostics(candidate: PayableCandidate) -> dict[str, Any]:
 
 def _tax_diagnostic(tax: Any) -> dict[str, Any]:
     return {"scope": tax.scope, "kind": tax.kind, "name": _field(tax.name), "rate": _field(tax.rate), "amount": _field(tax.amount)}
+
+
+def _schema_blocker(payable: dict[str, Any]) -> str | None:
+    """Reject a draft whose required enum values cannot be represented by the schema."""
+    for index, line in enumerate(payable.get("line_items", []), start=1):
+        if line.get("item_type") not in _SCHEMA_ITEM_TYPES:
+            return f"Line {index} item type is not established as a permitted schema value."
+        for tax in line.get("taxes", []):
+            if tax.get("tax_type") not in _SCHEMA_TAX_TYPES:
+                return f"Line {index} has a tax type outside the permitted schema values."
+    for index, tax in enumerate(payable.get("taxes", []), start=1):
+        if tax.get("tax_type") not in _SCHEMA_TAX_TYPES:
+            return f"Header tax {index} has a type outside the permitted schema values."
+    return None
 
 
 def _explicit_buyer_hints(document: DocumentRecord, masters: MasterData) -> tuple[dict[str, str], dict[str, Any]]:
@@ -108,6 +124,8 @@ def _explicit_payment_term(document: DocumentRecord, masters: MasterData) -> tup
     for term in masters.payment_terms:
         for alias in term.get("text_aliases", []):
             match = re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", text, re.I)
+            if not match and (reverse := re.fullmatch(r"net\s+(\d+)", alias, re.I)):
+                match = re.search(r"(?<!\w)" + re.escape(reverse.group(1)) + r"\s+net(?!\w)", text, re.I)
             if match:
                 hits.append((term["payment_term_id"], alias, match.start()))
     identities = {term_id for term_id, _alias, _pos in hits}
@@ -180,13 +198,32 @@ class AutodraftPipeline:
             term_text, term_evidence = _explicit_payment_term(scoped_document, self.masters)
             payable, diagnostic = generate_autodraft(candidate, self.masters, buyer_hints=hints, payment_term_text=term_text)
             reconciliation = diagnostic.get("reconciliation", {})
-            emitted = reconciliation.get("status") == "passed"
+            # The schema carries both supplier name and VAT ID, and permits a
+            # blank supplier code when no master row matches. A source-printed
+            # VAT ID is explicit supplier identity evidence even when the PDF
+            # omits the legal name; never infer a name from an email domain.
+            supplier_identity_supported = (
+                candidate.supplier_name.status == "found"
+                or candidate.supplier_vat_id.status == "found"
+            )
+            schema_blocker = _schema_blocker(payable)
+            emitted = reconciliation.get("status") == "passed" and supplier_identity_supported and schema_blocker is None
+            if not supplier_identity_supported:
+                bookability = {"status": "unresolved",
+                               "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."}
+            elif schema_blocker:
+                bookability = {"status": "unresolved", "reason": schema_blocker}
+            else:
+                bookability = {"status": "passed" if emitted else "unresolved",
+                               "reason": "Required ERP reconciliation passed." if emitted else reconciliation.get("reason", "ERP reconciliation is incomplete.")}
             if emitted:
                 accounting_payables.append(payable)
             else:
-                unresolved_reasons.append(reconciliation.get("reason", "The payable evidence is incomplete or ambiguous."))
+                unresolved_reasons.append(bookability["reason"] if reconciliation.get("status") == "passed"
+                                          else reconciliation.get("reason", "The payable evidence is incomplete or ambiguous."))
             candidates.append({"fields": _candidate_diagnostics(candidate), "master_hints": {"buyer": buyer_evidence, "payment_term": term_evidence},
                                "output_status": "emitted_bookable_payable" if emitted else "unresolved_not_emitted",
+                               "bookability": bookability,
                                **diagnostic})
 
         declined: list[dict[str, str]] = []

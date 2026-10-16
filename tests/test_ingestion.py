@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import io
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -97,6 +98,19 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(result.pages[0].extraction_method, "ocr")
         self.assertEqual(result.pages[0].page_number, 1)
         self.assertEqual(result.classification.category, "credit_memo")
+
+    def test_scanned_activity_table_gets_bounded_supplemental_table_ocr(self):
+        table = """Supplier Example Ltd
+ACTIVITY TAX atv RATE AMOUNT
+Stock Management fee Std 1 5,000.00 5,000.00
+Subtotal 5,000.00
+"""
+        ocr = FakeOCR(table)
+        result = self.process([FakePage("")], ocr)
+        evidence = result.pages[0].evidence["activity_table_ocr"]
+        self.assertEqual(evidence["status"], "found")
+        self.assertIn("Stock Management fee Std 1", evidence["text"])
+        self.assertEqual(ocr.calls, 2)
 
     def test_sparse_ocr_retries_page_segmentation_and_keeps_best_result(self):
         ocr = FakeOCR(responses={6: "", 11: "", 3: "No boxes Net Weight Gross Weight UOM Length Width Height Volume"})
@@ -199,6 +213,18 @@ class IngestionTests(unittest.TestCase):
                 category = classify_pages([PageRecord("test.pdf", 1, text, "fixture")]).category
                 self.assertEqual(category, expected)
 
+    def test_estonian_credit_memo_title_overrides_generic_invoice_wording(self):
+        text = (
+            "Arve kokku -400,00 EUR\n"
+            "Summa km-ta 22% -327,87\n"
+            "KM 22% -72,13\n"
+            "Kreeditarve arvele nr. 6265."
+        )
+        classification = classify_pages([PageRecord("DU-11.pdf", 1, text, "ocr")])
+        self.assertEqual(classification.category, "credit_memo")
+        self.assertEqual(classification.evidence, ["kreeditarve"])
+        self.assertFalse(classification.uncertain)
+
     def test_tesseract_preflight_checks_each_requested_model_and_reports_path(self):
         from types import SimpleNamespace
 
@@ -224,6 +250,22 @@ class IngestionTests(unittest.TestCase):
             text = TesseractOCR().recognize(b"png", language="eng")
         self.assertEqual(text, "Fatura de emissão")
         self.assertTrue(all(call.kwargs.get("encoding") == "utf-8" for call in run.call_args_list))
+
+    def test_tesseract_timeout_cleans_temporary_image_directory(self):
+        from pathlib import Path
+        from types import SimpleNamespace
+
+        listing = 'List of available languages in "C:/tessdata/" (2):\neng\nosd\n'
+        responses = [
+            SimpleNamespace(returncode=0, stdout=listing, stderr=""),
+            subprocess.TimeoutExpired("tesseract", 1),
+        ]
+        with patch("subprocess.run", side_effect=responses) as run:
+            with self.assertRaises(subprocess.TimeoutExpired):
+                TesseractOCR().recognize(b"png", language="eng", timeout=1)
+        image_path = Path(run.call_args_list[1].args[0][1])
+        self.assertFalse(image_path.exists())
+        self.assertFalse(image_path.parent.exists())
 
     @unittest.skipIf(pymupdf is None, "PyMuPDF is required for real-PDF fixtures")
     def test_real_native_empty_scanned_and_multi_page_pdf_fixtures(self):

@@ -1,16 +1,24 @@
 {
   "document_error": null,
   "classification": {
-    "category": "uncertain",
-    "confidence": 0.0,
-    "uncertain": true,
-    "evidence": [],
+    "category": "invoice",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "arve",
+      "invoice",
+      "vat"
+    ],
     "page_classifications": [
       {
         "page_number": 1,
-        "category": "uncertain",
-        "confidence": 0.0,
-        "evidence": []
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "arve",
+          "vat"
+        ]
       }
     ],
     "mixed_document": false,
@@ -22,20 +30,37 @@
     {
       "filename": "INV-11.pdf",
       "page_number": 1,
-      "text": "",
-      "extraction_method": "ocr_timeout",
+      "text": "ARVE INVOICE\nE lüüja - Saatja Seller - Consignor\nEM Northwind Operations OU S?0 Jo?o da Talh Rony Date: Aan ROE NGL\n523 Parnu mnt 10\nEse 07.04.26 18109293\nEE 2695671 S?0 Jo?o da Talha üli.\nrt PORTUGAL\nEek g Arve maksja Payer of invoice Ref. EE398766194\n2222 | Northwind OPERATIONS OÜ 2505212\nEEL EE Lindenstrasse 15\n3353\n3225 | 10134 TALLINN\n< FF 2 EESTI Meridian Media\n23 Ea Vastuvõtja Consignee Gartenweg 12\nFe 3 FI N 7 A a +(052) 3729 958\nEEEL lorthwind Operations OU Dos Hermanas E-M — lena.tammOblackpine-media.ee\näššs | Parnumnt43 WWW https:/cloverdale-mobility.ee\n2330 - “e Re — 64670685\n2233 S?0 Jo?0 da Talha\nai 32 Saatmise kuupäev Dispatched on\nESE 01.04.26\nEG E 2 Tarneklausel Term of delivery\nBegs S?0 Jo?0 da Talha\n3 sua Umberiaadimise koht Sihtpunkt Destination\nEEEGI Dos Hermanas EXW S?0 Jo?0 da Talha\n23 34 Markeerinaud. kohtade arv ia kauba nimetus. Marks and Nos. No of Pieces and Nature of Goods\nEEEE 3 CIN spares\nkg REFNR.FJ19363| STK-PT001-26-000084\nEE06 3132 2643 8105 Bia Xrutokaa Arvestuslik kaal\night Volume Chargeable weight\n64,7 0,144 65\nLisaandmed Additional information Selgitused Explanations KM VAT\n408 AGREED PICKUP FEE 24,0 % 5,00\n551 TARNEKULUD 24,0 % 53,40\n2 805 AGREED DELIVERY FEE 24,0 % 5,00\nZe * | 920 BAF 6,93% (16.03-29.03) 24,0 % 3,70\nHalagas KM 24,0 % 67,10 16,11\nEEE\n585\nÄsia\n2283\n2583\nayy\nge Sz\n£2098\nBelle\ngees\nHEEP\n2338 | MAKSETÄHTAEG\nFEE DUE DATE 28.04.26\n83283 [ VIS vepare x 0*1%/ PÄEVAS\ni š E š EUR 83,21\nSs ees Eksped Jonas Meyer — (alex.haasObrightside-mobility.ee\nEI EEG ž Tel. :+4033982 8055 (PRETENSIOONID PALUME ESITADA 10 PÄEVA JOOKSUL)\nHE\n22538 | saaja Bene Meridian Media\n<£=:£ | Pank Bank Oakhaven Bank PankB —_ Redwater BEeknimäe 2, Tallinn\nSWIF SZWGVJOV SWIF USQNDC2G\nIBAN: EE06 3132 2643 8105 8219 Xrutokaa IBAN: EE05 9834 1202 5448 4875\n",
+      "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1385,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 16889,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
-        ]
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "cb29279ea1d3ba9c919baf2dbc3ad095355d38da720e41fbcd8fa87c07dd43c1"
+        }
       },
-      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+      "error": null
     }
   ],
   "extraction": {
-    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "excluded_reason": null,
     "review_required": true,
     "page_scope": [
       {
@@ -44,10 +69,332 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [],
-    "candidates": [],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "ARVE INVOICE\nE lüüja - Saatja Seller - Consignor\nEM Northwind Operations OU S?0 Jo?o da Talh Rony Date: Aan ROE NGL\n523 Parnu mnt 10\nEse 07.04.26 18109293\nEE 2695671 S?0 Jo?o da Talha üli.\nrt PORTUGAL\nEek g Arve maksja Payer of invoice Ref."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Consignor",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "E lüüja - Saatja Seller - Consignor"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "£2098"
+              },
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "i š E š EUR 83,21"
+              },
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "<£=:£ | Pank Bank Oakhaven Bank PankB —_ Redwater BEeknimäe 2, Tallinn"
+              }
+            ],
+            "alternatives": [
+              "GBP",
+              "EUR"
+            ],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "16.11",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-11.pdf",
+                "page_number": 1,
+                "text": "Halagas KM 24,0 % 67,10 16,11"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-11.pdf",
+                    "page_number": 1,
+                    "text": "Lisaandmed Additional information Selgitused Explanations KM VAT"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-11.pdf",
+                    "page_number": 1,
+                    "text": "Halagas KM 24,0 % 67,10 16,11"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "24.0",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-11.pdf",
+                    "page_number": 1,
+                    "text": "Halagas KM 24,0 % 67,10 16,11"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "16.11",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-11.pdf",
+                    "page_number": 1,
+                    "text": "Halagas KM 24,0 % 67,10 16,11"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "withholding",
+              "name": {
+                "value": "RETEN",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-11.pdf",
+                    "page_number": 1,
+                    "text": "EI EEG ž Tel. :+4033982 8055 (PRETENSIOONID PALUME ESITADA 10 PÄEVA JOOKSUL)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 1 has a type outside the permitted schema values."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "EST_240_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
     "unresolved_reasons": [
-      "not_a_confirmed_payable_document:uncertain"
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }

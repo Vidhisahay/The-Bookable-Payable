@@ -6,6 +6,8 @@ from decimal import Decimal
 from ingestion.models import DocumentClassification, DocumentRecord, PageRecord
 from ingestion.payables import extract_payables
 from ingestion.payables.numbers import parse_localized_decimal
+from ingestion.autodraft import MasterData, generate_autodraft
+from erp import erp_book
 
 
 class PayableExtractionTests(unittest.TestCase):
@@ -101,6 +103,169 @@ Gross total EUR 30.00"""
         self.assertEqual(candidate.supplier_address.value, "10 Main Street, Dublin")
         self.assertEqual(candidate.supplier_vat_id.value, "IE1234567A")
         self.assertEqual(candidate.purchase_order_number.value, "PO-7788")
+
+    def test_party_role_conflict_does_not_promote_first_legal_name(self):
+        text = """Tax Invoice
+Invoice Date: 2026-05-01  Silverbrook Media Limited
+Northwind Services UK Ltd  Invoice Number: INV-1587
+Bill To: Northwind Services UK Ltd
+VAT Number: GB123456789
+Description Quantity Unit Price VAT Amount GBP
+Management Service June 1.00 100.00 20% 100.00
+Subtotal 100.00
+Total VAT 20% 20.00
+Invoice Total GBP 120.00"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        # The explicit buyer block contradicts a naive "first legal name" rule;
+        # without a role label or reliable VAT linkage, identity remains blank.
+        self.assertEqual(candidate.supplier_name.status, "missing")
+
+    def test_labelled_column_table_extracts_rows_and_preserves_line_tax_scope(self):
+        text = """Invoice Number: TEST-744
+Invoice Date: 2026-05-01
+Supplier: Example Services Ltd
+Currency: EUR
+Description Quantity Net Unit Price VAT Amount EUR
+Consulting Service 1.00 10.00 10% 10.00
+Support Service 2.00 10.00 10% 20.00
+Subtotal EUR 30.00
+Total VAT 10% EUR 3.00
+Invoice Total EUR 33.00"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(len(candidate.lines), 2)
+        self.assertEqual([line.description.value for line in candidate.lines],
+                         ["Consulting Service", "Support Service"])
+        self.assertEqual([line.quantity.value for line in candidate.lines],
+                         [Decimal("1.00"), Decimal("2.00")])
+        self.assertEqual([line.unit_price.value for line in candidate.lines],
+                         [Decimal("10.00"), Decimal("10.00")])
+        self.assertTrue(all(line.price_basis.value == "net" for line in candidate.lines))
+        self.assertTrue(all(len(line.taxes) == 1 and line.taxes[0].scope == "line"
+                            for line in candidate.lines))
+        payable, diag = generate_autodraft(candidate, MasterData())
+        self.assertEqual(erp_book(payable)["will_book_gross"], 33.0)
+        self.assertEqual(diag["reconciliation"]["status"], "passed")
+
+    def test_column_rows_are_invariant_to_row_order_and_spacing(self):
+        rows = ["Consulting Service 1.00 10.00 10% 10.00",
+                "Support Service 2.00 10.00 10% 20.00"]
+        def extract_with(order):
+            text = "\n".join([
+                "Invoice Number: TEST-889", "Invoice Date: 2026-05-01",
+                "Supplier: Example Services Ltd", "Currency: EUR",
+                "Description Quantity Net Unit Price VAT Amount EUR", *order,
+                "Subtotal EUR 30.00", "Total VAT 10% EUR 3.00", "Invoice Total EUR 33.00",
+            ])
+            return extract_payables(self.document(text)).candidates[0]
+        normal = extract_with(rows)
+        changed = extract_with(["   " + rows[1] + "   ", rows[0]])
+        normalize = lambda c: sorted((str(x.description.value), str(x.quantity.value),
+                                      str(x.unit_price.value), str(x.printed_total.value)) for x in c.lines)
+        self.assertEqual(normalize(normal), normalize(changed))
+        for candidate in (normal, changed):
+            payable, diag = generate_autodraft(candidate, MasterData())
+            self.assertEqual(erp_book(payable)["will_book_gross"], 33.0)
+            self.assertEqual(diag["reconciliation"]["status"], "passed")
+
+    def test_label_neighbor_fields_and_varied_synthetic_invoices(self):
+        cases = [
+            ("EUR", "Example Consulting Ltd", "AC-410", "10.00", "20.00", "10", "33.00"),
+            ("GBP", "Different Supplier PLC", "BILL-88", "100.00", "50.00", "5", "157.50"),
+        ]
+        for currency, supplier, invoice, first, second, rate, expected in cases:
+            with self.subTest(currency=currency, supplier=supplier, invoice=invoice):
+                subtotal = Decimal(first) + Decimal(second)
+                tax = (subtotal * Decimal(rate) / Decimal("100")).quantize(Decimal("0.01"))
+                gross = subtotal + tax
+                text = f"""Invoice Number Parnu mnt 117
+Rua do Ouro 175 {invoice} Parnu mnt 26
+Invoice Date {supplier}
+TAX INVOICE 01 May 2026 Attention Finance
+Due Date: 31 May 2026
+Supplier Name: {supplier}
+Currency: {currency}
+Description Quantity Net Unit Price VAT Amount {currency}
+Consulting Service 1.00 {first} {rate}% {first}
+Support Service 1.00 {second} {rate}% {second}
+Subtotal {currency} {subtotal:.2f}
+Total VAT {rate}% {currency} {tax:.2f}
+Invoice Total {currency} {gross:.2f}"""
+                candidate = extract_payables(self.document(text)).candidates[0]
+                self.assertEqual(candidate.invoice_number.value, invoice)
+                self.assertEqual(candidate.invoice_date.value.isoformat(), "2026-05-01")
+                self.assertEqual(candidate.supplier_name.value, supplier)
+                self.assertEqual(candidate.currency.value, currency)
+                self.assertEqual(len(candidate.lines), 2)
+                payable, diagnostics = generate_autodraft(candidate, MasterData())
+                self.assertEqual(erp_book(payable)["will_book_gross"], float(expected))
+                self.assertEqual(diagnostics["reconciliation"]["status"], "passed")
+
+    def test_amount_only_table_does_not_invent_quantity_or_unit_price(self):
+        text = """Invoice Number: TEST-991
+Invoice Date: 2026-05-01
+Supplier: Example Ltd
+Description Amount EUR
+One-time platform access 125.00
+Invoice Total EUR 125.00"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(len(candidate.lines), 1)
+        line = candidate.lines[0]
+        self.assertEqual(line.printed_total.value, Decimal("125.00"))
+        self.assertEqual(line.quantity.status, "missing")
+        self.assertEqual(line.unit_price.status, "missing")
+
+    def test_supplier_name_and_address_from_unique_bank_remittance_block(self):
+        text = """Invoice number INV-BANK
+Invoice date: 2026-03-01
+Description Quantity Unit price excl VAT Total
+1 service 1 EA 100.00 100.00 EUR
+Grand total EUR 100.00
+Meridian Logistics OÜ
+High Street 4, Tartumaa 50703
+Oakhaven Bank IBAN: EE682389839721862212"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.supplier_name.value, "Meridian Logistics OÜ")
+        self.assertEqual(candidate.supplier_address.value, "High Street 4, Tartumaa 50703")
+        self.assertEqual(candidate.supplier_name.status, "found")
+        self.assertEqual(candidate.supplier_name.evidence[0].page_number, 1)
+
+    def test_ambiguous_remittance_bank_block_does_not_guess_supplier(self):
+        text = """Invoice number INV-BANK-AMBIG
+Vendor Services Ltd
+Purchasing Holdings Ltd
+Main Street 4
+Bank IBAN: XX123"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.supplier_name.status, "missing")
+
+    def test_common_terminal_total_labels_are_recognized_without_generic_total_guessing(self):
+        cases = [
+            ("TOTAL A PAGAR EUR 535,79", Decimal("535.79")),
+            ("Kogusumma (EUR) 254,52", Decimal("254.52")),
+            ("Total incl. VAT EUR 1,683.98", Decimal("1683.98")),
+            ("TOTAL (USD) 17,657.53", Decimal("17657.53")),
+        ]
+        for label, expected in cases:
+            with self.subTest(label=label):
+                candidate = extract_payables(self.document(
+                    f"Invoice number INV-TOTAL\nInvoice date: 2026-03-01\n{label}"
+                )).candidates[0]
+                self.assertEqual(candidate.printed_gross_total.status, "found")
+                self.assertEqual(candidate.printed_gross_total.value, expected)
+                self.assertEqual(candidate.printed_gross_total.evidence[0].page_number, 1)
+
+    def test_pre_discount_subtotal_is_not_conflicted_with_after_discount_net_amount(self):
+        text = """Invoice number INV-DISCOUNT
+Vahesumma EUR 538.60
+Allahindlus 15% EUR 48.09
+Summa ilma käibemaksuta EUR 490.51
+VAT 24% EUR 117.72
+Grand total EUR 608.23"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.printed_subtotal.status, "found")
+        self.assertEqual(candidate.printed_subtotal.value, Decimal("538.60"))
+        self.assertEqual(candidate.printed_subtotal.evidence[0].text, "Vahesumma EUR 538.60")
+        self.assertEqual(candidate.printed_gross_total.value, Decimal("608.23"))
 
     def test_price_basis_is_only_set_when_the_table_states_it(self):
         text = "Invoice No. AA-1\nInvoice date: 2026-03-01\nDescription Quantity Unit price excl VAT VAT amount\n1 Widget 2 10.00 7% 1.40\nGrand total EUR 21.40"

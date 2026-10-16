@@ -30,17 +30,31 @@
     {
       "filename": "DU-05.pdf",
       "page_number": 1,
-      "text": "Vantek Asia Pte Lid. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 wwrw.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\nfire Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 1.041\nJalan Ampang 08 [omen TE ——————\ni ‚ustomer nr. ‘our / VAT-no\nSingapore 539775 12192 207490313H\n‘Your Ust-ID no our Ust-ID no\n207490313H\nyour EORI no our EORI no\n[Eon\nPhone Fax\n[Fensianee  Ship-t0 party [Pestomer reference\nFairmont Technologies Inc 693100096\nGartenweg 24\nLaguna Technopark, Building C ‘Order number ~ [Currency\n4024 BINAN-SPECIAL ECONOMIC ZONE 3057199 SGD\nPHILIPPINES\n[Pos: [Product number / Description [Amount [Un [Ustpriceperunt [Pu [VAT [rest\n80 4108044 100 PC 771.66 100 771.66\nF:WSA_89424080 _HSS (N) H2940 DKC\nCust. mat-no: 89424080\nCountry of origin: Indonesia\nCustoms tariff nr.: 3926,9000\nDelivery note: 8358769 from 30.06.2026\nTotal amount in SGD\nIncoterms: EXW BATAM\nTerms of payment: 90 days net\nDue date: Up to 28.09.2026 without deduction\nBank account Larkspur Bank SINGAPORE BRANCH\nUSD-acc. 267-621698-425. Swift Code: TFFKBCCO\nSGD-acc. 143-022260-749. Swift Code: TFFKBCCO\n",
+      "text": "Vantek Asia Pte Ltd. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 www.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\n[Romer Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 144\nJalan Ampang 08 [omen ema\ni justomer nr. ‘our / VAT-no\nSingapore 539775 12192 207490313H\nYour Ust-ID no our USAD no\n207490313H\nyour EORI no ‘our EORI no\n[eero\nPhone Fax\n[corsianee  Ship-t0 party [erstomer reference\nFairmont Technologies Inc 693100096\nGartenweg 24\nLaguna Technopark, Building C ‘Order number ~ [Currency\n4024 BINAN-SPECIAL ECONOMIC ZONE 3057199 SGD\nPHILIPPINES\n[Pos. [ Product number / Description [Amount [Un [List price perunit” [PU [VAT [rest\n80 4108044 100 PC 771.66 100 771.66\nF:WSA 89424080. HSS (N) H2940 DKC\nCust. mat-no: 89424080\nCountry of origin: Indonesia\nCustoms tariff nr.: 3926,9000\nDelivery note: 8358769 from 30.06.2026\nTotal amount in SGD\nIncoterms: EXW BATAM\nTerms of payment: 90 days net\nDue date: Up to 28.09.2026 without deduction\nBank account Larkspur Bank SINGAPORE BRANCH\nUSD-acc. 267-621698-425. Swift Code: TFFKBCCO\nSGD-acc. 143-022260-749. Swift Code: TFFKBCCO\n",
       "extraction_method": "ocr",
       "evidence": {
         "native_alphanumeric_chars": 0,
-        "ocr_attempted": true,
-        "rendered_bytes": 359498,
-        "ocr_alphanumeric_chars": 886,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 889,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 8149,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
         "ocr_modes_attempted": [
           6
         ],
-        "ocr_page_segmentation_mode": 6
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "f23c55f675e7c496b7562eda2e85861031a9292dc5b77fa4897e1e818c284136"
+        }
       },
       "error": null
     }
@@ -69,7 +83,7 @@
               {
                 "filename": "DU-05.pdf",
                 "page_number": 1,
-                "text": "Vantek Asia Pte Lid. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 wwrw.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\nfire Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 1.041\nJal"
+                "text": "Vantek Asia Pte Ltd. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 www.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\n[Romer Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 144\nJala"
               }
             ],
             "alternatives": [],
@@ -83,9 +97,15 @@
             "note": null
           },
           "invoice_date": {
-            "value": null,
-            "status": "missing",
-            "evidence": [],
+            "value": "2026-06-30",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "[Romer Date Page Cadence Pte. Ltd - Standard 7363916 30.06.2026 144"
+              }
+            ],
             "alternatives": [],
             "note": null
           },
@@ -179,13 +199,13 @@
           "lines": [
             {
               "description": {
-                "value": "4108044 100 PC",
+                "value": "Cust. mat-no:",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-05.pdf",
                     "page_number": 1,
-                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                    "text": "Cust. mat-no: 89424080"
                   }
                 ],
                 "alternatives": [],
@@ -199,15 +219,9 @@
                 "note": null
               },
               "quantity": {
-                "value": "100",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "DU-05.pdf",
-                    "page_number": 1,
-                    "text": "80 4108044 100 PC 771.66 100 771.66"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
                 "note": null
               },
@@ -219,33 +233,91 @@
                 "note": null
               },
               "unit_price": {
-                "value": "771.66",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "DU-05.pdf",
-                    "page_number": 1,
-                    "text": "80 4108044 100 PC 771.66 100 771.66"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
-                "note": null
+                "note": "The table provides an amount only."
               },
               "price_basis": {
                 "value": null,
                 "status": "missing",
                 "evidence": [],
                 "alternatives": [],
-                "note": "The table does not state whether prices include tax."
+                "note": null
               },
               "printed_total": {
-                "value": "771.66",
+                "value": "89424080",
                 "status": "found",
                 "evidence": [
                   {
                     "filename": "DU-05.pdf",
                     "page_number": 1,
-                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                    "text": "Cust. mat-no: 89424080"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Customs tariff nr.:",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "Customs tariff nr.: 3926,9000"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "3926.9000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "Customs tariff nr.: 3926,9000"
                   }
                 ],
                 "alternatives": [],
@@ -265,7 +337,7 @@
                   {
                     "filename": "DU-05.pdf",
                     "page_number": 1,
-                    "text": "i ‚ustomer nr. ‘our / VAT-no"
+                    "text": "i justomer nr. ‘our / VAT-no"
                   }
                 ],
                 "alternatives": [],
@@ -296,7 +368,7 @@
                   {
                     "filename": "DU-05.pdf",
                     "page_number": 1,
-                    "text": "‘Your Ust-ID no our Ust-ID no"
+                    "text": "Your Ust-ID no our USAD no"
                   }
                 ],
                 "alternatives": [],
@@ -338,6 +410,10 @@
           }
         },
         "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
         "matches": {
           "supplier": {
             "code": "",
@@ -388,5 +464,19 @@
     "unresolved_reasons": [
       "Printed gross is missing, ambiguous, conflicting, or unreadable."
     ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
   }
 }
