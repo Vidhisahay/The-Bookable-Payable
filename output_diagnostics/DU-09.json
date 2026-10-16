@@ -1,0 +1,81 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "DU-09.pdf",
+      "page_number": 1,
+      "text": "",
+      "extraction_method": "ocr_timeout",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "ocr_modes_attempted": [
+          6
+        ]
+      },
+      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+    },
+    {
+      "filename": "DU-09.pdf",
+      "page_number": 2,
+      "text": "From: maria.novak@cadence.com\nSent: Wednesday, March 18, 2U26 1:23:2/ PM\nTo: USA clara.roth@cadence.com\nCe:\nSubject: FW: David Yea! shared CADENC'Donations and Sponsorship Form (Internal Document)\" with you 4F-538013\nAttachments: image (3).png; ©A0ENdBonations and Sponsorship Form_SCHAS KB 1.pdf, cADENdBonations and Sponsorship Form_SCHAS KB. pdf\nBest Regards,\nElena Keller\nPTP Americas — Helpdesk\nHalden Cybergate Tower 2\nMandaluyong, 1554 Metro Manila, Philippines\nEmail: maria.novak@cadence.com\nWonderful for All\nRestricted\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 283147,
+        "ocr_alphanumeric_chars": 422,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  }
+}

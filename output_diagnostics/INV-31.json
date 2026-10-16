@@ -1,0 +1,408 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "amount due",
+      "invoice",
+      "invoice number"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "invoice number",
+          "amount due"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "amount due"
+        ]
+      },
+      {
+        "page_number": 3,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": true,
+    "multiple_document_evidence": [
+      "multiple invoice identifiers found on page 1"
+    ]
+  },
+  "pages": [
+    {
+      "filename": "INV-31.pdf",
+      "page_number": 1,
+      "text": "Conshohocken, PA 19428\n125 E Elm Street\nSuite 400\n100 Airport KPG III, LLC.\nRemit payment to:\nInvoice For:\nInvoice Date:\n100 Airport KPG III, LLC.\nUnit\nAmount\nINVOICE\nPO Box 713847\nCincinnati, OH 45271-3847\n200 Stevens Drive\nSuite 100\nLester, PA 19113\nAmeriHealth Caritas\nCharge Date\nDescription\nPlease detach and enclose this portion with your payment to Ensure Proper Application of your Payment.\nAmount Enclosed:\nDue Date:\n200 Stevens Drive\nSuite 100\nLester, PA 19113\nAmeriHealth Caritas\nBilling Contact: Meashirl Brown\nEmail Contact: mbrown1@amerihealthcaritas.com\nAmount Due:\n17,657.53\nInvoice Number:\n6/1/2018\nInvoice Number: \n39015\n39015\n6/1/2018\n100\n6/1/2018\n 17,657.53 \nElectric 04/27/18-05/16/18 \n    17,657.53\nBalance:\nPlease pay by due date to avoid late charges.\nIf you have any questions please contact:\nTenzin Yeshi at 610-980-7000\nPO#16299\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 679,
+        "ocr_attempted": false
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-31.pdf",
+      "page_number": 2,
+      "text": "Page 1 of 2\nAccount Representative\nYour major account rep is CHRIS PAQUETTE. If you have any\nquestions about this bill please contact us at 215-841-5527 or by\nwriting PECO, 2301 Market St, S10-1, Philadelphia, PA\n19103-1380.\nOnline: peco.com\nIn Person: 2301 Market St., Philadelphia, PA 19103\nBy Phone: 215-841-5527\n2\nName:\n100 AIRPORT KPG III LLC\nEmergency and Repair\nAccount Number:\nPhone Number:\nService Address:\n92990-35018\n610-980-7000\n100 Stevens Dr, A1 1, Lester\n800-841-4141\nThis is the number to call to report power outages, gas leaks\nor odors, and safety hazards related to PECO Equipment.\nTAXES & FEES\nELECTRIC SUPPLY\nHudson Energy\n5251 Westheimer Rd.\nSuite 1000\nHouston TX 77056\n877-483-7669\nPECO ELECTRIC\nDELIVERY\nELECTRIC\n$17,657.53\nBilling Summary\nBill Date\n05/23/2018\nThank you for your payment of $17,311.65 on\n05/21/2018\nThank you for your payment of $18,983.48 on\n04/20/2018\nCurrent Period Charges\nElectric\n$17,657.53\nTotal New Charges\n$17,657.53\nTotal Amount Due on 06/18/2018\n$17,657.53\nGeneral Information\nNext scheduled meter reading:06/19/2018\n215-841-5527\nIf you have any questions or concerns, please call 800-494-4000\nbefore the due date. Si tiene alguna pregunta, favor de llamar al\nnumero 1-800-494-4000 antes de la fecha de vencimiento.\npeco.com/service\nCustomer Self Service - Manage Your Account 24/7\nStart, stop and move your service\nReturn only this portion with your check made payable to PECO. Please write your account number on your check.\n2301 Market Street\nPhiladelphia, PA 19103-1380\nPay Today!\npeco.com/ebill\nGo paperless: receive and pay your bill online.\nEnroll in Automatic Payment. Complete form on reverse side.\nPledge a donation to MEAF. Complete form on reverse side.\nAccount # 92990-35018\n877-432-9384\nPlease pay this amount by\n06/18/2018\n$17,657.53\nPayment Amount\n$\n.\n929903501801000000081690000001\nPay by phone, a convenience fee will apply ($2.35 fee)\n10101010101010101010\n11001000000000010101\n10000001010111111000\n10101101001010111011\n10100100101010101010\n10000110110000010011\n10001111001010110000\n10001011011000101101\n10110010100100101000\n11110111000100001001\n10010101011011000110\n11100010000100110001\n11110010101011011000\n10011011010001010111\n11111111110110110110\n11000110101011001001\n11000100100011001110\n11000010011010111101\n10001000100001101010\n11111111111111111111\n8801-33-0100376-0001-0000594\n0100376 01 AB 0.405  **AUTO   T1 0 8801 19428-415400    -C33-B1-P00376-I            \nFAFATFTDTDTFFTFDDTDFTTAFATAATDAFFTDTFTFADAFFAAFDDFADADAFFFTAATTTF\n100 AIRPORT KPG III LLC\n10101010101010101010\n11001000000000010101\n10001001010111111000\n10100001001010110011\n10000010101010110110\n10001110110001110111\n10011111001011011100\n10001011011101001011\n10110010100000000010\n11110111001000100001\n10010101000101000110\n11100010100111101001\n11110010010010101100\n10011101011100100111\n11111111100001100010\n11011011000010111001\n11011110110010111000\n11011111111001111101\n10001010000001111010\n11111111111111111111\n125 E ELM ST STE 400\nCONSHOHOCKEN, PA 19428-4154\nTFDDTFDFDTFFFTFDFAFATDDATFTDFFTDFDTDTADTTTDATATFTAAATFATAADTTTAFT\nPECO - Payment Processing         \nPO Box 37632             \nPhiladelphia, PA 19101-0629   \nPO#16299\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 2628,
+        "ocr_attempted": false
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-31.pdf",
+      "page_number": 3,
+      "text": "Page 2 of 2\nAccount Number: 92990-35018\nOnline: peco.com\nIn Person: 2301 Market St., Philadelphia, PA 19103\nBy Phone: 215-841-5527\n3\nMeter Information\nRead\nDates\nMeter\nNumber\nLoad Type\nReading\nType\nMeter Reading\nPrevious\nPresent\nDifference\nMultiplier\nX\nTotal\nUsage\n04/17-05/16\n021583162\nGeneral Service\nPower Factor\nActual\nActual\n0.9777\n1\n0.978\n04/17-05/16\n021583162\nGeneral Service\nPk kW\nActual\nActual\n0.3960\n1,200\n475.20\n04/17-05/16\n021583162\nGeneral Service\nTot kWh\nActual\nActual\n183.1200\n1,200\n219,744\n04/17-05/16\n021583162\nGeneral Service\nGS Off Pk kW\nActual\nActual\n0.3560\n1,200\n427.20\n04/17-05/16\n021583162\nGeneral Service\nOn Pk Kw\nActual\nActual\n0.3960\n1,200\n475.20\nDistribution kW - Measured : 475.0\nTotal kWh Used: 219,744\nElectric High Tension Service >500kW\nService Period 04/17/2018 to 05/16/2018 - 29 days\nPECO ELECTRIC DELIVERY\n$2,752.75\nCustomer Charge\n299.78\nDistribution Charges\n475 kW\nX 4.77000\n2,265.75\nDistribution Charges\n219,744 kWh X -0.00100\n-219.74\nDistribution System Improvement\nCharge\n13.98\nEnergy Eff & Nonbypassable Trans\n401 kW\nX 0.98000\n392.98\nELECTRIC SUPPLY\n$14,739.91\nHudson Energy Charges (877-483-7669)\nADJUSTMENT\n-0.01\nENERGY CHARGE: 219744 KH * $0.0595/KH\n13,074.77\nGross Receipts Tax\n819.80\nSales Tax\n845.35\nTAXES & FEES\n$164.87\nState Tax Adjustment\n-0.28\nSales Tax\n165.15\nTotal Current Charges\n$17,657.53\nMessage Center\nFrom PECO:\n5.90% estimated Gross Receipts Tax of $982.20\nincluded in new charges.\nYour estimated electric price to compare adder is\n$0.00823 per kWh, which includes ancillary charges\nand the purchased generation adjustment but\nexcludes energy and capacity. This may change\nmonthly. For more information and supplier offers\nvisit PAPowerSwitch.com.\nShopping Information Box\nWhen shopping for a competitive electric/natural gas\nsupplier, please provide the following:\nAccount Number: 92990-35018\nElectric Rate:Electric High Tension Service >500kW\nIf you are purchasing the energy you use from a\ncompetitive supplier, it is important to understand the\nterms of your contract and expiration date.\n10101010101010101010\n11001000000000010101\n10000001010111111000\n10101101001010111011\n10100100101010101010\n10000110110000010011\n10001111001010110000\n10001011011000101101\n10110010100100101000\n11110111000100001001\n10010101011011000110\n11100010000100110001\n11110010101011011000\n10011011010001010111\n11111111110110110110\n11000110101011001001\n11000100100011001110\n11000010011010111101\n10001000100001101010\n11111111111111111111\n8801-33-0100376-0001-0000594\nPO#16299\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 2072,
+        "ocr_attempted": false
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 3,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Multiple invoice-like sections were indicated by page classification; review candidate boundaries.",
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "Conshohocken, PA 19428\n125 E Elm Street\nSuite 400\n100 Airport KPG III, LLC.\nRemit payment to:\nInvoice For:\nInvoice Date:\n100 Airport KPG III, LLC.\nUnit\nAmount\nINVOICE\nPO Box 713847\nCincinnati, OH 45271-3847\n200 Stevens Drive\nSuite 100\nLeste"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Page 1 of 2\nAccount Representative\nYour major account rep is CHRIS PAQUETTE. If you have any\nquestions about this bill please contact us at 215-841-5527 or by\nwriting PECO, 2301 Market St, S10-1, Philadelphia, PA\n19103-1380.\nOnline: peco.co"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "Page 2 of 2\nAccount Number: 92990-35018\nOnline: peco.com\nIn Person: 2301 Market St., Philadelphia, PA 19103\nBy Phone: 215-841-5527\n3\nMeter Information\nRead\nDates\nMeter\nNumber\nLoad Type\nReading\nType\nMeter Reading\nPrevious\nPresent\nDifference"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "39015",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "Invoice Number: 39015"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Total Amount Due on 06/18/2018"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "Due Date:"
+              }
+            ],
+            "alternatives": [
+              "2018-06-18"
+            ],
+            "note": "A separate Due Date label has no reliably associated value and may conflict with the parsed due date."
+          },
+          "supplier_name": {
+            "value": "100 Airport KPG III, LLC.",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "100 Airport KPG III, LLC. Remit payment to:"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Thank you for your payment of $17,311.65 on"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Thank you for your payment of $18,983.48 on"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "$"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Pay by phone, a convenience fee will apply ($2.35 fee)"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "$2,752.75"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "$14,739.91"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "ENERGY CHARGE: 219744 KH * $0.0595/KH"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "$164.87"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "$17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "5.90% estimated Gross Receipts Tax of $982.20"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "$0.00823 per kWh, which includes ancillary charges"
+              }
+            ],
+            "alternatives": [
+              "USD",
+              "SGD",
+              "CAD",
+              "AUD"
+            ],
+            "note": "The dollar symbol does not identify a currency without a code or locale evidence."
+          },
+          "printed_gross_total": {
+            "value": "17657.53",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "Amount Due: 17,657.53"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "Total Amount Due on 06/18/2018 $17,657.53"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": "16299",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 1,
+                "text": "PO#16299"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 2,
+                "text": "PO#16299"
+              },
+              {
+                "filename": "INV-31.pdf",
+                "page_number": 3,
+                "text": "PO#16299"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [],
+          "charges": [],
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "review_required": true,
+          "warnings": [
+            "Multiple invoice-like sections were indicated by page classification; review candidate boundaries.",
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "PO cannot be linked to supplier until supplier identity is resolved.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": []
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "17657.53"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

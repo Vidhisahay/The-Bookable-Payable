@@ -1,0 +1,224 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "invoice",
+      "tax invoice",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "tax invoice",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "HLD-08.pdf",
+      "page_number": 1,
+      "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell: 168 377 9578\nDate 19/05/2026\nCloverdale Partners CC\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Zi\n4300\nVat No:2731114415 Document No 162547\nDeliver to\nHigh Street 1\nMeridian Technologies ExT1\nA Division of meridian Print LTD Johannesburg, GP 1401\nMeridian Print LTD\nP.O.Box 13385\nJacobs 4026\nVendor Number 432145\nAccount Your Reference Tax Exempt Tax Reference Sales Code\nTGB001 9267418170 N 7414745407 APOO1 Exclusive\nCode Description Quantity Unit Unit Price Disc% Tax Nett Price\nTGB001/531 Hall's Smooth Fruit Punch 1lt M 337521 468.0 1000 276.74 15.00% R129,514.32\nWT037912\nCG\nSub Total 129,514.32\nmanner | ase |\nReceived in good order\nSigned. Date. BE Total R148,941.47\nSilverbrook Distribution Lid\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 279331,
+        "ocr_alphanumeric_chars": 619,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-08.pdf",
+                "page_number": 1,
+                "text": "Fax : (893) 6555156 Copy Tax Invoice\nTel : (691) 948 2799\nCell: 168 377 9578\nDate 19/05/2026\nCloverdale Partners CC\nPO Box 2505 Page 1\nMarket Road 73\nRua do Ouro 138 Zi\n4300\nVat No:2731114415 Document No 162547\nDeliver to\nHigh Street 1\nMeri"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": "2026-05-19",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-08.pdf",
+                "page_number": 1,
+                "text": "Date 19/05/2026"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "2731114415 Document No 162547",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-08.pdf",
+                "page_number": 1,
+                "text": "Vat No:2731114415 Document No 162547"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": []
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "invoice",
+          "quotation"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-26.pdf",
+      "page_number": 1,
+      "text": "",
+      "extraction_method": "ocr_timeout",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "ocr_modes_attempted": [
+          6
+        ]
+      },
+      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+    },
+    {
+      "filename": "INV-26.pdf",
+      "page_number": 2,
+      "text": "SALES\nPage 2 of 2\nsc Pt ae\nern sy son an ree 18) wann!\nvum vun ı\n‘Mid Valley City Uingkaran Syed Putra 47810 Jaya\n59200 Kuala Lumpur\nMalaysia Malaysia\nTot momen Fa 603 61500766\nCompany Registration No.\nSST Registration No. muzmsrune\nBil-to Customer No.\nSST Registration No.\nQuotation No. wien\nDocument Date oayoz/202s\nPayment Terms Instant Transfer\nDue Date\nTotal Amount in Words : EIGHT THREE AND FIFTY THREE SEN ONLY.\n‘SST Amount Specification\nF Invoice\n‘SST Identifier sst% Gross Amount Base Discount SST Base ‘SST Amount\nse ——n\nKDOON 000 87353 000 000 87353 000\nTotal un53 000 0.00 un53 0.00\nNowe\n1. For Online transfer, please remit the payment to the following account number.\nBank: Crestinw Bark\nCurrent/Vietual Bank Account No:\n2.All cheques should be crossed and made payaove to Gown nun se\n3. Goods sold are nether returnable nor refundable Otherwise a cancellation fee 20% on purchase price will be imposed.\nUser Name\n‘This is system generated. No signature required\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 339300,
+        "ocr_alphanumeric_chars": 781,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  }
+}

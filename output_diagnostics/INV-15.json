@@ -1,0 +1,433 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.95,
+    "uncertain": false,
+    "evidence": [
+      "amount due",
+      "invoice",
+      "invoice number",
+      "subtotal",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "invoice number",
+          "amount due",
+          "subtotal",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-15.pdf",
+      "page_number": 1,
+      "text": "Invoice Date Silverbrook Media Limited\nTAX | N VO | C E 01 Apr 2026 Attention: Finance\n2nd Floor\nNorthwind Services UK Ltd Invoice Number Parnu mnt 117\nRua do Ouro 175 INV-8935 Parnu mnt 26\nTaper Studio London\nLondon Reference Middlesex\nSE1 4GT May 2026-Kadakatee 119 - = NI9RY\nNorthwitahagement Fee UNITED KINGDOM\nVAT Number\n474927490\nUTR Number\n18823 19423\nDescription Quantity Unit Price VAT Amount GBP\n2nd Floor\nManagement Fee for May 2026 1.00 14,620.18 20% 14,620.18\nBusiness Rates for May 2026 1.00 9,987.50 No VAT 9,987.50\nUtilities for May 2026 1.00 1,435.00 20% 1,435.00\nSubtotal 26,042.68\nTotal No VAT 0.00\nTotal VAT 20% 3,211.04\nInvoice Total GBP 29,253.72\nTotal Net Payments GBP 0.00\nAmount Due GBP 29,253.72\nDue Date: 30 Apr 2026\nBank name: Meridian Bank\nSort code: 20-41-50\nAccount number: 21823016\nSwift code: SKYYOU10\nIBAN: GB84 FAQA 54689987784014\nCompany Registration No: 43214229. Registered Office: 2nd Floor, Parnu mnt 117, Pamu mnt 26 „London, Middlesex, N1 9RY, United Kingdom\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 327667,
+        "ocr_alphanumeric_chars": 787,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Silverbrook Media Limited\nTAX | N VO | C E 01 Apr 2026 Attention: Finance\n2nd Floor\nNorthwind Services UK Ltd Invoice Number Parnu mnt 117\nRua do Ouro 175 INV-8935 Parnu mnt 26\nTaper Studio London\nLondon Reference Middlesex\nSE1"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "Parnu",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Northwind Services UK Ltd Invoice Number Parnu mnt 117"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "GBP",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Description Quantity Unit Price VAT Amount GBP"
+              },
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Invoice Total GBP 29,253.72"
+              },
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Total Net Payments GBP 0.00"
+              },
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Amount Due GBP 29,253.72"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "29253.72",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Invoice Total GBP 29,253.72"
+              },
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Amount Due GBP 29,253.72"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": "26042.68",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Subtotal 26,042.68"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "3211.04",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-15.pdf",
+                "page_number": 1,
+                "text": "Total VAT 20% 3,211.04"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for May 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "9987.50",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Business Rates for May 2026 1.00 9,987.50 No VAT 9,987.50"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Total No VAT 0.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "0.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Total No VAT 0.00"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "20",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "3211.04",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Total VAT 20% 3,211.04"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "extra_charge",
+              "description": {
+                "value": "Management Fee for May 2026 1.00 14,620.18 20% 14,620.18",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Management Fee for May 2026 1.00 14,620.18 20% 14,620.18"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "14620.18",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-15.pdf",
+                    "page_number": 1,
+                    "text": "Management Fee for May 2026 1.00 14,620.18 20% 14,620.18"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "GB_200_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "29253.72"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

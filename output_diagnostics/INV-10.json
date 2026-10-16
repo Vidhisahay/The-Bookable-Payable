@@ -1,0 +1,56 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-10.pdf",
+      "page_number": 1,
+      "text": "Arvenr.: 18533\nKuupäev: 25.03.2026\nMaksja: Northwind Operations OU Kliendi nr: 5207\nRua do Ouro 15 Tingimused: 30 pv neto\na nur Tähtaeg: 24.04.2026\n10134 maakon Viivis: 0,5% piievas\nKontaktisik: Marco Lind\nMaksja KMKR nr: EE398766194\nKauba Kauba nimetus Ühik Kogus % Hind Summa\nkood\n001 17/03 Toitlustus kord 1 479,28 479,28\nYM Umardus 1 -0,01 -0,01\nKokku: 479,27\nSumma sönadega: Br\nKäibemaks 24%: 115,03\nViissada üheksakümmend neli ja 30\n5 Tasuda: 594,30\nAllkiri:\nLarkspur Print OU Kontakt: +190 2609 0057 A/a: EE684837406967098266\nJalan Ampang 60 KMKR nr: EE755780626 Harbor Savings\nj aosa Reg.nr.:77060059 SWIFT XYQXPY30\nTallinn\nHarju maakond\n10412\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 327595,
+        "ocr_alphanumeric_chars": 512,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  }
+}

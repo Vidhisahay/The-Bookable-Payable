@@ -1,0 +1,524 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.72,
+    "uncertain": false,
+    "evidence": [
+      "rechnung",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "rechnung",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-01.pdf",
+      "page_number": 1,
+      "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\n‚Account Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen unseres gemeinsamen Projektes \"Unterstützung Standortakquise NORTHWetde-/Abstellstationen\"\nerlauben wir uns folgende Rechnung zu stellen.\nPos Beschreibung Einzelpreis Menge Gesamtpreis\n1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €\n2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €\nLiefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme 438,00 €\nzzgl. 0 % MwSt 0,00€\nEndbetrag 438,00 €\nBitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der aufgeführten Bankverbindungen.\nVat ID: EE398766194\nReverse Charge\nWir bedanken uns für Ihr Vertrauen und freuen uns auf eine weiterhin erfolgreiche Zusammenarbeit.\nE_Danhniinn Annahan:\n: Rechnung\neisen per Code:\n2quem Code mit der Banking-App scannen.\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 346126,
+        "ocr_alphanumeric_chars": 820,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU\nHerrn Alex Kask\nLindenstrasse 15\n10134 Estonia\nRechnung Nr.: 852566\nRechnungsdatum: 02.02.2026\nRechnung Kunden-Nr.: 28973\n‚Account Manager: Paul\nRoth\njonas.haas@kingsley-media.de\nSehr geehrter Herr Kask ,\nim Rahmen u"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "852566",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Rechnung Nr.: 852566"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": "2026-02-02",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Rechnungsdatum: 02.02.2026"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": "2026-02-12",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Bitte begleichen Sie den Betrag bis zum 12.02.2026 auf eine der aufgeführten Bankverbindungen."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "EE398766194",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Vat ID: EE398766194"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+              },
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+              },
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Liefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme 438,00 €"
+              },
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "zzgl. 0 % MwSt 0,00€"
+              },
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Endbetrag 438,00 €"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "438.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Liefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme 438,00 €"
+              },
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "Endbetrag 438,00 €"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "0.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-01.pdf",
+                "page_number": 1,
+                "text": "zzgl. 0 % MwSt 0,00€"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "Projektmanagement Nachberechnung aus November",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "4",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "Std",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "73.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "zzgl. 0 % MwSt"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "292.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "1 Projektmanagement Nachberechnung aus November 73,00 € 4 Std. 292,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Projektmanagement Nachberechnung aus Dezember",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": "service",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "2",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": "Std",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "73.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": "net",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "zzgl. 0 % MwSt"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "146.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "2 Projektmanagement Nachberechnung aus Dezember 73,00 € 2 Std. 146,00 €"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "MwSt",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "zzgl. 0 % MwSt 0,00€"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "0",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "zzgl. 0 % MwSt 0,00€"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "0.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-01.pdf",
+                    "page_number": 1,
+                    "text": "zzgl. 0 % MwSt 0,00€"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "emitted_bookable_payable",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "ambiguous",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": [
+                "DE_000_RC",
+                "EST_000_VAT",
+                "GB_000_VAT",
+                "MY_000_SST",
+                "PL_NP",
+                "SG_000_GST",
+                "US_U1_USE"
+              ]
+            }
+          ]
+        },
+        "reconciliation": {
+          "erp_gross": "438.00",
+          "printed_gross": "438.00",
+          "difference": "0.00",
+          "status": "passed",
+          "reason": "ERP gross equals the determinable printed gross to the cent."
+        }
+      }
+    ],
+    "unresolved_reasons": []
+  }
+}

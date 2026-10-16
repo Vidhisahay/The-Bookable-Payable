@@ -1,0 +1,295 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "amount due",
+      "invoice",
+      "invoice number",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      },
+      {
+        "page_number": 2,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "invoice number",
+          "amount due",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-03.pdf",
+      "page_number": 1,
+      "text": "",
+      "extraction_method": "ocr_timeout",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "ocr_modes_attempted": [
+          6
+        ]
+      },
+      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+    },
+    {
+      "filename": "INV-03.pdf",
+      "page_number": 2,
+      "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number Be\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind@silverbrook-services.za Amount Enclosed\nWeb: www.blackpine-systems.za \"Erte the eriount vou are baie Eh\nVAT: 3590736231 inter the amount you are paying above\nCompany Registration No: 8976/781226/23 . Registered Office: PO Box 5230, Cresta, Johannesburg, Gauteng, 2118, South Africa.\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 173889,
+        "ocr_alphanumeric_chars": 397,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Some pages have missing or failed text extraction: [1].",
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 2,
+                "text": "Customer Northwind Services ZA (Pty) Ltd\nPAYMENT ADVICE 9446690440 Mara Kask\nTo: Cloverdale Print Ltd Invoice Number Be\nBahnhofstrasse 9 Amount Due 8,550.00\nTel: 301 266 7428 Due Date 8 Jun 2025\nEmail: anja.lind@silverbrook-services.za Amou"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "Be",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 2,
+                "text": "To: Cloverdale Print Ltd Invoice Number Be"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "8550.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-03.pdf",
+                "page_number": 2,
+                "text": "Bahnhofstrasse 9 Amount Due 8,550.00"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-03.pdf",
+                    "page_number": 2,
+                    "text": "VAT: 3590736231 inter the amount you are paying above"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Some pages have missing or failed text extraction: [1].",
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "8550.00"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

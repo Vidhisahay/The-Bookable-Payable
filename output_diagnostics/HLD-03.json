@@ -1,0 +1,58 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "iva"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "HLD-03.pdf",
+      "page_number": 1,
+      "text": "ZF\nOriginal\nNota: Sobre estes produtos incidem ainda, os\n‘ 4 it * Nort len\nLarkspur Print ou\ndo de fornecimento, bem das demais en re\nO nl. Kadaka tee 224\nee mee 5 5 1250-148 Lisboa\n* Desconios Promocionaisrefereste ao més em cuno. 1350-v17 Labou\nNümero Data 02.12.2025 V/Ref.* N/Ref* N° Contrib. N° IEC N° Cliente basal Nos\n[ OQuantidades | Niquido [____Descontos Promecionsis ___] Descontos de Quantidade | IEC\nCX | TRINCA ALE T22 6X1500 CXE NTT 13,5 123,36 123,36 1,76 % 63,85 13,00 59,51\nEAN:5601012004984\n13.00 5951 7.74 Descontos Promocionais 63,85-\nIVA 7,714\nIVA Adiantamento\n‘Data de Vencimento 01.01.2026\ncorn MO Prpcessado por programa cenificado n.\"256YAT Vinora cots\npa nun 1ELErONE FAX:\nEm 4 6.500.000€ C.R.C. DE V.N. DE GAIA N° NIPC rast SIRER # Registo\npmo — M\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 434376,
+        "ocr_alphanumeric_chars": 579,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.95,
+    "uncertain": false,
+    "evidence": [
+      "bill to",
+      "invoice",
+      "invoice number",
+      "subtotal"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "bill to",
+          "invoice number",
+          "subtotal"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-36.pdf",
+      "page_number": 1,
+      "text": "Page 1 of 1\nOracle America, Inc.\nINVOICE\nFederal Tax ID: 94-2805249\nINVOICE NUMBER\n44273107\nINVOICE DATE\n18-Jun-2018\nYOUR P.O. NUMBER\n1000021496\nPAYMENT TERMS\n30 NET\nDUE DATE\n18-Jul-2018\nCUSTOMER REF\n500 Oracle Parkway\nRedwood Shores, CA 94065\nUnited States\nNOT OFD\nSPECIAL INSTRUCTIONS:\n N\n  \nSUBTOTAL\nTAX\nTOTAL(USD)\n91,580.50\n0.00\n91,580.50\nLess Payments\n0.00\nCredits/Adjustments\n0.00\nOutstanding Balance as of 27-Jun-2018\n91,580.50\n \nBILL TO :\nAmeriHealth Caritas Services\nAttention: Accounts Payable \n200 Stevens Drive\nPhiladelphia, PA 19113\nUnited States\nSHIP TO :\nAmerihealth Caritas Health Plan\n200 Stevens Dr\nAmhss 1000- Corp Shared Services\nPhiladelphia, PA  19113\nUnited States\n                                 PAYMENT INSTRUCTIONS:\n   REFERENCE      44273107             ON YOUR REMITTANCE\nMAIL CHECKS TO:\nOracle America, Inc.\nP.O. Box  203448\nDallas TX 75320-3448\nWIRE TRANSFERS TO:\nWELLS FARGO BANK\nABA     121000248\nACCT  4522-020841\nRegular Invoice\nFOR BILLING QUESTIONS, CALL: (888) 803-7414 OR EMAIL: COLLECTIONS_US@ORACLE.COM\nOKS_CONTRACTS001Oracle America, Inc.P.O. Box  203448DallasTX75320-3448\nORACLE SALESPERSON\nORACLE ORDER \nNUMBER\nCUSTOMER CONTACT\nEND USER\nSettelmeyer, Jacob\n14724557\n Attention: Accounts Payable\nAmerihealth Caritas Health Plan\nITEM\nNO.\nDESCRIPTION\nQTY/\nNO.  OF USERS\nTAX\nEXTENDED \nAMOUNT\n1\nManaged Cloud Services - Computer and Administration Services - \nManaged Cloud Services - Additional Services 18-JUL-2018 : \n17-OCT-2018\n11\nN\n91,580.50\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 1145,
+        "ocr_attempted": false
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "Page 1 of 1\nOracle America, Inc.\nINVOICE\nFederal Tax ID: 94-2805249\nINVOICE NUMBER\n44273107\nINVOICE DATE\n18-Jun-2018\nYOUR P.O. NUMBER\n1000021496\nPAYMENT TERMS\n30 NET\nDUE DATE\n18-Jul-2018\nCUSTOMER REF\n500 Oracle Parkway\nRedwood Shores, CA 94"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "44273107",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "INVOICE NUMBER 44273107"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "94-2805249",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "Federal Tax ID: 94-2805249"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "USD",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-36.pdf",
+                "page_number": 1,
+                "text": "TOTAL(USD)"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": []
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "invoice",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "invoice",
+          "vat"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-20.pdf",
+      "page_number": 1,
+      "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 a.\nustomer num\nOur reference person 8008\nReference person na Costa Switzerland\nOrder reference\nDelivery address Mina Costa Norm CH, 13,\nCH-8126 Zumikon\nVAT ID CHE-726.894. 710.\nType of delivery Shipping\nPayment terms 20 Days net\nCurrency CHF\nDescription Article number Dispatch Quantit VAT Price excl. Price incl. Amount excl. Amount incl.\nKing King Tony Cap 1/2 & quot Torx tip with T45x60mm 35605506 16.02.2026 8.10% 11.19 12.10 11.19 12.10\nhole\n24 Months Warranty (2/16/2026 - 2/16/2028)\nTotal amount 11.19 12.10\nTotal amount includes the following VAT:\nVAT 8.10% 0.91\nBilling amount 12.10\nDispatch Upon receiving your product, please make sure it is correct and complete and check it for damage. Any deficiencies need to be\nreported within five calendar days from collection resp. delivery date via your personal customer account in the online shop.\nGeneral Our general terms and conditions apply.\nWarranty services This document serves as a warranty receipt for the service centre. Further warranty information and the address of the service\ncentre are available in your customer account. Please send returns to the stated address only.\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 394477,
+        "ocr_alphanumeric_chars": 1029,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-20.pdf",
+      "page_number": 2,
+      "text": "",
+      "extraction_method": "ocr_timeout",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "ocr_modes_attempted": [
+          6
+        ]
+      },
+      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Some pages have missing or failed text extraction: [2].",
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "‘Avenida Central 60\n8005 Zurich\nInvoice 20423591\nInvoice date 16.02.2026 Northwind CH sari\nDue date 08.03.2026 Nee Costa\nee ber 7856147 a.\nustomer num\nOur reference person 8008\nReference person na Costa Switzerland\nOrder reference\nDelivery"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "conflicting",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "Invoice date 16.02.2026 Northwind CH sari"
+              },
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "Due date 08.03.2026 Nee Costa"
+              }
+            ],
+            "alternatives": [
+              "2026-02-16",
+              "08.03.2026"
+            ],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "Due date 08.03.2026 Nee Costa"
+              }
+            ],
+            "alternatives": [
+              "08.03.2026"
+            ],
+            "note": "Day/month order cannot be determined."
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "CHE-726",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "VAT ID CHE-726.894. 710."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "CHF",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "Currency CHF"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "12.10",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-20.pdf",
+                "page_number": 1,
+                "text": "Total amount 11.19 12.10"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "VAT 8.10% 0.91"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "8.10",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "VAT 8.10% 0.91"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "0.91",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "VAT 8.10% 0.91"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Type of delivery Shipping",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-20.pdf",
+                    "page_number": 1,
+                    "text": "Type of delivery Shipping"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Some pages have missing or failed text extraction: [2].",
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "CH_081_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "12.10"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

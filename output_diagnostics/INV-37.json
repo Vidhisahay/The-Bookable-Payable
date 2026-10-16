@@ -1,0 +1,53 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "invoice",
+          "purchase order"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-37.pdf",
+      "page_number": 1,
+      "text": "page 1 of 1\n4-02 Amerihealth Utility Reimbursement.xls\n1120 VERMONT AVENUE ASSOCIATES, LLP\nUTILITIES REIMBURSEMENT\nAmerihealth - 2nd Floor\nAttention:\nAccountspayable@amerihealthcaritas.com\nInvoice Date:\n6/12/2018\nBilling Address:\nAmeriHealth\nInvoice:\n5568\n200 Stevens Drive\n17816\nPhiladelphia, PA 19113\nService Period:\nApril 30, 2018 to May 29, 2018  (30 Days)\nELECTRIC USAGE\nMeter Reading\nMeter Number\nRead Type\nPresent\nPrevious\nMultiplier\nKWH Used\nBlended $/KWH\nAmount\n1\nSM #0201\nActual\n497649\n-\n497625\n=\n24\nx\n1\n=\n24\nx\n0.097958122\n=\n$2.35\n at 2nd fl North Mech Room\nDemand\n1\nx\n1\n=\n1\nx\n11.470001\n=\n$11.47\n3\nSM #0202\nActual\n434313\n-\n434122\n=\n191\nx\n1\n=\n191\nx\n0.097958122\n=\n$18.71\n at 2nd fl North Mech Room\nDemand\n0.7\nx\n1\n=\n0.7\nx\n11.470001\n=\n$8.03\n4\nSM #0206\nActual\n703329\n-\n687513\n=\n15816\nx\n1\n=\n15816\nx\n0.097958122\n=\n$1,549.31\n at \nDemand\n21.5\nx\n1\n=\n21.5\nx\n11.470001\n=\n$246.61\nTotal KWH Billed:\n16,031\nNon-Residential-GT:\n$1,570.37\nTotal Distribution Charged:\n23.200\nMaximum Demand:\n$266.10\nSales tax at 0.0575 on utility bills:\n$105.60\nSUB-TOTAL FOR ELECTRICAL COSTS:\n$1,942.07\nEMERGENCY GENERATOR FUEL USAGE\nMeter Reading\nMeter Number\nPresent\nPrevious\nGallons\nMultiplier\nConsumption\nRate\nAmount\n1\n#4369148\n815\n-\n815\n=\n0\nx\n1\n=\n0\nx\n$2.76\n=\n$0.00\nSales tax at 0.0575 on utility bills:\n$0.00\nSUB-TOTAL FOR EMERGENCY GENERATOR FUEL COSTS:\n$0.00\nCOOLING SYSTEM CONDENSER WATER USAGE\nUnit Number\nModel Number\nInstall Date\nUsage Type\nUnit BTU's\nBTU Tonnage\nConnected Ton\nPer lease annual fee of \nCSCW x connected ton \n/ 12 months*\nAmount\n1\n2.1\nCCH-042\n07/23/03\nStandby \n42,000\n/\n12,000\n=\n3.500\nx\n$63.93\n=\n$61.73\n2\n2.5\nWCMS.1.024\n07/23/03\n24 Hour\n24,000\n/\n12,000\n=\n2.000\nx\n$63.93\n=\n$35.27\n4\n2.9\nCCH-024\n01/01/14\n24 Hour\n60,000\n/\n12,000\n=\n5.000\nx\n$63.93\n=\n$319.65\n*24 Hour unit utility costs: $740.71, Lease Hour unit utility costs: $194.7, $26.49 for maintenance and repairs to the 24-hour central plant system; per connected ton\nTotal Connected Tonnage:\n10.500\nTotal Energy Costs:\n$393.47\nCost Per Ton, Common Equipment PM:\n2.208\nTotal C.E. PM Costs:\n$23.18\nSUB-TOTAL FOR CONDENSER WATER COSTS:\n$416.65\nBUILDING SERVICE FEES\n(4-12000.00 ::: 152.19375)\n..\n$122.00\n(')\nSales tax at 0.0575 on building services:\n$7.02\nNET CURRENT REIMBURSEMENT:\n$2,487.73\nPurchase Order:\n13662 \n11785 \n13965 \n15972 \n14742 \n14508 \n14037 \n19943 \n5682 \n20619 \n8295 \n11964 \n16031 \n0 \n20000 \n40000 \nMay \nJune \nJuly \nAugust \nSeptemb\ner \nOctober \nNovemb\ner \nDecembe\nr \nJanuary \nFebruary \nMarch \nApril \nMay \nUsage History \n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 1835,
+        "ocr_attempted": false
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  }
+}

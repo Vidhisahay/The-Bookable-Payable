@@ -1,0 +1,451 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": false,
+    "evidence": [
+      "arve"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-16.pdf",
+      "page_number": 1,
+      "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LOUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.roth@speedwell.com\nTeenuse liik Saadetiste Kogukaal Osade Transpordi- Lisatasud KM Kogusum-\narv arv tasu kokku ma (KM-ga)\nECONOMY SELECT 1 1,00 1 18,87 2,83 4,77 26,47\nKokku 1 1,00 1 18,87 2,83 4,77 26,47\nLisateenuste loetelu Kokku\nFUEL SURCHARGE 2,83\nKokku lisateenuste tasud 2,83\nKM analüüs Kokku\nKood Koodi kirjeldus KM määr Maksustatav summa KM\nA P 22,00% 21,70 4,77\nKokku KM 4,77\nKokku (v.a. KM) KM Kokku (KM-ga)\nMaksetähtaeg: 07-07-25 Kogusumma (EUR) 21,70 4,77 26,47\nSpeedwell Express Estonia AS +372 680 8555 (klienditeenindus) Reg. No.: 10451175 Palume: * märkida oma maksekorraldusele makstava\nBahnhofstrasse 32 +372 680 8455 (raamatupidamine) KMKR EE445462205 arve number ja kuupäev\n11415 Tallinn e-mail alex.keiler@speedwell.com IBAN EE989745485604538087 Rank * märkida saatelehele saatja nimi\nESTONIA www.speedweil.ee E989 72GX868085G8087 Rank\nEE44537654965 1250068\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 353439,
+        "ocr_alphanumeric_chars": 890,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-16.pdf",
+      "page_number": 2,
+      "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumber kuupaev liik (Kg) arv hind kirjeldus nuste ma\ntasud (KM-ga)\n6757799188 STK-EEO03-25-00250 04-06-25 MHN, MANNHEIM WAW, WARSAW ECONOMY 1,00 V 1 18,87 415A 23,02\n0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45\nMaria Haas Jonas Weber\nGartenweg 6 Lindenstrasse 20\nLOCATION IS ON THE BASEMENT OF BUIL PL-01-940, Warsaw\nDE-68165, MANNHEIM\n26,47\nVahesumma teenuse järgi - ECONOMY SELECT 1,00 1 18,87 283 477 26,47\nKokku: EUR: 1,00 1 18,87 2,83 an 26,47\nA = Kliendi poolt arvutatud tegelik kaal V = Kliendi poolt arvutatud mahukaal 8 = DHLI poolt arvutatud tegelik kaal W = DHLi poolt arvutatud mahukaal M=sega\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 225976,
+        "ocr_alphanumeric_chars": 703,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU Arve number: TLLIR72836045\nVANA-LOUNA TN 15 Kliendikood: 952774062\n10134 TALLINN Reg. number: 27044945\nESTONIA Arve kuupäev: 09-06-25\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: +372 6 808 455\nE-post: luis.ro"
+              },
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 2,
+                "text": "Arve number: TLLIR72836045 A\nKliendikood: 952774062 rve\nArve kuupäev: 09-06-25\nLehekülgede arv: 2/2\nSaatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumbe"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU Arve number: TLLIR72836045"
+              },
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Bahnhofstrasse 32 +372 680 8455 (raamatupidamine) KMKR EE445462205 arve number ja kuupäev"
+              },
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 2,
+                "text": "Arve number: TLLIR72836045 A"
+              }
+            ],
+            "alternatives": [
+              "TLLIR72836045",
+              "ja"
+            ],
+            "note": "More than one distinct value is supported by the document text."
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg: 07-07-25 Kogusumma (EUR) 21,70 4,77 26,47"
+              },
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 2,
+                "text": "Kokku: EUR: 1,00 1 18,87 2,83 an 26,47"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "4.77",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-16.pdf",
+                "page_number": 1,
+                "text": "Kokku KM 4,77"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "Teenuse liik Saadetiste Kogukaal Osade Transpordi- Lisatasud KM Kogusum-"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "arv arv tasu kokku ma (KM-ga)"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "KM analüüs Kokku"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "Kood Koodi kirjeldus KM määr Maksustatav summa KM"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "Kokku (v.a. KM) KM Kokku (KM-ga)"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 2,
+                    "text": "Saatelehe Saatja vide Saadetise Lähtekoht /saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-"
+                  },
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 2,
+                    "text": "tasud (KM-ga)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "Kokku KM 4,77"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "4.77",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "Kokku KM 4,77"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "extra_charge",
+              "description": {
+                "value": "FUEL SURCHARGE 2,83",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "FUEL SURCHARGE 2,83"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "2.83",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 1,
+                    "text": "FUEL SURCHARGE 2,83"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "extra_charge",
+              "description": {
+                "value": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 2,
+                    "text": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "3.45",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-16.pdf",
+                    "page_number": 2,
+                    "text": "0 NORT@RERATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE 2,83 0,52A 3.45"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  }
+}

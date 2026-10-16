@@ -1,0 +1,427 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.72,
+    "uncertain": false,
+    "evidence": [
+      "invoice",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "invoice",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "HLD-01.pdf",
+      "page_number": 1,
+      "text": "=\nใบวางบิล (INVOICE)\nใบวางบิลเลข                                                                                                                  -            จ      °\na                  166751021467                                              บริษัท ซิงค์ ครีเอชัน จํากัด\nชื่องาน / Project:           Staff Impact (May 2026)                                                    เลขที 799/124 หมู่ที 3 ตําบลแพรกษา\nชื่อลูกค้า / Customer: พ๐กกหกส SUPPORT SERVICES (หลแผขดเแพนทซเรบหรดคตธรสมเซระรเหเรฒเภะพหเรสเง0) LIMITED (       )\nที่อยู่ / Address:            เลขที่ 8 อาคารทีวัน ชั้นที่ 16 ห้องเลขที่ 16-103 16-104 16-105               จังหวัดสมุทรปราการ 10280\n(ซอยสุขุมวิท 40 ถนนสุขุมวิท แขวงพระโขนง เขตคลองเดย                 ผู้ประสานงาน : คุณวุฒิพงษ์ แบ่งลาภ\nกรุงเทพมหานคร                                                  เบอร์โทร : 5901619152\nเลขประจําตัวผู้เสียภาษี : 4053930153035                                E-mail: jonas.silva@larkspur-technologies.com\nโทร / Tel:                                                                                                    หมายเลขผู้เสียภาษี\nแฟกซ์ / Fax:                                                                      0 1055 56100 87 9\nลําดับ                                  รายการ                                  จํานวน                  ราคาต่อหน่วย                    จํานวนเงิน\nITEM                             DEQGKGDFIYT                           QUANTITY                UNIT PRICE                    AMOUNT\nThe detail are as below:-\n\n1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}\nTotal\nMANAGEMENT FEE 9%\nTOTAL (INCLUDING AGENCY FEE)\nVat 7 %\nGRAND TOTAL (INCLUDING VAT)                                                                                          | 8,397.36]\nภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44\nจํานวนเงินที่ต้องซําระ (TOTAL PAYMENT)                                                                                   | ว88161.92|\nบาท / BAHT                                             แปดพันหนึ่งร้อยหกสิบเอ็ดบาทเก้าสิบสองสตางค์\n\n1\n2\nจํากัต\n4699417904\n3                                                jonas.silva@larkspur-technologies.com\nAPPROVED BY                                                                            PRESENTED BY\n 0                                                             (Managing Director)\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 683474,
+        "ocr_alphanumeric_chars": 856,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header.",
+      "At least one line item contains ambiguous or unreadable values."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-01.pdf",
+                "page_number": 1,
+                "text": "=\nใบวางบิล (INVOICE)\nใบวางบิลเลข                                                                                                                  -            จ      °\na                  166751021467"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "THB",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-01.pdf",
+                "page_number": 1,
+                "text": "บาท / BAHT                                             แปดพันหนึ่งร้อยหกสิบเอ็ดบาทเก้าสิบสองสตางค์"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "8397.36",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-01.pdf",
+                "page_number": 1,
+                "text": "GRAND TOTAL (INCLUDING VAT)                                                                                          | 8,397.36]"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "Staff 2 Units X 6 Days                                                       12",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "ambiguous",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                  }
+                ],
+                "alternatives": [
+                  "2",
+                  "6",
+                  "12"
+                ],
+                "note": "Several numeric tokens precede the unit price; their quantity role is unclear."
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "600.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "7200.00",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "1       Staff 2 Units X 6 Days                                                       12                                          600.00)               7,200.00}"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Vat",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "Vat 7 %"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "7",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "Vat 7 %"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "withholding",
+              "name": {
+                "value": "WITHHOLDING TAX",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "3",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "235.44",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "ภาษีหัก ณ ที่จ่าย 3% (WITHHOLDING TAX)                                                                            | 235.44"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "extra_charge",
+              "description": {
+                "value": "MANAGEMENT FEE 9%",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-01.pdf",
+                    "page_number": 1,
+                    "text": "MANAGEMENT FEE 9%"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header.",
+            "At least one line item contains ambiguous or unreadable values."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "ambiguous",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": [
+                "DE_070_VAT",
+                "TH_070_VAT"
+              ]
+            },
+            {
+              "code": "TH_WHT_003",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "erp_gross": "-235.44",
+          "printed_gross": "8397.36",
+          "difference": "-8632.80",
+          "status": "unresolved",
+          "reason": "Unresolved because one or more required source values are ambiguous or conflicting."
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Unresolved because one or more required source values are ambiguous or conflicting."
+    ]
+  }
+}

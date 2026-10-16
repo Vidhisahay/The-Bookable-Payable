@@ -1,0 +1,307 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.95,
+    "uncertain": false,
+    "evidence": [
+      "amount due",
+      "invoice",
+      "invoice number",
+      "subtotal",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "invoice number",
+          "amount due",
+          "subtotal",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-07.pdf",
+      "page_number": 1,
+      "text": "Invoice Date Larkspur Distribution Meridian Print\nTAX | NVO | C E 30 Apr 2025 Larkspur Distribution Meridian Print\nGartenweg 173\nNorthwind Services ZA (Pty) Meridian Print Ltd INV7097292303 F04, Kiepersol House\nMS Office Park Bahnhofstrasse 300\nUnit 7, Block B INV7097292303 Darrenwood\nGartenweg 60 Gauteng\nMaitland 2195\nWESTERN CAPE CAPE TOWN 7405 BERTEERE South Africa\nSOUTH AFRICA\nVAT Number: 9446639440\nDescription Quantity Unit Price VAT Amount ZAR\nStandard Criminal Verification 133.00 129.00 15% 17,157.00\nSubtotal 17,157.00\nTOTAL VAT 2,573.55\nTOTAL ZAR 19,730.55\nLess Amount Credited 13,110.00\nAMOUNT DUE ZAR 6,620.55\nDue Date: 31 May 2025\nOakhaven Distribution Meridian Print Ltd\nRedwater Bank\nBranch: Sand\nBranch Number -\nAccount 897530172\nSWIFT: SYEWTNPV\nPlease use your invoice number as reference when making payment.\nCompany Registration No: 3268/558090/90 . Registered Office: Gartenweg 173 ,F04, Kiepersol House, Bahnhofstrasse 30Oarrenwood, Johannesburg, Gauteng,\n2195, South Africa.\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 365464,
+        "ocr_alphanumeric_chars": 820,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "Invoice Date Larkspur Distribution Meridian Print\nTAX | NVO | C E 30 Apr 2025 Larkspur Distribution Meridian Print\nGartenweg 173\nNorthwind Services ZA (Pty) Meridian Print Ltd INV7097292303 F04, Kiepersol House\nMS Office Park Bahnhofstrasse"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "as",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "Please use your invoice number as reference when making payment."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": "9446639440",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "VAT Number: 9446639440"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "ZAR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "Description Quantity Unit Price VAT Amount ZAR"
+              },
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "TOTAL ZAR 19,730.55"
+              },
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "AMOUNT DUE ZAR 6,620.55"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "6620.55",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "AMOUNT DUE ZAR 6,620.55"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": "17157.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "Subtotal 17,157.00"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "2573.55",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-07.pdf",
+                "page_number": 1,
+                "text": "TOTAL VAT 2,573.55"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-07.pdf",
+                    "page_number": 1,
+                    "text": "TOTAL VAT 2,573.55"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "2573.55",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-07.pdf",
+                    "page_number": 1,
+                    "text": "TOTAL VAT 2,573.55"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "6620.55"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# OCR and processing caches
+.cache/
+.pycache/
+ocr_cache/
+*.tesseract.txt
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local virtual environment configuration
+.python-version.local

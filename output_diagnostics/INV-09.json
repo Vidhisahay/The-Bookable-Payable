@@ -1,0 +1,434 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "arve",
+      "invoice",
+      "invoice no",
+      "invoicing",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "arve",
+          "invoicing",
+          "invoice no",
+          "vat"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-09.pdf",
+      "page_number": 1,
+      "text": "ARVE\nKuupäev Date Kliendinr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES166 EDOEREEEREEES\n‘Arve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OU EE398766194\nLindon 15 Maksetähtaeg Due Date\nindenstrasse\nEE-10134 TALLINN 26108127\nViide maksmisel Payment reference\n210020201117683950\nmaria.tamm@northwind.eu\nMeie vilde Our ref. Veovahend Vehicle Saatmise kuupäev Departure date\nTLLFW19939 /TLL9386486 2025 / 06 / 06\nSaatja viide Shipper Reference Tarneklausel Terms of delivery Saabumise kuupäev Arrival date\nPTGGM351961374 001 Ismir 2025 / 06 / 06\nVastuvötja Consignee\nNorthwi@PERATIONS\nFrielas business park, PT-2660 Frielas\nKood Code Tekst Notes KM VAT % Neto summa Net amount\n752 Import duties 0 31889.09\n751 Customs VAT 0 5878.23\ni Valuuta Currency Kokku Total\nEUR 37767.32\n3 Arve tähtajaks mittetasumisel on Cloverdale Tradäkßigus nöuda vilvist 0,1% tasumata summast iga maksetähtpäeva ületanud päeva eest. Lisandub\nvilvisarve valjastamise tasu 40 eurot.\nCloverdale Tradihns the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies\nt for every interest invoicing.\nNeto summa Net amount KMalus VATC.A _Kälbemaks VAT amount Valuuta Currency Kokku Total\n37767.32 0.00 0.00 EUR 37767.32\nCloverdale Trading\n10112, Gartenweg 13 . Harju county ESTONIA tel:\nAriregistri nr., Trade reg. No.: 15116864\nKM reg. nr., VAT reg. No.: EE418070965\nE-mail, E-post: luis.roth@ ashford-<istribution.com\nPangad, Banks:\nOakhaven BaflE516678092588562155 , BIC: SZWGVJOV\nRedwater BaiiE319931502108360825 „BIC: USQNDC2G\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 423788,
+        "ocr_alphanumeric_chars": 1325,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-09.pdf",
+      "page_number": 2,
+      "text": "",
+      "extraction_method": "ocr_timeout",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "ocr_modes_attempted": [
+          6
+        ]
+      },
+      "error": "OCR page timed out after 12s; PSM modes attempted: [6]"
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Some pages have missing or failed text extraction: [2].",
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "ARVE\nKuupäev Date Kliendinr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES166 EDOEREEEREEES\n‘Arve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OU EE398766194\nLindon 15 Maksetähtaeg Due"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "Invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "Kuupäev Date Kliendinr. Client No, Arve nr. Invoice No."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "EUR 37767.32"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "Cloverdale Tradihns the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "37767.32 0.00 0.00 EUR 37767.32"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "unreadable",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "‘Arve maksja Payer of invoice Reg. nr. VAT reg. no."
+                  },
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Neto summa Net amount KMalus VATC.A _Kälbemaks VAT amount Valuuta Currency Kokku Total"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "iva",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Saatja viide Shipper Reference Tarneklausel Terms of delivery Saabumise kuupäev Arrival date"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Kood Code Tekst Notes KM VAT % Neto summa Net amount"
+                  },
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "KM reg. nr., VAT reg. No.: EE418070965"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "751 Customs VAT 0 5878.23"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "5878.23",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "751 Customs VAT 0 5878.23"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "Some pages have missing or failed text extraction: [2].",
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  }
+}

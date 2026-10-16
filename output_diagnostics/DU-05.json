@@ -1,0 +1,392 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "invoice",
+      "tax invoice",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "tax invoice",
+          "vat"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "DU-05.pdf",
+      "page_number": 1,
+      "text": "Vantek Asia Pte Lid. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 wwrw.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\nfire Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 1.041\nJalan Ampang 08 [omen TE ——————\ni ‚ustomer nr. ‘our / VAT-no\nSingapore 539775 12192 207490313H\n‘Your Ust-ID no our Ust-ID no\n207490313H\nyour EORI no our EORI no\n[Eon\nPhone Fax\n[Fensianee  Ship-t0 party [Pestomer reference\nFairmont Technologies Inc 693100096\nGartenweg 24\nLaguna Technopark, Building C ‘Order number ~ [Currency\n4024 BINAN-SPECIAL ECONOMIC ZONE 3057199 SGD\nPHILIPPINES\n[Pos: [Product number / Description [Amount [Un [Ustpriceperunt [Pu [VAT [rest\n80 4108044 100 PC 771.66 100 771.66\nF:WSA_89424080 _HSS (N) H2940 DKC\nCust. mat-no: 89424080\nCountry of origin: Indonesia\nCustoms tariff nr.: 3926,9000\nDelivery note: 8358769 from 30.06.2026\nTotal amount in SGD\nIncoterms: EXW BATAM\nTerms of payment: 90 days net\nDue date: Up to 28.09.2026 without deduction\nBank account Larkspur Bank SINGAPORE BRANCH\nUSD-acc. 267-621698-425. Swift Code: TFFKBCCO\nSGD-acc. 143-022260-749. Swift Code: TFFKBCCO\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 359498,
+        "ocr_alphanumeric_chars": 886,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "Vantek Asia Pte Lid. Phone +43 0546 01 68\nHigh Street 7 Fax +65 6546 65 76\n#03-66/67/68/69 wwrw.vantek.com\nSingapore 737664 clara. kask@vantek.com\nSingapore\nTax Invoice\nfire Date Page\nCadence Pte. Ltd - Standard 7363916 30.06.2026 1.041\nJal"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "4024 BINAN-SPECIAL ECONOMIC ZONE 3057199 SGD"
+              },
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "Total amount in SGD"
+              },
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "USD-acc. 267-621698-425. Swift Code: TFFKBCCO"
+              },
+              {
+                "filename": "DU-05.pdf",
+                "page_number": 1,
+                "text": "SGD-acc. 143-022260-749. Swift Code: TFFKBCCO"
+              }
+            ],
+            "alternatives": [
+              "SGD",
+              "USD"
+            ],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "4108044 100 PC",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": "100",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": "771.66",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table does not state whether prices include tax."
+              },
+              "printed_total": {
+                "value": "771.66",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "80 4108044 100 PC 771.66 100 771.66"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "i ‚ustomer nr. ‘our / VAT-no"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Ust",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-05.pdf",
+                    "page_number": 1,
+                    "text": "‘Your Ust-ID no our Ust-ID no"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "found",
+            "payment_term_id": "Net_90",
+            "alias": "90 days",
+            "evidence": "n SGD Incoterms: EXW BATAM Terms of payment: 90 days net Due date: Up to 28.09.2026 without deduc"
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "Net_90",
+            "status": "matched",
+            "reason": "Exact normalized payment-term alias.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  }
+}

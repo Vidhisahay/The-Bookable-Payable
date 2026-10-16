@@ -1,0 +1,311 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": false,
+    "evidence": [
+      "arve"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "DU-11.pdf",
+      "page_number": 1,
+      "text": "Kuupäev 16.03.2025\nMaksetähtaeg 16.03.2025\nViitenumber 795977\nViivis 0,03% päevas\nArve kokku -400,00 EUR\nNorthwind Operations OU\nPaul Costa\nRua do Ouro 15\n10134 Kesklinna\nTallinn, Harju maakond\nEesti\nRegistrikood: 27044045\nKMKR nr.\nToode/Teenus Hind Kogus KM% Summa\nToitlustamine Tavoio 11.03.25 -327,868852 1 (tk) 22 -327,87\nSumma km-ta 22% -327,87\nKM 22% -72,13\nArve kokku (EUR) -400,00\nKreeditarve arvele nr. 6265.\nTäname Gigeaegselt tasutud arve eest!\nTavolo OU www.Tavolo.ee Nordbank AS\nI paul.haas@tavolo.ee\nRegistrikood; Teeassor\nKMKR nr.:\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": true,
+        "rendered_bytes": 412524,
+        "ocr_alphanumeric_chars": 428,
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "credit_memo",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Kuupäev 16.03.2025\nMaksetähtaeg 16.03.2025\nViitenumber 795977\nViivis 0,03% päevas\nArve kokku -400,00 EUR\nNorthwind Operations OU\nPaul Costa\nRua do Ouro 15\n10134 Kesklinna\nTallinn, Harju maakond\nEesti\nRegistrikood: 27044045\nKMKR nr.\nToode/Te"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "6265",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Kreeditarve arvele nr. 6265."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": "2025-03-16",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Kuupäev 16.03.2025"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": "2025-03-16",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg 16.03.2025"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Arve kokku -400,00 EUR"
+              },
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Arve kokku (EUR) -400,00"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "-400.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Arve kokku -400,00 EUR"
+              },
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Arve kokku (EUR) -400,00"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": "-327.87",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "Summa km-ta 22% -327,87"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "-72.13",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-11.pdf",
+                "page_number": 1,
+                "text": "KM 22% -72,13"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-11.pdf",
+                    "page_number": 1,
+                    "text": "KM 22% -72,13"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": "22",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-11.pdf",
+                    "page_number": 1,
+                    "text": "KM 22% -72,13"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "-72.13",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-11.pdf",
+                    "page_number": 1,
+                    "text": "KM 22% -72,13"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "EST_220_VAT",
+              "status": "matched",
+              "reason": "Unique master tax match by rate, supplier country, and tax type evidence.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "400.00"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "file": "DU-08.pdf",
+  "payables": [],
+  "declined": [
+    {
+      "doc_type": "payment_reminder",
+      "reason": "A payment reminder can reference an existing invoice but does not establish a new payable."
+    }
+  ]
+}
