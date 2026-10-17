@@ -52,7 +52,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "4c90bf2de24df2fbe85453e0febae12bbf53a8d90869d26c33dafc322126d6af"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }

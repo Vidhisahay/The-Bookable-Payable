@@ -1,0 +1,2 @@
+# Local PDF parsing and page rendering. Tesseract OCR is a separate system dependency.
+PyMuPDF>=1.24,<2

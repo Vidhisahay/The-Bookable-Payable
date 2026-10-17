@@ -58,7 +58,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "efa29d8e5e5701be73b9baeb5ae3f48157b176f554f5fbac6ed5d90487fdcb92"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     },
@@ -89,7 +90,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "58ac9f39c0114e15f18d8129b0e5474fb6f627ac405768db935571a23c619a63"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }

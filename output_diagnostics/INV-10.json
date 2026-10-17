@@ -46,7 +46,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "93b5b2ec15bae917545dc50817e30f15cc73149fd59414cfc09938d079babdc2"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }

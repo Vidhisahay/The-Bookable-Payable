@@ -124,7 +124,7 @@ Euro (EUR): Account Number 8672480039
             self.assertEqual(generated[1]["diagnostics"]["pages"][0]["evidence"]["ocr_cache"]["status"], "hit")
             self.assertEqual(generated[1]["diagnostics"]["extraction"]["candidates"][0]["reconciliation"]["status"], "passed")
 
-    def test_native_column_table_uses_bounded_ocr_and_recovers_oracle_payable(self):
+    def test_native_column_table_uses_bounded_ocr_but_does_not_invent_unit_price(self):
         native = """Oracle America, Inc.
 500 Oracle Parkway
 Redwood Shores, CA 94065
@@ -175,26 +175,18 @@ SUBTOTAL TOTAL(USD)
 91,580.50 91,580.50
 """
         result = self.run_text([native], ocr=FakeOCR(table_ocr))
-        payable = result["accounting"]["payables"][0]
+        self.assertEqual(result["accounting"]["payables"], [])
         candidate = result["diagnostics"]["extraction"]["candidates"][0]
-        self.assertEqual(payable["invoice_number"], "44273107")
-        self.assertEqual(payable["invoice_date"], "2018-06-18")
-        self.assertEqual(payable["due_date"], "2018-07-18")
-        self.assertEqual(payable["currency"], "USD")
-        self.assertEqual(payable["supplier"]["name"], "Oracle America, Inc.")
-        self.assertEqual(payable["supplier"]["address"], "500 Oracle Parkway, Redwood Shores, CA 94065, United States")
-        self.assertEqual(payable["supplier"]["vat_id"], "")
-        self.assertEqual(payable["po_number"], "1000021496")
-        self.assertEqual(payable["payment_term_id"], "Net_30")
-        self.assertEqual(payable["subtotal"], "91580.50")
-        self.assertEqual(payable["total_tax_amount"], "0.00")
-        self.assertEqual(payable["line_items"][0]["quantity"], "1")
-        self.assertIn("Managed Cloud Services - Additional Services", payable["line_items"][0]["description"])
-        self.assertIn("17-OCT-2018", payable["line_items"][0]["description"])
-        self.assertEqual(payable["line_items"][0]["unit_price"], "91580.50")
-        self.assertEqual(payable["line_items"][0]["total"], "91580.50")
-        self.assertEqual(candidate["reconciliation"]["erp_gross"], "91580.50")
-        self.assertEqual(candidate["bookability"]["status"], "passed")
+        fields = candidate["fields"]
+        self.assertEqual(fields["invoice_number"]["value"], "44273107")
+        self.assertEqual(fields["invoice_date"]["value"], "2018-06-18")
+        self.assertEqual(fields["currency"]["value"], "USD")
+        self.assertEqual(fields["supplier_name"]["value"], "Oracle America, Inc.")
+        self.assertEqual(fields["lines"][0]["quantity"]["value"], "1")
+        self.assertEqual(fields["lines"][0]["printed_total"]["value"], "91580.50")
+        self.assertEqual(fields["lines"][0]["unit_price"]["status"], "missing")
+        self.assertEqual(candidate["reconciliation"]["status"], "unresolved")
+        self.assertEqual(candidate["bookability"]["status"], "unresolved")
         self.assertEqual(result["diagnostics"]["pages"][0]["evidence"]["table_ocr"]["status"], "found")
 
     def test_product_reference_credit_table_keeps_line_vat_and_supplier_vat_scope(self):
@@ -459,6 +451,23 @@ Grand total EUR 100.00"""
         self.assertEqual(candidate["matches"]["supplier"]["status"], "unmatched")
         self.assertEqual(candidate["reconciliation"]["erp_gross"], "119.00")
         self.assertEqual(candidate["bookability"]["status"], "passed")
+
+    def test_unattributed_vat_after_total_does_not_identify_supplier(self):
+        text = """TAX INVOICE
+Bill To: Example Buyer Ltd
+Invoice number: INV-FOOTER
+Description Quantity Net Unit Price Amount
+Consulting service 1 100.00 100.00
+Grand total EUR 100.00
+VAT ID: XX123456789
+Reverse Charge"""
+        result = self.run_text([text])
+        candidate = result["diagnostics"]["extraction"]["candidates"][0]
+        self.assertEqual(candidate["fields"]["supplier_vat_id"]["status"], "missing")
+        self.assertEqual(candidate["fields"]["supplier_vat_id"]["value"], None)
+        self.assertEqual(result["accounting"]["payables"], [])
+        self.assertEqual(result["accounting"]["declined"], [])
+        self.assertEqual(candidate["bookability"]["status"], "unresolved")
 
     def test_bank_remittance_identity_allows_unmatched_supplier_code_when_arithmetic_is_supported(self):
         text = """TAX INVOICE

@@ -1,0 +1,132 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "iva"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "iva"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-25.pdf",
+      "page_number": 1,
+      "text": "Pot FAC A98/712\nOriginal Folha\nN° ide\nFairmont Services LDA\nHigh Street 34\n1000-137 LISBOA Support Services PT Unipessoal, Lda\nro 224\nChamada para a rede fixa nacional: Tel:40486«\nCaso esteja a ligar do estrangeiro contacte a sua ope Lisboa\npara saber a taxa aplicada\nIBAN: PT03 3800 2817 0335 4051 0822 4\nContribuinte N° :029461956\nCapital Social: 9975.96€\nRegistada na C.R.C.de LX. N.°2888\nE-Mail: lena.silva@larkspur-partners.com\nPT456472637 Emitido em Condigões de Pagamento Vencimento em\nš 2026-04-13 Pagamento Credito 2026-05-13\nš V/ Documento Cliente N° V/ Contribuinte Transporte\na 9448 353598648 V/Viatura\nFsi\n5\ng (Alinea f do N° 5 do Art? 36 CIVA) Os artigos facturados foram colocados a disposigäo do adquirente em 2026-04-13\nT REFERENCIA DESCRICAO COR TAM QUANTIDADE UNI P.VENDAC/IVA DESC VALORLIQUIDO IVA\nc6 FOT./IMPRESSAO A4 CORES 1 A4 400,00 UNI 0,400 EUR 160,00 EUR 23 %\nESTUD.\nFul FOLHA 80g BRANCO A4 400,00 UNI 0,000 EUR 0,00 EUR 23%\nFL2 FOLHA 1209 BRANCO A4 200,00 UNI 0,080 EUR 16,00 EUR 23%\nObservacões:\nHid}? Street 34\nFairmont-Services-b DA\nanFo - Processado por programa certificado n° 1217/AT - Sage\nIncidéncia Valor de I.V.A. TOTAL BRUTO 176,00 EUR\n143,09 23,0 % 32,91 DESCONTO LINHA 0,00 EUR\n0,00 0,0 % 0,00 DESCONTO GLOBAL 0,00 EUR\n0,00 0,0 % 0,00 TOTAL LIQUIDO 143,09 EUR\n0,00 0,0 % 0,00 TOTAL I.V.A. 32,91 EUR\nTOTAL PORTES 0,00 EUR\nHora de Carga: 12:38 Hora Descarga:\nLocal de Carga: — N/INSTALACOES Total 176,00 EUR\nLocal de Descarga: Rua do Ouro 224\n1250-148 Lisboa SF“\n© Sage licenciado a: Kingsley Partners LDA\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1185,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12576,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "ce224a7e8d8a06cc10390301adf5dbb5f795617bf50ed6be66fb131b5b3e9d50"
+        },
+        "text_layout": null
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-25.pdf",
+      "page_number": 2,
+      "text": "Pot FAC A98/712\nDuplicado Folha\nNõidel\nFairmont Services LDA\nHigh Street 34\n1000-137 LISBOA Support Services PT Unipessoal, Lda\nro 224\nChamada para a rede fixa nacional: Tel:40486«\nCaso esteja a ligar do estrangeiro contacte a sua ope Lisboa\npara saber a taxa aplicada\nIBAN: PT03 3800 2817 0335 4051 0822 4\nContribuinte N° :029461956\nCapital Social: 9975.96€\nRegistada na C.R.C.de LX. N.°2888\nE-Mail: lena.silva@larkspur-partners.com\nPT456472637 Emitido em Condigões de Pagamento Vencimento em\nš 2026-04-13 Pagamento Credito 2026-05-13\nš V/ Documento Cliente N° V/ Contribuinte Transporte\na 9448 353598648 V/Viatura\nFsi\n5\ng (Alinea f do N° 5 do Art? 36 CIVA) Os artigos facturados foram colocados a disposigäo do adquirente em 2026-04-13\nT REFERENCIA DESCRICAO COR TAM QUANTIDADE UNI P.VENDAC/IVA DESC VALORLIQUIDO IVA\nc6 FOT./IMPRESSAO A4 CORES 1 A4 400,00 UNI 0,400 EUR 160,00 EUR 23 %\nESTUD.\nFul FOLHA 80g BRANCO A4 400,00 UNI 0,000 EUR 0,00 EUR 23%\nFL2 FOLHA 1209 BRANCO A4 200,00 UNI 0,080 EUR 16,00 EUR 23%\nObservacões:\nHid}? Street 34\nFairmont-Services-b DA\nanFo - Processado por programa certificado n° 1217/AT - Sage\nIncidéncia Valor de I.V.A. TOTAL BRUTO 176,00 EUR\n143,09 23,0 % 32,91 DESCONTO LINHA 0,00 EUR\n0,00 0,0 % 0,00 DESCONTO GLOBAL 0,00 EUR\n0,00 0,0 % 0,00 TOTAL LIQUIDO 143,09 EUR\n0,00 0,0 % 0,00 TOTAL I.V.A. 32,91 EUR\nTOTAL PORTES 0,00 EUR\nHora de Carga: 12:38 Hora Descarga:\nLocal de Carga: — N/INSTALACOES Total 176,00 EUR\nLocal de Descarga: Rua do Ouro 224\n1250-148 Lisboa SF“\n© Sage licenciado a: Kingsley Partners LDA\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1188,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12158,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "4fb1062a566f879ef2f949adbcc91277c1d5ab3a0b6fa834a196736ced040e8b"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "gst",
+      "invoice",
+      "invoice no"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.84,
+        "evidence": [
+          "invoice",
+          "invoice no",
+          "gst"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-33.pdf",
+      "page_number": 1,
+      "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF\n$ Account Project No / | Amount ($) Contact Person's) Aps ing Olt a \" s\nNo Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14\n50401002 | 4244286 eo. Cost Gentrel GL: F2AGEKE [S00 002\n°\n= (Zale Wei NOTIGNS INT'L PTE. LTD.\n| 1 (Passenger Development www.AD-Natlons.com\nLo gi Airport Group (Singapore) Pto Lid o—~\nREGISTRATION NO, 53057406C RELEN ON\n| — ——-. _ 4 \\\nEN 2\nINVOICE (Page 01 of 01) FIN (EXP)\nChangi Airport Group (S) Pte Ltd\nPO Box 168 Invoice No. : ADIPL/INV/070/17\nSingapore Changi Airport Date : 8th June 2017\nSingapore 918146\nYour P.O. No. :\nTel : 6541 2374 Our D.O. No. :\nFax : 65425390 Job Ref. =: CAG/ST/8074/06/17\nAttn : Ms. Jacqueline Hia Terms : C.O.D\nQuantity [Unie Price | Amount |\n[PROJECT : Pillar Signage Panel For Shi\nCoach Bay (Lot No. 8)\nProcess : Supply of 2mm thick clear poly-carbonate sheet with reverse\nblack color base & install onto existing pillar with A3 size\ndigital print Matt lamination onto panel surface. Please\nnote; driling work is applicable for this job (Day Work).\n*Excluding any dismantling work.\nPanel Size = ; 500mm(W) x 500mm(H) 01 pc\n|Remarks = : Design 8 Ready FA for production aré scnnitratenotcaal\n: Future replacement of A3 size shuttle schedule per pc @.S$70. pe — |\n|! - am | —\n* Please kindly endorse and scan via dmail back to us once you have received this Invoice. Thank you |_| Total | $250.00 |\n* Cheque payment is to be issued to : AD NOTIONS INT'L PTE LTD i\nJacgueline Hia opment) ° A\nAssociate (Passénga- Dey / 4\naaa tp jahi õpe Orr INT'L PTE. LTD. ( x\nCustomer's Signatur company Stamp Authorised Signature )\nAD NOTIONS (t(wr't PTE. LTO\n20 Sin Ming Lane Midview City #08-61 Singapore 573968\nt: (465) 6515 1516 f: 465) 6515 1517 — «: Sales ZAQ-Notions.com\nInnovative Design Solutions\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1335,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 16089,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "d31e14462b1c94f149e8912504e7f5fac7b8c56f71dcf7218884870de04ab2cd"
+        },
+        "text_layout": {
+          "page_number": 1,
+          "source": "ocr",
+          "page_width": 595.2000122070312,
+          "page_height": 841.4400024414062,
+          "coordinate_system": "normalized_page",
+          "words": [
+            {
+              "text": "Phrked",
+              "bbox": [
+                0.015120967431817671,
+                0.02353108949247843,
+                0.058215724612498035,
+                0.044922989031095185
+              ],
+              "source": "ocr",
+              "confidence": 91.607597,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "Decument",
+              "bbox": [
+                0.06502015995681598,
+                0.02353108949247843,
+                0.1239919329409049,
+                0.044922989031095185
+              ],
+              "source": "ocr",
+              "confidence": 91.624001,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "Number)",
+              "bbox": [
+                0.13079636828522284,
+                0.02353108949247843,
+                0.4710181355011204,
+                0.044922989031095185
+              ],
+              "source": "ocr",
+              "confidence": 28.438103,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "ProjectNRIC:",
+              "bbox": [
+                0.6131552293602065,
+                0.031553051819459714,
+                0.7084173241806578,
+                0.04278379907723351
+              ],
+              "source": "ocr",
+              "confidence": 87.889969,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "Pdo0g",
+              "bbox": [
+                0.733366920443157,
+                0.030483456842528876,
+                0.7893144999408824,
+                0.04224900158876809
+              ],
+              "source": "ocr",
+              "confidence": 32.745178,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "£&",
+              "bbox": [
+                0.8074596608590636,
+                0.031018254330994297,
+                0.8210685315476995,
+                0.039575014146441
+              ],
+              "source": "ocr",
+              "confidence": 50.96711,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "PdeEOF",
+              "bbox": [
+                0.8346774022363355,
+                0.02887906437713262,
+                0.8966733687067879,
+                0.04064460912337183
+              ],
+              "source": "ocr",
+              "confidence": 38.11908,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "$",
+              "bbox": [
+                0.023437499519317388,
+                0.04759697647342228,
+                0.026461693005680922,
+                0.05294495135807647
+              ],
+              "source": "ocr",
+              "confidence": 58.154526,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Account",
+              "bbox": [
+                0.05367943438295273,
+                0.04759697647342228,
+                0.10131048179317839,
+                0.05615373628886898
+              ],
+              "source": "ocr",
+              "confidence": 28.691757,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Project",
+              "bbox": [
+                0.14969757757499494,
+                0.04920136893881854,
+                0.19052418964090265,
+                0.0593625212196615
+              ],
+              "source": "ocr",
+              "confidence": 96.411835,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "No",
+              "bbox": [
+                0.19657257661362973,
+                0.04973616642728396,
+                0.22152217287612888,
+                0.05722333126579982
+              ],
+              "source": "ocr",
+              "confidence": 34.898361,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "/",
+              "bbox": [
+                0.21698588264658358,
+                0.04706217898495686,
+                0.22303426961931064,
+                0.06203650866198859
+              ],
+              "source": "ocr",
+              "confidence": 34.898361,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.22605846310567418,
+                0.04706217898495686,
+                0.23135080170681036,
+                0.06203650866198859
+              ],
+              "source": "ocr",
+              "confidence": 52.992867,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Amount",
+              "bbox": [
+                0.23664314030794656,
+                0.050270963915749374,
+                0.27898184911703605,
+                0.05829292624273066
+              ],
+              "source": "ocr",
+              "confidence": 93.187172,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "($)",
+              "bbox": [
+                0.2850302360897631,
+                0.050270963915749374,
+                0.298639106778399,
+                0.059897318708126916
+              ],
+              "source": "ocr",
+              "confidence": 92.695374,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Contact",
+              "bbox": [
+                0.3122479774670349,
+                0.050270963915749374,
+                0.3447580574454429,
+                0.05829292624273066
+              ],
+              "source": "ocr",
+              "confidence": 94.123154,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Person's)",
+              "bbox": [
+                0.3492943476749882,
+                0.04438819154262977,
+                0.38860886299771413,
+                0.062571306150454
+              ],
+              "source": "ocr",
+              "confidence": 39.250378,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Aps",
+              "bbox": [
+                0.3954132983420321,
+                0.05187535638114563,
+                0.41204636251703153,
+                0.05829292624273066
+              ],
+              "source": "ocr",
+              "confidence": 47.009319,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "ing",
+              "bbox": [
+                0.4226310397193039,
+                0.0481317739618877,
+                0.43472781366475804,
+                0.062571306150454
+              ],
+              "source": "ocr",
+              "confidence": 90.87973,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Olt",
+              "bbox": [
+                0.4392641038943033,
+                0.051340558892680216,
+                0.4506048294681666,
+                0.05775812875426524
+              ],
+              "source": "ocr",
+              "confidence": 63.144508,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "a",
+              "bbox": [
+                0.4589213615556663,
+                0.04599258400802602,
+                0.47933466758862014,
+                0.05829292624273066
+              ],
+              "source": "ocr",
+              "confidence": 38.612381,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "5\t1\t1\t1\t2\t16\t939\t106\t3\t3\t12.153625\ts\n4\t1\t1\t1\t3\t0\t92\t87\t1020\t42\t-1\t\n5\t1\t1\t1\t3\t1\t92\t109\t20\t14\t94.077248\tNo\n5\t1\t1\t1\t3\t2\t197\t111\t35\t15\t96.852097\tCost\n5\t1\t1\t1\t3\t3\t241\t112\t50\t14\t94.121391\tCentre\n5\t1\t1\t1\t3\t4\t300\t99\t7\t39\t38.715397\t|\n5\t1\t1\t1\t3\t5\t307\t113\t56\t15\t38.715397\tWithout\n5\t1\t1\t1\t3\t6\t370\t113\t32\t15\t80.891884\tGST]\n5\t1\t1\t1\t3\t7\t413\t114\t73\t14\t85.702759\tNane\n5\t1\t1\t1\t3\t8\t449\t99\t4\t39\t93.003677\t8\n5\t1\t1\t1\t3\t9\t462\t114\t24\t14\t60.283188\tExtn\n5\t1\t1\t1\t3\t10\t492\t87\t26\t41\t9.068909\tAl\n5\t1\t1\t1\t3\t11\t531\t121\t15\t6\t59.039654\tre\n5\t1\t1\t1\t3\t12\t561\t102\t18\t26\t69.187515\tal\n5\t1\t1\t1\t3\t13\t598\t116\t21\t13\t35.196213\tOa\n5\t1\t1\t1\t3\t14\t810\t101\t64\t21\t96.083755\tProject\n5\t1\t1\t1\t3\t15\t880\t101\t61\t17\t47.235085\toficer:\n5\t1\t1\t1\t3\t16\t973\t98\t60\t20\t57.139282\t2259\n5\t1\t1\t1\t3\t17\t1043\t84\t6\t56\t47.207253\t|\n5\t1\t1\t1\t3\t18\t1044\t88\t68\t33\t50.826286\t14\n4\t1\t1\t1\t4\t0\t24\t125\t1236\t46\t-1\t\n5\t1\t1\t1\t4\t1\t24\t142\t106\t21\t27.283203\t50401002\n5\t1\t1\t1\t4\t2\t167\t123\t29\t49\t51.115112\t|\n5\t1\t1\t1\t4\t3\t194\t143\t91\t23\t23.914917\t4244286\n5\t1\t1\t1\t4\t4\t476\t136\t139\t31\t27.462181\teo.\n5\t1\t1\t1\t4\t5\t808\t144\t43\t16\t74.808289\tCost\n5\t1\t1\t1\t4\t6\t858\t144\t68\t17\t62.701660\tGentrel\n5\t1\t1\t1\t4\t7\t933\t144\t33\t18\t90.040321\tGL:\n5\t1\t1\t1\t4\t8\t986\t139\t111\t27\t0.000000\tF2AGEKE\n5\t1\t1\t1\t4\t9\t1113\t125\t78\t46\t0.000000\t[S00\n5\t1\t1\t1\t4\t10\t1200\t141\t60\t18\t64.776802\t002\n4\t1\t1\t1\t5\t0\t789\t168\t15\t14\t-1\t\n5\t1\t1\t1\t5\t1\t789\t168\t15\t14\t87.163071\t°\n4\t1\t1\t1\t6\t0\t321\t171\t821\t51\t-1\t\n5\t1\t1\t1\t6\t1\t321\t211\t17\t2\t71.048248\t=\n5\t1\t1\t1\t6\t2\t402\t171\t120\t51\t14.352608\t(Zale\n5\t1\t1\t1\t6\t3\t534\t202\t82\t14\t57.554211\tWei\n5\t1\t1\t1\t6\t4\t803\t199\t135\t14\t90.299751\tNOTIGNS\n5\t1\t1\t1\t6\t5\t950\t199\t64\t14\t84.266434\tINT'L\n5\t1\t1\t1\t6\t6\t1026\t201\t53\t12\t90.105888\tPTE.\n5\t1\t1\t1\t6\t7\t1093\t201\t49\t12\t91.297699\tLTD.\n4\t1\t1\t1\t7\t0\t12\t214\t1123\t39\t-1\t\n5\t1\t1\t1\t7\t1\t12\t216\t1\t5\t95.834236\t|\n5\t1\t1\t1\t7\t2\t405\t214\t161\t39\t50.033134\t1\n5\t1\t1\t1\t7\t3\t572\t219\t53\t16\t93.998016\t(Passenger\n5\t1\t1\t1\t7\t4\t637\t221\t82\t16\t82.743805\tDevelopment\n5\t1\t1\t1\t7\t5\t972\t218\t163\t11\t63.428619\twww.AD-Natlons.com\n4\t1\t1\t1\t8\t0\t297\t228\t876\t40\t-1\t\n5\t1\t1\t1\t8\t1\t297\t228\t38\t31\t62.076248\tLo\n5\t1\t1\t1\t8\t2\t513\t240\t7\t9\t56.038021\tgi\n5\t1\t1\t1\t8\t3\t524\t230\t40\t31\t93.432487\tAirport\n5\t1\t1\t1\t8\t4\t571\t230\t32\t31\t96.793648\tGroup\n5\t1\t1\t1\t8\t5\t636\t245\t25\t5\t96.180359\t(Singapore)\n5\t1\t1\t1\t8\t6\t670\t240\t56\t16\t78.370537\tPto\n5\t1\t1\t1\t8\t7\t710\t230\t19\t31\t96.728325\tLid\n5\t1\t1\t1\t8\t8\t1091\t248\t82\t20\t37.980377\to—~\n4\t1\t1\t1\t9\t0\t690\t266\t495\t26\t-1\t\n5\t1\t1\t1\t9\t1\t690\t266\t99\t11\t96.659897\tREGISTRATION\n5\t1\t1\t1\t9\t2\t794\t267\t19\t10\t93.224785\tNO,\n5\t1\t1\t1\t9\t3\t821\t267\t68\t10\t35.710922\t53057406C\n5\t1\t1\t1\t9\t4\t1082\t276\t58\t16\t48.280998\tRELEN\n5\t1\t1\t1\t9\t5\t1162\t270\t23\t19\t92.958176\tON\n4\t1\t1\t1\t10\t0\t290\t288\t898\t7\t-1\t\n5\t1\t1\t1\t10\t1\t290\t290\t5\t2\t37.347038\t|\n5\t1\t1\t1\t10\t2\t394\t291\t4\t2\t76.835365\t—\n5\t1\t1\t1\t10\t3\t454\t291\t41\t3\t35.948380\t——-.\n5\t1\t1\t1\t10\t4\t585\t294\t7\t1\t62.417889\t_\n5\t1\t1\t1\t10\t5\t1102\t290\t2\t2\t80.222023\t4\n5\t1\t1\t1\t10\t6\t1185\t288\t3\t7\t92.303566\t\\\n4\t1\t1\t1\t11\t0\t1125\t305\t32\t15\t-1\t\n5\t1\t1\t1\t11\t1\t1125\t306\t11\t10\t25.998688\tEN\n5\t1\t1\t1\t11\t2\t1152\t305\t5\t15\t36.689667\t2\n4\t1\t1\t1\t12\t0\t789\t335\t380\t22\t-1\t\n5\t1\t1\t1\t12\t1\t789\t335\t89\t17\t87.453888\tINVOICE\n5\t1\t1\t1\t12\t2\t893\t340\t104\t14\t86.748009\t(Page\n5\t1\t1\t1\t12\t3\t937\t331\t16\t31\t87.581482\t01\n5\t1\t1\t1\t12\t4\t960\t331\t12\t31\t96.210129\tof\n5\t1\t1\t1\t12\t5\t978\t331\t22\t31\t90.237801\t01)\n5\t1\t1\t1\t12\t6\t1090\t339\t26\t16\t94.194214\tFIN\n5\t1\t1\t1\t12\t7\t1124\t336\t45\t21\t92.995674\t(EXP)\n4\t1\t1\t1\t13\t0\t166\t361\t348\t20\t-1\t\n5\t1\t1\t1\t13\t1\t166\t361\t74\t20\t96.191551\tChangi\n5\t1\t1\t1\t13\t2\t247\t361\t74\t20\t96.793823\tAirport\n5\t1\t1\t1\t13\t3\t328\t361\t66\t20\t93.225395\tGroup\n5\t1\t1\t1\t13\t4\t402\t361\t29\t20\t93.149567\t(S)\n5\t1\t1\t1\t13\t5\t438\t361\t34\t17\t96.857040\tPte\n5\t1\t1\t1\t13\t6\t481\t361\t33\t17\t96.296539\tLtd\n4\t1\t1\t1\t14\t0\t165\t390\t929\t17\t-1\t\n5\t1\t1\t1\t14\t1\t165\t390\t26\t15\t94.760620\tPO\n5\t1\t1\t1\t14\t2\t198\t390\t35\t15\t96.013298\tBox\n5\t1\t1\t1\t14\t3\t239\t390\t31\t15\t96.716583\t168\n5\t1\t1\t1\t14\t4\t796\t392\t64\t14\t93.999512\tInvoice\n5\t1\t1\t1\t14\t5\t867\t392\t29\t14\t30.988533\tNo.\n5\t1\t1\t1\t14\t6\t922\t395\t3\t11\t72.702393\t:\n5\t1\t1\t1\t14\t7\t936\t391\t158\t16\t70.948822\tADIPL/INV/070/17\n4\t1\t1\t1\t15\t0\t165\t412\t894\t27\t-1\t\n5\t1\t1\t1\t15\t1\t165\t415\t92\t19\t96.550827\tSingapore\n5\t1\t1\t1\t15\t2\t264\t415\t64\t19\t95.593445\tChangi\n5\t1\t1\t1\t15\t3\t334\t415\t64\t18\t96.203537\tAirport\n5\t1\t1\t1\t15\t4\t826\t412\t40\t27\t96.518257\tDate\n5\t1\t1\t1\t15\t5\t922\t420\t3\t11\t86.661346\t:\n5\t1\t1\t1\t15\t6\t937\t416\t25\t15\t96.077896\t8th\n5\t1\t1\t1\t15\t7\t970\t417\t40\t14\t96.696915\tJune\n5\t1\t1\t1\t15\t8\t1017\t417\t42\t14\t96.626556\t2017\n4\t1\t1\t1\t16\t0\t165\t439\t163\t18\t-1\t\n5\t1\t1\t1\t16\t1\t165\t439\t92\t18\t96.313637\tSingapore\n5\t1\t1\t1\t16\t2\t264\t439\t64\t15\t96.521049\t918146\n4\t1\t1\t1\t17\t0\t787\t463\t138\t15\t-1\t\n5\t1\t1\t1\t17\t1\t787\t464\t44\t14\t96.728073\tYour\n5\t1\t1\t1\t17\t2\t837\t463\t36\t15\t87.272247\tP.O.\n5\t1\t1\t1\t17\t3\t880\t464\t29\t14\t87.272247\tNo.\n5\t1\t1\t1\t17\t4\t922\t467\t3\t11\t91.624306\t:\n4\t1\t1\t1\t18\t0\t165\t486\t760\t16\t-1\t\n5\t1\t1\t1\t18\t1\t165\t486\t26\t15\t96.643425\tTel\n5\t1\t1\t1\t18\t2\t277\t491\t4\t11\t67.019806\t:\n5\t1\t1\t1\t18\t3\t292\t486\t40\t15\t95.357666\t6541\n5\t1\t1\t1\t18\t4\t341\t486\t43\t15\t93.094116\t2374\n5\t1\t1\t1\t18\t5\t792\t487\t34\t15\t93.303589\tOur\n5\t1\t1\t1\t18\t6\t832\t487\t36\t15\t84.664864\tD.O.\n5\t1\t1\t1\t18\t7\t876\t487\t29\t15\t92.852699\tNo.\n5\t1\t1\t1\t18\t8\t922\t491\t3\t11\t86.616058\t:\n4\t1\t1\t1\t19\t0\t165\t510\t945\t16\t-1\t\n5\t1\t1\t1\t19\t1\t165\t510\t32\t15\t96.738823\tFax\n5\t1\t1\t1\t19\t2\t277\t514\t4\t11\t77.871658\t:\n5\t1\t1\t1\t19\t3\t293\t510\t90\t15\t96.462563\t65425390\n5\t1\t1\t1\t19\t4\t811\t511\t33\t15\t94.557899\tJob\n5\t1\t1\t1\t19\t5\t851\t511\t34\t15\t89.336937\tRef.\n5\t1\t1\t1\t19\t6\t922\t515\t3\t10\t20.839905\t=:\n5\t1\t1\t1\t19\t7\t938\t511\t172\t15\t91.788315\tCAG/ST/8074/06/17\n4\t1\t1\t1\t20\t0\t165\t553\t824\t28\t-1\t\n5\t1\t1\t1\t20\t1\t165\t553\t39\t27\t92.374214\tAttn\n5\t1\t1\t1\t20\t2\t277\t561\t4\t11\t84.499680\t:\n5\t1\t1\t1\t20\t3\t293\t557\t31\t15\t93.772758\tMs.\n5\t1\t1\t1\t20\t4\t330\t557\t99\t19\t93.253876\tJacqueline\n5\t1\t1\t1\t20\t5\t436\t557\t29\t15\t93.249420\tHia\n5\t1\t1\t1\t20\t6\t821\t554\t55\t27\t95.963837\tTerms\n5\t1\t1\t1\t20\t7\t922\t562\t3\t11\t68.010185\t:\n5\t1\t1\t1\t20\t8\t938\t558\t51\t15\t64.266182\tC.O.D\n4\t1\t1\t1\t21\t0\t804\t606\t352\t38\t-1\t\n5\t1\t1\t1\t21\t1\t804\t615\t84\t21\t61.745308\tQuantity\n5\t1\t1\t1\t21\t2\t901\t602\t59\t58\t12.076523\t[Unie\n5\t1\t1\t1\t21\t3\t969\t602\t49\t58\t12.076523\tPrice\n5\t1\t1\t1\t21\t4\t1027\t602\t15\t58\t93.238594\t|\n5\t1\t1\t1\t21\t5\t1033\t606\t123\t38\t42.022320\tAmount\n5\t1\t1\t1\t21\t6\t1148\t602\t10\t58\t96.855331\t|\n4\t1\t1\t1\t22\t0\t165\t671\t378\t16\t-1\t\n5\t1\t1\t1\t22\t1\t165\t671\t89\t15\t63.345123\t[PROJECT\n5\t1\t1\t1\t22\t2\t264\t667\t13\t29\t80.385536\t:\n5\t1\t1\t1\t22\t3\t311\t672\t4\t15\t96.682816\tPillar\n5\t1\t1\t1\t22\t4\t376\t675\t20\t12\t96.341721\tSignage\n5\t1\t1\t1\t22\t5\t449\t672\t45\t15\t96.452568\tPanel\n5\t1\t1\t1\t22\t6\t482\t667\t30\t29\t96.808998\tFor\n5\t1\t1\t1\t22\t7\t519\t672\t24\t15\t89.302155\tShi\n4\t1\t1\t1\t23\t0\t292\t695\t201\t20\t-1\t\n5\t1\t1\t1\t23\t1\t292\t695\t201\t20\t92.462318\tCoach\n5\t1\t1\t1\t23\t2\t356\t691\t29\t34\t96.708618\tBay\n5\t1\t1\t1\t23\t3\t395\t691\t38\t34\t96.407051\t(Lot\n5\t1\t1\t1\t23\t4\t441\t691\t26\t34\t96.890602\tNo.\n5\t1\t1\t1\t23\t5\t475\t691\t20\t34\t96.855019\t8)\n4\t1\t1\t1\t24\t0\t165\t739\t577\t25\t-1\t\n5\t1\t1\t1\t24\t1\t165\t739\t60\t25\t76.178360\tProcess\n5\t1\t1\t1\t24\t2\t278\t748\t3\t9\t56.014343\t:\n5\t1\t1\t1\t24\t3\t292\t743\t51\t17\t96.797234\tSupply\n5\t1\t1\t1\t24\t4\t349\t744\t14\t13\t96.988678\tof\n5\t1\t1\t1\t24\t5\t367\t744\t37\t13\t96.862534\t2mm\n5\t1\t1\t1\t24\t6\t409\t744\t35\t14\t96.872314\tthick\n5\t1\t1\t1\t24\t7\t450\t744\t36\t14\t90.238548\tclear\n5\t1\t1\t1\t24\t8\t491\t744\t110\t17\t90.238548\tpoly-carbonate\n5\t1\t1\t1\t24\t9\t606\t739\t39\t26\t96.768852\tsheet\n5\t1\t1\t1\t24\t10\t653\t739\t27\t26\t96.768852\twith\n5\t1\t1\t1\t24\t11\t687\t748\t55\t10\t96.511566\treverse\n4\t1\t1\t1\t25\t0\t293\t767\t416\t18\t-1\t\n5\t1\t1\t1\t25\t1\t293\t767\t38\t13\t95.264038\tblack\n5\t1\t1\t1\t25\t2\t336\t767\t36\t13\t96.926750\tcolor\n5\t1\t1\t1\t25\t3\t378\t767\t34\t14\t93.305046\tbase\n5\t1\t1\t1\t25\t4\t418\t767\t11\t13\t93.261978\t&\n5\t1\t1\t1\t25\t5\t434\t767\t42\t14\t95.016052\tinstall\n5\t1\t1\t1\t25\t6\t482\t768\t32\t13\t96.772041\tonto\n5\t1\t1\t1\t25\t7\t518\t767\t56\t18\t96.772041\texisting\n5\t1\t1\t1\t25\t8\t580\t768\t34\t16\t92.001289\tpillar\n5\t1\t1\t1\t25\t9\t618\t768\t30\t13\t93.050644\twith\n5\t1\t1\t1\t25\t10\t654\t768\t21\t13\t93.050644\tA3\n5\t1\t1\t1\t25\t11\t680\t768\t29\t14\t96.828171\tsize\n4\t1\t1\t1\t26\t0\t292\t791\t401\t17\t-1\t\n5\t1\t1\t1\t26\t1\t292\t791\t43\t17\t96.433601\tdigital\n5\t1\t1\t1\t26\t2\t340\t791\t32\t16\t97.011620\tprint\n5\t1\t1\t1\t26\t3\t378\t791\t32\t14\t96.954376\tMatt\n5\t1\t1\t1\t26\t4\t415\t791\t75\t14\t95.997993\tlamination\n5\t1\t1\t1\t26\t5\t496\t792\t31\t13\t96.930313\tonto\n5\t1\t1\t1\t26\t6\t532\t792\t40\t16\t88.134201\tpanel\n5\t1\t1\t1\t26\t7\t577\t791\t59\t14\t94.357193\tsurface.\n5\t1\t1\t1\t26\t8\t644\t791\t49\t14\t96.744118\tPlease\n4\t1\t1\t1\t27\t0\t293\t814\t405\t18\t-1\t\n5\t1\t1\t1\t27\t1\t293\t815\t35\t14\t95.872238\tnote;\n5\t1\t1\t1\t27\t2\t334\t814\t46\t17\t67.127167\tdriling\n5\t1\t1\t1\t27\t3\t386\t815\t36\t13\t96.978058\twork\n5\t1\t1\t1\t27\t4\t427\t815\t11\t13\t96.850922\tis\n5\t1\t1\t1\t27\t5\t444\t815\t75\t16\t96.607132\tapplicable\n5\t1\t1\t1\t27\t6\t523\t814\t20\t14\t96.983826\tfor\n5\t1\t1\t1\t27\t7\t548\t815\t25\t13\t96.170860\tthis\n5\t1\t1\t1\t27\t8\t578\t815\t24\t17\t96.145073\tjob\n5\t1\t1\t1\t27\t9\t608\t815\t35\t17\t96.991425\t(Day\n5\t1\t1\t1\t27\t10\t648\t815\t50\t17\t95.249046\tWork).\n4\t1\t1\t1\t28\t0\t292\t838\t241\t17\t-1\t\n5\t1\t1\t1\t28\t1\t292\t838\t78\t17\t87.595428\t*Excluding\n5\t1\t1\t1\t28\t2\t376\t841\t26\t14\t96.965012\tany\n5\t1\t1\t1\t28\t3\t407\t838\t85\t17\t95.286736\tdismantling\n5\t1\t1\t1\t28\t4\t497\t838\t36\t13\t95.981812\twork.\n4\t1\t1\t1\t29\t0\t165\t885\t704\t18\t-1\t\n5\t1\t1\t1\t29\t1\t165\t885\t41\t13\t83.876244\tPanel\n5\t1\t1\t1\t29\t2\t212\t885\t31\t13\t94.615028\tSize\n5\t1\t1\t1\t29\t3\t258\t880\t7\t26\t57.072830\t=\n5\t1\t1\t1\t29\t4\t278\t889\t3\t9\t77.846779\t;\n5\t1\t1\t1\t29\t5\t293\t885\t182\t17\t71.412605\t500mm(W)\n5\t1\t1\t1\t29\t6\t381\t880\t10\t26\t93.257225\tx\n5\t1\t1\t1\t29\t7\t399\t885\t76\t17\t86.804321\t500mm(H)\n5\t1\t1\t1\t29\t8\t829\t886\t15\t14\t72.318756\t01\n5\t1\t1\t1\t29\t9\t853\t889\t16\t14\t72.318756\tpc\n4\t1\t1\t1\t30\t0\t165\t925\t628\t52\t-1\t\n5\t1\t1\t1\t30\t1\t165\t932\t68\t13\t66.668320\t|Remarks\n5\t1\t1\t1\t30\t2\t248\t923\t13\t35\t52.880360\t=\n5\t1\t1\t1\t30\t3\t277\t936\t4\t10\t69.620697\t:\n5\t1\t1\t1\t30\t4\t293\t927\t86\t22\t56.989220\tDesign\n5\t1\t1\t1\t30\t5\t353\t923\t7\t35\t56.989220\t8\n5\t1\t1\t1\t30\t6\t370\t923\t45\t35\t90.148834\tReady\n5\t1\t1\t1\t30\t7\t423\t932\t16\t14\t90.148834\tFA\n5\t1\t1\t1\t30\t8\t446\t923\t22\t35\t96.334190\tfor\n5\t1\t1\t1\t30\t9\t472\t931\t109\t23\t93.304153\tproduction\n5\t1\t1\t1\t30\t10\t557\t923\t27\t35\t87.468254\taré\n5\t1\t1\t1\t30\t11\t587\t925\t206\t52\t0.000000\tscnnitratenotcaal\n4\t1\t1\t1\t31\t0\t277\t953\t666\t36\t-1\t\n5\t1\t1\t1\t31\t1\t277\t959\t4\t10\t87.444946\t:\n5\t1\t1\t1\t31\t2\t293\t949\t48\t30\t96.555458\tFuture\n5\t1\t1\t1\t31\t3\t348\t953\t57\t3\t94.641296\treplacement\n5\t1\t1\t1\t31\t4\t445\t954\t16\t16\t88.060753\tof\n5\t1\t1\t1\t31\t5\t468\t949\t13\t30\t85.531662\tA3\n5\t1\t1\t1\t31\t6\t488\t949\t30\t30\t93.306175\tsize\n5\t1\t1\t1\t31\t7\t528\t949\t50\t30\t0.225845\tshuttle\n5\t1\t1\t1\t31\t8\t585\t949\t63\t30\t56.724808\tschedule\n5\t1\t1\t1\t31\t9\t655\t949\t26\t30\t49.306736\tper\n5\t1\t1\t1\t31\t10\t688\t949\t15\t30\t63.752632\tpc\n5\t1\t1\t1\t31\t11\t713\t949\t59\t30\t71.701469\t@.S$70.\n5\t1\t1\t1\t31\t12\t787\t957\t55\t24\t34.192345\tpe\n5\t1\t1\t1\t31\t13\t870\t960\t9\t14\t59.022758\t—\n5\t1\t1\t1\t31\t14\t902\t968\t41\t21\t44.020405\t|\n4\t1\t1\t1\t32\t0\t389\t1012\t520\t26\t-1\t\n5\t1\t1\t1\t32\t1\t389\t1012\t5\t26\t67.647652\t|!\n5\t1\t1\t1\t32\t2\t436\t1028\t5\t1\t64.570938\t-\n5\t1\t1\t1\t32\t3\t765\t1029\t3\t1\t28.944252\tam\n5\t1\t1\t1\t32\t4\t788\t1018\t1\t4\t70.910782\t|\n5\t1\t1\t1\t32\t5\t858\t1029\t51\t2\t52.667027\t—\n4\t1\t1\t1\t33\t0\t165\t1239\t991\t21\t-1\t\n5\t1\t1\t1\t33\t1\t165\t1243\t5\t5\t84.204620\t*\n5\t1\t1\t1\t33\t2\t175\t1243\t39\t10\t75.673981\tPlease\n5\t1\t1\t1\t33\t3\t218\t1243\t33\t13\t94.849716\tkindly\n5\t1\t1\t1\t33\t4\t256\t1243\t48\t11\t95.179985\tendorse\n5\t1\t1\t1\t33\t5\t309\t1243\t21\t11\t96.866409\tand\n5\t1\t1\t1\t33\t6\t335\t1246\t28\t8\t95.234604\tscan\n5\t1\t1\t1\t33\t7\t367\t1246\t16\t8\t93.305794\tvia\n5\t1\t1\t1\t33\t8\t406\t1243\t12\t10\t80.926003\tdmail\n5\t1\t1\t1\t33\t9\t423\t1244\t27\t10\t96.806137\tback\n5\t1\t1\t1\t33\t10\t455\t1244\t11\t10\t95.150284\tto\n5\t1\t1\t1\t33\t11\t471\t1246\t13\t8\t95.150284\tus\n5\t1\t1\t1\t33\t12\t489\t1246\t29\t8\t95.339355\tonce\n5\t1\t1\t1\t33\t13\t522\t1246\t20\t10\t96.928421\tyou\n5\t1\t1\t1\t33\t14\t547\t1244\t28\t10\t96.109825\thave\n5\t1\t1\t1\t33\t15\t580\t1244\t50\t10\t96.490707\treceived\n5\t1\t1\t1\t33\t16\t634\t1244\t20\t10\t90.652283\tthis\n5\t1\t1\t1\t33\t17\t660\t1244\t41\t10\t93.039734\tInvoice.\n5\t1\t1\t1\t33\t18\t709\t1244\t36\t11\t96.277115\tThank\n5\t1\t1\t1\t33\t19\t750\t1247\t21\t10\t95.673683\tyou\n5\t1\t1\t1\t33\t20\t911\t1235\t35\t30\t0.000000\t|_|\n5\t1\t1\t1\t33\t21\t951\t1235\t53\t30\t0.000000\tTotal\n5\t1\t1\t1\t33\t22\t1021\t1235\t15\t30\t73.537659\t|\n5\t1\t1\t1\t33\t23\t1033\t1239\t123\t21\t81.097702\t$250.00\n5\t1\t1\t1\t33\t24\t1146\t1235\t13\t30\t96.060722\t|\n4\t1\t1\t1\t34\t0\t165\t1267\t775\t13\t-1\t\n5\t1\t1\t1\t34\t1\t165\t1267\t4\t5\t92.112419\t*\n5\t1\t1\t1\t34\t2\t175\t1267\t45\t13\t96.174568\tCheque\n5\t1\t1\t1\t34\t3\t225\t1267\t156\t13\t80.509232\tpayment\n5\t1\t1\t1\t34\t4\t279\t1257\t9\t31\t96.824135\tis\n5\t1\t1\t1\t34\t5\t295\t1257\t9\t31\t96.803162\tto\n5\t1\t1\t1\t34\t6\t310\t1257\t12\t31\t93.487152\tbe\n5\t1\t1\t1\t34\t7\t326\t1267\t40\t13\t73.650749\tissued\n5\t1\t1\t1\t34\t8\t370\t1257\t11\t31\t83.663582\tto\n5\t1\t1\t1\t34\t9\t388\t1257\t3\t31\t72.055428\t:\n5\t1\t1\t1\t34\t10\t398\t1257\t17\t31\t94.652275\tAD\n5\t1\t1\t1\t34\t11\t416\t1267\t62\t11\t94.652275\tNOTIONS\n5\t1\t1\t1\t34\t12\t483\t1267\t33\t11\t75.160149\tINT'L\n5\t1\t1\t1\t34\t13\t521\t1267\t25\t11\t84.523796\tPTE\n5\t1\t1\t1\t34\t14\t551\t1267\t26\t11\t96.159920\tLTD\n5\t1\t1\t1\t34\t15\t862\t1273\t78\t2\t0.000000\ti\n4\t1\t1\t1\t35\t0\t191\t1294\t906\t40\t-1\t\n5\t1\t1\t1\t35\t1\t191\t1298\t72\t17\t88.014809\tJacgueline\n5\t1\t1\t1\t35\t2\t269\t1297\t21\t13\t91.971756\tHia\n5\t1\t1\t1\t35\t3\t411\t1294\t61\t40\t45.126564\topment)\n5\t1\t1\t1\t35\t4\t755\t1303\t8\t11\t69.812553\t°\n5\t1\t1\t1\t35\t5\t1071\t1306\t26\t12\t14.870850\tA\n4\t1\t1\t1\t36\t0\t236\t1316\t858\t16\t-1\t\n5\t1\t1\t1\t36\t1\t236\t1317\t62\t14\t93.244621\tAssociate\n5\t1\t1\t1\t36\t2\t310\t1316\t54\t16\t12.175598\t(Passénga-\n5\t1\t1\t1\t36\t3\t400\t1317\t6\t10\t14.545670\tDey\n5\t1\t1\t1\t36\t4\t1011\t1325\t5\t5\t93.046761\t/\n5\t1\t1\t1\t36\t5\t1073\t1323\t21\t5\t54.679626\t4\n4\t1\t1\t1\t37\t0\t191\t1306\t891\t55\t-1\t\n5\t1\t1\t1\t37\t1\t191\t1318\t87\t37\t11.153297\taaa\n5\t1\t1\t1\t37\t2\t304\t1316\t40\t36\t10.617279\ttp\n5\t1\t1\t1\t37\t3\t356\t1334\t64\t15\t15.856514\tjahi\n5\t1\t1\t1\t37\t4\t452\t1333\t29\t28\t28.552879\tõpe\n5\t1\t1\t1\t37\t5\t715\t1306\t123\t55\t43.180389\tOrr\n5\t1\t1\t1\t37\t6\t845\t1327\t35\t10\t62.511681\tINT'L\n5\t1\t1\t1\t37\t7\t886\t1329\t30\t8\t74.884796\tPTE.\n5\t1\t1\t1\t37\t8\t924\t1329\t28\t9\t90.767220\tLTD.\n5\t1\t1\t1\t37\t9\t1000\t1338\t5\t12\t54.331886\t(\n5\t1\t1\t1\t37\t10\t1046\t1317\t36\t43\t31.768044\tx\n4\t1\t1\t1\t38\t0\t166\t1384\t814\t20\t-1\t\n5\t1\t1\t1\t38\t1\t166\t1384\t95\t15\t82.547310\tCustomer's\n5\t1\t1\t1\t38\t2\t268\t1384\t64\t19\t40.551300\tSignatur\n5\t1\t1\t1\t38\t3\t388\t1388\t68\t15\t7.804733\tcompany\n5\t1\t1\t1\t38\t4\t462\t1384\t56\t19\t93.585236\tStamp\n5\t1\t1\t1\t38\t5\t788\t1385\t91\t15\t96.835838\tAuthorised\n5\t1\t1\t1\t38\t6\t886\t1385\t82\t19\t93.297958\tSignature\n5\t1\t1\t1\t38\t7\t975\t1386\t5\t18\t93.277733\t)\n4\t1\t1\t1\t39\t0\t585\t1437\t419\t15\t-1\t\n5\t1\t1\t1\t39\t1\t585\t1437\t44\t14\t92.787659\tAD\n5\t1\t1\t1\t39\t2\t643\t1437\t147\t14\t91.906364\tNOTIONS\n5\t1\t1\t1\t39\t3\t805\t1437\t66\t14\t19.577934\t(t(wr't\n5\t1\t1\t1\t39\t4\t886\t1440\t58\t12\t82.147461\tPTE.\n5\t1\t1\t1\t39\t5\t959\t1440\t45\t12\t74.232544\tLTO\n4\t1\t1\t1\t40\t0\t583\t1464\t397\t13\t-1\t\n5\t1\t1\t1\t40\t1\t579\t1455\t18\t26\t92.769463\t20\n5\t1\t1\t1\t40\t2\t604\t1464\t21\t10\t87.562904\tSin\n5\t1\t1\t1\t40\t3\t632\t1464\t33\t13\t96.248573\tMing\n5\t1\t1\t1\t40\t4\t671\t1464\t33\t10\t93.047134\tLane\n5\t1\t1\t1\t40\t5\t709\t1464\t57\t10\t92.047714\tMidview\n5\t1\t1\t1\t40\t6\t773\t1464\t25\t13\t93.140869\tCity\n5\t1\t1\t1\t40\t7\t804\t1464\t43\t10\t92.638474\t#08-61\n5\t1\t1\t1\t40\t8\t855\t1464\t71\t13\t96.918495\tSingapore\n5\t1\t1\t1\t40\t9\t932\t1464\t48\t10\t91.915802\t573968\n4\t1\t1\t1\t41\t0\t584\t1483\t569\t13\t-1\t\n5\t1\t1\t1\t41\t1\t584\t1484\t9\t10\t72.336731\tt:\n5\t1\t1\t1\t41\t2\t600\t1483\t42\t13\t82.147446\t(465)\n5\t1\t1\t1\t41\t3\t649\t1484\t36\t11\t95.233215\t6515\n5\t1\t1\t1\t41\t4\t693\t1484\t31\t11\t95.044403\t1516\n5\t1\t1\t1\t41\t5\t775\t1484\t8\t11\t60.895145\tf:\n5\t1\t1\t1\t41\t6\t790\t1484\t41\t12\t41.731586\t465)\n5\t1\t1\t1\t41\t7\t838\t1484\t37\t11\t95.184662\t6515\n5\t1\t1\t1\t41\t8\t883\t1484\t30\t11\t54.397617\t1517\n5\t1\t1\t1\t41\t9\t931\t1474\t11\t31\t34.913521\t—\n5\t1\t1\t1\t41\t10\t955\t1487\t11\t8\t57.215034\t«:\n5\t1\t1\t1\t41\t11\t973\t1484\t39\t11\t91.184578\tSales\n5\t1\t1\t1\t41\t12\t1018\t1485\t135\t11\t47.282299\tZAQ-Notions.com\n4\t1\t1\t1\t42\t0\t479\t1668\t340\t16\t-1\t\n5\t1\t1\t1\t42\t1\t479\t1668\t123\t11\t96.198997\tInnovative\n5\t1\t1\t1\t42\t2\t618\t1668\t74\t16\t96.740646\tDesign\n5\t1\t1\t1\t42\t3\t708\t1668\t111\t13\t96.117783\tSolutions",
+              "bbox": [
+                0.6373487772511148,
+                0.05401454633500731,
+                0.6388608739942966,
+                0.05561893880040356
+              ],
+              "source": "ocr",
+              "confidence": 33.213577,
+              "block": "1",
+              "line": "2"
+            }
+          ],
+          "regions": [
+            {
+              "block": "1",
+              "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF\n$ Account Project No / | Amount ($) Contact Person's) Aps ing Olt a 5\t1\t1\t1\t2\t16\t939\t106\t3\t3\t12.153625\ts\n4\t1\t1\t1\t3\t0\t92\t87\t1020\t42\t-1\t\n5\t1\t1\t1\t3\t1\t92\t109\t20\t14\t94.077248\tNo\n5\t1\t1\t1\t3\t2\t197\t111\t35\t15\t96.852097\tCost\n5\t1\t1\t1\t3\t3\t241\t112\t50\t14\t94.121391\tCentre\n5\t1\t1\t1\t3\t4\t300\t99\t7\t39\t38.715397\t|\n5\t1\t1\t1\t3\t5\t307\t113\t56\t15\t38.715397\tWithout\n5\t1\t1\t1\t3\t6\t370\t113\t32\t15\t80.891884\tGST]\n5\t1\t1\t1\t3\t7\t413\t114\t73\t14\t85.702759\tNane\n5\t1\t1\t1\t3\t8\t449\t99\t4\t39\t93.003677\t8\n5\t1\t1\t1\t3\t9\t462\t114\t24\t14\t60.283188\tExtn\n5\t1\t1\t1\t3\t10\t492\t87\t26\t41\t9.068909\tAl\n5\t1\t1\t1\t3\t11\t531\t121\t15\t6\t59.039654\tre\n5\t1\t1\t1\t3\t12\t561\t102\t18\t26\t69.187515\tal\n5\t1\t1\t1\t3\t13\t598\t116\t21\t13\t35.196213\tOa\n5\t1\t1\t1\t3\t14\t810\t101\t64\t21\t96.083755\tProject\n5\t1\t1\t1\t3\t15\t880\t101\t61\t17\t47.235085\toficer:\n5\t1\t1\t1\t3\t16\t973\t98\t60\t20\t57.139282\t2259\n5\t1\t1\t1\t3\t17\t1043\t84\t6\t56\t47.207253\t|\n5\t1\t1\t1\t3\t18\t1044\t88\t68\t33\t50.826286\t14\n4\t1\t1\t1\t4\t0\t24\t125\t1236\t46\t-1\t\n5\t1\t1\t1\t4\t1\t24\t142\t106\t21\t27.283203\t50401002\n5\t1\t1\t1\t4\t2\t167\t123\t29\t49\t51.115112\t|\n5\t1\t1\t1\t4\t3\t194\t143\t91\t23\t23.914917\t4244286\n5\t1\t1\t1\t4\t4\t476\t136\t139\t31\t27.462181\teo.\n5\t1\t1\t1\t4\t5\t808\t144\t43\t16\t74.808289\tCost\n5\t1\t1\t1\t4\t6\t858\t144\t68\t17\t62.701660\tGentrel\n5\t1\t1\t1\t4\t7\t933\t144\t33\t18\t90.040321\tGL:\n5\t1\t1\t1\t4\t8\t986\t139\t111\t27\t0.000000\tF2AGEKE\n5\t1\t1\t1\t4\t9\t1113\t125\t78\t46\t0.000000\t[S00\n5\t1\t1\t1\t4\t10\t1200\t141\t60\t18\t64.776802\t002\n4\t1\t1\t1\t5\t0\t789\t168\t15\t14\t-1\t\n5\t1\t1\t1\t5\t1\t789\t168\t15\t14\t87.163071\t°\n4\t1\t1\t1\t6\t0\t321\t171\t821\t51\t-1\t\n5\t1\t1\t1\t6\t1\t321\t211\t17\t2\t71.048248\t=\n5\t1\t1\t1\t6\t2\t402\t171\t120\t51\t14.352608\t(Zale\n5\t1\t1\t1\t6\t3\t534\t202\t82\t14\t57.554211\tWei\n5\t1\t1\t1\t6\t4\t803\t199\t135\t14\t90.299751\tNOTIGNS\n5\t1\t1\t1\t6\t5\t950\t199\t64\t14\t84.266434\tINT'L\n5\t1\t1\t1\t6\t6\t1026\t201\t53\t12\t90.105888\tPTE.\n5\t1\t1\t1\t6\t7\t1093\t201\t49\t12\t91.297699\tLTD.\n4\t1\t1\t1\t7\t0\t12\t214\t1123\t39\t-1\t\n5\t1\t1\t1\t7\t1\t12\t216\t1\t5\t95.834236\t|\n5\t1\t1\t1\t7\t2\t405\t214\t161\t39\t50.033134\t1\n5\t1\t1\t1\t7\t3\t572\t219\t53\t16\t93.998016\t(Passenger\n5\t1\t1\t1\t7\t4\t637\t221\t82\t16\t82.743805\tDevelopment\n5\t1\t1\t1\t7\t5\t972\t218\t163\t11\t63.428619\twww.AD-Natlons.com\n4\t1\t1\t1\t8\t0\t297\t228\t876\t40\t-1\t\n5\t1\t1\t1\t8\t1\t297\t228\t38\t31\t62.076248\tLo\n5\t1\t1\t1\t8\t2\t513\t240\t7\t9\t56.038021\tgi\n5\t1\t1\t1\t8\t3\t524\t230\t40\t31\t93.432487\tAirport\n5\t1\t1\t1\t8\t4\t571\t230\t32\t31\t96.793648\tGroup\n5\t1\t1\t1\t8\t5\t636\t245\t25\t5\t96.180359\t(Singapore)\n5\t1\t1\t1\t8\t6\t670\t240\t56\t16\t78.370537\tPto\n5\t1\t1\t1\t8\t7\t710\t230\t19\t31\t96.728325\tLid\n5\t1\t1\t1\t8\t8\t1091\t248\t82\t20\t37.980377\to—~\n4\t1\t1\t1\t9\t0\t690\t266\t495\t26\t-1\t\n5\t1\t1\t1\t9\t1\t690\t266\t99\t11\t96.659897\tREGISTRATION\n5\t1\t1\t1\t9\t2\t794\t267\t19\t10\t93.224785\tNO,\n5\t1\t1\t1\t9\t3\t821\t267\t68\t10\t35.710922\t53057406C\n5\t1\t1\t1\t9\t4\t1082\t276\t58\t16\t48.280998\tRELEN\n5\t1\t1\t1\t9\t5\t1162\t270\t23\t19\t92.958176\tON\n4\t1\t1\t1\t10\t0\t290\t288\t898\t7\t-1\t\n5\t1\t1\t1\t10\t1\t290\t290\t5\t2\t37.347038\t|\n5\t1\t1\t1\t10\t2\t394\t291\t4\t2\t76.835365\t—\n5\t1\t1\t1\t10\t3\t454\t291\t41\t3\t35.948380\t——-.\n5\t1\t1\t1\t10\t4\t585\t294\t7\t1\t62.417889\t_\n5\t1\t1\t1\t10\t5\t1102\t290\t2\t2\t80.222023\t4\n5\t1\t1\t1\t10\t6\t1185\t288\t3\t7\t92.303566\t\\\n4\t1\t1\t1\t11\t0\t1125\t305\t32\t15\t-1\t\n5\t1\t1\t1\t11\t1\t1125\t306\t11\t10\t25.998688\tEN\n5\t1\t1\t1\t11\t2\t1152\t305\t5\t15\t36.689667\t2\n4\t1\t1\t1\t12\t0\t789\t335\t380\t22\t-1\t\n5\t1\t1\t1\t12\t1\t789\t335\t89\t17\t87.453888\tINVOICE\n5\t1\t1\t1\t12\t2\t893\t340\t104\t14\t86.748009\t(Page\n5\t1\t1\t1\t12\t3\t937\t331\t16\t31\t87.581482\t01\n5\t1\t1\t1\t12\t4\t960\t331\t12\t31\t96.210129\tof\n5\t1\t1\t1\t12\t5\t978\t331\t22\t31\t90.237801\t01)\n5\t1\t1\t1\t12\t6\t1090\t339\t26\t16\t94.194214\tFIN\n5\t1\t1\t1\t12\t7\t1124\t336\t45\t21\t92.995674\t(EXP)\n4\t1\t1\t1\t13\t0\t166\t361\t348\t20\t-1\t\n5\t1\t1\t1\t13\t1\t166\t361\t74\t20\t96.191551\tChangi\n5\t1\t1\t1\t13\t2\t247\t361\t74\t20\t96.793823\tAirport\n5\t1\t1\t1\t13\t3\t328\t361\t66\t20\t93.225395\tGroup\n5\t1\t1\t1\t13\t4\t402\t361\t29\t20\t93.149567\t(S)\n5\t1\t1\t1\t13\t5\t438\t361\t34\t17\t96.857040\tPte\n5\t1\t1\t1\t13\t6\t481\t361\t33\t17\t96.296539\tLtd\n4\t1\t1\t1\t14\t0\t165\t390\t929\t17\t-1\t\n5\t1\t1\t1\t14\t1\t165\t390\t26\t15\t94.760620\tPO\n5\t1\t1\t1\t14\t2\t198\t390\t35\t15\t96.013298\tBox\n5\t1\t1\t1\t14\t3\t239\t390\t31\t15\t96.716583\t168\n5\t1\t1\t1\t14\t4\t796\t392\t64\t14\t93.999512\tInvoice\n5\t1\t1\t1\t14\t5\t867\t392\t29\t14\t30.988533\tNo.\n5\t1\t1\t1\t14\t6\t922\t395\t3\t11\t72.702393\t:\n5\t1\t1\t1\t14\t7\t936\t391\t158\t16\t70.948822\tADIPL/INV/070/17\n4\t1\t1\t1\t15\t0\t165\t412\t894\t27\t-1\t\n5\t1\t1\t1\t15\t1\t165\t415\t92\t19\t96.550827\tSingapore\n5\t1\t1\t1\t15\t2\t264\t415\t64\t19\t95.593445\tChangi\n5\t1\t1\t1\t15\t3\t334\t415\t64\t18\t96.203537\tAirport\n5\t1\t1\t1\t15\t4\t826\t412\t40\t27\t96.518257\tDate\n5\t1\t1\t1\t15\t5\t922\t420\t3\t11\t86.661346\t:\n5\t1\t1\t1\t15\t6\t937\t416\t25\t15\t96.077896\t8th\n5\t1\t1\t1\t15\t7\t970\t417\t40\t14\t96.696915\tJune\n5\t1\t1\t1\t15\t8\t1017\t417\t42\t14\t96.626556\t2017\n4\t1\t1\t1\t16\t0\t165\t439\t163\t18\t-1\t\n5\t1\t1\t1\t16\t1\t165\t439\t92\t18\t96.313637\tSingapore\n5\t1\t1\t1\t16\t2\t264\t439\t64\t15\t96.521049\t918146\n4\t1\t1\t1\t17\t0\t787\t463\t138\t15\t-1\t\n5\t1\t1\t1\t17\t1\t787\t464\t44\t14\t96.728073\tYour\n5\t1\t1\t1\t17\t2\t837\t463\t36\t15\t87.272247\tP.O.\n5\t1\t1\t1\t17\t3\t880\t464\t29\t14\t87.272247\tNo.\n5\t1\t1\t1\t17\t4\t922\t467\t3\t11\t91.624306\t:\n4\t1\t1\t1\t18\t0\t165\t486\t760\t16\t-1\t\n5\t1\t1\t1\t18\t1\t165\t486\t26\t15\t96.643425\tTel\n5\t1\t1\t1\t18\t2\t277\t491\t4\t11\t67.019806\t:\n5\t1\t1\t1\t18\t3\t292\t486\t40\t15\t95.357666\t6541\n5\t1\t1\t1\t18\t4\t341\t486\t43\t15\t93.094116\t2374\n5\t1\t1\t1\t18\t5\t792\t487\t34\t15\t93.303589\tOur\n5\t1\t1\t1\t18\t6\t832\t487\t36\t15\t84.664864\tD.O.\n5\t1\t1\t1\t18\t7\t876\t487\t29\t15\t92.852699\tNo.\n5\t1\t1\t1\t18\t8\t922\t491\t3\t11\t86.616058\t:\n4\t1\t1\t1\t19\t0\t165\t510\t945\t16\t-1\t\n5\t1\t1\t1\t19\t1\t165\t510\t32\t15\t96.738823\tFax\n5\t1\t1\t1\t19\t2\t277\t514\t4\t11\t77.871658\t:\n5\t1\t1\t1\t19\t3\t293\t510\t90\t15\t96.462563\t65425390\n5\t1\t1\t1\t19\t4\t811\t511\t33\t15\t94.557899\tJob\n5\t1\t1\t1\t19\t5\t851\t511\t34\t15\t89.336937\tRef.\n5\t1\t1\t1\t19\t6\t922\t515\t3\t10\t20.839905\t=:\n5\t1\t1\t1\t19\t7\t938\t511\t172\t15\t91.788315\tCAG/ST/8074/06/17\n4\t1\t1\t1\t20\t0\t165\t553\t824\t28\t-1\t\n5\t1\t1\t1\t20\t1\t165\t553\t39\t27\t92.374214\tAttn\n5\t1\t1\t1\t20\t2\t277\t561\t4\t11\t84.499680\t:\n5\t1\t1\t1\t20\t3\t293\t557\t31\t15\t93.772758\tMs.\n5\t1\t1\t1\t20\t4\t330\t557\t99\t19\t93.253876\tJacqueline\n5\t1\t1\t1\t20\t5\t436\t557\t29\t15\t93.249420\tHia\n5\t1\t1\t1\t20\t6\t821\t554\t55\t27\t95.963837\tTerms\n5\t1\t1\t1\t20\t7\t922\t562\t3\t11\t68.010185\t:\n5\t1\t1\t1\t20\t8\t938\t558\t51\t15\t64.266182\tC.O.D\n4\t1\t1\t1\t21\t0\t804\t606\t352\t38\t-1\t\n5\t1\t1\t1\t21\t1\t804\t615\t84\t21\t61.745308\tQuantity\n5\t1\t1\t1\t21\t2\t901\t602\t59\t58\t12.076523\t[Unie\n5\t1\t1\t1\t21\t3\t969\t602\t49\t58\t12.076523\tPrice\n5\t1\t1\t1\t21\t4\t1027\t602\t15\t58\t93.238594\t|\n5\t1\t1\t1\t21\t5\t1033\t606\t123\t38\t42.022320\tAmount\n5\t1\t1\t1\t21\t6\t1148\t602\t10\t58\t96.855331\t|\n4\t1\t1\t1\t22\t0\t165\t671\t378\t16\t-1\t\n5\t1\t1\t1\t22\t1\t165\t671\t89\t15\t63.345123\t[PROJECT\n5\t1\t1\t1\t22\t2\t264\t667\t13\t29\t80.385536\t:\n5\t1\t1\t1\t22\t3\t311\t672\t4\t15\t96.682816\tPillar\n5\t1\t1\t1\t22\t4\t376\t675\t20\t12\t96.341721\tSignage\n5\t1\t1\t1\t22\t5\t449\t672\t45\t15\t96.452568\tPanel\n5\t1\t1\t1\t22\t6\t482\t667\t30\t29\t96.808998\tFor\n5\t1\t1\t1\t22\t7\t519\t672\t24\t15\t89.302155\tShi\n4\t1\t1\t1\t23\t0\t292\t695\t201\t20\t-1\t\n5\t1\t1\t1\t23\t1\t292\t695\t201\t20\t92.462318\tCoach\n5\t1\t1\t1\t23\t2\t356\t691\t29\t34\t96.708618\tBay\n5\t1\t1\t1\t23\t3\t395\t691\t38\t34\t96.407051\t(Lot\n5\t1\t1\t1\t23\t4\t441\t691\t26\t34\t96.890602\tNo.\n5\t1\t1\t1\t23\t5\t475\t691\t20\t34\t96.855019\t8)\n4\t1\t1\t1\t24\t0\t165\t739\t577\t25\t-1\t\n5\t1\t1\t1\t24\t1\t165\t739\t60\t25\t76.178360\tProcess\n5\t1\t1\t1\t24\t2\t278\t748\t3\t9\t56.014343\t:\n5\t1\t1\t1\t24\t3\t292\t743\t51\t17\t96.797234\tSupply\n5\t1\t1\t1\t24\t4\t349\t744\t14\t13\t96.988678\tof\n5\t1\t1\t1\t24\t5\t367\t744\t37\t13\t96.862534\t2mm\n5\t1\t1\t1\t24\t6\t409\t744\t35\t14\t96.872314\tthick\n5\t1\t1\t1\t24\t7\t450\t744\t36\t14\t90.238548\tclear\n5\t1\t1\t1\t24\t8\t491\t744\t110\t17\t90.238548\tpoly-carbonate\n5\t1\t1\t1\t24\t9\t606\t739\t39\t26\t96.768852\tsheet\n5\t1\t1\t1\t24\t10\t653\t739\t27\t26\t96.768852\twith\n5\t1\t1\t1\t24\t11\t687\t748\t55\t10\t96.511566\treverse\n4\t1\t1\t1\t25\t0\t293\t767\t416\t18\t-1\t\n5\t1\t1\t1\t25\t1\t293\t767\t38\t13\t95.264038\tblack\n5\t1\t1\t1\t25\t2\t336\t767\t36\t13\t96.926750\tcolor\n5\t1\t1\t1\t25\t3\t378\t767\t34\t14\t93.305046\tbase\n5\t1\t1\t1\t25\t4\t418\t767\t11\t13\t93.261978\t&\n5\t1\t1\t1\t25\t5\t434\t767\t42\t14\t95.016052\tinstall\n5\t1\t1\t1\t25\t6\t482\t768\t32\t13\t96.772041\tonto\n5\t1\t1\t1\t25\t7\t518\t767\t56\t18\t96.772041\texisting\n5\t1\t1\t1\t25\t8\t580\t768\t34\t16\t92.001289\tpillar\n5\t1\t1\t1\t25\t9\t618\t768\t30\t13\t93.050644\twith\n5\t1\t1\t1\t25\t10\t654\t768\t21\t13\t93.050644\tA3\n5\t1\t1\t1\t25\t11\t680\t768\t29\t14\t96.828171\tsize\n4\t1\t1\t1\t26\t0\t292\t791\t401\t17\t-1\t\n5\t1\t1\t1\t26\t1\t292\t791\t43\t17\t96.433601\tdigital\n5\t1\t1\t1\t26\t2\t340\t791\t32\t16\t97.011620\tprint\n5\t1\t1\t1\t26\t3\t378\t791\t32\t14\t96.954376\tMatt\n5\t1\t1\t1\t26\t4\t415\t791\t75\t14\t95.997993\tlamination\n5\t1\t1\t1\t26\t5\t496\t792\t31\t13\t96.930313\tonto\n5\t1\t1\t1\t26\t6\t532\t792\t40\t16\t88.134201\tpanel\n5\t1\t1\t1\t26\t7\t577\t791\t59\t14\t94.357193\tsurface.\n5\t1\t1\t1\t26\t8\t644\t791\t49\t14\t96.744118\tPlease\n4\t1\t1\t1\t27\t0\t293\t814\t405\t18\t-1\t\n5\t1\t1\t1\t27\t1\t293\t815\t35\t14\t95.872238\tnote;\n5\t1\t1\t1\t27\t2\t334\t814\t46\t17\t67.127167\tdriling\n5\t1\t1\t1\t27\t3\t386\t815\t36\t13\t96.978058\twork\n5\t1\t1\t1\t27\t4\t427\t815\t11\t13\t96.850922\tis\n5\t1\t1\t1\t27\t5\t444\t815\t75\t16\t96.607132\tapplicable\n5\t1\t1\t1\t27\t6\t523\t814\t20\t14\t96.983826\tfor\n5\t1\t1\t1\t27\t7\t548\t815\t25\t13\t96.170860\tthis\n5\t1\t1\t1\t27\t8\t578\t815\t24\t17\t96.145073\tjob\n5\t1\t1\t1\t27\t9\t608\t815\t35\t17\t96.991425\t(Day\n5\t1\t1\t1\t27\t10\t648\t815\t50\t17\t95.249046\tWork).\n4\t1\t1\t1\t28\t0\t292\t838\t241\t17\t-1\t\n5\t1\t1\t1\t28\t1\t292\t838\t78\t17\t87.595428\t*Excluding\n5\t1\t1\t1\t28\t2\t376\t841\t26\t14\t96.965012\tany\n5\t1\t1\t1\t28\t3\t407\t838\t85\t17\t95.286736\tdismantling\n5\t1\t1\t1\t28\t4\t497\t838\t36\t13\t95.981812\twork.\n4\t1\t1\t1\t29\t0\t165\t885\t704\t18\t-1\t\n5\t1\t1\t1\t29\t1\t165\t885\t41\t13\t83.876244\tPanel\n5\t1\t1\t1\t29\t2\t212\t885\t31\t13\t94.615028\tSize\n5\t1\t1\t1\t29\t3\t258\t880\t7\t26\t57.072830\t=\n5\t1\t1\t1\t29\t4\t278\t889\t3\t9\t77.846779\t;\n5\t1\t1\t1\t29\t5\t293\t885\t182\t17\t71.412605\t500mm(W)\n5\t1\t1\t1\t29\t6\t381\t880\t10\t26\t93.257225\tx\n5\t1\t1\t1\t29\t7\t399\t885\t76\t17\t86.804321\t500mm(H)\n5\t1\t1\t1\t29\t8\t829\t886\t15\t14\t72.318756\t01\n5\t1\t1\t1\t29\t9\t853\t889\t16\t14\t72.318756\tpc\n4\t1\t1\t1\t30\t0\t165\t925\t628\t52\t-1\t\n5\t1\t1\t1\t30\t1\t165\t932\t68\t13\t66.668320\t|Remarks\n5\t1\t1\t1\t30\t2\t248\t923\t13\t35\t52.880360\t=\n5\t1\t1\t1\t30\t3\t277\t936\t4\t10\t69.620697\t:\n5\t1\t1\t1\t30\t4\t293\t927\t86\t22\t56.989220\tDesign\n5\t1\t1\t1\t30\t5\t353\t923\t7\t35\t56.989220\t8\n5\t1\t1\t1\t30\t6\t370\t923\t45\t35\t90.148834\tReady\n5\t1\t1\t1\t30\t7\t423\t932\t16\t14\t90.148834\tFA\n5\t1\t1\t1\t30\t8\t446\t923\t22\t35\t96.334190\tfor\n5\t1\t1\t1\t30\t9\t472\t931\t109\t23\t93.304153\tproduction\n5\t1\t1\t1\t30\t10\t557\t923\t27\t35\t87.468254\taré\n5\t1\t1\t1\t30\t11\t587\t925\t206\t52\t0.000000\tscnnitratenotcaal\n4\t1\t1\t1\t31\t0\t277\t953\t666\t36\t-1\t\n5\t1\t1\t1\t31\t1\t277\t959\t4\t10\t87.444946\t:\n5\t1\t1\t1\t31\t2\t293\t949\t48\t30\t96.555458\tFuture\n5\t1\t1\t1\t31\t3\t348\t953\t57\t3\t94.641296\treplacement\n5\t1\t1\t1\t31\t4\t445\t954\t16\t16\t88.060753\tof\n5\t1\t1\t1\t31\t5\t468\t949\t13\t30\t85.531662\tA3\n5\t1\t1\t1\t31\t6\t488\t949\t30\t30\t93.306175\tsize\n5\t1\t1\t1\t31\t7\t528\t949\t50\t30\t0.225845\tshuttle\n5\t1\t1\t1\t31\t8\t585\t949\t63\t30\t56.724808\tschedule\n5\t1\t1\t1\t31\t9\t655\t949\t26\t30\t49.306736\tper\n5\t1\t1\t1\t31\t10\t688\t949\t15\t30\t63.752632\tpc\n5\t1\t1\t1\t31\t11\t713\t949\t59\t30\t71.701469\t@.S$70.\n5\t1\t1\t1\t31\t12\t787\t957\t55\t24\t34.192345\tpe\n5\t1\t1\t1\t31\t13\t870\t960\t9\t14\t59.022758\t—\n5\t1\t1\t1\t31\t14\t902\t968\t41\t21\t44.020405\t|\n4\t1\t1\t1\t32\t0\t389\t1012\t520\t26\t-1\t\n5\t1\t1\t1\t32\t1\t389\t1012\t5\t26\t67.647652\t|!\n5\t1\t1\t1\t32\t2\t436\t1028\t5\t1\t64.570938\t-\n5\t1\t1\t1\t32\t3\t765\t1029\t3\t1\t28.944252\tam\n5\t1\t1\t1\t32\t4\t788\t1018\t1\t4\t70.910782\t|\n5\t1\t1\t1\t32\t5\t858\t1029\t51\t2\t52.667027\t—\n4\t1\t1\t1\t33\t0\t165\t1239\t991\t21\t-1\t\n5\t1\t1\t1\t33\t1\t165\t1243\t5\t5\t84.204620\t*\n5\t1\t1\t1\t33\t2\t175\t1243\t39\t10\t75.673981\tPlease\n5\t1\t1\t1\t33\t3\t218\t1243\t33\t13\t94.849716\tkindly\n5\t1\t1\t1\t33\t4\t256\t1243\t48\t11\t95.179985\tendorse\n5\t1\t1\t1\t33\t5\t309\t1243\t21\t11\t96.866409\tand\n5\t1\t1\t1\t33\t6\t335\t1246\t28\t8\t95.234604\tscan\n5\t1\t1\t1\t33\t7\t367\t1246\t16\t8\t93.305794\tvia\n5\t1\t1\t1\t33\t8\t406\t1243\t12\t10\t80.926003\tdmail\n5\t1\t1\t1\t33\t9\t423\t1244\t27\t10\t96.806137\tback\n5\t1\t1\t1\t33\t10\t455\t1244\t11\t10\t95.150284\tto\n5\t1\t1\t1\t33\t11\t471\t1246\t13\t8\t95.150284\tus\n5\t1\t1\t1\t33\t12\t489\t1246\t29\t8\t95.339355\tonce\n5\t1\t1\t1\t33\t13\t522\t1246\t20\t10\t96.928421\tyou\n5\t1\t1\t1\t33\t14\t547\t1244\t28\t10\t96.109825\thave\n5\t1\t1\t1\t33\t15\t580\t1244\t50\t10\t96.490707\treceived\n5\t1\t1\t1\t33\t16\t634\t1244\t20\t10\t90.652283\tthis\n5\t1\t1\t1\t33\t17\t660\t1244\t41\t10\t93.039734\tInvoice.\n5\t1\t1\t1\t33\t18\t709\t1244\t36\t11\t96.277115\tThank\n5\t1\t1\t1\t33\t19\t750\t1247\t21\t10\t95.673683\tyou\n5\t1\t1\t1\t33\t20\t911\t1235\t35\t30\t0.000000\t|_|\n5\t1\t1\t1\t33\t21\t951\t1235\t53\t30\t0.000000\tTotal\n5\t1\t1\t1\t33\t22\t1021\t1235\t15\t30\t73.537659\t|\n5\t1\t1\t1\t33\t23\t1033\t1239\t123\t21\t81.097702\t$250.00\n5\t1\t1\t1\t33\t24\t1146\t1235\t13\t30\t96.060722\t|\n4\t1\t1\t1\t34\t0\t165\t1267\t775\t13\t-1\t\n5\t1\t1\t1\t34\t1\t165\t1267\t4\t5\t92.112419\t*\n5\t1\t1\t1\t34\t2\t175\t1267\t45\t13\t96.174568\tCheque\n5\t1\t1\t1\t34\t3\t225\t1267\t156\t13\t80.509232\tpayment\n5\t1\t1\t1\t34\t4\t279\t1257\t9\t31\t96.824135\tis\n5\t1\t1\t1\t34\t5\t295\t1257\t9\t31\t96.803162\tto\n5\t1\t1\t1\t34\t6\t310\t1257\t12\t31\t93.487152\tbe\n5\t1\t1\t1\t34\t7\t326\t1267\t40\t13\t73.650749\tissued\n5\t1\t1\t1\t34\t8\t370\t1257\t11\t31\t83.663582\tto\n5\t1\t1\t1\t34\t9\t388\t1257\t3\t31\t72.055428\t:\n5\t1\t1\t1\t34\t10\t398\t1257\t17\t31\t94.652275\tAD\n5\t1\t1\t1\t34\t11\t416\t1267\t62\t11\t94.652275\tNOTIONS\n5\t1\t1\t1\t34\t12\t483\t1267\t33\t11\t75.160149\tINT'L\n5\t1\t1\t1\t34\t13\t521\t1267\t25\t11\t84.523796\tPTE\n5\t1\t1\t1\t34\t14\t551\t1267\t26\t11\t96.159920\tLTD\n5\t1\t1\t1\t34\t15\t862\t1273\t78\t2\t0.000000\ti\n4\t1\t1\t1\t35\t0\t191\t1294\t906\t40\t-1\t\n5\t1\t1\t1\t35\t1\t191\t1298\t72\t17\t88.014809\tJacgueline\n5\t1\t1\t1\t35\t2\t269\t1297\t21\t13\t91.971756\tHia\n5\t1\t1\t1\t35\t3\t411\t1294\t61\t40\t45.126564\topment)\n5\t1\t1\t1\t35\t4\t755\t1303\t8\t11\t69.812553\t°\n5\t1\t1\t1\t35\t5\t1071\t1306\t26\t12\t14.870850\tA\n4\t1\t1\t1\t36\t0\t236\t1316\t858\t16\t-1\t\n5\t1\t1\t1\t36\t1\t236\t1317\t62\t14\t93.244621\tAssociate\n5\t1\t1\t1\t36\t2\t310\t1316\t54\t16\t12.175598\t(Passénga-\n5\t1\t1\t1\t36\t3\t400\t1317\t6\t10\t14.545670\tDey\n5\t1\t1\t1\t36\t4\t1011\t1325\t5\t5\t93.046761\t/\n5\t1\t1\t1\t36\t5\t1073\t1323\t21\t5\t54.679626\t4\n4\t1\t1\t1\t37\t0\t191\t1306\t891\t55\t-1\t\n5\t1\t1\t1\t37\t1\t191\t1318\t87\t37\t11.153297\taaa\n5\t1\t1\t1\t37\t2\t304\t1316\t40\t36\t10.617279\ttp\n5\t1\t1\t1\t37\t3\t356\t1334\t64\t15\t15.856514\tjahi\n5\t1\t1\t1\t37\t4\t452\t1333\t29\t28\t28.552879\tõpe\n5\t1\t1\t1\t37\t5\t715\t1306\t123\t55\t43.180389\tOrr\n5\t1\t1\t1\t37\t6\t845\t1327\t35\t10\t62.511681\tINT'L\n5\t1\t1\t1\t37\t7\t886\t1329\t30\t8\t74.884796\tPTE.\n5\t1\t1\t1\t37\t8\t924\t1329\t28\t9\t90.767220\tLTD.\n5\t1\t1\t1\t37\t9\t1000\t1338\t5\t12\t54.331886\t(\n5\t1\t1\t1\t37\t10\t1046\t1317\t36\t43\t31.768044\tx\n4\t1\t1\t1\t38\t0\t166\t1384\t814\t20\t-1\t\n5\t1\t1\t1\t38\t1\t166\t1384\t95\t15\t82.547310\tCustomer's\n5\t1\t1\t1\t38\t2\t268\t1384\t64\t19\t40.551300\tSignatur\n5\t1\t1\t1\t38\t3\t388\t1388\t68\t15\t7.804733\tcompany\n5\t1\t1\t1\t38\t4\t462\t1384\t56\t19\t93.585236\tStamp\n5\t1\t1\t1\t38\t5\t788\t1385\t91\t15\t96.835838\tAuthorised\n5\t1\t1\t1\t38\t6\t886\t1385\t82\t19\t93.297958\tSignature\n5\t1\t1\t1\t38\t7\t975\t1386\t5\t18\t93.277733\t)\n4\t1\t1\t1\t39\t0\t585\t1437\t419\t15\t-1\t\n5\t1\t1\t1\t39\t1\t585\t1437\t44\t14\t92.787659\tAD\n5\t1\t1\t1\t39\t2\t643\t1437\t147\t14\t91.906364\tNOTIONS\n5\t1\t1\t1\t39\t3\t805\t1437\t66\t14\t19.577934\t(t(wr't\n5\t1\t1\t1\t39\t4\t886\t1440\t58\t12\t82.147461\tPTE.\n5\t1\t1\t1\t39\t5\t959\t1440\t45\t12\t74.232544\tLTO\n4\t1\t1\t1\t40\t0\t583\t1464\t397\t13\t-1\t\n5\t1\t1\t1\t40\t1\t579\t1455\t18\t26\t92.769463\t20\n5\t1\t1\t1\t40\t2\t604\t1464\t21\t10\t87.562904\tSin\n5\t1\t1\t1\t40\t3\t632\t1464\t33\t13\t96.248573\tMing\n5\t1\t1\t1\t40\t4\t671\t1464\t33\t10\t93.047134\tLane\n5\t1\t1\t1\t40\t5\t709\t1464\t57\t10\t92.047714\tMidview\n5\t1\t1\t1\t40\t6\t773\t1464\t25\t13\t93.140869\tCity\n5\t1\t1\t1\t40\t7\t804\t1464\t43\t10\t92.638474\t#08-61\n5\t1\t1\t1\t40\t8\t855\t1464\t71\t13\t96.918495\tSingapore\n5\t1\t1\t1\t40\t9\t932\t1464\t48\t10\t91.915802\t573968\n4\t1\t1\t1\t41\t0\t584\t1483\t569\t13\t-1\t\n5\t1\t1\t1\t41\t1\t584\t1484\t9\t10\t72.336731\tt:\n5\t1\t1\t1\t41\t2\t600\t1483\t42\t13\t82.147446\t(465)\n5\t1\t1\t1\t41\t3\t649\t1484\t36\t11\t95.233215\t6515\n5\t1\t1\t1\t41\t4\t693\t1484\t31\t11\t95.044403\t1516\n5\t1\t1\t1\t41\t5\t775\t1484\t8\t11\t60.895145\tf:\n5\t1\t1\t1\t41\t6\t790\t1484\t41\t12\t41.731586\t465)\n5\t1\t1\t1\t41\t7\t838\t1484\t37\t11\t95.184662\t6515\n5\t1\t1\t1\t41\t8\t883\t1484\t30\t11\t54.397617\t1517\n5\t1\t1\t1\t41\t9\t931\t1474\t11\t31\t34.913521\t—\n5\t1\t1\t1\t41\t10\t955\t1487\t11\t8\t57.215034\t«:\n5\t1\t1\t1\t41\t11\t973\t1484\t39\t11\t91.184578\tSales\n5\t1\t1\t1\t41\t12\t1018\t1485\t135\t11\t47.282299\tZAQ-Notions.com\n4\t1\t1\t1\t42\t0\t479\t1668\t340\t16\t-1\t\n5\t1\t1\t1\t42\t1\t479\t1668\t123\t11\t96.198997\tInnovative\n5\t1\t1\t1\t42\t2\t618\t1668\t74\t16\t96.740646\tDesign\n5\t1\t1\t1\t42\t3\t708\t1668\t111\t13\t96.117783\tSolutions",
+              "bbox": [
+                0.015120967431817671,
+                0.02353108949247843,
+                0.8966733687067879,
+                0.062571306150454
+              ]
+            }
+          ],
+          "cache": {
+            "status": "hit",
+            "key": "28afe8cf5b637ca231a25608083cc17b08ef935d405c1479eb5367c569bef4e3"
+          }
+        }
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF\n$ Account Project No / | Amount ($) Contact Person's) Aps ing Olt a \" s\nNo Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14\n50401002 | 4244286 eo. Cost Gentrel"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "ADIPL/INV/070/17",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "PO Box 168 Invoice No. : ADIPL/INV/070/17"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "GBP",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-33.pdf",
+                "page_number": 1,
+                "text": "Phrked Decument Number) ProjectNRIC: Pdo0g £& PdeEOF"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "GST",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-33.pdf",
+                    "page_number": 1,
+                    "text": "No Cost Centre | Without GST] Nane 8 Extn Al re al Oa Project oficer: 2259 | 14"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

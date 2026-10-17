@@ -52,14 +52,15 @@
         "ocr_cache": {
           "status": "hit",
           "key": "403609f7a3e3627f93c1977fe07f2e338ed39a66255b6aa3b20cdd822c60cb5e"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }
   ],
   "extraction": {
     "excluded_reason": null,
-    "review_required": false,
+    "review_required": true,
     "page_scope": [
       {
         "page_number": 1,
@@ -67,7 +68,10 @@
         "reason": "No explicit non-payable page boundary was classified."
       }
     ],
-    "warnings": [],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
     "candidates": [
       {
         "fields": {
@@ -124,15 +128,9 @@
             "note": null
           },
           "supplier_name": {
-            "value": "Northwind Operations OU",
-            "status": "found",
-            "evidence": [
-              {
-                "filename": "INV-01.pdf",
-                "page_number": 1,
-                "text": "Northwind Operations OU"
-              }
-            ],
+            "value": null,
+            "status": "missing",
+            "evidence": [],
             "alternatives": [],
             "note": null
           },
@@ -144,8 +142,8 @@
             "note": null
           },
           "supplier_vat_id": {
-            "value": "EE398766194",
-            "status": "found",
+            "value": null,
+            "status": "ambiguous",
             "evidence": [
               {
                 "filename": "INV-01.pdf",
@@ -153,8 +151,10 @@
                 "text": "Vat ID: EE398766194"
               }
             ],
-            "alternatives": [],
-            "note": null
+            "alternatives": [
+              "EE398766194"
+            ],
+            "note": "A VAT label after the payable total is not linked to the supplier."
           },
           "currency": {
             "value": "EUR",
@@ -473,8 +473,11 @@
           "pages": [
             1
           ],
-          "review_required": false,
-          "warnings": []
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
         },
         "master_hints": {
           "buyer": {},
@@ -484,10 +487,10 @@
             "reason": "No exact payment-term alias was found; dates are not used to infer terms."
           }
         },
-        "output_status": "emitted_bookable_payable",
+        "output_status": "unresolved_not_emitted",
         "bookability": {
-          "status": "passed",
-          "reason": "Required ERP reconciliation passed."
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
         },
         "matches": {
           "supplier": {
@@ -539,7 +542,9 @@
         }
       }
     ],
-    "unresolved_reasons": []
+    "unresolved_reasons": [
+      "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+    ]
   },
   "run_configuration": {
     "ocr_language": "eng+est",

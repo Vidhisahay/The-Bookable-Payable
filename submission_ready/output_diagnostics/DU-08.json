@@ -1,0 +1,4056 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "payment_reminder",
+    "confidence": 0.84,
+    "uncertain": false,
+    "evidence": [
+      "mahnung",
+      "zahlungsausgleich",
+      "zahlungstermin"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "payment_reminder",
+        "confidence": 0.84,
+        "evidence": [
+          "mahnung",
+          "zahlungsausgleich",
+          "zahlungstermin"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "DU-08.pdf",
+      "page_number": 1,
+      "text": "2\nMahnung\nKingsley Trading GmbH & Co. KG\nNorthwind Services DE GmbH\nKarl-Liebknecht-Str. 29\n10178 Berlin Bankverbindung\nDeutschland DE47 3221 2282 8473 6223 St@ibarBT79 3686\nIBAN DE47 3221 2204 64706823 35 2250179 3686\nBIC YSTTFV26AKT\nBitte bei Zahlungen immer angeben:\nKundennr. 0665850800\nBelegnr. siehe unten\n4. Juni 2025\nMB236544896 Pahnungsnr MB236544896 Pahnungsnr\nSeite 1\nSehr geehrte Damen und Herren,\nbei der Fülle der täglichen Arbeit ist es verständlich, dass trotz aller Sorgfalt einmal ein\nZahlungstermin übersehen wird. Wir haben die Leistung wie vereinbart erbracht.\nWir bitten Sie daher, den Zahlungsausgleich für die nachstehend aufgeführte Forderung bis zum\n10.06.2025 auf unser Konto zu überweisen.\nSollten Sie inzwischen bezahlt haben, betrachten Sie dieses Schreiben bitte als gegenstandslos.\nZahlungseingänge wurden berücksichtigt bis zum 03.06.25.\nRg.VRB519A2890964 — wurde storniert. Guthaben EUR 44,84\nBelegdatum Belegart Belegnr. Fällig Mahnstufe Ursprungsbetrag Restbetrag\n29.01.25 Zahlung 25COBK-20-005 29.01.25 1 -44,84 -44,84\n12.05.25 Rechnung VRB700A6126940 22.05.25 1 48,94 48,94\nTotal EUR 4,10\nLassen Sie uns an dieser Stelle noch erwähnen, dass wir eine 2. Mahnung mit Mahngebühren und Zinsen\nausstellen werden.\nAusgehend davon, dass Sie die Erinnerung als solche nutzen, verbleiben wir\nmit freundlichen GrüBen\nSilverbrook Media GmbH 8 Co.KG\nAnsprechpartner Paul : Frau Marco Reis Vidal 2948 / 90099 - 6096\ne-mail: martin.kaskOlarkspur-consulting.com\nWir möchten Sie darauf hinweisen, dass ab dem 01.01.2025 alle Rechnungen ausschlieBlich per E-Mail\nversendet werden.\nBitte stellen Sie sicher, dass uns Ihre aktuelle E-Mail-Adresse vorliegt, um einen reibungslosen\nAblauf zu gewährleisten.\nKingsiey Trading GmbH 8 Co. KG + Vidal+ 16 37106114015\nGeschäftsführer: Nina Reis ,Elena Lind Lena Novak * Amtsgericht Bremen, HRA 28216 * Komplementärin: Cloverdale Distribution GntbAmtsgericht Bremen, HRB 33717\nStadibank + BLZ: 29050101 + Konto: 80141314 * BIC: YSTTFV26AKT® IBAN: DE65 8339 7329 2725 2446 71 lommerzbank\nDE6S 8339 7328aRRBAMBLE RAMMA AIKonto: 5653843829 * BIC: UWHVFKOSMM' IBAN: DE47 3221 2282 8473 6223 94 Oank OT79 3686\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1770,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 13618,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "a51faca15970a942288691d742e6eb56f2d590defaff7e3342518a8b74e7a108"
+        },
+        "text_layout": {
+          "page_number": 1,
+          "source": "ocr",
+          "page_width": 595.2760009765625,
+          "page_height": 841.8900146484375,
+          "coordinate_system": "normalized_page",
+          "words": [
+            {
+              "text": "2",
+              "bbox": [
+                0.40141043752477445,
+                0.09460855766683587,
+                0.4082140042624825,
+                0.09888465066872676
+              ],
+              "source": "ocr",
+              "confidence": 89.645065,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "Mahnung",
+              "bbox": [
+                0.5563805687725687,
+                0.1528703248175992,
+                0.6357555140458292,
+                0.16516409219803552
+              ],
+              "source": "ocr",
+              "confidence": 90.470665,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Kingsley",
+              "bbox": [
+                0.10810111594358333,
+                0.16462958057279914,
+                0.14589870893085022,
+                0.17157823170087183
+              ],
+              "source": "ocr",
+              "confidence": 96.760262,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Trading",
+              "bbox": [
+                0.1489225163698316,
+                0.16462958057279914,
+                0.18294035005837178,
+                0.17157823170087183
+              ],
+              "source": "ocr",
+              "confidence": 96.936485,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "GmbH",
+              "bbox": [
+                0.18596415749735315,
+                0.16462958057279914,
+                0.21469032816767597,
+                0.16997469682516275
+              ],
+              "source": "ocr",
+              "confidence": 92.709976,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "&",
+              "bbox": [
+                0.21847008746640267,
+                0.16462958057279914,
+                0.22451770234436538,
+                0.16997469682516275
+              ],
+              "source": "ocr",
+              "confidence": 92.709976,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Co.",
+              "bbox": [
+                0.22754150978334672,
+                0.16462958057279914,
+                0.24266054697825348,
+                0.16997469682516275
+              ],
+              "source": "ocr",
+              "confidence": 95.632401,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "KG",
+              "bbox": [
+                0.2464403062769802,
+                0.16462958057279914,
+                0.26004743975239625,
+                0.16997469682516275
+              ],
+              "source": "ocr",
+              "confidence": 93.745087,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Northwind",
+              "bbox": [
+                0.10810111594358333,
+                0.17745785957847182,
+                0.1595058424062663,
+                0.18387199908130814
+              ],
+              "source": "ocr",
+              "confidence": 94.645836,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Services",
+              "bbox": [
+                0.163285601704993,
+                0.17745785957847182,
+                0.20637485771047726,
+                0.18387199908130814
+              ],
+              "source": "ocr",
+              "confidence": 95.273605,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "DE",
+              "bbox": [
+                0.2109105688689493,
+                0.17745785957847182,
+                0.22527365420411072,
+                0.18387199908130814
+              ],
+              "source": "ocr",
+              "confidence": 95.273605,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "GmbH",
+              "bbox": [
+                0.22980936536258273,
+                0.17745785957847182,
+                0.2623152953316323,
+                0.18387199908130814
+              ],
+              "source": "ocr",
+              "confidence": 95.848289,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Karl-Liebknecht-Str.",
+              "bbox": [
+                0.10885706780332867,
+                0.1860100455822536,
+                0.23434507652105477,
+                0.19295869671032628
+              ],
+              "source": "ocr",
+              "confidence": 74.960854,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "29",
+              "bbox": [
+                0.23963673953927214,
+                0.1860100455822536,
+                0.25399982487443357,
+                0.19295869671032628
+              ],
+              "source": "ocr",
+              "confidence": 96.977547,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "10178",
+              "bbox": [
+                0.109613019663074,
+                0.1983038129626899,
+                0.14816656451008625,
+                0.2063214873412353
+              ],
+              "source": "ocr",
+              "confidence": 96.002716,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Berlin",
+              "bbox": [
+                0.15270227566855826,
+                0.1983038129626899,
+                0.1889879649363345,
+                0.2063214873412353
+              ],
+              "source": "ocr",
+              "confidence": 96.898087,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Bankverbindung",
+              "bbox": [
+                0.5518448576140967,
+                0.19776930133745352,
+                0.6538983586797174,
+                0.20739051059170802
+              ],
+              "source": "ocr",
+              "confidence": 92.433365,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Deutschland",
+              "bbox": [
+                0.10885706780332867,
+                0.20845953384218074,
+                0.18747606121684382,
+                0.2239603709740352
+              ],
+              "source": "ocr",
+              "confidence": 78.222885,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "DE47",
+              "bbox": [
+                0.5518448576140967,
+                0.21273562684407163,
+                0.5775472208454382,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 90.616821,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "3221",
+              "bbox": [
+                0.5813269801441648,
+                0.21327013846930798,
+                0.6032495840767796,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 96.558838,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "2282",
+              "bbox": [
+                0.608541247094997,
+                0.21327013846930798,
+                0.6319757547471025,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 93.810539,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "8473",
+              "bbox": [
+                0.6357555140458292,
+                0.21327013846930798,
+                0.6591900216979347,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 96.582146,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "6223",
+              "bbox": [
+                0.6629697809966614,
+                0.21273562684407163,
+                0.6864042886487669,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 93.216675,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "St@ibarBT79",
+              "bbox": [
+                0.6901840479474936,
+                0.21273562684407163,
+                0.7612435227635553,
+                0.21968427797214432
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "3686",
+              "bbox": [
+                0.765023282062282,
+                0.21327013846930798,
+                0.7884577897143875,
+                0.21914976634690797
+              ],
+              "source": "ocr",
+              "confidence": 96.468964,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "IBAN",
+              "bbox": [
+                0.5518448576140967,
+                0.2212878128478534,
+                0.5805710282844195,
+                0.23571962672923516
+              ],
+              "source": "ocr",
+              "confidence": 96.05899,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "DE47",
+              "bbox": [
+                0.6947197591059656,
+                0.22502939422450793,
+                0.7204221223373071,
+                0.2309090221021079
+              ],
+              "source": "ocr",
+              "confidence": 90.789581,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "3221",
+              "bbox": [
+                0.7242018816360337,
+                0.22502939422450793,
+                0.7461244855686485,
+                0.2309090221021079
+              ],
+              "source": "ocr",
+              "confidence": 94.582817,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "2204",
+              "bbox": [
+                0.7514161485868659,
+                0.2212878128478534,
+                0.7748506562389714,
+                0.2362541383544715
+              ],
+              "source": "ocr",
+              "confidence": 86.795586,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "64706823",
+              "bbox": [
+                0.7786304155376981,
+                0.22342585934879886,
+                0.9313326912062564,
+                0.23144353372734427
+              ],
+              "source": "ocr",
+              "confidence": 67.084763,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "35",
+              "bbox": [
+                0.8345708531588532,
+                0.2212878128478534,
+                0.8451541791952878,
+                0.2362541383544715
+              ],
+              "source": "ocr",
+              "confidence": 93.051239,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "2250179",
+              "bbox": [
+                0.8504458422135052,
+                0.22342585934879886,
+                0.9018505686761882,
+                0.23144353372734427
+              ],
+              "source": "ocr",
+              "confidence": 59.060322,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "3686",
+              "bbox": [
+                0.9086541354138962,
+                0.2212878128478534,
+                0.9336005467854924,
+                0.2362541383544715
+              ],
+              "source": "ocr",
+              "confidence": 94.541687,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "BIC",
+              "bbox": [
+                0.5518448576140967,
+                0.23518511510399878,
+                0.5707436541077302,
+                0.24266827785730785
+              ],
+              "source": "ocr",
+              "confidence": 95.412209,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "YSTTFV26AKT",
+              "bbox": [
+                0.6939638072462202,
+                0.23732316160494424,
+                0.7688030413610087,
+                0.2432027894825442
+              ],
+              "source": "ocr",
+              "confidence": 85.012405,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "Bitte",
+              "bbox": [
+                0.5518448576140967,
+                0.2565655801134532,
+                0.5805710282844195,
+                0.2640487428667623
+              ],
+              "source": "ocr",
+              "confidence": 96.549347,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "bei",
+              "bbox": [
+                0.5851067394428916,
+                0.2565655801134532,
+                0.6032495840767796,
+                0.2640487428667623
+              ],
+              "source": "ocr",
+              "confidence": 93.140327,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "Zahlungen",
+              "bbox": [
+                0.6070293433755064,
+                0.2565655801134532,
+                0.6720412033136054,
+                0.26618678936770773
+              ],
+              "source": "ocr",
+              "confidence": 92.973618,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "immer",
+              "bbox": [
+                0.6758209626123322,
+                0.2565655801134532,
+                0.7166423630385804,
+                0.2640487428667623
+              ],
+              "source": "ocr",
+              "confidence": 93.304352,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "angeben:",
+              "bbox": [
+                0.7204221223373071,
+                0.2565655801134532,
+                0.7778744636779528,
+                0.26618678936770773
+              ],
+              "source": "ocr",
+              "confidence": 91.634552,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "Kundennr.",
+              "bbox": [
+                0.5518448576140967,
+                0.2677903242434168,
+                0.6153448138327051,
+                0.2827566497500349
+              ],
+              "source": "ocr",
+              "confidence": 89.715897,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "0665850800",
+              "bbox": [
+                0.6947197591059656,
+                0.27153190562007135,
+                0.755951859745338,
+                0.27794604512290766
+              ],
+              "source": "ocr",
+              "confidence": 86.988991,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "Belegnr.",
+              "bbox": [
+                0.5488210501751154,
+                0.27901506837338036,
+                0.6024936322170343,
+                0.2923778590042894
+              ],
+              "source": "ocr",
+              "confidence": 88.767967,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "siehe",
+              "bbox": [
+                0.6939638072462202,
+                0.2811531148743258,
+                0.7264697372152698,
+                0.2886362776276349
+              ],
+              "source": "ocr",
+              "confidence": 91.964653,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "unten",
+              "bbox": [
+                0.7310054483737418,
+                0.2816876264995622,
+                0.7665351857817727,
+                0.2886362776276349
+              ],
+              "source": "ocr",
+              "confidence": 96.750244,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "4.",
+              "bbox": [
+                0.550332953894606,
+                0.3078786961361439,
+                0.5609162799310408,
+                0.3148273472642166
+              ],
+              "source": "ocr",
+              "confidence": 91.19693,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "Juni",
+              "bbox": [
+                0.5646960392297674,
+                0.3078786961361439,
+                0.5881305468818729,
+                0.3148273472642166
+              ],
+              "source": "ocr",
+              "confidence": 94.68531,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "2025",
+              "bbox": [
+                0.592666258040345,
+                0.3073441845109075,
+                0.6221483805704131,
+                0.3148273472642166
+              ],
+              "source": "ocr",
+              "confidence": 94.68531,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "MB236544896",
+              "bbox": [
+                0.5510889057543513,
+                0.3207069751418165,
+                0.6213924287106678,
+                0.3271211146446529
+              ],
+              "source": "ocr",
+              "confidence": 85.759766,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "Pahnungsnr",
+              "bbox": [
+                0.6251721880093944,
+                0.3207069751418165,
+                0.6833804812097856,
+                0.3281901378951256
+              ],
+              "source": "ocr",
+              "confidence": 52.568924,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "MB236544896",
+              "bbox": [
+                0.6939638072462202,
+                0.3207069751418165,
+                0.7642673302025367,
+                0.3271211146446529
+              ],
+              "source": "ocr",
+              "confidence": 86.40287,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "Pahnungsnr",
+              "bbox": [
+                0.7680470895012633,
+                0.3207069751418165,
+                0.8262553827016544,
+                0.3281901378951256
+              ],
+              "source": "ocr",
+              "confidence": 90.515137,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "Seite",
+              "bbox": [
+                0.8920231944994987,
+                0.35331218428123456,
+                0.921505317029567,
+                0.36026083540930726
+              ],
+              "source": "ocr",
+              "confidence": 96.559616,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.9267969800477843,
+                0.35331218428123456,
+                0.932844594925747,
+                0.36026083540930726
+              ],
+              "source": "ocr",
+              "confidence": 96.559616,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "Sehr",
+              "bbox": [
+                0.09902969362663927,
+                0.39553860267490704,
+                0.1292677680164528,
+                0.4040907886786888
+              ],
+              "source": "ocr",
+              "confidence": 92.860191,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "geehrte",
+              "bbox": [
+                0.1330475273151795,
+                0.39553860267490704,
+                0.1852082056376078,
+                0.4056943235543979
+              ],
+              "source": "ocr",
+              "confidence": 92.860191,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "Damen",
+              "bbox": [
+                0.19049986865582516,
+                0.3960731143001434,
+                0.2373688839600361,
+                0.4040907886786888
+              ],
+              "source": "ocr",
+              "confidence": 92.418152,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "und",
+              "bbox": [
+                0.24266054697825348,
+                0.39553860267490704,
+                0.26760695834984966,
+                0.4040907886786888
+              ],
+              "source": "ocr",
+              "confidence": 93.280693,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "Herren,",
+              "bbox": [
+                0.27289862136806703,
+                0.3960731143001434,
+                0.3227914441112593,
+                0.40515981192916156
+              ],
+              "source": "ocr",
+              "confidence": 92.788223,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "bei",
+              "bbox": [
+                0.0997856454863846,
+                0.4233332071871978,
+                0.11868444198001805,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 96.83976,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "der",
+              "bbox": [
+                0.12397610499823543,
+                0.4233332071871978,
+                0.14589870893085022,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.242088,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "Fülle",
+              "bbox": [
+                0.1511903719490676,
+                0.4233332071871978,
+                0.1814284463388811,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.0625,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "der",
+              "bbox": [
+                0.18672010935709848,
+                0.4233332071871978,
+                0.2086427132897133,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.305893,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "täglichen",
+              "bbox": [
+                0.21242247258843996,
+                0.4233332071871978,
+                0.27365457322781234,
+                0.43402343969192503
+              ],
+              "source": "ocr",
+              "confidence": 92.698555,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "Arbeit",
+              "bbox": [
+                0.27819028438628435,
+                0.4233332071871978,
+                0.319767636672278,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 96.480888,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "ist",
+              "bbox": [
+                0.3250592996904953,
+                0.4238677188124342,
+                0.33942238502565675,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 96.480888,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "es",
+              "bbox": [
+                0.34395809618412876,
+                0.42547125368814326,
+                0.35756522965954485,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.277718,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "verständlich,",
+              "bbox": [
+                0.36210094081801686,
+                0.4233332071871978,
+                0.4475235009692401,
+                0.43348892806668865
+              ],
+              "source": "ocr",
+              "confidence": 93.120193,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "dass",
+              "bbox": [
+                0.4528151639874574,
+                0.4233332071871978,
+                0.48154133465778026,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.281929,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "trotz",
+              "bbox": [
+                0.48607704581625233,
+                0.42440223043767056,
+                0.5170710720658112,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.256683,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "aller",
+              "bbox": [
+                0.5223627350840285,
+                0.4233332071871978,
+                0.5510889057543513,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 93.148354,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "Sorgfalt",
+              "bbox": [
+                0.5556246169128234,
+                0.4233332071871978,
+                0.6070293433755064,
+                0.43402343969192503
+              ],
+              "source": "ocr",
+              "confidence": 92.436516,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "einmal",
+              "bbox": [
+                0.6115650545339784,
+                0.4233332071871978,
+                0.6569221661186987,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 92.436516,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "ein",
+              "bbox": [
+                0.6614578772771708,
+                0.4233332071871978,
+                0.6811126256305495,
+                0.43188539319097957
+              ],
+              "source": "ocr",
+              "confidence": 97.005333,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "Zahlungstermin",
+              "bbox": [
+                0.09902969362663927,
+                0.43776502106857956,
+                0.20335105027149591,
+                0.4484552535733068
+              ],
+              "source": "ocr",
+              "confidence": 91.783119,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "übersehen",
+              "bbox": [
+                0.2086427132897133,
+                0.43776502106857956,
+                0.279702188105775,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 92.198761,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "wird.",
+              "bbox": [
+                0.2849938511239924,
+                0.43776502106857956,
+                0.31749978109304194,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 96.38369,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "Wir",
+              "bbox": [
+                0.3227914441112593,
+                0.43776502106857956,
+                0.3469819036231101,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 96.709351,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "haben",
+              "bbox": [
+                0.35151761478158217,
+                0.43776502106857956,
+                0.3923390152078304,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 97.003044,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "die",
+              "bbox": [
+                0.39763067822604775,
+                0.43776502106857956,
+                0.4172854265794266,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 93.298798,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "Leistung",
+              "bbox": [
+                0.4225770895976439,
+                0.43776502106857956,
+                0.4785175272187989,
+                0.4484552535733068
+              ],
+              "source": "ocr",
+              "confidence": 93.038223,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "wie",
+              "bbox": [
+                0.4822972865175256,
+                0.43776502106857956,
+                0.5057317941696311,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 93.306229,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "vereinbart",
+              "bbox": [
+                0.5102675053281032,
+                0.43776502106857956,
+                0.5798150764246742,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 92.678078,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "erbracht.",
+              "bbox": [
+                0.5843507875831463,
+                0.43776502106857956,
+                0.6448269363627733,
+                0.44631720707236133
+              ],
+              "source": "ocr",
+              "confidence": 91.342026,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "Wir",
+              "bbox": [
+                0.09902969362663927,
+                0.45273134657519765,
+                0.12246420127874474,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 93.053085,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "bitten",
+              "bbox": [
+                0.12775586429696212,
+                0.45273134657519765,
+                0.16630940914397435,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 93.032661,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.17160107216219173,
+                0.45273134657519765,
+                0.19049986865582516,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 93.269989,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "daher,",
+              "bbox": [
+                0.1950355798142972,
+                0.45273134657519765,
+                0.2373688839600361,
+                0.46235255582945217
+              ],
+              "source": "ocr",
+              "confidence": 93.249168,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "den",
+              "bbox": [
+                0.24266054697825348,
+                0.45273134657519765,
+                0.2668510064901043,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 93.306206,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "Zahlungsausgleich",
+              "bbox": [
+                0.27214266950832167,
+                0.45273134657519765,
+                0.3946068707870664,
+                0.46288706745468855
+              ],
+              "source": "ocr",
+              "confidence": 91.941017,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "für",
+              "bbox": [
+                0.3991425819455384,
+                0.4521968349499613,
+                0.41879733029891725,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 96.946472,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "die",
+              "bbox": [
+                0.4225770895976439,
+                0.45273134657519765,
+                0.44298778981076803,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 93.303932,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "nachstehend",
+              "bbox": [
+                0.4475235009692401,
+                0.45273134657519765,
+                0.5337020129802086,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 92.249977,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "aufgeführte",
+              "bbox": [
+                0.538993675998426,
+                0.4521968349499613,
+                0.6183686212716865,
+                0.46288706745468855
+              ],
+              "source": "ocr",
+              "confidence": 92.359589,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "Forderung",
+              "bbox": [
+                0.6236602842899038,
+                0.45273134657519765,
+                0.6924519035267296,
+                0.46288706745468855
+              ],
+              "source": "ocr",
+              "confidence": 91.988785,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "bis",
+              "bbox": [
+                0.697743566544947,
+                0.45273134657519765,
+                0.7151304593190897,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 96.9701,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "zum",
+              "bbox": [
+                0.7204221223373071,
+                0.4548693930761431,
+                0.7476363892881392,
+                0.4607490209537431
+              ],
+              "source": "ocr",
+              "confidence": 95.054131,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "10.06.2025",
+              "bbox": [
+                0.18294035005837178,
+                0.48159497433796117,
+                0.25626768045366954,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 96.519981,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "auf",
+              "bbox": [
+                0.2615593434718869,
+                0.4810604627127248,
+                0.2834819474045017,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 96.873268,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "unser",
+              "bbox": [
+                0.2872617067032284,
+                0.48319850921367025,
+                0.3250592996904953,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 96.937828,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "Konto",
+              "bbox": [
+                0.32959501084896736,
+                0.48159497433796117,
+                0.3689045075557249,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 97.003807,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "zu",
+              "bbox": [
+                0.37344021871419697,
+                0.48319850921367025,
+                0.38704735218961306,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 93.259491,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "überweisen.",
+              "bbox": [
+                0.3923390152078304,
+                0.4810604627127248,
+                0.4739818160603269,
+                0.48961264871650656
+              ],
+              "source": "ocr",
+              "confidence": 92.842346,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "Sollten",
+              "bbox": [
+                0.09902969362663927,
+                0.5088550672250156,
+                0.14438680521135955,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 92.965698,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.14967846822957692,
+                0.5093895788502519,
+                0.16857726472321036,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 93.30114,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "inzwischen",
+              "bbox": [
+                0.17386892774142773,
+                0.5088550672250156,
+                0.2464403062769802,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 92.685608,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "bezahlt",
+              "bbox": [
+                0.25173196929519753,
+                0.5088550672250156,
+                0.30011288831889915,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 87.770927,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "haben,",
+              "bbox": [
+                0.3054045513371165,
+                0.5088550672250156,
+                0.3500057110620915,
+                0.5190107881045064
+              ],
+              "source": "ocr",
+              "confidence": 96.852341,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "betrachten",
+              "bbox": [
+                0.3560533259400542,
+                0.5088550672250156,
+                0.42862470447560663,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 96.054573,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.433916367493824,
+                0.5093895788502519,
+                0.4528151639874574,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 96.054573,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "dieses",
+              "bbox": [
+                0.4573508751459295,
+                0.5088550672250156,
+                0.49892822743192305,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 93.274414,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "Schreiben",
+              "bbox": [
+                0.5034639385903951,
+                0.5088550672250156,
+                0.5699877022479848,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 92.790443,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "bitte",
+              "bbox": [
+                0.5752793652662022,
+                0.5088550672250156,
+                0.606273391515761,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 97.008179,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "als",
+              "bbox": [
+                0.610809102674233,
+                0.5088550672250156,
+                0.6281959954483758,
+                0.5174072532287973
+              ],
+              "source": "ocr",
+              "confidence": 93.229416,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "gegenstandslos.",
+              "bbox": [
+                0.6327317066068479,
+                0.5088550672250156,
+                0.7400768706906858,
+                0.5195452997297427
+              ],
+              "source": "ocr",
+              "confidence": 92.734734,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "Zahlungseingänge",
+              "bbox": [
+                0.09902969362663927,
+                0.5232868811063973,
+                0.21998199118589334,
+                0.5339771136111245
+              ],
+              "source": "ocr",
+              "confidence": 92.378197,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "wurden",
+              "bbox": [
+                0.22451770234436538,
+                0.5232868811063973,
+                0.27592242880704837,
+                0.5313045554849427
+              ],
+              "source": "ocr",
+              "confidence": 93.294441,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "berücksichtigt",
+              "bbox": [
+                0.28121409182526574,
+                0.5232868811063973,
+                0.37495212243368764,
+                0.5339771136111245
+              ],
+              "source": "ocr",
+              "confidence": 93.079704,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "bis",
+              "bbox": [
+                0.380243785451905,
+                0.5232868811063973,
+                0.39763067822604775,
+                0.5313045554849427
+              ],
+              "source": "ocr",
+              "confidence": 96.95285,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "zum",
+              "bbox": [
+                0.4021663893845198,
+                0.5254249276073427,
+                0.4301366081950973,
+                0.5313045554849427
+              ],
+              "source": "ocr",
+              "confidence": 96.117165,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "03.06.25.",
+              "bbox": [
+                0.4346723193535693,
+                0.5232868811063973,
+                0.496660371852687,
+                0.5313045554849427
+              ],
+              "source": "ocr",
+              "confidence": 96.655075,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "Rg.VRB519A2890964",
+              "bbox": [
+                0.0997856454863846,
+                0.5655132995000698,
+                0.219226039326148,
+                0.5751345087543243
+              ],
+              "source": "ocr",
+              "confidence": 33.49028,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "—",
+              "bbox": [
+                0.23207722094181876,
+                0.5623062297486516,
+                0.23963673953927214,
+                0.5772725552552698
+              ],
+              "source": "ocr",
+              "confidence": 40.135899,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "wurde",
+              "bbox": [
+                0.24568435441723482,
+                0.5649787878748335,
+                0.2887736104227191,
+                0.5729964622533789
+              ],
+              "source": "ocr",
+              "confidence": 92.251511,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "storniert.",
+              "bbox": [
+                0.2933093215811911,
+                0.5649787878748335,
+                0.3552973740803088,
+                0.5729964622533789
+              ],
+              "source": "ocr",
+              "confidence": 92.003517,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "Guthaben",
+              "bbox": [
+                0.3598330852387809,
+                0.5644442762495971,
+                0.4263568488963706,
+                0.5729964622533789
+              ],
+              "source": "ocr",
+              "confidence": 92.457153,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "EUR",
+              "bbox": [
+                0.431648511914588,
+                0.5649787878748335,
+                0.45886277886542015,
+                0.5729964622533789
+              ],
+              "source": "ocr",
+              "confidence": 96.946594,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "44,84",
+              "bbox": [
+                0.46264253816414685,
+                0.5649787878748335,
+                0.5004401311514137,
+                0.5745999971290879
+              ],
+              "source": "ocr",
+              "confidence": 96.948761,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "Belegdatum",
+              "bbox": [
+                0.09902969362663927,
+                0.5906353458861788,
+                0.1731129758816824,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 91.08139,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Belegart",
+              "bbox": [
+                0.22149389490538401,
+                0.5906353458861788,
+                0.27365457322781234,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 93.253761,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Belegnr.",
+              "bbox": [
+                0.3227914441112593,
+                0.5906353458861788,
+                0.3764640261531783,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 92.98188,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Fällig",
+              "bbox": [
+                0.48532109395650697,
+                0.5906353458861788,
+                0.5193389276450472,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 93.093346,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Mahnstufe",
+              "bbox": [
+                0.5805710282844195,
+                0.5906353458861788,
+                0.653142406819972,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 89.873962,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Ursprungsbetrag",
+              "bbox": [
+                0.7226899779165431,
+                0.5906353458861788,
+                0.8262553827016544,
+                0.6045326481423242
+              ],
+              "source": "ocr",
+              "confidence": 92.194458,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "Restbetrag",
+              "bbox": [
+                0.8806839166033187,
+                0.5927733923871242,
+                0.9479636321206538,
+                0.6023946016413787
+              ],
+              "source": "ocr",
+              "confidence": 92.996803,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "29.01.25",
+              "bbox": [
+                0.09902969362663927,
+                0.6066706946432696,
+                0.1511903719490676,
+                0.6141538573965787
+              ],
+              "source": "ocr",
+              "confidence": 96.586594,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "Zahlung",
+              "bbox": [
+                0.22149389490538401,
+                0.6066706946432696,
+                0.2691188620693403,
+                0.6162919038975241
+              ],
+              "source": "ocr",
+              "confidence": 93.135345,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "25COBK-20-005",
+              "bbox": [
+                0.326571203409986,
+                0.6045326481423242,
+                0.4218211377378986,
+                0.6189644620237059
+              ],
+              "source": "ocr",
+              "confidence": 88.161743,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "29.01.25",
+              "bbox": [
+                0.4883449013954883,
+                0.6066706946432696,
+                0.5405055797179167,
+                0.6141538573965787
+              ],
+              "source": "ocr",
+              "confidence": 96.259048,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.6274400435886305,
+                0.6072052062685059,
+                0.6334876584665932,
+                0.6141538573965787
+              ],
+              "source": "ocr",
+              "confidence": 96.961349,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "-44,84",
+              "bbox": [
+                0.7877018378546421,
+                0.6045326481423242,
+                0.825499430841909,
+                0.6189644620237059
+              ],
+              "source": "ocr",
+              "confidence": 92.275932,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "-44,84",
+              "bbox": [
+                0.9101660391333869,
+                0.6066706946432696,
+                0.9479636321206538,
+                0.6157573922722878
+              ],
+              "source": "ocr",
+              "confidence": 91.272911,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "12.05.25",
+              "bbox": [
+                0.0997856454863846,
+                0.6317927410293785,
+                0.1511903719490676,
+                0.6451555316602876
+              ],
+              "source": "ocr",
+              "confidence": 96.513107,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "Rechnung",
+              "bbox": [
+                0.22224984676512935,
+                0.6333962759050876,
+                0.28121409182526574,
+                0.6430174851593421
+              ],
+              "source": "ocr",
+              "confidence": 93.131668,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "VRB700A6126940",
+              "bbox": [
+                0.32581525155024066,
+                0.6317927410293785,
+                0.41577352285993585,
+                0.6451555316602876
+              ],
+              "source": "ocr",
+              "confidence": 76.021072,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "22.05.25",
+              "bbox": [
+                0.4883449013954883,
+                0.6339307875303241,
+                0.5405055797179167,
+                0.6408794386583967
+              ],
+              "source": "ocr",
+              "confidence": 96.257385,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.6274400435886305,
+                0.6339307875303241,
+                0.6334876584665932,
+                0.6408794386583967
+              ],
+              "source": "ocr",
+              "confidence": 96.90567,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "48,94",
+              "bbox": [
+                0.7892137415741328,
+                0.6317927410293785,
+                0.825499430841909,
+                0.6451555316602876
+              ],
+              "source": "ocr",
+              "confidence": 96.547142,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "48,94",
+              "bbox": [
+                0.914701750291859,
+                0.6339307875303241,
+                0.9479636321206538,
+                0.6419484619088694
+              ],
+              "source": "ocr",
+              "confidence": 96.221275,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "Total",
+              "bbox": [
+                0.5828388838636556,
+                0.6515696711631239,
+                0.6138329101132144,
+                0.6606563687921421
+              ],
+              "source": "ocr",
+              "confidence": 96.840012,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "EUR",
+              "bbox": [
+                0.6191245731314318,
+                0.6521041827883602,
+                0.6433150326432826,
+                0.6606563687921421
+              ],
+              "source": "ocr",
+              "confidence": 96.603287,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "4,10",
+              "bbox": [
+                0.9222612688893123,
+                0.6521041827883602,
+                0.9487195839803991,
+                0.6606563687921421
+              ],
+              "source": "ocr",
+              "confidence": 93.525116,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "Lassen",
+              "bbox": [
+                0.09600588618765792,
+                0.6815023221763601,
+                0.1398510940528875,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.146217,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.14514275707110488,
+                0.6815023221763601,
+                0.163285601704993,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 96.812294,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "uns",
+              "bbox": [
+                0.16857726472321036,
+                0.6836403686773056,
+                0.1912558205155705,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 96.72081,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "an",
+              "bbox": [
+                0.19654748353378787,
+                0.6836403686773056,
+                0.21166652072869463,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.30574,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "dieser",
+              "bbox": [
+                0.216958183746912,
+                0.6809678105511238,
+                0.25777958417316027,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.175316,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Stelle",
+              "bbox": [
+                0.2623152953316323,
+                0.6809678105511238,
+                0.2986009845994085,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.193825,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "noch",
+              "bbox": [
+                0.30389264761762586,
+                0.6809678105511238,
+                0.33564262572693004,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.28302,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "erwähnen,",
+              "bbox": [
+                0.34017833688540206,
+                0.6809678105511238,
+                0.41123781170146384,
+                0.6911235314306147
+              ],
+              "source": "ocr",
+              "confidence": 92.975731,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "dass",
+              "bbox": [
+                0.4165294747196812,
+                0.6809678105511238,
+                0.44601159724974937,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.276695,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "wir",
+              "bbox": [
+                0.4497913565484761,
+                0.6815023221763601,
+                0.47095800862134557,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 96.980133,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "eine",
+              "bbox": [
+                0.4754937197798176,
+                0.6815023221763601,
+                0.5042198904501404,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 96.789474,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "2.",
+              "bbox": [
+                0.5087556016086124,
+                0.6815023221763601,
+                0.5200948795047925,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.285767,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Mahnung",
+              "bbox": [
+                0.5253865425230099,
+                0.6809678105511238,
+                0.5896424506013636,
+                0.691658043055851
+              ],
+              "source": "ocr",
+              "confidence": 92.637016,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "mit",
+              "bbox": [
+                0.5941781617598356,
+                0.6815023221763601,
+                0.6161007656924504,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.267891,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Mahngebühren",
+              "bbox": [
+                0.6206364768509225,
+                0.6809678105511238,
+                0.7242018816360337,
+                0.691658043055851
+              ],
+              "source": "ocr",
+              "confidence": 92.297066,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "und",
+              "bbox": [
+                0.7294935446542511,
+                0.6809678105511238,
+                0.7544399560258472,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.276733,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Zinsen",
+              "bbox": [
+                0.7589756671843193,
+                0.6815023221763601,
+                0.8020649231898036,
+                0.6895199965549056
+              ],
+              "source": "ocr",
+              "confidence": 93.233475,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "ausstellen",
+              "bbox": [
+                0.09600588618765792,
+                0.6953996244325055,
+                0.163285601704993,
+                0.7039518104362873
+              ],
+              "source": "ocr",
+              "confidence": 92.849838,
+              "block": "1",
+              "line": "29"
+            },
+            {
+              "text": "werden.",
+              "bbox": [
+                0.16782131286346502,
+                0.6953996244325055,
+                0.22300579862487468,
+                0.7039518104362873
+              ],
+              "source": "ocr",
+              "confidence": 96.869972,
+              "block": "1",
+              "line": "29"
+            },
+            {
+              "text": "Ausgehend",
+              "bbox": [
+                0.09600588618765792,
+                0.7231942289447962,
+                0.17008916844270103,
+                0.7338844614495235
+              ],
+              "source": "ocr",
+              "confidence": 92.443741,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "davon,",
+              "bbox": [
+                0.1753808314609184,
+                0.7231942289447962,
+                0.21998199118589334,
+                0.7333499498242871
+              ],
+              "source": "ocr",
+              "confidence": 93.123474,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "dass",
+              "bbox": [
+                0.22527365420411072,
+                0.7231942289447962,
+                0.25399982487443357,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 92.008179,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.2585355360329056,
+                0.7237287405700327,
+                0.27743433252653904,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 96.942947,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "die",
+              "bbox": [
+                0.2827259955447564,
+                0.7231942289447962,
+                0.3023807438981352,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 93.280052,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "Erinnerung",
+              "bbox": [
+                0.30767240691635256,
+                0.7237287405700327,
+                0.3809997373116503,
+                0.7338844614495235
+              ],
+              "source": "ocr",
+              "confidence": 93.26149,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "als",
+              "bbox": [
+                0.38553544847012233,
+                0.7231942289447962,
+                0.4029223412442651,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 93.29776,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "solche",
+              "bbox": [
+                0.40745805240273714,
+                0.7231942289447962,
+                0.4497913565484761,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 92.858009,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "nutzen,",
+              "bbox": [
+                0.45508301956669345,
+                0.724263252195269,
+                0.5042198904501404,
+                0.7333499498242871
+              ],
+              "source": "ocr",
+              "confidence": 93.097748,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "verbleiben",
+              "bbox": [
+                0.5095115534683577,
+                0.7231942289447962,
+                0.5805710282844195,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 92.655167,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "wir",
+              "bbox": [
+                0.5851067394428916,
+                0.7237287405700327,
+                0.606273391515761,
+                0.7317464149485781
+              ],
+              "source": "ocr",
+              "confidence": 96.976875,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "mit",
+              "bbox": [
+                0.09600588618765792,
+                0.7515233450823234,
+                0.11792849012027272,
+                0.7595410194608688
+              ],
+              "source": "ocr",
+              "confidence": 87.137314,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "freundlichen",
+              "bbox": [
+                0.12170824941899941,
+                0.750988833457087,
+                0.20637485771047726,
+                0.7595410194608688
+              ],
+              "source": "ocr",
+              "confidence": 90.403229,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "GrüBen",
+              "bbox": [
+                0.21166652072869463,
+                0.750988833457087,
+                0.2615593434718869,
+                0.7595410194608688
+              ],
+              "source": "ocr",
+              "confidence": 92.150536,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Silverbrook",
+              "bbox": [
+                0.09600588618765792,
+                0.7814559960955596,
+                0.15572608310753963,
+                0.7884046472236323
+              ],
+              "source": "ocr",
+              "confidence": 92.603699,
+              "block": "1",
+              "line": "32"
+            },
+            {
+              "text": "Media",
+              "bbox": [
+                0.1595058424062663,
+                0.7814559960955596,
+                0.19201177237531583,
+                0.7884046472236323
+              ],
+              "source": "ocr",
+              "confidence": 96.350021,
+              "block": "1",
+              "line": "32"
+            },
+            {
+              "text": "GmbH",
+              "bbox": [
+                0.19579153167404253,
+                0.7814559960955596,
+                0.22980936536258273,
+                0.7884046472236323
+              ],
+              "source": "ocr",
+              "confidence": 96.350021,
+              "block": "1",
+              "line": "32"
+            },
+            {
+              "text": "8",
+              "bbox": [
+                0.23358912466130943,
+                0.7814559960955596,
+                0.2411486432587628,
+                0.7884046472236323
+              ],
+              "source": "ocr",
+              "confidence": 88.570763,
+              "block": "1",
+              "line": "32"
+            },
+            {
+              "text": "Co.KG",
+              "bbox": [
+                0.24568435441723482,
+                0.7814559960955596,
+                0.28121409182526574,
+                0.7884046472236323
+              ],
+              "source": "ocr",
+              "confidence": 74.871338,
+              "block": "1",
+              "line": "32"
+            },
+            {
+              "text": "Ansprechpartner",
+              "bbox": [
+                0.09600588618765792,
+                0.807112554106905,
+                0.21015461700920396,
+                0.8172682749863958
+              ],
+              "source": "ocr",
+              "confidence": 93.010223,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "Paul",
+              "bbox": [
+                0.21469032816767597,
+                0.8092506006078504,
+                0.2373688839600361,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 96.536758,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.34395809618412876,
+                0.8097851122330867,
+                0.3462259517633648,
+                0.8156647401106867
+              ],
+              "source": "ocr",
+              "confidence": 86.657791,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "Frau",
+              "bbox": [
+                0.3552973740803088,
+                0.8076470657321413,
+                0.38402354475063166,
+                0.8156647401106867
+              ],
+              "source": "ocr",
+              "confidence": 58.883057,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "Marco",
+              "bbox": [
+                0.38931520776884904,
+                0.8092506006078504,
+                0.4218211377378986,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 10.070145,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "Reis",
+              "bbox": [
+                0.44071993423153205,
+                0.8092506006078504,
+                0.46339849002389216,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 85.120445,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "Vidal",
+              "bbox": [
+                0.5004401311514137,
+                0.8092506006078504,
+                0.5261424943827552,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 92.718246,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "2948",
+              "bbox": [
+                0.5329460611204633,
+                0.8092506006078504,
+                0.5586484243518047,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 93.300949,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "/",
+              "bbox": [
+                0.5624281836505315,
+                0.8097851122330867,
+                0.5662079429492581,
+                0.8156647401106867
+              ],
+              "source": "ocr",
+              "confidence": 93.26503,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "90099",
+              "bbox": [
+                0.5699877022479848,
+                0.8092506006078504,
+                0.6032495840767796,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 93.030502,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "-",
+              "bbox": [
+                0.6070293433755064,
+                0.812992181984505,
+                0.6100531508144877,
+                0.8140612052349776
+              ],
+              "source": "ocr",
+              "confidence": 92.463684,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "6096",
+              "bbox": [
+                0.6138329101132144,
+                0.8092506006078504,
+                0.6402912252043013,
+                0.8161992517359231
+              ],
+              "source": "ocr",
+              "confidence": 96.348434,
+              "block": "1",
+              "line": "33"
+            },
+            {
+              "text": "e-mail:",
+              "bbox": [
+                0.09600588618765792,
+                0.8215443679882867,
+                0.1413629977723782,
+                0.8300965539920685
+              ],
+              "source": "ocr",
+              "confidence": 91.964294,
+              "block": "1",
+              "line": "34"
+            },
+            {
+              "text": "martin.kaskOlarkspur-consulting.com",
+              "bbox": [
+                0.14665466079059555,
+                0.8236824144892321,
+                0.3469819036231101,
+                0.8322346004930139
+              ],
+              "source": "ocr",
+              "confidence": 83.456512,
+              "block": "1",
+              "line": "34"
+            },
+            {
+              "text": "Wir",
+              "bbox": [
+                0.09600588618765792,
+                0.8493389725005774,
+                0.1194403938397634,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 93.219437,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "möchten",
+              "bbox": [
+                0.12473205685798076,
+                0.8493389725005774,
+                0.18294035005837178,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 92.07328,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.18823201307658916,
+                0.8493389725005774,
+                0.2071308095702226,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 93.282127,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "darauf",
+              "bbox": [
+                0.21166652072869463,
+                0.8493389725005774,
+                0.25626768045366954,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 92.345711,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "hinweisen,",
+              "bbox": [
+                0.2608033916121416,
+                0.8493389725005774,
+                0.33186286642820334,
+                0.8594946933800683
+              ],
+              "source": "ocr",
+              "confidence": 93.018372,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "dass",
+              "bbox": [
+                0.3371545294464207,
+                0.8493389725005774,
+                0.36588070011674356,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 96.956528,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "ab",
+              "bbox": [
+                0.3704164112752156,
+                0.8493389725005774,
+                0.3862914003298677,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 96.982018,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "dem",
+              "bbox": [
+                0.3908271114883397,
+                0.8493389725005774,
+                0.4203092340184079,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 96.675827,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "01.01.2025",
+              "bbox": [
+                0.42484494517687993,
+                0.8493389725005774,
+                0.5004401311514137,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 96.776367,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "alle",
+              "bbox": [
+                0.5049758423098858,
+                0.8493389725005774,
+                0.5284103499619912,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 93.296738,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "Rechnungen",
+              "bbox": [
+                0.5337020129802086,
+                0.8493389725005774,
+                0.6161007656924504,
+                0.8600292050053047
+              ],
+              "source": "ocr",
+              "confidence": 91.556366,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "ausschlieBlich",
+              "bbox": [
+                0.6206364768509225,
+                0.8493389725005774,
+                0.7136185555995991,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 90.423759,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "per",
+              "bbox": [
+                0.7189102186178163,
+                0.8514770190015228,
+                0.7408328225504311,
+                0.8600292050053047
+              ],
+              "source": "ocr",
+              "confidence": 97.01075,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "E-Mail",
+              "bbox": [
+                0.7453685337089032,
+                0.8493389725005774,
+                0.7869458859948968,
+                0.8578911585043593
+              ],
+              "source": "ocr",
+              "confidence": 96.111496,
+              "block": "1",
+              "line": "35"
+            },
+            {
+              "text": "versendet",
+              "bbox": [
+                0.09600588618765792,
+                0.8632362747567228,
+                0.16252964984524765,
+                0.8717884607605046
+              ],
+              "source": "ocr",
+              "confidence": 93.241318,
+              "block": "1",
+              "line": "36"
+            },
+            {
+              "text": "werden.",
+              "bbox": [
+                0.16782131286346502,
+                0.8632362747567228,
+                0.22224984676512935,
+                0.8717884607605046
+              ],
+              "source": "ocr",
+              "confidence": 96.939438,
+              "block": "1",
+              "line": "36"
+            },
+            {
+              "text": "Bitte",
+              "bbox": [
+                0.09600588618765792,
+                0.8787371118885773,
+                0.12699991243721678,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 96.618851,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "stellen",
+              "bbox": [
+                0.13229157545543413,
+                0.878202600263341,
+                0.1753808314609184,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 96.618851,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "Sie",
+              "bbox": [
+                0.18067249447913578,
+                0.8787371118885773,
+                0.1995712909727692,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 93.199745,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "sicher,",
+              "bbox": [
+                0.20410700213124125,
+                0.878202600263341,
+                0.24719625813672552,
+                0.8883583211428318
+              ],
+              "source": "ocr",
+              "confidence": 96.844368,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "dass",
+              "bbox": [
+                0.2524879211549429,
+                0.878202600263341,
+                0.28121409182526574,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 96.985794,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "uns",
+              "bbox": [
+                0.28650575484348306,
+                0.8808751583895227,
+                0.30918431063584323,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 93.291,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "Ihre",
+              "bbox": [
+                0.3144759736540606,
+                0.878202600263341,
+                0.34017833688540206,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 65.638611,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "aktuelle",
+              "bbox": [
+                0.3447140480438741,
+                0.878202600263341,
+                0.3983866300857931,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 93.298912,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "E-Mail-Adresse",
+              "bbox": [
+                0.4036782931040105,
+                0.878202600263341,
+                0.5042198904501404,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 92.211502,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "vorliegt,",
+              "bbox": [
+                0.5087556016086124,
+                0.878202600263341,
+                0.5631841355102768,
+                0.8888928327680682
+              ],
+              "source": "ocr",
+              "confidence": 92.965271,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "um",
+              "bbox": [
+                0.5684757985284942,
+                0.8808751583895227,
+                0.5888864987416182,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 97.016151,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "einen",
+              "bbox": [
+                0.5941781617598356,
+                0.8787371118885773,
+                0.6312198028873572,
+                0.8867547862671227
+              ],
+              "source": "ocr",
+              "confidence": 93.207535,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "reibungslosen",
+              "bbox": [
+                0.6365114659055745,
+                0.878202600263341,
+                0.7294935446542511,
+                0.8888928327680682
+              ],
+              "source": "ocr",
+              "confidence": 91.91301,
+              "block": "1",
+              "line": "37"
+            },
+            {
+              "text": "Ablauf",
+              "bbox": [
+                0.09600588618765792,
+                0.8926344141447227,
+                0.1398510940528875,
+                0.9011866001485045
+              ],
+              "source": "ocr",
+              "confidence": 93.169014,
+              "block": "1",
+              "line": "38"
+            },
+            {
+              "text": "zu",
+              "bbox": [
+                0.1436308533516142,
+                0.8947724606456681,
+                0.1572379868270303,
+                0.9011866001485045
+              ],
+              "source": "ocr",
+              "confidence": 93.289352,
+              "block": "1",
+              "line": "38"
+            },
+            {
+              "text": "gewährleisten.",
+              "bbox": [
+                0.16252964984524765,
+                0.8926344141447227,
+                0.2608033916121416,
+                0.9033246466494499
+              ],
+              "source": "ocr",
+              "confidence": 92.33934,
+              "block": "1",
+              "line": "38"
+            },
+            {
+              "text": "Kingsiey",
+              "bbox": [
+                0.2978450327396632,
+                0.9156184140298862,
+                0.33564262572693004,
+                0.9279121814103225
+              ],
+              "source": "ocr",
+              "confidence": 90.545464,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "Trading",
+              "bbox": [
+                0.33942238502565675,
+                0.9156184140298862,
+                0.3726842668544516,
+                0.9279121814103225
+              ],
+              "source": "ocr",
+              "confidence": 96.88398,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "GmbH",
+              "bbox": [
+                0.3787318817324143,
+                0.9156184140298862,
+                0.4021663893845198,
+                0.9279121814103225
+              ],
+              "source": "ocr",
+              "confidence": 96.950615,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "8",
+              "bbox": [
+                0.40745805240273714,
+                0.918290972156068,
+                0.4127497154209545,
+                0.9236360884084316
+              ],
+              "source": "ocr",
+              "confidence": 93.517937,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "Co.",
+              "bbox": [
+                0.4172854265794266,
+                0.9156184140298862,
+                0.433916367493824,
+                0.9279121814103225
+              ],
+              "source": "ocr",
+              "confidence": 93.517937,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "KG",
+              "bbox": [
+                0.4354282712133147,
+                0.918290972156068,
+                0.4497913565484761,
+                0.9236360884084316
+              ],
+              "source": "ocr",
+              "confidence": 88.407928,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "+",
+              "bbox": [
+                0.5760353171259476,
+                0.9193599954065407,
+                0.5790591245649289,
+                0.9220325535327225
+              ],
+              "source": "ocr",
+              "confidence": 51.537933,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "Vidal+",
+              "bbox": [
+                0.5835948357234009,
+                0.9161529256551225,
+                0.610809102674233,
+                0.9279121814103225
+              ],
+              "source": "ocr",
+              "confidence": 92.014977,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "16",
+              "bbox": [
+                0.6145888619729598,
+                0.918290972156068,
+                0.6229043324301585,
+                0.9236360884084316
+              ],
+              "source": "ocr",
+              "confidence": 94.071556,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "37106114015",
+              "bbox": [
+                0.6259281398691399,
+                0.918290972156068,
+                0.6871602405085122,
+                0.9236360884084316
+              ],
+              "source": "ocr",
+              "confidence": 94.071556,
+              "block": "1",
+              "line": "39"
+            },
+            {
+              "text": "Geschäftsführer:",
+              "bbox": [
+                0.07710708969402447,
+                0.9273776697850862,
+                0.15572608310753963,
+                0.9332572976626861
+              ],
+              "source": "ocr",
+              "confidence": 85.552872,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Nina",
+              "bbox": [
+                0.1617736979855023,
+                0.9284466930355588,
+                0.18218439819862645,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 96.969009,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Reis",
+              "bbox": [
+                0.20939866514945862,
+                0.9284466930355588,
+                0.2290534135028374,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 93.305573,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": ",Elena",
+              "bbox": [
+                0.23434507652105477,
+                0.9284466930355588,
+                0.26458315091086826,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 91.414246,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Lind",
+              "bbox": [
+                0.279702188105775,
+                0.9284466930355588,
+                0.2978450327396632,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 93.300507,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Lena",
+              "bbox": [
+                0.3069164550566072,
+                0.9284466930355588,
+                0.328839058989222,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 95.748215,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Novak",
+              "bbox": [
+                0.3363985775866754,
+                0.9284466930355588,
+                0.3643687963972529,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 96.958366,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "*",
+              "bbox": [
+                0.3704164112752156,
+                0.9295157162860316,
+                0.37495212243368764,
+                0.9321882744122134
+              ],
+              "source": "ocr",
+              "confidence": 84.91095,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Amtsgericht",
+              "bbox": [
+                0.3787318817324143,
+                0.9273776697850862,
+                0.4354282712133147,
+                0.9348608325383951
+              ],
+              "source": "ocr",
+              "confidence": 92.687653,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Bremen,",
+              "bbox": [
+                0.4392080305120413,
+                0.9279121814103225,
+                0.4785175272187989,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 93.292328,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "HRA",
+              "bbox": [
+                0.4822972865175256,
+                0.9279121814103225,
+                0.501196083011159,
+                0.9332572976626861
+              ],
+              "source": "ocr",
+              "confidence": 96.205353,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "28216",
+              "bbox": [
+                0.5049758423098858,
+                0.9279121814103225,
+                0.5344579648399539,
+                0.9332572976626861
+              ],
+              "source": "ocr",
+              "confidence": 93.305298,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "*",
+              "bbox": [
+                0.538993675998426,
+                0.9289812046607953,
+                0.5427734352971526,
+                0.9321882744122134
+              ],
+              "source": "ocr",
+              "confidence": 85.370773,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Komplementärin:",
+              "bbox": [
+                0.5473091464556247,
+                0.9273776697850862,
+                0.6281959954483758,
+                0.9348608325383951
+              ],
+              "source": "ocr",
+              "confidence": 88.6465,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Cloverdale",
+              "bbox": [
+                0.6319757547471025,
+                0.9284466930355588,
+                0.6796007219110588,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 80.647125,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Distribution",
+              "bbox": [
+                0.6833804812097856,
+                0.9284466930355588,
+                0.7325173520932324,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 93.284431,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "GntbAmtsgericht",
+              "bbox": [
+                0.7355411595322139,
+                0.9273776697850862,
+                0.8134042010859837,
+                0.9348608325383951
+              ],
+              "source": "ocr",
+              "confidence": 58.124424,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Bremen,",
+              "bbox": [
+                0.8171839603847103,
+                0.9279121814103225,
+                0.856493457091468,
+                0.9343263209131588
+              ],
+              "source": "ocr",
+              "confidence": 96.929749,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "HRB",
+              "bbox": [
+                0.8602732163901946,
+                0.9279121814103225,
+                0.8799279647435734,
+                0.9332572976626861
+              ],
+              "source": "ocr",
+              "confidence": 93.237114,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "33717",
+              "bbox": [
+                0.8829517721825547,
+                0.9279121814103225,
+                0.9116779428528776,
+                0.9332572976626861
+              ],
+              "source": "ocr",
+              "confidence": 95.891243,
+              "block": "1",
+              "line": "40"
+            },
+            {
+              "text": "Stadibank",
+              "bbox": [
+                0.21847008746640267,
+                0.9332572976626861,
+                0.266095054630359,
+                0.9498271580450133
+              ],
+              "source": "ocr",
+              "confidence": 87.835175,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "+",
+              "bbox": [
+                0.31220811807482457,
+                0.9396714371655225,
+                0.3167438292332966,
+                0.9423439952917042
+              ],
+              "source": "ocr",
+              "confidence": 84.094688,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "BLZ:",
+              "bbox": [
+                0.3205235885320233,
+                0.9380679022898134,
+                0.33942238502565675,
+                0.9439475301674133
+              ],
+              "source": "ocr",
+              "confidence": 49.210533,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "29050101",
+              "bbox": [
+                0.34320214432438345,
+                0.9380679022898134,
+                0.38931520776884904,
+                0.9439475301674133
+              ],
+              "source": "ocr",
+              "confidence": 8.153755,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "+",
+              "bbox": [
+                0.39385091892732105,
+                0.9396714371655225,
+                0.39763067822604775,
+                0.9423439952917042
+              ],
+              "source": "ocr",
+              "confidence": 52.235291,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "Konto:",
+              "bbox": [
+                0.4021663893845198,
+                0.9380679022898134,
+                0.42938065633535194,
+                0.9439475301674133
+              ],
+              "source": "ocr",
+              "confidence": 96.266075,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "80141314",
+              "bbox": [
+                0.4354282712133147,
+                0.9386024139150497,
+                0.4800294309382896,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 33.294266,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "*",
+              "bbox": [
+                0.48683299767599764,
+                0.9396714371655225,
+                0.49061275697472434,
+                0.9423439952917042
+              ],
+              "source": "ocr",
+              "confidence": 75.335175,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "BIC:",
+              "bbox": [
+                0.496660371852687,
+                0.9332572976626861,
+                0.5125353609073391,
+                0.9498271580450133
+              ],
+              "source": "ocr",
+              "confidence": 91.497871,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "YSTTFV26AKT®",
+              "bbox": [
+                0.5155591683463205,
+                0.9380679022898134,
+                0.590398402461109,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 80.726837,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "IBAN:",
+              "bbox": [
+                0.5949341136195809,
+                0.9332572976626861,
+                0.6206364768509225,
+                0.9498271580450133
+              ],
+              "source": "ocr",
+              "confidence": 92.233551,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "DE65",
+              "bbox": [
+                0.6251721880093944,
+                0.9332572976626861,
+                0.6470947919420093,
+                0.9498271580450133
+              ],
+              "source": "ocr",
+              "confidence": 54.852985,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "8339",
+              "bbox": [
+                0.6516305031004813,
+                0.9386024139150497,
+                0.6735531070330961,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 94.60556,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "7329",
+              "bbox": [
+                0.6765769144720775,
+                0.9386024139150497,
+                0.6992554702644376,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 95.185806,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "2725",
+              "bbox": [
+                0.7022792777034189,
+                0.9386024139150497,
+                0.7242018816360337,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 86.886246,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "2446",
+              "bbox": [
+                0.7272256890750151,
+                0.9386024139150497,
+                0.7491482930076299,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 95.902023,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "71",
+              "bbox": [
+                0.7521721004466113,
+                0.9386024139150497,
+                0.7619994746233006,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 92.329544,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "lommerzbank",
+              "bbox": [
+                0.767291137641518,
+                0.9386024139150497,
+                0.8270113345613997,
+                0.9444820417926497
+              ],
+              "source": "ocr",
+              "confidence": 89.163727,
+              "block": "1",
+              "line": "41"
+            },
+            {
+              "text": "DE6S",
+              "bbox": [
+                0.20335105027149591,
+                0.9487581347945405,
+                0.22829746164309206,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 62.476532,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "8339",
+              "bbox": [
+                0.23132126908207343,
+                0.949292646419777,
+                0.2532438730146882,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 92.36525,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "7328aRRBAMBLE",
+              "bbox": [
+                0.2570236323134149,
+                0.9482236231693042,
+                0.3424461924646381,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "RAMMA",
+              "bbox": [
+                0.34849380734260077,
+                0.943413018542177,
+                0.3900711596285944,
+                0.9599828789245042
+              ],
+              "source": "ocr",
+              "confidence": 19.261856,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "AIKonto:",
+              "bbox": [
+                0.39687472636630244,
+                0.943413018542177,
+                0.43618422307306,
+                0.9599828789245042
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "5653843829",
+              "bbox": [
+                0.4399639823717867,
+                0.9487581347945405,
+                0.49514846813319635,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 72.141426,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "*",
+              "bbox": [
+                0.5027079867306498,
+                0.9498271580450133,
+                0.5064877460293764,
+                0.9524997161711951
+              ],
+              "source": "ocr",
+              "confidence": 30.969986,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "BIC:",
+              "bbox": [
+                0.5110234571878485,
+                0.9482236231693042,
+                0.5276543981022459,
+                0.9541032510469042
+              ],
+              "source": "ocr",
+              "confidence": 92.857574,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "UWHVFKOSMM'",
+              "bbox": [
+                0.532190109260718,
+                0.9487581347945405,
+                0.608541247094997,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 9.489716,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "IBAN:",
+              "bbox": [
+                0.6123210063937238,
+                0.9482236231693042,
+                0.6380233696250652,
+                0.9541032510469042
+              ],
+              "source": "ocr",
+              "confidence": 93.172745,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "DE47",
+              "bbox": [
+                0.6418031289237919,
+                0.9487581347945405,
+                0.6659935884356427,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 92.534462,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "3221",
+              "bbox": [
+                0.6697733477343695,
+                0.949292646419777,
+                0.6901840479474936,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 81.349434,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "2282",
+              "bbox": [
+                0.6947197591059656,
+                0.949292646419777,
+                0.7166423630385804,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 96.887299,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "8473",
+              "bbox": [
+                0.7204221223373071,
+                0.949292646419777,
+                0.7415887744101766,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 96.459915,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "6223",
+              "bbox": [
+                0.7453685337089032,
+                0.949292646419777,
+                0.767291137641518,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 93.506706,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "94",
+              "bbox": [
+                0.7703149450804994,
+                0.949292646419777,
+                0.7808982711169341,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 93.306229,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "Oank",
+              "bbox": [
+                0.7846780304156608,
+                0.9487581347945405,
+                0.8081125380677663,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 82.200546,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "OT79",
+              "bbox": [
+                0.8111363455067476,
+                0.9487581347945405,
+                0.8360827568783438,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 88.565895,
+              "block": "1",
+              "line": "42"
+            },
+            {
+              "text": "3686",
+              "bbox": [
+                0.8398625161770704,
+                0.949292646419777,
+                0.8610291682499399,
+                0.9546377626721405
+              ],
+              "source": "ocr",
+              "confidence": 89.480797,
+              "block": "1",
+              "line": "42"
+            }
+          ],
+          "regions": [
+            {
+              "block": "1",
+              "text": "2\nMahnung\nKingsley Trading GmbH & Co. KG\nNorthwind Services DE GmbH\nKarl-Liebknecht-Str. 29\n10178 Berlin Bankverbindung\nDeutschland DE47 3221 2282 8473 6223 St@ibarBT79 3686\nIBAN DE47 3221 2204 64706823 35 2250179 3686\nBIC YSTTFV26AKT\nBitte bei Zahlungen immer angeben:\nKundennr. 0665850800\nBelegnr. siehe unten\n4. Juni 2025\nMB236544896 Pahnungsnr MB236544896 Pahnungsnr\nSeite 1\nSehr geehrte Damen und Herren,\nbei der Fülle der täglichen Arbeit ist es verständlich, dass trotz aller Sorgfalt einmal ein\nZahlungstermin übersehen wird. Wir haben die Leistung wie vereinbart erbracht.\nWir bitten Sie daher, den Zahlungsausgleich für die nachstehend aufgeführte Forderung bis zum\n10.06.2025 auf unser Konto zu überweisen.\nSollten Sie inzwischen bezahlt haben, betrachten Sie dieses Schreiben bitte als gegenstandslos.\nZahlungseingänge wurden berücksichtigt bis zum 03.06.25.\nRg.VRB519A2890964 — wurde storniert. Guthaben EUR 44,84\nBelegdatum Belegart Belegnr. Fällig Mahnstufe Ursprungsbetrag Restbetrag\n29.01.25 Zahlung 25COBK-20-005 29.01.25 1 -44,84 -44,84\n12.05.25 Rechnung VRB700A6126940 22.05.25 1 48,94 48,94\nTotal EUR 4,10\nLassen Sie uns an dieser Stelle noch erwähnen, dass wir eine 2. Mahnung mit Mahngebühren und Zinsen\nausstellen werden.\nAusgehend davon, dass Sie die Erinnerung als solche nutzen, verbleiben wir\nmit freundlichen GrüBen\nSilverbrook Media GmbH 8 Co.KG\nAnsprechpartner Paul : Frau Marco Reis Vidal 2948 / 90099 - 6096\ne-mail: martin.kaskOlarkspur-consulting.com\nWir möchten Sie darauf hinweisen, dass ab dem 01.01.2025 alle Rechnungen ausschlieBlich per E-Mail\nversendet werden.\nBitte stellen Sie sicher, dass uns Ihre aktuelle E-Mail-Adresse vorliegt, um einen reibungslosen\nAblauf zu gewährleisten.\nKingsiey Trading GmbH 8 Co. KG + Vidal+ 16 37106114015\nGeschäftsführer: Nina Reis ,Elena Lind Lena Novak * Amtsgericht Bremen, HRA 28216 * Komplementärin: Cloverdale Distribution GntbAmtsgericht Bremen, HRB 33717\nStadibank + BLZ: 29050101 + Konto: 80141314 * BIC: YSTTFV26AKT® IBAN: DE65 8339 7329 2725 2446 71 lommerzbank\nDE6S 8339 7328aRRBAMBLE RAMMA AIKonto: 5653843829 * BIC: UWHVFKOSMM' IBAN: DE47 3221 2282 8473 6223 94 Oank OT79 3686",
+              "bbox": [
+                0.07710708969402447,
+                0.09460855766683587,
+                0.9487195839803991,
+                0.9599828789245042
+              ]
+            }
+          ],
+          "cache": {
+            "status": "hit",
+            "key": "50c7fd020468e7a578bd56b1be40c25b53a1b10b29999aebf992da25716d6547"
+          }
+        }
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "payment_reminder",
+    "review_required": false,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": false,
+        "reason": "Explicit payment_reminder page ends the payable section."
+      }
+    ],
+    "warnings": [
+      "A payment reminder can reference an existing invoice but does not establish a new payable."
+    ],
+    "candidates": [],
+    "unresolved_reasons": []
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

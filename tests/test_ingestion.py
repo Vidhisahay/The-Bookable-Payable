@@ -92,6 +92,39 @@ class IngestionTests(unittest.TestCase):
         self.assertEqual(ocr.calls, 0)
         self.assertEqual(result.classification.category, "invoice")
 
+    @unittest.skipIf(pymupdf is None, "PyMuPDF is required for native layout integration")
+    def test_native_pdf_words_are_preserved_as_normalized_spatial_evidence(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "native-layout.pdf"
+            pdf = pymupdf.open()
+            page = pdf.new_page(width=300, height=400)
+            page.insert_text((30, 40), "Supplier Asteria Consulting Ltd")
+            page.insert_text((30, 100), "Invoice number SP-1 Grand total EUR 10.00")
+            pdf.save(path)
+            pdf.close()
+            result = IngestionPipeline(IngestionConfig(ocr_enabled=False)).process_file(path)
+        layout = result.pages[0].evidence["text_layout"]
+        self.assertEqual(layout["source"], "native")
+        self.assertEqual(layout["page_number"], 1)
+        self.assertEqual(layout["coordinate_system"], "normalized_page")
+        self.assertTrue(layout["words"])
+        self.assertTrue(all(0 <= coordinate <= 1 for word in layout["words"] for coordinate in word["bbox"]))
+
+    def test_tesseract_tsv_word_boxes_keep_confidence_and_line_provenance(self):
+        tsv = """level\tpage_num\tblock_num\tpar_num\tline_num\tword_num\tleft\ttop\twidth\theight\tconf\ttext
+5\t1\t2\t1\t3\t1\t10\t20\t40\t12\t91.5\tSupplier
+5\t1\t2\t1\t3\t2\t55\t20\t30\t12\t88.0\tAcme
+"""
+        with patch.object(TesseractOCR, "prepare"), patch(
+            "subprocess.run", return_value=subprocess.CompletedProcess([], 0, stdout=tsv, stderr=""),
+        ):
+            words = TesseractOCR().recognize_words(b"png", language="eng", timeout=5, psm=6)
+        self.assertEqual(words[0]["text"], "Supplier")
+        self.assertEqual(words[0]["bbox"], [10.0, 20.0, 50.0, 32.0])
+        self.assertEqual(words[0]["confidence"], 91.5)
+        self.assertEqual(words[0]["block"], "2")
+        self.assertEqual(words[0]["line"], "3")
+
     def test_sparse_scanned_page_uses_ocr(self):
         ocr = FakeOCR("Credit note Amount credited 10.00")
         result = self.process([FakePage("")], ocr)

@@ -1,0 +1,3724 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "arve",
+      "invoice",
+      "invoice no",
+      "invoicing",
+      "vat"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "arve",
+          "invoicing",
+          "invoice no",
+          "vat"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-09.pdf",
+      "page_number": 1,
+      "text": "ARVE\nKuupäev Date Kilendi nr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES 166 EOLATASHEESS\nArve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OÜ EE398766194\nLindon 15 Maksetähtaeg Due Date\nindenstrasse\nEE-10134 TALLINN 26108127\nViide maksmisel Payment reference\n210020201117683950\nmaria.tamm@northwind.eu\nMeie viide Our ref. Veovahend Vehicle Saatmise kuupäev Departure date\nTLLFW19939 — /TLL9386486 2025 / 06 / 06\nSaatja viide Shipper Reference Tameklausel Terms of delivery Saabumise kuupäev Arrival date\nPTGGM351961374 001 Ismir 2025 / 06 / 06\nVastuvõtja Consignee\nNorthwi@PERATIONS\nFrielas business park, PT-2660 Frielas\nKood Code Tekst Notes KM VAT % Neto summa Net amount\n752 Import duties 0 31889.09\n751 Customs VAT 0 5878.23\ni Valuuta Currency Kokku Total\nEUR 37767.32\n3 Arve tähtajaks mittetasumisel on Cloverdale Tradik®igus nõuda viivist 0,1% tasumata summast iga maksetähtpäeva ületanud päeva eest. Lisandub\nviivisarve väljastamise tasu 40 eurot.\nCloverdale Tradihas the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies\nE for every interest invoicing.\nNeto summa Net amount KMalus VATC.A — Käibemaks VAT amount Valuuta Currency Kokku Total\n37767.32 0.00 0.00 EUR 37767.32\nCloverdale Trading\n10112, Gartenweg 13 . Harju county ESTONIA tel:\nÄriregistri nr., Trade reg. No.: 15116864\nKM reg. nr., VAT reg. No.: EE418070965\nE-mail, E-post: luis.roth@ ashford-<istribution.com\nPangad, Banks:\nOakhaven BaflE516678092588562155 , BIC: SZWGvyov\nRedwater BaiiE319931502108360825 , BIC: USQNDC2G\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1322,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 11253,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "1ecd4681cce7c126b3efef369040e43fab7bd9004c883a2e9514ec0b440e4d54"
+        },
+        "text_layout": null
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-09.pdf",
+      "page_number": 2,
+      "text": "Blackpine Services S.A NRL : 3217PT6557408317495996\nESTANCIA ADUANEIRA : PT423029 Tipo Declaragäo -EU A) N° Ad. -1 Total Vis - 156 Processo N° - 1693 de 05/05/2025\nN° Aceitagäo : 9752PT76913459517321 de 05/05/2025 N° Provisorio : 356960/2025 Conta N°:\nExpedidor : Oakhaven Technologies LTD Pais: TR\nDestinatario : Northwind OPERATIONS PT NIF : 198709709\nInc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000\nPeso Bruto : 4.882,800 Peso Liquido : 3.884,400 Valor Aduaneiro Total : 65.750,710 CM : 002615000000\nLocalizagäo (C30) : DTP95621713004PT MT18: 30 / 76GPC174 MT21: 30/ BE\n(E rae annan [eest | AA [USue [PO] runs Vator adie [ Avotanente |\nEEE [40 [| A A E 6.875.000\n(EJ ET KT A [6 | 8876,23 EEE\n[aso | osmsone | 485 — | 1080.09 | oonsses 20253 |\njest si [oss = [ |\n(E ÕE TAA AASA KEELES\nLTT A AKA KAKA\nET\n[ezor_eowo Cid 02028 |\na AKA EET\nÜKS AAA KAA A\na AKA EEE\n(EE CII KKK\n(ESL CL KKK E\nÜHELE CAA KAKA\nES CAA. KAKA E\nÜKT CAA TE\ns jsrreemo ST\n[ozis feerr oniem TR Dieses OO | | |\n[wore CE KK EEE\nToi ago\nTrinta e sete mil setecentos e sessenta e sete euros e trinta e dois céntimos 37.767,32\nGIDWIN - Desenvolvido por Meridian Distribution Ldkicenciado a: Nordis - Transitärios, S.A\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 902,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 24901,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "f4e8a81c97333768e69f2b694a37e9bd0a31cec6b38f3a271ad75a8bf3bdb4d5"
+        },
+        "text_layout": {
+          "page_number": 2,
+          "source": "ocr",
+          "page_width": 595.3200073242188,
+          "page_height": 841.9199829101562,
+          "coordinate_system": "normalized_page",
+          "words": [
+            {
+              "text": "Blackpine",
+              "bbox": [
+                0.035527111032371946,
+                0.0336730337507921,
+                0.10431364515887934,
+                0.04489737833438947
+              ],
+              "source": "ocr",
+              "confidence": 91.448746,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "Services",
+              "bbox": [
+                0.11036081299417669,
+                0.0336730337507921,
+                0.1708324913471502,
+                0.042759407937513774
+              ],
+              "source": "ocr",
+              "confidence": 96.678993,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "S.A",
+              "bbox": [
+                0.17687965918244755,
+                0.0336730337507921,
+                0.20182422650304915,
+                0.042759407937513774
+              ],
+              "source": "ocr",
+              "confidence": 96.829796,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "NRL",
+              "bbox": [
+                0.6682120458003574,
+                0.032604048552354256,
+                0.702227364873905,
+                0.04222491533829485
+              ],
+              "source": "ocr",
+              "confidence": 91.922577,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.7075186367297902,
+                0.034742018949229944,
+                0.7120540126062632,
+                0.04222491533829485
+              ],
+              "source": "ocr",
+              "confidence": 86.468536,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "3217PT6557408317495996",
+              "bbox": [
+                0.7181011804415606,
+                0.03420752635001102,
+                0.8836423999328257,
+                0.04222491533829485
+              ],
+              "source": "ocr",
+              "confidence": 82.146835,
+              "block": "1",
+              "line": "1"
+            },
+            {
+              "text": "ESTANCIA",
+              "bbox": [
+                0.035527111032371946,
+                0.05932867851330036,
+                0.102801853200055,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 92.267075,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "ADUANEIRA",
+              "bbox": [
+                0.10658133309711584,
+                0.05932867851330036,
+                0.18519451495598144,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 91.739357,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.1829268270177449,
+                0.057190708116424675,
+                0.18972989083245445,
+                0.07108751569611665
+              ],
+              "source": "ocr",
+              "confidence": 92.136292,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "PT423029",
+              "bbox": [
+                0.1980447466059883,
+                0.06039766371173821,
+                0.24642208928836712,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 92.576988,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Tipo",
+              "bbox": [
+                0.29706711990898244,
+                0.05932867851330036,
+                0.3250352711472327,
+                0.06788056010080312
+              ],
+              "source": "ocr",
+              "confidence": 93.255959,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Declaragäo",
+              "bbox": [
+                0.3295706470237057,
+                0.05932867851330036,
+                0.40062486908844963,
+                0.06841505270002204
+              ],
+              "source": "ocr",
+              "confidence": 80.908432,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "-EU",
+              "bbox": [
+                0.40516024496492264,
+                0.05932867851330036,
+                0.4308607082649364,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 60.39204,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "A)",
+              "bbox": [
+                0.4353960841414094,
+                0.05932867851330036,
+                0.4452227318737676,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 53.3876,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "N°",
+              "bbox": [
+                0.47092319517378134,
+                0.05932867851330036,
+                0.4845293228032004,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 62.520115,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Ad.",
+              "bbox": [
+                0.4883088027002612,
+                0.05932867851330036,
+                0.5087179941443898,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 28.463058,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "-1",
+              "bbox": [
+                0.514009266000275,
+                0.05932867851330036,
+                0.5268594976502818,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 28.463058,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Total",
+              "bbox": [
+                0.5646542966208903,
+                0.05932867851330036,
+                0.5964019277562014,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 96.995316,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Vis",
+              "bbox": [
+                0.6001814076532622,
+                0.05932867851330036,
+                0.6205905990973908,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 93.046227,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "-",
+              "bbox": [
+                0.6251259749738638,
+                0.0625356341086139,
+                0.6296613508503368,
+                0.06467360450548959
+              ],
+              "source": "ocr",
+              "confidence": 93.046227,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "156",
+              "bbox": [
+                0.6341967267268098,
+                0.05932867851330036,
+                0.6553618141503506,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 95.274628,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "Processo",
+              "bbox": [
+                0.7521164995151083,
+                0.05932867851330036,
+                0.8118322818886696,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 91.092819,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "N°",
+              "bbox": [
+                0.8163676577651426,
+                0.05932867851330036,
+                0.8299737853945617,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 87.599495,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "-",
+              "bbox": [
+                0.8345091612710347,
+                0.0625356341086139,
+                0.8390445371475077,
+                0.06467360450548959
+              ],
+              "source": "ocr",
+              "confidence": 87.599495,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "1693",
+              "bbox": [
+                0.8435799130239807,
+                0.05932867851330036,
+                0.8723039602416431,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 96.580322,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "de",
+              "bbox": [
+                0.8798629200357648,
+                0.05932867851330036,
+                0.8949808396240082,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 96.792839,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "05/05/2025",
+              "bbox": [
+                0.8995162155004812,
+                0.05932867851330036,
+                0.9667909576681643,
+                0.06627708230314636
+              ],
+              "source": "ocr",
+              "confidence": 96.792839,
+              "block": "1",
+              "line": "2"
+            },
+            {
+              "text": "N°",
+              "bbox": [
+                0.035527111032371946,
+                0.0844498306765897,
+                0.053668614538264006,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 80.137352,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Aceitagäo",
+              "bbox": [
+                0.05744809443532485,
+                0.0844498306765897,
+                0.13606127629419043,
+                0.09674316045862492
+              ],
+              "source": "ocr",
+              "confidence": 67.441864,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.1413525481500756,
+                0.08658780107346539,
+                0.14513202804713646,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 88.134094,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "9752PT76913459517321",
+              "bbox": [
+                0.1511791958824338,
+                0.08658780107346539,
+                0.3000907038266311,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 89.662689,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "de",
+              "bbox": [
+                0.3439326706325369,
+                0.0844498306765897,
+                0.3635859660972533,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 93.201782,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "05/05/2025",
+              "bbox": [
+                0.3681213419737263,
+                0.0844498306765897,
+                0.45126989970906495,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 92.415634,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "N°",
+              "bbox": [
+                0.5752368403326606,
+                0.0844498306765897,
+                0.5933783438385527,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 87.883942,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Provisorio",
+              "bbox": [
+                0.5986696156944379,
+                0.0844498306765897,
+                0.6803063814709521,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 91.867104,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.6863535493062495,
+                0.08712229367268433,
+                0.6901330292033103,
+                0.09353620486331139
+              ],
+              "source": "ocr",
+              "confidence": 92.185043,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "356960/2025",
+              "bbox": [
+                0.6954243010591955,
+                0.0844498306765897,
+                0.7929348824033654,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 91.519966,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Conta",
+              "bbox": [
+                0.8813747119945892,
+                0.0844498306765897,
+                0.9289961586975558,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 96.423828,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "N°:",
+              "bbox": [
+                0.934287430553441,
+                0.0844498306765897,
+                0.9569643099358061,
+                0.09407069746253031
+              ],
+              "source": "ocr",
+              "confidence": 94.35305,
+              "block": "1",
+              "line": "3"
+            },
+            {
+              "text": "Expedidor",
+              "bbox": [
+                0.38097157362373324,
+                0.11170895323675474,
+                0.44673452383259193,
+                0.12079532742347641
+              ],
+              "source": "ocr",
+              "confidence": 92.806595,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.45126989970906495,
+                0.1133124310344115,
+                0.45353758764730145,
+                0.11865735702660073
+              ],
+              "source": "ocr",
+              "confidence": 91.28495,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Oakhaven",
+              "bbox": [
+                0.45882885950318664,
+                0.11277793843519258,
+                0.5079620981649776,
+                0.11865735702660073
+              ],
+              "source": "ocr",
+              "confidence": 90.069405,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Technologies",
+              "bbox": [
+                0.5117415780620385,
+                0.11277793843519258,
+                0.5752368403326606,
+                0.12026083482425749
+              ],
+              "source": "ocr",
+              "confidence": 96.44471,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "LTD",
+              "bbox": [
+                0.5797722162091337,
+                0.11277793843519258,
+                0.59942551167385,
+                0.11865735702660073
+              ],
+              "source": "ocr",
+              "confidence": 96.810165,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Pais:",
+              "bbox": [
+                0.9093428632328394,
+                0.11170895323675474,
+                0.9441140782857992,
+                0.11865735702660073
+              ],
+              "source": "ocr",
+              "confidence": 77.983299,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "TR",
+              "bbox": [
+                0.9494053501416844,
+                0.11170895323675474,
+                0.9667909576681643,
+                0.11865735702660073
+              ],
+              "source": "ocr",
+              "confidence": 94.453796,
+              "block": "1",
+              "line": "4"
+            },
+            {
+              "text": "Destinatario",
+              "bbox": [
+                0.5533158569297078,
+                0.13362314980473056,
+                0.630417246829749,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 92.715164,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.6357085186856342,
+                0.13576112020160624,
+                0.6379762066238707,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 92.734848,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "Northwind",
+              "bbox": [
+                0.6432674784797558,
+                0.13522662760238732,
+                0.6916448211621347,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 95.068977,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "OPERATIONS",
+              "bbox": [
+                0.6946684050797833,
+                0.1346921350031684,
+                0.7657226271445273,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 96.951218,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "PT",
+              "bbox": [
+                0.7695021070415882,
+                0.13522662760238732,
+                0.7831082346710072,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 96.168884,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "NIF",
+              "bbox": [
+                0.8662567924063458,
+                0.13362314980473056,
+                0.8866659838504743,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 90.133896,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.8919572557063595,
+                0.13576112020160624,
+                0.8949808396240082,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 87.065903,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "198709709",
+              "bbox": [
+                0.9010280074593056,
+                0.13522662760238732,
+                0.9531848300387452,
+                0.14110604619379546
+              ],
+              "source": "ocr",
+              "confidence": 96.588371,
+              "block": "1",
+              "line": "5"
+            },
+            {
+              "text": "Inc.:",
+              "bbox": [
+                0.03930659092943279,
+                0.1566063315711442,
+                0.06576295020885871,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 90.069809,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "EXW",
+              "bbox": [
+                0.07105422206474389,
+                0.1566063315711442,
+                0.10129006124123066,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 91.175735,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "NT.:",
+              "bbox": [
+                0.13152590041771742,
+                0.1566063315711442,
+                0.15571457175890682,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 89.588287,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "11",
+              "bbox": [
+                0.16176173959420417,
+                0.1566063315711442,
+                0.17385607526479888,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 96.761436,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Montante",
+              "bbox": [
+                0.23810723351483326,
+                0.1566063315711442,
+                0.29706711990898244,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 92.884537,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Casa",
+              "bbox": [
+                0.30160249578545545,
+                0.1566063315711442,
+                0.3325942309413544,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 96.024643,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "22",
+              "bbox": [
+                0.3371296068178274,
+                0.1566063315711442,
+                0.3514916304266586,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 93.153526,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.3567829022825438,
+                0.15820980936880097,
+                0.3590505902207803,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 92.901245,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "489.840,000",
+              "bbox": [
+                0.36434186207666547,
+                0.1566063315711442,
+                0.4384196680590581,
+                0.16515821315864695
+              ],
+              "source": "ocr",
+              "confidence": 92.847397,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "CNY",
+              "bbox": [
+                0.4429550439355311,
+                0.1566063315711442,
+                0.47092319517378134,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 96.369919,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Tx",
+              "bbox": [
+                0.5381979373414644,
+                0.1566063315711442,
+                0.5533158569297078,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 94.998047,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Cambio:",
+              "bbox": [
+                0.5578512328061808,
+                0.1566063315711442,
+                0.6100080553856204,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 82.28157,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "8,319900",
+              "bbox": [
+                0.6152993272415056,
+                0.1566063315711442,
+                0.6704797337385939,
+                0.16515821315864695
+              ],
+              "source": "ocr",
+              "confidence": 93.07618,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Frete",
+              "bbox": [
+                0.7029832608533172,
+                0.15714082417036312,
+                0.7301955161121553,
+                0.1635547353609902
+              ],
+              "source": "ocr",
+              "confidence": 92.535179,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.7347308919886283,
+                0.1587443019680199,
+                0.7369985799268648,
+                0.16302024276177127
+              ],
+              "source": "ocr",
+              "confidence": 91.225067,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "6.875,000",
+              "bbox": [
+                0.7415339558033379,
+                0.15714082417036312,
+                0.7921789864239532,
+                0.1640892279602091
+              ],
+              "source": "ocr",
+              "confidence": 90.736519,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "‘Seguro",
+              "bbox": [
+                0.8874218798298865,
+                0.1566063315711442,
+                0.9274843667387315,
+                0.16515821315864695
+              ],
+              "source": "ocr",
+              "confidence": 83.725891,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.9312638466357923,
+                0.15820980936880097,
+                0.9335315345740288,
+                0.16302024276177127
+              ],
+              "source": "ocr",
+              "confidence": 91.445656,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "0,000",
+              "bbox": [
+                0.9380669104505018,
+                0.15714082417036312,
+                0.9667909576681643,
+                0.1640892279602091
+              ],
+              "source": "ocr",
+              "confidence": 96.12986,
+              "block": "1",
+              "line": "6"
+            },
+            {
+              "text": "Peso",
+              "bbox": [
+                0.09524289340593331,
+                0.17905502073833895,
+                0.12623462856183224,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 93.292564,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Bruto",
+              "bbox": [
+                0.13152590041771742,
+                0.17905502073833895,
+                0.1662971154706772,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 91.931915,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.17158838732656237,
+                0.18065849853599572,
+                0.17385607526479888,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 92.393921,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "4.882,800",
+              "bbox": [
+                0.17914734712068406,
+                0.17905502073833895,
+                0.23886312949424543,
+                0.18707240972662278
+              ],
+              "source": "ocr",
+              "confidence": 88.67424,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Peso",
+              "bbox": [
+                0.3144527274354623,
+                0.17905502073833895,
+                0.34544446259136125,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 93.256447,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Liquido",
+              "bbox": [
+                0.35073573444724643,
+                0.17905502073833895,
+                0.3983571811502131,
+                0.1876069023258417
+              ],
+              "source": "ocr",
+              "confidence": 91.258926,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.4036484530060983,
+                0.18065849853599572,
+                0.4059161409443348,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 91.334717,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "3.884,400",
+              "bbox": [
+                0.41196330877963216,
+                0.17905502073833895,
+                0.47092319517378134,
+                0.18707240972662278
+              ],
+              "source": "ocr",
+              "confidence": 91.653496,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Valor",
+              "bbox": [
+                0.5737250483738363,
+                0.17905502073833895,
+                0.6069844714679717,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 93.268417,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Aduaneiro",
+              "bbox": [
+                0.6107639513650326,
+                0.17905502073833895,
+                0.6772827975533035,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 91.69487,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Total",
+              "bbox": [
+                0.6810622774503643,
+                0.17905502073833895,
+                0.7120540126062632,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 93.213234,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.7181011804415606,
+                0.18065849853599572,
+                0.7203688683797971,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 92.631996,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "65.750,710",
+              "bbox": [
+                0.7256601402356823,
+                0.17905502073833895,
+                0.7921789864239532,
+                0.18707240972662278
+              ],
+              "source": "ocr",
+              "confidence": 92.143761,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "CM",
+              "bbox": [
+                0.8443358090033929,
+                0.17852052813912003,
+                0.8639891044681093,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 92.044434,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.8700362723034066,
+                0.18065849853599572,
+                0.8723039602416431,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 92.592842,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "002615000000",
+              "bbox": [
+                0.8775952320975283,
+                0.17905502073833895,
+                0.9667909576681643,
+                0.18600342452818494
+              ],
+              "source": "ocr",
+              "confidence": 96.594635,
+              "block": "1",
+              "line": "7"
+            },
+            {
+              "text": "Localizagäo",
+              "bbox": [
+                0.2199657300089412,
+                0.20096921730631476,
+                0.2955553279501581,
+                0.21005559149303643
+              ],
+              "source": "ocr",
+              "confidence": 84.866508,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "(C30)",
+              "bbox": [
+                0.3000907038266311,
+                0.20096921730631476,
+                0.3325942309413544,
+                0.21005559149303643
+              ],
+              "source": "ocr",
+              "confidence": 93.051605,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": ":",
+              "bbox": [
+                0.3371296068178274,
+                0.20310718770319044,
+                0.34015319073547606,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 92.03286,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "DTP95621713004PT",
+              "bbox": [
+                0.34544446259136125,
+                0.2020382025047526,
+                0.44673452383259193,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 47.728836,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "MT18:",
+              "bbox": [
+                0.4837734268237882,
+                0.20096921730631476,
+                0.5208123298149845,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 92.953583,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "30",
+              "bbox": [
+                0.5261036016708697,
+                0.20096921730631476,
+                0.5404656252797009,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 92.478439,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "/",
+              "bbox": [
+                0.5450010011561739,
+                0.20096921730631476,
+                0.5487804810532347,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 92.478439,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "76GPC174",
+              "bbox": [
+                0.5533158569297078,
+                0.2020382025047526,
+                0.6054726795091474,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 85.558052,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "MT21:",
+              "bbox": [
+                0.6946684050797833,
+                0.20096921730631476,
+                0.7324632040503918,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 83.43541,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "30/",
+              "bbox": [
+                0.737754475906277,
+                0.20096921730631476,
+                0.75967545930923,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 91.106125,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "BE",
+              "bbox": [
+                0.764210835185703,
+                0.20096921730631476,
+                0.7815964427121829,
+                0.20845211369537966
+              ],
+              "source": "ocr",
+              "confidence": 96.26416,
+              "block": "1",
+              "line": "8"
+            },
+            {
+              "text": "(E",
+              "bbox": [
+                0.03325942309413544,
+                0.21593501008444457,
+                0.07256601402356823,
+                0.23250428066023116
+              ],
+              "source": "ocr",
+              "confidence": 22.127899,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "rae",
+              "bbox": [
+                0.11036081299417669,
+                0.21967645827897703,
+                0.15571457175890682,
+                0.22822833986647978
+              ],
+              "source": "ocr",
+              "confidence": 16.133789,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "annan",
+              "bbox": [
+                0.161005843614792,
+                0.21967645827897703,
+                0.2668312807324957,
+                0.22715935466804194
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "[eest",
+              "bbox": [
+                0.30387018372369196,
+                0.20631414329850398,
+                0.35224752640607077,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 44.548878,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.3635859660972533,
+                0.20631414329850398,
+                0.3719008218707872,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 41.238655,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "AA",
+              "bbox": [
+                0.3794597816649089,
+                0.20631414329850398,
+                0.41120741280022,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 75.708748,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "[USue",
+              "bbox": [
+                0.42254585249140253,
+                0.20631414329850398,
+                0.4747026750708422,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "[PO]",
+              "bbox": [
+                0.49057649063849773,
+                0.20631414329850398,
+                0.5223241217738088,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 79.525917,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "runs",
+              "bbox": [
+                0.5465127931149982,
+                0.21967645827897703,
+                0.6069844714679717,
+                0.22822833986647978
+              ],
+              "source": "ocr",
+              "confidence": 34.027695,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "Vator",
+              "bbox": [
+                0.764210835185703,
+                0.21967645827897703,
+                0.7982261542592506,
+                0.22715935466804194
+              ],
+              "source": "ocr",
+              "confidence": 77.536293,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "adie",
+              "bbox": [
+                0.8035174261151358,
+                0.21967645827897703,
+                0.8473593929210416,
+                0.22822833986647978
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "[",
+              "bbox": [
+                0.8602096245710484,
+                0.20631414329850398,
+                0.8685244803445823,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 76.766113,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "Avotanente",
+              "bbox": [
+                0.8662567924063458,
+                0.21593501008444457,
+                0.9690586456064008,
+                0.23250428066023116
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.9630114777711034,
+                0.20631414329850398,
+                0.9720822295240494,
+                0.23998717704929606
+              ],
+              "source": "ocr",
+              "confidence": 94.714539,
+              "block": "1",
+              "line": "9"
+            },
+            {
+              "text": "EEE",
+              "bbox": [
+                0.03250352711472327,
+                0.23998717704929606,
+                0.23054827372071157,
+                0.25334949202976914
+              ],
+              "source": "ocr",
+              "confidence": 49.576038,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "[40",
+              "bbox": [
+                0.3046260797031041,
+                0.23196978806101223,
+                0.34771215052959775,
+                0.2597634032203962
+              ],
+              "source": "ocr",
+              "confidence": 43.872047,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "[|",
+              "bbox": [
+                0.36509775805607764,
+                0.23196978806101223,
+                0.4323725002237607,
+                0.2597634032203962
+              ],
+              "source": "ocr",
+              "confidence": 67.155441,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "A",
+              "bbox": [
+                0.4285930203266999,
+                0.23998717704929606,
+                0.6319290387885733,
+                0.25334949202976914
+              ],
+              "source": "ocr",
+              "confidence": 13.442337,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "A",
+              "bbox": [
+                0.6848417573474251,
+                0.24159065484695283,
+                0.7445575397209866,
+                0.2501425364344556
+              ],
+              "source": "ocr",
+              "confidence": 8.407509,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "E",
+              "bbox": [
+                0.7853759226092437,
+                0.24159065484695283,
+                0.8602096245710484,
+                0.2501425364344556
+              ],
+              "source": "ocr",
+              "confidence": 50.449619,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "6.875.000",
+              "bbox": [
+                0.9063192793151907,
+                0.24159065484695283,
+                0.9660350616887521,
+                0.2501425364344556
+              ],
+              "source": "ocr",
+              "confidence": 31.804268,
+              "block": "1",
+              "line": "10"
+            },
+            {
+              "text": "(EJ",
+              "bbox": [
+                0.029479943197074594,
+                0.25121152163289345,
+                0.06500705422944654,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 12.553467,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "ET",
+              "bbox": [
+                0.08088086979710209,
+                0.25121152163289345,
+                0.11640798082947404,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 35.206978,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "KT",
+              "bbox": [
+                0.161005843614792,
+                0.25121152163289345,
+                0.2222334179471777,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 36.243279,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "A",
+              "bbox": [
+                0.2570046330001375,
+                0.25121152163289345,
+                0.2834609922795634,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 20.665695,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "[6",
+              "bbox": [
+                0.28950816011486075,
+                0.25121152163289345,
+                0.3703890299119629,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 38.398613,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.40213666104727397,
+                0.25121152163289345,
+                0.43161660424434856,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 57.16227,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "8876,23",
+              "bbox": [
+                0.44371093991494326,
+                0.25121152163289345,
+                0.4988913464120316,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 24.144958,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "EEE",
+              "bbox": [
+                0.5465127931149982,
+                0.25121152163289345,
+                0.6334408307473977,
+                0.2784706441930585
+              ],
+              "source": "ocr",
+              "confidence": 38.293324,
+              "block": "1",
+              "line": "11"
+            },
+            {
+              "text": "[aso",
+              "bbox": [
+                0.07181011804415606,
+                0.26617731441102327,
+                0.12094335670594705,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 51.702522,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.13379358835595392,
+                0.26617731441102327,
+                0.15722636371773116,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 51.607231,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "osmsone",
+              "bbox": [
+                0.17612376320303538,
+                0.26617731441102327,
+                0.2585164249589618,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.28724047217662424,
+                0.26617731441102327,
+                0.3144527274354623,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 66.588493,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "485",
+              "bbox": [
+                0.3462003585707734,
+                0.26617731441102327,
+                0.38323926156196975,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 45.537148,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "—",
+              "bbox": [
+                0.39533359723256445,
+                0.26617731441102327,
+                0.40969562084139566,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 45.872555,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.4187663725943417,
+                0.26617731441102327,
+                0.42934891630611205,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 52.621208,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "1080.09",
+              "bbox": [
+                0.4444668358943554,
+                0.26617731441102327,
+                0.5041826182679168,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 42.600403,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.5132533700208628,
+                0.26617731441102327,
+                0.5238359137326332,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 58.956238,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "oonsses",
+              "bbox": [
+                0.5329066654855792,
+                0.26617731441102327,
+                0.5797722162091337,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 36.895447,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "20253",
+              "bbox": [
+                0.585819384044431,
+                0.26617731441102327,
+                0.6160552232209178,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 21.947701,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.6281495588915125,
+                0.26617731441102327,
+                0.6357085186856342,
+                0.2939709295704072
+              ],
+              "source": "ocr",
+              "confidence": 89.37291,
+              "block": "1",
+              "line": "12"
+            },
+            {
+              "text": "jest",
+              "bbox": [
+                0.029479943197074594,
+                0.28702252578056126,
+                0.07483370196180474,
+                0.309471214947756
+              ],
+              "source": "ocr",
+              "confidence": 54.544979,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "si",
+              "bbox": [
+                0.09826647732358199,
+                0.28702252578056126,
+                0.11943156474712271,
+                0.309471214947756
+              ],
+              "source": "ocr",
+              "confidence": 50.857521,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "[oss",
+              "bbox": [
+                0.13530538031477826,
+                0.28916049617743694,
+                0.3469562545501856,
+                0.30252281115790997
+              ],
+              "source": "ocr",
+              "confidence": 48.729202,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "=",
+              "bbox": [
+                0.2570046330001375,
+                0.28702252578056126,
+                0.2759020324854417,
+                0.309471214947756
+              ],
+              "source": "ocr",
+              "confidence": 55.192245,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "[",
+              "bbox": [
+                0.29933480784721894,
+                0.28702252578056126,
+                0.3152086234148745,
+                0.309471214947756
+              ],
+              "source": "ocr",
+              "confidence": 77.513847,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.33108243898253004,
+                0.28702252578056126,
+                0.34997983846783426,
+                0.309471214947756
+              ],
+              "source": "ocr",
+              "confidence": 70.785965,
+              "block": "1",
+              "line": "13"
+            },
+            {
+              "text": "(E",
+              "bbox": [
+                0.029479943197074594,
+                0.2961088999672829,
+                0.05895988639414919,
+                0.32390251512666685
+              ],
+              "source": "ocr",
+              "confidence": 34.341537,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "ÕE",
+              "bbox": [
+                0.07785728587945341,
+                0.2961088999672829,
+                0.12169925268535922,
+                0.32390251512666685
+              ],
+              "source": "ocr",
+              "confidence": 36.744888,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "TAA",
+              "bbox": [
+                0.1466438200059608,
+                0.2961088999672829,
+                0.41271920475904433,
+                0.32390251512666685
+              ],
+              "source": "ocr",
+              "confidence": 26.023331,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "AASA",
+              "bbox": [
+                0.43161660424434856,
+                0.2961088999672829,
+                0.6228582870356273,
+                0.32390251512666685
+              ],
+              "source": "ocr",
+              "confidence": 40.105934,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "KEELES",
+              "bbox": [
+                0.6379762066238707,
+                0.2961088999672829,
+                0.7339749960092161,
+                0.32390251512666685
+              ],
+              "source": "ocr",
+              "confidence": 21.963913,
+              "block": "1",
+              "line": "14"
+            },
+            {
+              "text": "LTT",
+              "bbox": [
+                0.07181011804415606,
+                0.3169541113368209,
+                0.12774642052065657,
+                0.3394028005040156
+              ],
+              "source": "ocr",
+              "confidence": 42.275223,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "A",
+              "bbox": [
+                0.26985486465014435,
+                0.3190920817336966,
+                0.4134751007384565,
+                0.3324543967141696
+              ],
+              "source": "ocr",
+              "confidence": 23.67585,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "AKA",
+              "bbox": [
+                0.43161660424434856,
+                0.3169541113368209,
+                0.5457568971355861,
+                0.3394028005040156
+              ],
+              "source": "ocr",
+              "confidence": 17.034485,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "KAKA",
+              "bbox": [
+                0.6379762066238707,
+                0.3169541113368209,
+                0.7324632040503918,
+                0.3394028005040156
+              ],
+              "source": "ocr",
+              "confidence": 34.552826,
+              "block": "1",
+              "line": "15"
+            },
+            {
+              "text": "ET",
+              "bbox": [
+                0.07483370196180474,
+                0.3340578745118264,
+                0.7324632040503918,
+                0.34742018949229947
+              ],
+              "source": "ocr",
+              "confidence": 22.657097,
+              "block": "1",
+              "line": "16"
+            },
+            {
+              "text": "[ezor_eowo",
+              "bbox": [
+                0.07181011804415606,
+                0.34100627830167235,
+                0.18670630691480578,
+                0.36879989346105635
+              ],
+              "source": "ocr",
+              "confidence": 9.427231,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "Cid",
+              "bbox": [
+                0.30689376764134063,
+                0.34100627830167235,
+                0.4323725002237607,
+                0.36879989346105635
+              ],
+              "source": "ocr",
+              "confidence": 31.018333,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "02028",
+              "bbox": [
+                0.5563394408473564,
+                0.34100627830167235,
+                0.7143217005444997,
+                0.36879989346105635
+              ],
+              "source": "ocr",
+              "confidence": 25.585457,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.7233924522974458,
+                0.34100627830167235,
+                0.7339749960092161,
+                0.36879989346105635
+              ],
+              "source": "ocr",
+              "confidence": 77.320312,
+              "block": "1",
+              "line": "17"
+            },
+            {
+              "text": "a",
+              "bbox": [
+                0.07483370196180474,
+                0.363989460068086,
+                0.7324632040503918,
+                0.3773517750485591
+              ],
+              "source": "ocr",
+              "confidence": 19.278107,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "AKA",
+              "bbox": [
+                0.43161660424434856,
+                0.3559720710798022,
+                0.5601189207444173,
+                0.38376568623918617
+              ],
+              "source": "ocr",
+              "confidence": 25.708458,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "EET",
+              "bbox": [
+                0.6379762066238707,
+                0.3559720710798022,
+                0.7339749960092161,
+                0.38376568623918617
+              ],
+              "source": "ocr",
+              "confidence": 38.862232,
+              "block": "1",
+              "line": "18"
+            },
+            {
+              "text": "ÜKS",
+              "bbox": [
+                0.07181011804415606,
+                0.37093786385793204,
+                0.12547873258242007,
+                0.3992659716165349
+              ],
+              "source": "ocr",
+              "confidence": 14.880875,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "AAA",
+              "bbox": [
+                0.13832896423242694,
+                0.37895525284621584,
+                0.7324632040503918,
+                0.3923175678266889
+              ],
+              "source": "ocr",
+              "confidence": 24.859245,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "KAA",
+              "bbox": [
+                0.4353960841414094,
+                0.37093786385793204,
+                0.5759927363120728,
+                0.3992659716165349
+              ],
+              "source": "ocr",
+              "confidence": 25.544334,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "A",
+              "bbox": [
+                0.6357085186856342,
+                0.37093786385793204,
+                0.733219100029804,
+                0.3992659716165349
+              ],
+              "source": "ocr",
+              "confidence": 30.825951,
+              "block": "1",
+              "line": "19"
+            },
+            {
+              "text": "a",
+              "bbox": [
+                0.07483370196180474,
+                0.39392104562434566,
+                0.7324632040503918,
+                0.40728336060481873
+              ],
+              "source": "ocr",
+              "confidence": 6.553391,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "AKA",
+              "bbox": [
+                0.43161660424434856,
+                0.38590365663606185,
+                0.5472686890944104,
+                0.4136972717954458
+              ],
+              "source": "ocr",
+              "confidence": 35.425667,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "EEE",
+              "bbox": [
+                0.6478028543562289,
+                0.38590365663606185,
+                0.7339749960092161,
+                0.4136972717954458
+              ],
+              "source": "ocr",
+              "confidence": 47.577953,
+              "block": "1",
+              "line": "20"
+            },
+            {
+              "text": "(EE",
+              "bbox": [
+                0.07181011804415606,
+                0.40086944941419167,
+                0.11791977278829838,
+                0.4286630645735756
+              ],
+              "source": "ocr",
+              "confidence": 12.522186,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "CII",
+              "bbox": [
+                0.13984075619125128,
+                0.40086944941419167,
+                0.29177584805309725,
+                0.4286630645735756
+              ],
+              "source": "ocr",
+              "confidence": 34.824089,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "KKK",
+              "bbox": [
+                0.43161660424434856,
+                0.40086944941419167,
+                0.5502922730120591,
+                0.4286630645735756
+              ],
+              "source": "ocr",
+              "confidence": 30.768684,
+              "block": "1",
+              "line": "21"
+            },
+            {
+              "text": "(ESL",
+              "bbox": [
+                0.07181011804415606,
+                0.4158352421923215,
+                0.1247228366030079,
+                0.44362885735170543
+              ],
+              "source": "ocr",
+              "confidence": 27.840584,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "CL",
+              "bbox": [
+                0.13984075619125128,
+                0.4158352421923215,
+                0.29177584805309725,
+                0.44362885735170543
+              ],
+              "source": "ocr",
+              "confidence": 26.439804,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "KKK",
+              "bbox": [
+                0.43161660424434856,
+                0.4158352421923215,
+                0.5472686890944104,
+                0.44362885735170543
+              ],
+              "source": "ocr",
+              "confidence": 31.382256,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "E",
+              "bbox": [
+                0.6576295020885871,
+                0.42385263118060534,
+                0.7324632040503918,
+                0.43721494616107837
+              ],
+              "source": "ocr",
+              "confidence": 42.338062,
+              "block": "1",
+              "line": "22"
+            },
+            {
+              "text": "ÜHELE",
+              "bbox": [
+                0.07181011804415606,
+                0.4308010349704513,
+                0.12094335670594705,
+                0.45859465012983525
+              ],
+              "source": "ocr",
+              "confidence": 21.329865,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "CAA",
+              "bbox": [
+                0.13832896423242694,
+                0.43881842395873516,
+                0.7324632040503918,
+                0.4521807389392082
+              ],
+              "source": "ocr",
+              "confidence": 22.852715,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "KAKA",
+              "bbox": [
+                0.43161660424434856,
+                0.4308010349704513,
+                0.5570953368267686,
+                0.45859465012983525
+              ],
+              "source": "ocr",
+              "confidence": 28.969109,
+              "block": "1",
+              "line": "23"
+            },
+            {
+              "text": "ES",
+              "bbox": [
+                0.07181011804415606,
+                0.4452323351493622,
+                0.11791977278829838,
+                0.47302595030874617
+              ],
+              "source": "ocr",
+              "confidence": 10.303772,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "CAA.",
+              "bbox": [
+                0.13832896423242694,
+                0.453249724137646,
+                0.7324632040503918,
+                0.4666120391181191
+              ],
+              "source": "ocr",
+              "confidence": 24.321457,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "KAKA",
+              "bbox": [
+                0.43161660424434856,
+                0.4452323351493622,
+                0.5570953368267686,
+                0.47302595030874617
+              ],
+              "source": "ocr",
+              "confidence": 34.323776,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "E",
+              "bbox": [
+                0.6674561498209453,
+                0.4452323351493622,
+                0.7339749960092161,
+                0.47302595030874617
+              ],
+              "source": "ocr",
+              "confidence": 34.922707,
+              "block": "1",
+              "line": "24"
+            },
+            {
+              "text": "ÜKT",
+              "bbox": [
+                0.07181011804415606,
+                0.46073262052671093,
+                0.11791977278829838,
+                0.48852623568609493
+              ],
+              "source": "ocr",
+              "confidence": 30.680344,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "CAA",
+              "bbox": [
+                0.13832896423242694,
+                0.4687500095149948,
+                0.7324632040503918,
+                0.4821123244954678
+              ],
+              "source": "ocr",
+              "confidence": 33.875092,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "TE",
+              "bbox": [
+                0.6644325659032966,
+                0.46073262052671093,
+                0.7339749960092161,
+                0.48852623568609493
+              ],
+              "source": "ocr",
+              "confidence": 35.920242,
+              "block": "1",
+              "line": "25"
+            },
+            {
+              "text": "s",
+              "bbox": [
+                0.07483370196180474,
+                0.4837158022931246,
+                0.12094335670594705,
+                0.4970781172735977
+              ],
+              "source": "ocr",
+              "confidence": 32.634224,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "jsrreemo",
+              "bbox": [
+                0.13001410845889308,
+                0.47569841330484075,
+                0.25246925712366447,
+                0.5034920284642247
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "ST",
+              "bbox": [
+                0.13832896423242694,
+                0.4837158022931246,
+                0.7324632040503918,
+                0.4970781172735977
+              ],
+              "source": "ocr",
+              "confidence": 25.494545,
+              "block": "1",
+              "line": "26"
+            },
+            {
+              "text": "[ozis",
+              "bbox": [
+                0.07181011804415606,
+                0.49012971348375167,
+                0.12094335670594705,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 19.228439,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "feerr",
+              "bbox": [
+                0.13001410845889308,
+                0.49012971348375167,
+                0.17990324310009623,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 19.786949,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "oniem",
+              "bbox": [
+                0.18897399485304228,
+                0.49012971348375167,
+                0.24264260939130627,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "TR",
+              "bbox": [
+                0.24793388124719146,
+                0.49012971348375167,
+                0.26531948877367134,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 60.376881,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "Dieses",
+              "bbox": [
+                0.27741382444426604,
+                0.49012971348375167,
+                0.3469562545501856,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 0.0,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "OO",
+              "bbox": [
+                0.3726567178501994,
+                0.49012971348375167,
+                0.3960894932119766,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 29.396561,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.41498689269728084,
+                0.49012971348375167,
+                0.5238359137326332,
+                0.5179233286431356
+              ],
+              "source": "ocr",
+              "confidence": 29.396561,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.6251259749738638,
+                0.49814710247203553,
+                0.6319290387885733,
+                0.5115094174525086
+              ],
+              "source": "ocr",
+              "confidence": 28.439476,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "|",
+              "bbox": [
+                0.6803063814709521,
+                0.49814710247203553,
+                0.7324632040503918,
+                0.5115094174525086
+              ],
+              "source": "ocr",
+              "confidence": 23.965729,
+              "block": "1",
+              "line": "27"
+            },
+            {
+              "text": "[wore",
+              "bbox": [
+                0.07181011804415606,
+                0.5050955062618815,
+                0.1247228366030079,
+                0.5328891214212654
+              ],
+              "source": "ocr",
+              "confidence": 51.01844,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "CE",
+              "bbox": [
+                0.13984075619125128,
+                0.5050955062618815,
+                0.29177584805309725,
+                0.5328891214212654
+              ],
+              "source": "ocr",
+              "confidence": 28.325241,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "KK",
+              "bbox": [
+                0.43161660424434856,
+                0.5050955062618815,
+                0.5374420413620522,
+                0.5328891214212654
+              ],
+              "source": "ocr",
+              "confidence": 26.822845,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "EEE",
+              "bbox": [
+                0.6379762066238707,
+                0.5050955062618815,
+                0.7339749960092161,
+                0.5328891214212654
+              ],
+              "source": "ocr",
+              "confidence": 39.565033,
+              "block": "1",
+              "line": "28"
+            },
+            {
+              "text": "Toi",
+              "bbox": [
+                0.060471678352973526,
+                0.5339581066197033,
+                0.08995162155004811,
+                0.5414410030087682
+              ],
+              "source": "ocr",
+              "confidence": 59.233315,
+              "block": "1",
+              "line": "29"
+            },
+            {
+              "text": "ago",
+              "bbox": [
+                0.09448699742652114,
+                0.5339581066197033,
+                0.15949405165596767,
+                0.543044480806425
+              ],
+              "source": "ocr",
+              "confidence": 41.988789,
+              "block": "1",
+              "line": "29"
+            },
+            {
+              "text": "Trinta",
+              "bbox": [
+                0.03401531907354761,
+                0.5900798295376901,
+                0.07181011804415606,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 62.870323,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "e",
+              "bbox": [
+                0.07785728587945341,
+                0.5922177999345658,
+                0.08390445371475076,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 96.441383,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "sete",
+              "bbox": [
+                0.08995162155004811,
+                0.590614322136909,
+                0.11640798082947404,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 96.904587,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "mil",
+              "bbox": [
+                0.12245514866477139,
+                0.5900798295376901,
+                0.14059665217066344,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.305923,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "setecentos",
+              "bbox": [
+                0.1466438200059608,
+                0.590614322136909,
+                0.2154303541324682,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.009804,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "e",
+              "bbox": [
+                0.22147752196776554,
+                0.5916833073353469,
+                0.22828058578247507,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.257942,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "sessenta",
+              "bbox": [
+                0.23432775361777242,
+                0.590614322136909,
+                0.2902640560942729,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.040993,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "e",
+              "bbox": [
+                0.29631122392957027,
+                0.5922177999345658,
+                0.3031142877442798,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 96.843773,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "sete",
+              "bbox": [
+                0.30916145557957714,
+                0.590614322136909,
+                0.3348619188795909,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 96.987122,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "euros",
+              "bbox": [
+                0.34090908671488823,
+                0.5916833073353469,
+                0.3764361977472602,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 92.638618,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "e",
+              "bbox": [
+                0.3817274696031454,
+                0.5922177999345658,
+                0.38853053341785493,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.271446,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "trinta",
+              "bbox": [
+                0.3938218052737401,
+                0.590614322136909,
+                0.4278371243472877,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 92.908615,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "e",
+              "bbox": [
+                0.4331283962031729,
+                0.5916833073353469,
+                0.43917556403847025,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.306244,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "dois",
+              "bbox": [
+                0.4452227318737676,
+                0.5900798295376901,
+                0.4716790911531935,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 93.11425,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "céntimos",
+              "bbox": [
+                0.4769703630090787,
+                0.5900798295376901,
+                0.5344184574444035,
+                0.5975627259267551
+              ],
+              "source": "ocr",
+              "confidence": 92.190201,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "37.767,32",
+              "bbox": [
+                0.8964926315828325,
+                0.5895453369384712,
+                0.9599878938534547,
+                0.598097218525974
+              ],
+              "source": "ocr",
+              "confidence": 88.017197,
+              "block": "1",
+              "line": "30"
+            },
+            {
+              "text": "GIDWIN",
+              "bbox": [
+                0.23357185763836025,
+                0.9695695749831249,
+                0.2827050963001512,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 92.933746,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "-",
+              "bbox": [
+                0.28724047217662424,
+                0.9733110231776574,
+                0.29177584805309725,
+                0.9749145009753142
+              ],
+              "source": "ocr",
+              "confidence": 92.197205,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Desenvolvido",
+              "bbox": [
+                0.29631122392957027,
+                0.9695695749831249,
+                0.37568030176784806,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 92.073265,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "por",
+              "bbox": [
+                0.38097157362373324,
+                0.9711730527807817,
+                0.39986897310903746,
+                0.9786559491698466
+              ],
+              "source": "ocr",
+              "confidence": 96.877808,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Meridian",
+              "bbox": [
+                0.4036484530060983,
+                0.9706385601815628,
+                0.4444668358943554,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 96.543434,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Distribution",
+              "bbox": [
+                0.44900221177082844,
+                0.9706385601815628,
+                0.5011590343502681,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 93.268936,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Ldkicenciado",
+              "bbox": [
+                0.5056944102267411,
+                0.9695695749831249,
+                0.581284008167958,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 58.066475,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "a:",
+              "bbox": [
+                0.585819384044431,
+                0.9711730527807817,
+                0.5956460317767892,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 93.217285,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Nordis",
+              "bbox": [
+                0.6009373036326744,
+                0.9706385601815628,
+                0.6319290387885733,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 87.868835,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "-",
+              "bbox": [
+                0.6614089819856479,
+                0.9733110231776574,
+                0.6659443578621209,
+                0.9749145009753142
+              ],
+              "source": "ocr",
+              "confidence": 92.501396,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "Transitärios,",
+              "bbox": [
+                0.6697238377591818,
+                0.9695695749831249,
+                0.7430457477621623,
+                0.9775869639714088
+              ],
+              "source": "ocr",
+              "confidence": 92.501396,
+              "block": "1",
+              "line": "31"
+            },
+            {
+              "text": "S.A",
+              "bbox": [
+                0.7483370196180474,
+                0.9695695749831249,
+                0.7695021070415882,
+                0.9765179787729709
+              ],
+              "source": "ocr",
+              "confidence": 94.875053,
+              "block": "1",
+              "line": "31"
+            }
+          ],
+          "regions": [
+            {
+              "block": "1",
+              "text": "Blackpine Services S.A NRL : 3217PT6557408317495996\nESTANCIA ADUANEIRA : PT423029 Tipo Declaragäo -EU A) N° Ad. -1 Total Vis - 156 Processo N° - 1693 de 05/05/2025\nN° Aceitagäo : 9752PT76913459517321 de 05/05/2025 N° Provisorio : 356960/2025 Conta N°:\nExpedidor : Oakhaven Technologies LTD Pais: TR\nDestinatario : Northwind OPERATIONS PT NIF : 198709709\nInc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000\nPeso Bruto : 4.882,800 Peso Liquido : 3.884,400 Valor Aduaneiro Total : 65.750,710 CM : 002615000000\nLocalizagäo (C30) : DTP95621713004PT MT18: 30 / 76GPC174 MT21: 30/ BE\n(E rae annan [eest | AA [USue [PO] runs Vator adie [ Avotanente |\nEEE [40 [| A A E 6.875.000\n(EJ ET KT A [6 | 8876,23 EEE\n[aso | osmsone | 485 — | 1080.09 | oonsses 20253 |\njest si [oss = [ |\n(E ÕE TAA AASA KEELES\nLTT A AKA KAKA\nET\n[ezor_eowo Cid 02028 |\na AKA EET\nÜKS AAA KAA A\na AKA EEE\n(EE CII KKK\n(ESL CL KKK E\nÜHELE CAA KAKA\nES CAA. KAKA E\nÜKT CAA TE\ns jsrreemo ST\n[ozis feerr oniem TR Dieses OO | | |\n[wore CE KK EEE\nToi ago\nTrinta e sete mil setecentos e sessenta e sete euros e trinta e dois céntimos 37.767,32\nGIDWIN - Desenvolvido por Meridian Distribution Ldkicenciado a: Nordis - Transitärios, S.A",
+              "bbox": [
+                0.029479943197074594,
+                0.032604048552354256,
+                0.9720822295240494,
+                0.9786559491698466
+              ]
+            }
+          ],
+          "cache": {
+            "status": "hit",
+            "key": "0339d66de731fb48df863abc13d3ba3551530f2615a05235e822a16d2cd77187"
+          }
+        }
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "Supplier name was not explicitly labeled; no name was inferred from the header.",
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "ARVE\nKuupäev Date Kilendi nr. Client No, Arve nr. Invoice No.\n2025 / 06 / 06 11768395\nEMK_2492_177233378 EES 166 EOLATASHEESS\nArve maksja Payer of invoice Reg. nr. VAT reg. no.\nNorthwind Operations OÜ EE398766194\nLindon 15 Maksetähtaeg Due"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 2,
+                "text": "Blackpine Services S.A NRL : 3217PT6557408317495996\nESTANCIA ADUANEIRA : PT423029 Tipo Declaragäo -EU A) N° Ad. -1 Total Vis - 156 Processo N° - 1693 de 05/05/2025\nN° Aceitagäo : 9752PT76913459517321 de 05/05/2025 N° Provisorio : 356960/202"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": "Invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "Kuupäev Date Kilendi nr. Client No, Arve nr. Invoice No."
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "EUR 37767.32"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "Cloverdale Tradihas the right to charge interest on arrears 0.1% of the unpaid amount for each day the invoice is overdue. Service fee of 40 EUR applies"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "37767.32 0.00 0.00 EUR 37767.32"
+              },
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 2,
+                "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
+              }
+            ],
+            "alternatives": [
+              "EUR",
+              "CNY"
+            ],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "5878.23",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-09.pdf",
+                "page_number": 1,
+                "text": "751 Customs VAT 0 5878.23"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [
+            {
+              "description": {
+                "value": "37767.32 0.00 0.00 EUR",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "37767.32 0.00 0.00 EUR 37767.32"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "37767.32",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "37767.32 0.00 0.00 EUR 37767.32"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            },
+            {
+              "description": {
+                "value": "Äriregistri nr., Trade reg. No.:",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Äriregistri nr., Trade reg. No.: 15116864"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "item_type": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "quantity": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "unit_price": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": "The table provides an amount only."
+              },
+              "price_basis": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "printed_total": {
+                "value": "15116864",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Äriregistri nr., Trade reg. No.: 15116864"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "taxes": []
+            }
+          ],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Arve maksja Payer of invoice Reg. nr. VAT reg. no."
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Kood Code Tekst Notes KM VAT % Neto summa Net amount"
+                  },
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "KM reg. nr., VAT reg. No.: EE418070965"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "VAT",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "751 Customs VAT 0 5878.23"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "5878.23",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "751 Customs VAT 0 5878.23"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "Käibemaks",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 1,
+                    "text": "Neto summa Net amount KMalus VATC.A — Käibemaks VAT amount Valuuta Currency Kokku Total"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 2,
+                    "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "6875.000",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-09.pdf",
+                    "page_number": 2,
+                    "text": "Inc.: EXW NT.: 11 Montante Casa 22 : 489.840,000 CNY Tx Cambio: 8,319900 Frete : 6.875,000 ‘Seguro : 0,000"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "Supplier name was not explicitly labeled; no name was inferred from the header.",
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

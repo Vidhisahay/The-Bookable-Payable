@@ -8,10 +8,10 @@
       "invoice_type": "CREDIT_MEMO",
       "currency": "GBP",
       "supplier": {
-        "name": "",
+        "name": "Blackpine Consulting Limited",
         "supplier_id": "",
         "address": "",
-        "vat_id": "G8726874417"
+        "vat_id": "GB447324473"
       },
       "buyer": {
         "company_code": "",

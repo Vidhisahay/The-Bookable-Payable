@@ -1,0 +1,461 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": false,
+    "evidence": [
+      "arve"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "invoice",
+        "confidence": 0.55,
+        "evidence": [
+          "arve"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "HLD-10.pdf",
+      "page_number": 1,
+      "text": "Northwind Operations OU Arve number:\nINA HND Kliendikood:\n10134 Reg. number: 27044945\nArve kuupäev: 07-05-26\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: ,\nE-post: cloverdale-media.com\nTeenuse liik Saadetiste Kogukaal  Osade Transpordi- _Lisatasud KM _ Kogusum-\narv arv tasu kokku ma (KM-ga)\n1 4,00 1 65,26 31,47 96,73\n3 38,00 4 92,36 34,89 30,53 157,78\nvwanrvaviiNE 0,01 0,01\nKokku 4 42,00 5 157,62 66,36 30,54 254,52\nLisateenuste loetelu Kokku\nFUEL 64,04\nPLUS - 2,32\nKokku lisateenuste tasud 66,36\nKM analüüs Kokku\nKood Koodi kirjeldus KM määr Maksustatav summa KM\nA E 24,00% 127,25 30,54\nB A 0,00% 96,73 0,00\nKokku KM 30,54\nKokku (v.a. KM) KM Kokku (KM-ga)\nMaksetähtaeg: 04-06-26 Kogusumma (EUR) 223,98 30,54 254,52\nSpeedwel Estonia AS (klienditeenindus) Reg. No.: 17765 Palume: * märkida oma maksekorraldusele makstava\nHigh Street 36 (raamatupidamine) KMKR arve number ja kuupäev\n75310 Harju maakond, = a-mail akrksletisperõneteni IBAN * märkida saatelehele saatja nimi\nEesti www.speedwell.ee siitiste,\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 780,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 6705,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "efa29d8e5e5701be73b9baeb5ae3f48157b176f554f5fbac6ed5d90487fdcb92"
+        },
+        "text_layout": null
+      },
+      "error": null
+    },
+    {
+      "filename": "HLD-10.pdf",
+      "page_number": 2,
+      "text": "Arve number: A\nKliendikood: rve\nArve kuupäev: 07-05-26\nLehekülgede arv: 2/2\nSaatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumber kuupäev liik (kg) arv — hind kirjeldus nuste ma\ntasud (KM-ga)\nSTK-EE003-26-00182 05-05-26 WAW, ost, 4,00 B 1 65,26 8 65,26\n5 a oucw Normans es FUEL 30,67 8 30,67\nCara vai ene vow nondoc PLUS- 0,80 8 0,80\nLromavane 22 cwH Market Road 67\nPL-01-940, Warsaw NO-0196,\n96,73\nVahesumma teenuse järgi - nondoc 4,00 1 65,26 3147 96,73\nSTK-EE003-26-00158 22-04-26 WAW, ‘AMS, 17,00 B 1 35,41 850A 43,91\n8 homme ovom norm os FUEL 12,92 3104 16,02\nCara Kew ne eve PLUS - 0,68 0,168 0,84\nromaan WH Het BIA\nPL-01-940, Warsaw RA,\n60,77\nSTK-EE003-26-00180 30-04-26 ZPE, Tu 4,00 B 1 25,18 6,04. 31,22\n4 mores Opera Ou norman Opera 01 PLUS - 0,16 0,044 0,20\nLaos st en arog? FUEL 925 222A 11,47\nDE-48153, EE-13619,\n42,89\nSTK-EE003-26-00187 05-05-26 VNO, Tu 17,00 B 2 3177 7,62 A 39,39\n1 hone ov erm oi FUEL 11,20 2,69 13,89\nad a ma al PLUS- 0,68 0,164 0,84\nBarnhotstrasse 69 ee aang 3\n1T-47214, EE-13619,\n54,12\nVahesumma teenuse järgi - 34,89 30,53 157,78\nÜMARDAMINE 0.01 0.01\nKokku: EUR: 42,00 5 157,62 66,36 30,54 254,52\nA =Kliendi poolt arvutatud tegelik kaal V= Kliendi poolt arvutatud mahukaal B= se=mpoolt arvutatud tegelik kaal sem\" — pooltarvutatud mahukaal M=sega\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1012,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 10444,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "58ac9f39c0114e15f18d8129b0e5474fb6f627ac405768db935571a23c619a63"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU Arve number:\nINA HND Kliendikood:\n10134 Reg. number: 27044945\nArve kuupäev: 07-05-26\nLehekülgede arv: 1/2\nPäringud arvete kohta\nTelefon: ,\nE-post: cloverdale-media.com\nTeenuse liik Saadetiste Kogukaal  Osade Transpor"
+              },
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 2,
+                "text": "Arve number: A\nKliendikood: rve\nArve kuupäev: 07-05-26\nLehekülgede arv: 2/2\nSaatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-\nnumber kuupäev liik (kg) ar"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "High Street 36 (raamatupidamine) KMKR arve number ja kuupäev"
+              },
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 2,
+                "text": "Arve number: A"
+              }
+            ],
+            "alternatives": [
+              "ja",
+              "A"
+            ],
+            "note": "More than one distinct value is supported by the document text."
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Northwind Operations OU",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "Northwind Operations OU"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg: 04-06-26 Kogusumma (EUR) 223,98 30,54 254,52"
+              },
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 2,
+                "text": "Kokku: EUR: 42,00 5 157,62 66,36 30,54 254,52"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "254.52",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "Maksetähtaeg: 04-06-26 Kogusumma (EUR) 223,98 30,54 254,52"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "conflicting",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 2,
+                "text": "Vahesumma teenuse järgi - nondoc 4,00 1 65,26 3147 96,73"
+              },
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 2,
+                "text": "Vahesumma teenuse järgi - 34,89 30,53 157,78"
+              }
+            ],
+            "alternatives": [
+              "96.73",
+              "157.78"
+            ],
+            "note": "More than one distinct printed amount matches this total label."
+          },
+          "printed_tax_total": {
+            "value": "30.54",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "HLD-10.pdf",
+                "page_number": 1,
+                "text": "Kokku KM 30,54"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "Teenuse liik Saadetiste Kogukaal  Osade Transpordi- _Lisatasud KM _ Kogusum-"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "arv arv tasu kokku ma (KM-ga)"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "KM analüüs Kokku"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "Kood Koodi kirjeldus KM määr Maksustatav summa KM"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "Kokku (v.a. KM) KM Kokku (KM-ga)"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 2,
+                    "text": "Saatelehe Saatja viide Saadetise Lähtekoht / saatja Sihtkoht / saaja Teenuse Kaal Osade Standard- Lisateenuste Lisatee- KM/kood Kogusum-"
+                  },
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 2,
+                    "text": "tasud (KM-ga)"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "KM",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "Kokku KM 30,54"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "30.54",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "HLD-10.pdf",
+                    "page_number": 1,
+                    "text": "Kokku KM 30,54"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 1 has a type outside the permitted schema values."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            },
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "254.52"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

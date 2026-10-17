@@ -1,0 +1,130 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "vat"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-19.pdf",
+      "page_number": 1,
+      "text": "VENDOR DETAILS\nTIN: 09765403675\nName: Redwater Technologies\nBank Name: Stadtbank\nBranch: Lindenstrasse 111\nAccount No. 1028243888660\nPREPARED FOR: SORT code: 240124\nSWIFT code: GMOEYYPUFGV\nNorthwind HOLDINGS OU\nHigh Street 10\nPO ‘\nMeal per head 60 GHC 90.00 GHC 5400.00\nTransportation and Set up 1 GHC 1,200.00 GHC 1,200.00\n(i) Tax Exclusive Value GHC6,600.00\n(ii) NHIL(2.5%) GHC 165.00\n(ii) — GETFund Levy (2.5%) GHC 165.00\n(iv) — COVID-19 Levy (1%) GHC 66.00\n(v) Total Levy Inclusive Value (i+ii+iii+iv) GHC 6,996.00\n(vi) — VAT (15%) (i) GHC 1049.40\n(vii) Total Tax Inclusive Value (v+vi) GHC 8,045.40\nAccount No: 1028243888660\nSORT code: 240124 SWIFT\ncode: GMOEYYPUFGV\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 498,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 4757,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "32403a849ae0271a69e01882ce63d6e24a5a7f375a948dc79a0804ae2db392fc"
+        },
+        "text_layout": null
+      },
+      "error": null
+    },
+    {
+      "filename": "INV-19.pdf",
+      "page_number": 2,
+      "text": "Manager Name: Alex MeyeMoreau\nAbutiate\nSignature : feo)\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 45,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 865,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "dd0092cbbb674d39befc12fda11ad0540b5320e711f4ab2323eb4030dcb68eac"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

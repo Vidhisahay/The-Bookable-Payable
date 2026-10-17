@@ -1,0 +1,11 @@
+Invoice AutoDraft submission
+
+The supplied README.md is the unchanged assessment brief. This file provides
+the requested run command. From this directory, after installing Python 3.10+
+and the dependencies described in RUN_GUIDE.md, run:
+
+.venv\Scripts\python.exe -m ingestion.dataset_cli documents --output-dir output --diagnostics-dir output_diagnostics --ocr-language eng+est --page-timeout-seconds 60 --ocr-retries 1 --ocr-cache-dir .cache\ocr_pages
+
+The command writes one output/<PDF stem>.json per input PDF. Diagnostics are
+written separately to output_diagnostics/. RUN_GUIDE.md documents installation,
+Tesseract language packs, tests, and auditing.

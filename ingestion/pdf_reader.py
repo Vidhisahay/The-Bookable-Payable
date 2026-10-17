@@ -103,6 +103,40 @@ class TesseractOCR:
                 raise RuntimeError(detail)
             return result.stdout
 
+    def recognize_words(self, image_bytes: bytes, *, language: str = "eng", timeout: int = 120,
+                        psm: int = 6) -> list[dict[str, Any]]:
+        """Return Tesseract TSV word boxes without changing the flat-text API."""
+        import csv
+        import io
+        import subprocess
+        import tempfile
+
+        self.prepare(language)
+        with tempfile.TemporaryDirectory(prefix="pdf-ocr-layout-") as folder:
+            image_path = Path(folder) / "page.png"
+            image_path.write_bytes(image_bytes)
+            result = subprocess.run(
+                [self.executable, str(image_path), "stdout", "-l", language, "--psm", str(psm), "tsv"],
+                capture_output=True, text=True, encoding="utf-8", errors="replace",
+                timeout=timeout, check=False,
+            )
+            if result.returncode:
+                raise RuntimeError(result.stderr.strip() or f"Tesseract TSV exited with status {result.returncode}")
+            words: list[dict[str, Any]] = []
+            for row in csv.DictReader(io.StringIO(result.stdout), delimiter="\t"):
+                text = (row.get("text") or "").strip()
+                if not text:
+                    continue
+                try:
+                    x, y, width, height = (float(row[key]) for key in ("left", "top", "width", "height"))
+                    confidence = float(row.get("conf", ""))
+                except (ValueError, TypeError, KeyError):
+                    continue
+                words.append({"text": text, "bbox": [x, y, x + width, y + height],
+                              "confidence": confidence if confidence >= 0 else None,
+                              "block": row.get("block_num"), "line": row.get("line_num")})
+            return words
+
 
 class PyMuPDFReader:
     """Extract native page text and render sparse pages for optional OCR."""

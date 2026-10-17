@@ -58,7 +58,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "57b2b474f0b4aadeb119b7e87db624e699c7df07d332773388c3d2c981a344d7"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     },
@@ -89,7 +90,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "781b167a0c039755516eee2e670c0ebb0b5229778c4e3a3400e50898222dcc8a"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }
@@ -543,15 +545,9 @@
                 "note": null
               },
               "item_type": {
-                "value": "goods",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-02.pdf",
-                    "page_number": 1,
-                    "text": "2x Pioneer CDJ-3000 24 tundi €45,00 €90,00"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
                 "note": null
               },
@@ -883,15 +879,9 @@
                 "note": null
               },
               "item_type": {
-                "value": "freight",
-                "status": "found",
-                "evidence": [
-                  {
-                    "filename": "INV-02.pdf",
-                    "page_number": 1,
-                    "text": "1x Linnasisene transport Fikseeritud €50,00 €50,00"
-                  }
-                ],
+                "value": null,
+                "status": "missing",
+                "evidence": [],
                 "alternatives": [],
                 "note": null
               },

@@ -9,6 +9,7 @@ from decimal import Decimal, ROUND_HALF_UP
 from typing import Any, Callable
 
 from ..models import DocumentRecord, PageRecord
+from ..layout import resolve_party_roles, resolve_party_vat
 from .models import (
     ChargeItem,
     Evidence,
@@ -19,6 +20,7 @@ from .models import (
     TaxItem,
 )
 from .numbers import parse_localized_decimal
+from .line_type import classify_line_type
 
 
 _DATE = r"(?P<date>\d{1,4}[./-]\d{1,2}[./-]\d{1,4}|\d{1,2}(?:-|\s+)[A-Za-z]{3,9}(?:-|\s+)\d{4})"
@@ -167,12 +169,25 @@ def _header_supplier(pages: list[PageRecord]) -> tuple[ExtractedField, Extracted
         if len({_norm(name) for _, name in entities}) != 1:
             continue
         index, name = entities[0]
+        # A sole legal entity in the upper left can be the addressee. A
+        # following personal salutation is positive recipient evidence, so
+        # it must not be promoted to the invoice issuer by page position.
+        if any(re.match(r"^\s*(?:Herrn?|Frau|Dear|Attn\.?|Attention\s*:|To\s*:)", line, re.I)
+               for line in lines[index + 1:index + 3]):
+            continue
         address_lines: list[str] = []
+        contaminated_address = False
         for line in lines[index + 1:limit]:
             value = line.strip()
             if not value:
                 continue
             if structural.search(value) or recipient.search(value):
+                break
+            # Flattened OCR can merge a reference printed in another column
+            # into an address line. Withhold the address rather than emit a
+            # mixed address/reference value.
+            if re.search(r"\b\d{4,}[A-Z]{2,}\d+\b", value, re.I):
+                contaminated_address = True
                 break
             if not re.search(r"\d", value) and not re.search(r"\b(?:United States|USA|Germany|Estonia|Portugal|Switzerland)\b", value, re.I):
                 break
@@ -180,7 +195,7 @@ def _header_supplier(pages: list[PageRecord]) -> tuple[ExtractedField, Extracted
             if len(address_lines) >= 4:
                 break
         name_field = ExtractedField(name, "found", [_evidence(page, name)])
-        address = ", ".join(address_lines)
+        address = "" if contaminated_address else ", ".join(address_lines)
         address_field = ExtractedField(address, "found", [_evidence(page, address)]) if address else ExtractedField(status="missing")
         return name_field, address_field
     return ExtractedField(status="missing"), ExtractedField(status="missing")
@@ -205,13 +220,19 @@ def _footer_supplier_from_tax_block(pages: list[PageRecord]) -> tuple[ExtractedF
             _norm(line.strip()) for line in lines[:min(table_start, 40)]
             if legal_suffix.search(line) and len(legal_suffix.findall(line)) == 1
         }
+        last_total = max((index for index, line in enumerate(lines)
+                          if re.search(r"\b(?:grand\s+total|total\s+amount|invoice\s+total|amount\s+due)\b", line, re.I)),
+                         default=-1)
         # Flattened two-column OCR can put a buyer's legal name inside the
         # seven-line neighborhood of the issuer's VAT label. In that case the
         # VAT proximity is not enough to assign the role.
-        if len(header_entities) > 1:
-            continue
         for vat_index, _line in enumerate(lines):
             if not vat_label.search(lines[vat_index]):
+                continue
+            # Multiple parties in the header make a header VAT label unsafe.
+            # A separate legal entity and VAT block after the payable total
+            # can still identify the issuer in a registered-office footer.
+            if len(header_entities) > 1 and vat_index <= last_total:
                 continue
             start = max(0, vat_index - 7)
             block = lines[start:vat_index + 1]
@@ -252,7 +273,9 @@ def _vat_field_near_supplier(pages: list[PageRecord], supplier_name: str) -> Ext
         supplier_indexes = [index for index, line in enumerate(lines) if normalized_name in _norm(line)]
         for supplier_index in supplier_indexes:
             for index in range(max(0, supplier_index - 2), min(len(lines), supplier_index + 10)):
-                match = labeled_vat.search(lines[index]) or bare_vat.search(lines[index])
+                # A country-prefixed VAT token has a clear end. OCR often
+                # appends unrelated postal/account columns after it.
+                match = bare_vat.search(lines[index]) or labeled_vat.search(lines[index])
                 if match:
                     value = re.sub(r"\s", "", match.group("value")).rstrip(".,;:")
                     found.append((value, _evidence(page, lines[index]), abs(index - supplier_index)))
@@ -451,12 +474,7 @@ def _line_items(pages: list[PageRecord]) -> list[LineItem]:
                     continue
                 description = match.group("description").strip()
                 evidence = [_evidence(page, row.strip())]
-                if re.search(r"freight|shipping|transport|delivery charge|porto|fracht|frete", description, re.I):
-                    item_type = "freight"
-                elif re.search(r"handling|storage|stock\s+management|service|management|maintenance|cleaning", description, re.I):
-                    item_type = "service"
-                else:
-                    item_type = None
+                item_type = classify_line_type(description)
                 activity_rows.append(LineItem(
                     ExtractedField(description, "found", evidence),
                     ExtractedField(item_type, "found", evidence) if item_type else ExtractedField(status="missing"),
@@ -498,9 +516,10 @@ def _line_items(pages: list[PageRecord]) -> list[LineItem]:
                     continue
                 source = f"{lines[row_index].strip()} {description}"
                 evidence = [_evidence(page, source)]
+                item_type = classify_line_type(description)
                 table_rows.append(LineItem(
                     ExtractedField(description, "found", evidence),
-                    ExtractedField("goods", "found", evidence),
+                    ExtractedField(item_type, "found", evidence) if item_type else ExtractedField(status="missing"),
                     ExtractedField(quantity.value, "found", evidence),
                     ExtractedField(status="missing"),
                     ExtractedField(price.value, "found", evidence),
@@ -650,16 +669,7 @@ def _line_items(pages: list[PageRecord]) -> list[LineItem]:
                         quantity = ExtractedField(quantity_value, "found", evidence)
                         unit = ExtractedField(leading_qty.group("unit"), "found", evidence)
                         description = prefix[:leading_qty.start()].strip(" :|-")
-            if re.search(r"freight|shipping|transport|delivery charge|porto|fracht|frete", description, re.I):
-                item_type = "freight"
-            elif re.search(r"hour|hours|stunde|stunden|std\.?|service|management|arbeit|toitlust|servi[cç]o|servicio|horas|tehnik|technician|consult(?:ing|ancy)|maintenance|cleaning", description, re.I):
-                item_type = "service"
-            elif re.search(r"\b(?:tax|vat|gst|iva|tva|withholding)\b", description, re.I):
-                item_type = "tax"
-            elif re.search(r"\b(?:goods|product|equipment|device|hardware|material|led\s+bar|cdj|mixer|speaker|subwoofer|cable|kaabel|k[oõ]lar|statiiv|stand|pikendusjuhe)\b", description, re.I):
-                item_type = "goods"
-            else:
-                item_type = None
+            item_type = classify_line_type(description)
             evidence = [_evidence(page, source_line)]
             if re.search(r"gross\s+price|incl(?:uding)?\.?\s+(?:vat|tax)|tax.inclusive|brutto|com\s+iva|con\s+iva", table_header, re.I):
                 price_basis = ExtractedField("tax_inclusive", "found", [_evidence(page, table_header)])
@@ -699,14 +709,6 @@ def _line_items(pages: list[PageRecord]) -> list[LineItem]:
                                                        "A single amount appears on the item row; its field role cannot be identified.")
                     unit_price = uncertain_amount
                     printed_total = uncertain_amount
-                elif (no_tax_cell and quantity.status == "found" and quantity.value == Decimal("1")
-                      and price_basis.status == "found" and price_basis.value == "net"):
-                    # With a printed quantity of exactly one and a printed
-                    # extended amount, the unit-price amount is that same
-                    # source amount; no gross balancing or multi-unit division
-                    # is involved.
-                    unit_price = ExtractedField(values[0][0], "found", evidence,
-                                                note="Equals the printed extended amount because printed quantity is 1.")
             rows.append(LineItem(
                 ExtractedField(description, "found", evidence),
                 ExtractedField(item_type, "found", evidence) if item_type else ExtractedField(status="missing"),
@@ -743,6 +745,7 @@ def _column_table_rows(page: PageRecord, lines: list[str], end: re.Pattern[str])
         rf"(?P<amount>{_NUMBER})\s*$", re.I,
     )
     amount_only = re.compile(rf"^\s*(?P<description>.+?)\s+(?P<amount>{_NUMBER})\s*$", re.I)
+    pending_description: list[str] = []
     for line in lines[header_index + 1:]:
         if summary_end.search(line):
             break
@@ -751,6 +754,7 @@ def _column_table_rows(page: PageRecord, lines: list[str], end: re.Pattern[str])
         # Numbered rows are handled by the established parser below, which
         # retains its ambiguity checks for numeric descriptions and quantities.
         if re.match(r"^\s*\d{1,3}[.)]?\s+", line):
+            pending_description.clear()
             continue
         match = row_pattern.match(line) if has_quantity and has_price else None
         evidence = [_evidence(page, line.strip())]
@@ -760,7 +764,10 @@ def _column_table_rows(page: PageRecord, lines: list[str], end: re.Pattern[str])
             amount = parse_localized_decimal(match.group("amount"))
             if any(value.value is None for value in (quantity, price, amount)):
                 continue
-            description = match.group("description").strip()
+            description = " ".join([*pending_description, match.group("description").strip()]).strip()
+            if pending_description:
+                evidence = [_evidence(page, " ".join([*pending_description, line.strip()]))]
+            pending_description.clear()
             qty_field = ExtractedField(quantity.value, "found", evidence)
             price_field = ExtractedField(price.value, "found", evidence)
             amount_field = ExtractedField(amount.value, "found", evidence)
@@ -786,17 +793,7 @@ def _column_table_rows(page: PageRecord, lines: list[str], end: re.Pattern[str])
                     ExtractedField(Decimal("0"), "found", evidence),
                     ExtractedField(Decimal("0"), "found", evidence),
                 ))
-            low_desc = description.casefold()
-            if re.search(r"\b(?:freight|shipping|delivery charge|transport)\b", low_desc):
-                item_type = "freight"
-            elif re.search(r"\b(?:service|consult(?:ing|ancy)|management fee|maintenance|cleaning)\b", low_desc):
-                item_type = "service"
-            elif re.search(r"\b(?:goods|product|equipment|device|hardware|material)\b", low_desc):
-                item_type = "goods"
-            elif re.search(r"\b(?:tax|vat|gst|withholding)\b", low_desc):
-                item_type = "tax"
-            else:
-                item_type = None
+            item_type = classify_line_type(description)
             basis = "net" if re.search(r"\bnet\b|excl(?:uding)?\.?\s+(?:tax|vat)|excluding\s+(?:tax|vat)", table_header, re.I) else None
             if not basis and re.search(r"gross|including\s+(?:tax|vat)", table_header, re.I):
                 basis = "tax_inclusive"
@@ -808,6 +805,15 @@ def _column_table_rows(page: PageRecord, lines: list[str], end: re.Pattern[str])
                 amount_field, line_taxes,
             ))
             continue
+        # A prose-only line directly before a complete numeric row can be a
+        # wrapped description. Keep it only inside a labelled table, and do
+        # not turn a value-free row into an accounting component.
+        if has_quantity and has_price and re.search(r"[A-Za-z]", line) and not _amounts(line, table_row=True):
+            pending_description.append(line.strip())
+            if len(pending_description) > 2:
+                pending_description.pop(0)
+        else:
+            pending_description.clear()
         if not has_quantity and not has_price:
             match = amount_only.match(line)
             if match:
@@ -1087,8 +1093,28 @@ def _candidate(document: DocumentRecord, pages: list[PageRecord], multi: bool) -
             number_field = ExtractedField(adjacent_numbers[0][0], "found", [ev for _value, ev in adjacent_numbers])
         elif len(values) > 1:
             number_field = ExtractedField(None, "ambiguous", [ev for _value, ev in adjacent_numbers], [value for value, _ in adjacent_numbers])
-    supplier_pattern = r"(?:supplier|vendor|seller|from|lieferant|fournisseur|fornecedor|proveedor|remit\s+payment\s+to)\s*(?:name|nome|nombre)?\s*[:#-]\s*(?P<value>[^\r\n]+)"
-    supplier_field = _field(pages, lambda text: _label_values(supplier_pattern, text), normalize=lambda v: _norm(str(v)))
+    spatial_supplier_values: list[tuple[str, Evidence]] = []
+    spatial_supplier_ambiguous = False
+    for page in pages:
+        layout = page.evidence.get("text_layout") if isinstance(page.evidence, dict) else None
+        if not isinstance(layout, dict):
+            continue
+        role = resolve_party_roles(layout).get("supplier", {})
+        if role.get("status") == "found" and role.get("value"):
+            source = role.get("evidence", {})
+            spatial_supplier_values.append((str(role["value"]), _evidence(page, f"{source.get('label', '')} | {source.get('party', '')}")))
+        elif role.get("status") == "ambiguous":
+            spatial_supplier_ambiguous = True
+    spatial_names = {_norm(value) for value, _ in spatial_supplier_values}
+    if spatial_supplier_ambiguous or len(spatial_names) > 1:
+        supplier_field = ExtractedField(None, "ambiguous", [evidence for _, evidence in spatial_supplier_values],
+                                        [value for value, _ in spatial_supplier_values],
+                                        "Spatial supplier role labels conflict or identify multiple parties.")
+    elif spatial_supplier_values:
+        supplier_field = ExtractedField(spatial_supplier_values[0][0], "found", [e for _, e in spatial_supplier_values])
+    else:
+        supplier_pattern = r"(?:supplier|vendor|seller|from|lieferant|fournisseur|fornecedor|proveedor|remit\s+payment\s+to)\s*(?:name|nome|nombre)?\s*[:#-]\s*(?P<value>[^\r\n]+)"
+        supplier_field = _field(pages, lambda text: _label_values(supplier_pattern, text), normalize=lambda v: _norm(str(v)))
     if supplier_field.status == "missing":
         for page in pages:
             lines = page.text.splitlines()
@@ -1258,7 +1284,33 @@ def _candidate(document: DocumentRecord, pages: list[PageRecord], multi: bool) -
             po_field = ExtractedField(adjacent_pos[0][0], "found", [evidence for _, evidence in adjacent_pos])
         elif len(distinct_pos) > 1:
             po_field = ExtractedField(None, "ambiguous", [evidence for _, evidence in adjacent_pos], [value for value, _ in adjacent_pos])
-    vat_field = _field(pages, lambda text: _label_values(vat_pattern, text), normalize=lambda v: re.sub(r"\s", "", str(v)).casefold())
+    def unassigned_vat_values(text: str, *, footer_only: bool = False) -> list[tuple[str, str]]:
+        """Only use an unassigned VAT label while it is in the invoice identity area."""
+        lines = text.splitlines()
+        buyer_label = re.compile(r"\b(?:bill\s*to|sold\s*to|ship\s*to|delivery\s+address|customer|buyer)\b", re.I)
+        issuer_vat_label = re.compile(r"\b(?:supplier|vendor|seller|issuer)\s+vat\b", re.I)
+        values: list[tuple[str, str]] = []
+        for index, line in enumerate(lines):
+            match = re.search(vat_pattern, line, re.I)
+            if not match or any(buyer_label.search(previous) for previous in lines[max(0, index - 5):index + 1]):
+                continue
+            value = match.group("value").strip(" :#-").rstrip(".,;")
+            # A bare VAT label after the printed amount can identify the buyer
+            # (for example on a reverse-charge invoice). Its mere presence is
+            # not evidence that the number belongs to the issuer.
+            after_total = any(re.search(gross_pattern, previous, re.I) and _amounts(previous)
+                              for previous in lines[:index])
+            unscoped_footer = after_total and not issuer_vat_label.search(line)
+            if unscoped_footer == footer_only:
+                values.append((value, line))
+        return values
+
+    vat_field = _field(pages, unassigned_vat_values, normalize=lambda v: re.sub(r"\s", "", str(v)).casefold())
+    if vat_field.status == "missing":
+        footer_vat = _field(pages, lambda text: unassigned_vat_values(text, footer_only=True))
+        if footer_vat.status == "found":
+            vat_field = ExtractedField(None, "ambiguous", footer_vat.evidence, [footer_vat.value],
+                                   "A VAT label after the payable total is not linked to the supplier.")
     if vat_field.status == "found" and vat_field.evidence and all(
         re.search(r"federal\s+tax\s+id", item.text, re.I) for item in vat_field.evidence
     ):
@@ -1267,6 +1319,30 @@ def _candidate(document: DocumentRecord, pages: list[PageRecord], multi: bool) -
         supplier_vat = _vat_field_near_supplier(pages, str(supplier_field.value))
         if supplier_vat.status == "found":
             vat_field = supplier_vat
+        spatial_vats: list[tuple[str, Evidence]] = []
+        spatial_vat_ambiguous = False
+        for page in pages:
+            layout = page.evidence.get("text_layout") if isinstance(page.evidence, dict) else None
+            if not isinstance(layout, dict):
+                continue
+            party_vat = resolve_party_vat(layout, str(supplier_field.value))
+            if party_vat.get("status") == "found":
+                evidence = party_vat.get("evidence", {})
+                spatial_vats.append((str(party_vat["value"]), _evidence(
+                    page, f"{evidence.get('party', '')} | {evidence.get('label', '')} | {evidence.get('value', '')}")))
+            elif party_vat.get("status") == "ambiguous":
+                spatial_vat_ambiguous = True
+        spatial_vat_values = {value for value, _ in spatial_vats}
+        if spatial_vat_ambiguous or len(spatial_vat_values) > 1:
+            vat_field = ExtractedField(None, "ambiguous", [e for _, e in spatial_vats], sorted(spatial_vat_values),
+                                       "Spatial VAT labels are competing for the resolved supplier block.")
+        elif spatial_vats:
+            value = spatial_vats[0][0]
+            if vat_field.status in {"missing", "conflicting", "ambiguous"}:
+                vat_field = ExtractedField(value, "found", [e for _, e in spatial_vats])
+            elif re.sub(r"\s", "", str(vat_field.value)).casefold() != re.sub(r"\s", "", value).casefold():
+                vat_field = ExtractedField(None, "conflicting", [*vat_field.evidence, *(e for _, e in spatial_vats)],
+                                           [vat_field.value, value], "Flat and spatial supplier VAT evidence disagree.")
 
     candidate = PayableCandidate(
         document_type=ExtractedField("credit_memo" if is_credit else "invoice", "found", [_evidence(page, page.text[:240]) for page in pages if page.text.strip()]),

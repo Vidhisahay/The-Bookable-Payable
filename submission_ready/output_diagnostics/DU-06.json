@@ -1,0 +1,412 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.55,
+    "uncertain": true,
+    "evidence": [
+      "fatura",
+      "iva"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "fatura",
+          "iva"
+        ]
+      },
+      {
+        "page_number": 2,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "DU-06.pdf",
+      "page_number": 1,
+      "text": "Blackpine Supply S.A\nAta da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado\nCap.Soc: 5.170.000€ , NIF: 785255159\nIBAN: PT28909636405289370959536 / SWIFT: YDSHMSZZC\nTelf: +361 140985503 — (rede fixa nacional) - www.fairmont-distribution.c\nDiregäo Fiscal Diregäo de\nNorthwind SUPPORT SERVICES PT, UNIPESSOAL Cloverdale Dististhigin Cloves\nBahnhofstrasse 224 High Street 31\n1250-148 LISBOA 1150-311 LI:\nNIF: 353598648\n618745\nZona Email: david.vidal@northwind.eu\nFatura FN 05/80906935 Data 2026-06-15 Reference: REF-841468 Original\nCod. Descrigäo -atd. Prego Valor IVA\n62782 Empanadilha Atum Cozida (50u) 1 41,68 41,68 23,00%\n67110 Pao Burger Brioch LeBrio14px4u 1 28,43 28,43 6,00%\n67322 Chapata Cristallino 28px2u 1 25,94 25,94 6,00%\n85101 Pao Maestra Classica 7u 2 13,43 26,86 6,00%\n85102 Pao Maestra Cereais 7u 4 15,29 15,29 6,00%\nNum. Pedido Total 6 138,20\n\nEmpresa Certificada RSPO n° BMC-RSPO-000188\nA responsabilidade pela gestäo de residuos de embalagens foi transferida para a Entidade Gestora: Silverbrook Mobility\nSilverbrook Mobility . Mais informagões, incluindo os valores das prestagões financeiras fixadas a favor daquela, em\nwww.northwind-techn@sylaeps foram colocados a disposigäo do adquirente na data da descarga - art.36°, n°5, f/ do CIVA.\nData Transporte 2026-06-15 Hora de inicio de transporte 00:00h\nLocal Carga Ata Medanha, / 2580-491, CARREGADO / Espaja\nLocal Descarga Morada entrega cliente\n\nAHm8-Processado por programa certificado n.° 6847/AT\nRübricas Base % Valor\n\nRota 804 Incidéncia 41,68 23,00% 9,59\nPed. 80120853 Incidéncia 96,52 6,00% 5,79\nATDocCodeld\nVencimento 2026-07-16\nModo Pagamento — Transf. bancaria TOTAL EUR 153,58\nPäg. 1/2\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1320,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 12644,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "d55eae9337d7ad65f571c0ba036a47f32342fc5e7e1dc8a8ac85e12f79a90bb5"
+        },
+        "text_layout": null
+      },
+      "error": null
+    },
+    {
+      "filename": "DU-06.pdf",
+      "page_number": 2,
+      "text": "Vv = 4 pi 2 aa VA\n<4 europastry\n4\nBlackpine Supply S.A\nAta da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado\nCap.Soc: 5.170.000€ , NIF: 785255159\nIBAN: PT28909636405289370959536 1 SWIFT: YDSHMSZZC\nTelf: +361 140985503 (rede fixa nacional) - www.fairmont-distribution.com\nDiregäo Fiscal Diregäo de Entrega\nNorthwind SUPPORT SERVICES PT, UNIPESSOAL Cloverdatad?iatilntinn Cloverdale Distribution LDA\nNorthwind SUPPORT SERVICES PT, UNIPESSOAL Cloverdale Distribution Cloverdale Distribution LDA\nBahnhofstrasse 224 High Street 31\n1250-148 LISBOA 1150-311 LISBOA\nNIF: 353598648\n618745\nZona\nPao Burger Brioch\n67110 LeBrio14pxdu 1 1 61070V1 1 2027-04-17\n67322 Chapata Cristallino 28px2u 1 1 61540V3 1 2027-08-27\n85101 Pao Maestra Classica 7u 2 2 6113344 2 2027-04-23\n85102 Pao Maestra Cereais 7u 1 1 6058244 1 2027-02-27\n62782 (a = am core 1 1 6135009 1 2027-05-05\nTotal 6 6\n\n2026-06-16 02:51 2026-06-16 09:54 -18,00\nA responsabilidade pela gestäo de residuos de embalagens foi transferida para a Entidade Gestora: Silverbrook Mobility\nSilverbrook Mobility Mais informagões, incluindo os valores das prestacées financeiras fixadas a favor daquela, em\nwww.northwind-techn@sylaens foram colocados a disposigäo do adguirente na data da descarga - art.36°, n°5, f/ do CIVA.\nData Transporte Hora de inicio de transporte 00:00h\nLocal Carga Ata Medanha, / 2580-491, CARREGADO / Espaja\nLocal Descarga Morada entrega cliente\nRota 804\nRed. euiziee Assinatura: (ILANDIA)\nPag. 2/2\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1176,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 11327,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "0f17da062e4844c96c099cf16703d17e0f51acf1454459ab26a1bc5c99b17353"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      },
+      {
+        "page_number": 2,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "The Phase 2 document classification is uncertain."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Blackpine Supply S.A\nAta da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado\nCap.Soc: 5.170.000€ , NIF: 785255159\nIBAN: PT28909636405289370959536 / SWIFT: YDSHMSZZC\nTelf: +361 140985503 — (rede fixa nacional) - www.fairmont-distribution.c"
+              },
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 2,
+                "text": "Vv = 4 pi 2 aa VA\n<4 europastry\n4\nBlackpine Supply S.A\nAta da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado\nCap.Soc: 5.170.000€ , NIF: 785255159\nIBAN: PT28909636405289370959536 1 SWIFT: YDSHMSZZC\nTelf: +361 140985503 (rede fixa nacional"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Blackpine Supply S.A",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Blackpine Supply S.A"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": "Ata da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado, Cap.Soc: 5.170.000€ , NIF: 785255159",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Ata da Mendanha, OTAPARK,, Fragäo AN, 2580-490 Carregado, Cap.Soc: 5.170.000€ , NIF: 785255159"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": "EUR",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Cap.Soc: 5.170.000€ , NIF: 785255159"
+              },
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Modo Pagamento — Transf. bancaria TOTAL EUR 153,58"
+              },
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 2,
+                "text": "Cap.Soc: 5.170.000€ , NIF: 785255159"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "153.58",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "DU-06.pdf",
+                "page_number": 1,
+                "text": "Modo Pagamento — Transf. bancaria TOTAL EUR 153,58"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "IVA",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-06.pdf",
+                    "page_number": 1,
+                    "text": "Cod. Descrigäo -atd. Prego Valor IVA"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Data Transporte 2026-06-15 Hora de inicio de transporte 00:00h",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-06.pdf",
+                    "page_number": 1,
+                    "text": "Data Transporte 2026-06-15 Hora de inicio de transporte 00:00h"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Data Transporte Hora de inicio de transporte 00:00h",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "DU-06.pdf",
+                    "page_number": 2,
+                    "text": "Data Transporte Hora de inicio de transporte 00:00h"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1,
+            2
+          ],
+          "review_required": true,
+          "warnings": [
+            "The Phase 2 document classification is uncertain."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "153.58"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

@@ -9,11 +9,13 @@ from typing import Callable
 import subprocess
 import time
 import re
+import json
 from typing import Any
 
 from .classifier import classify_pages
 from .models import DocumentClassification, DocumentRecord, PageRecord
 from .ocr_cache import OCRPageCache
+from .layout import layout_regions, normalized_words
 from .pdf_reader import PyMuPDFReader, TesseractOCR, is_usable_text
 
 
@@ -45,6 +47,64 @@ class IngestionPipeline:
         self.ocr = ocr
         self.progress = progress
         self.cache = OCRPageCache(self.config.ocr_cache_directory) if self.config.ocr_cache_directory else None
+
+    def _native_layout(self, page: Any, page_number: int) -> dict[str, Any] | None:
+        try:
+            raw_words = page.get_text("words")
+            rect = page.rect
+            words = [{"text": item[4], "bbox": item[:4], "block": item[5], "line": item[6], "confidence": None}
+                     for item in raw_words if len(item) >= 7 and str(item[4]).strip()]
+            layout = {"page_number": page_number, "source": "native", "page_width": float(rect.width),
+                      "page_height": float(rect.height), **normalized_words(words, float(rect.width), float(rect.height), source="native")}
+            layout["regions"] = layout_regions(layout)
+            return layout
+        except Exception:
+            return None
+
+    def _ocr_party_layout(self, text: str, image: bytes | None, page: Any, page_number: int,
+                          pdf_sha256: str | None, ocr: Any, reader: Any) -> dict[str, Any] | None:
+        """Run/cache TSV only on pages where flattened text suggests multiple parties."""
+        recognize_words = getattr(ocr, "recognize_words", None)
+        if not callable(recognize_words) or not _needs_party_layout(text):
+            return None
+        key = self._cache_key(pdf_sha256, page_number, "spatial_tsv_v1", (6,), self.config.render_dpi, ocr, reader)
+        cached = self.cache.load(key, minimum_chars=self.config.minimum_native_chars) if self.cache and key else None
+        raw: list[dict[str, Any]] | None = None
+        status = "miss"
+        if cached:
+            try:
+                parsed = json.loads(cached["text"])
+                if isinstance(parsed, list) and all(isinstance(item, dict) for item in parsed):
+                    raw, status = parsed, "hit"
+            except (json.JSONDecodeError, TypeError):
+                pass
+        try:
+            if raw is None:
+                if image is None:
+                    image = reader.render_png(page)
+                raw = recognize_words(image, language=self.config.ocr_language,
+                                     timeout=self.config.ocr_timeout_seconds, psm=6)
+                if not raw:
+                    return {"page_number": page_number, "source": "ocr", "status": "sparse", "words": [],
+                            "cache": {"status": "not_stored", "key": key}}
+                encoded = json.dumps(raw, ensure_ascii=False)
+                stored = bool(self.cache and key and self.cache.store(
+                    key, encoded, {"format": "tesseract-word-json-v1"}, minimum_chars=self.config.minimum_native_chars,
+                ))
+                status = "stored" if stored else ("disabled" if not self.cache else "not_stored")
+            # Tesseract boxes are pixel coordinates. Normalize by rendered page
+            # dimensions calculated from the same configured DPI.
+            rect = page.rect
+            width = float(rect.width) * self.config.render_dpi / 72
+            height = float(rect.height) * self.config.render_dpi / 72
+            layout = {"page_number": page_number, "source": "ocr", "page_width": float(rect.width),
+                      "page_height": float(rect.height), **normalized_words(raw, width, height, source="ocr")}
+            layout["regions"] = layout_regions(layout)
+            layout["cache"] = {"status": status, "key": key}
+            return layout
+        except Exception as exc:
+            return {"page_number": page_number, "source": "ocr", "status": "failed", "error": str(exc),
+                    "words": [], "cache": {"status": "miss" if self.cache else "disabled", "key": key}}
 
     def _activity_table_ocr(self, pdf_sha256: str | None, page_number: int, page: Any, text: str,
                             ocr: Any, reader: Any) -> dict[str, Any] | None:
@@ -126,6 +186,9 @@ class IngestionPipeline:
                             "native_alphanumeric_chars": sum(c.isalnum() for c in native_text),
                             "ocr_attempted": False,
                         }
+                        layout = self._native_layout(page, page_number)
+                        if layout is not None:
+                            native_evidence["text_layout"] = layout
                         # Some native PDFs retain their prose but flatten a
                         # columnar item table into an unusable reading order.
                         # Add bounded OCR evidence for this recognizable table
@@ -208,6 +271,9 @@ class IngestionPipeline:
                         table_evidence = self._activity_table_ocr(pdf_sha256, page_number, page, cached["text"], ocr, reader)
                         if table_evidence is not None:
                             cached_evidence["activity_table_ocr"] = table_evidence
+                        cached_evidence["text_layout"] = self._ocr_party_layout(
+                            cached["text"], None, page, page_number, pdf_sha256, ocr, reader,
+                        )
                         pages.append(PageRecord(
                             filename, page_number, cached["text"], "ocr",
                             cached_evidence,
@@ -232,6 +298,9 @@ class IngestionPipeline:
                             retries=self.config.ocr_retries,
                             minimum_chars=self.config.minimum_native_chars,
                         )
+                        spatial_layout = self._ocr_party_layout(
+                            text, image, page, page_number, pdf_sha256, ocr, reader,
+                        )
                         ocr_attempts = ocr_meta["ocr_modes_attempted"]
                         attempt_records = ocr_meta["ocr_attempts"]
                         method = "ocr" if is_usable_text(text, self.config.minimum_native_chars) else ("ocr_sparse" if text.strip() else "ocr_empty")
@@ -245,6 +314,7 @@ class IngestionPipeline:
                             filename, page_number, text, method,
                             {
                                 **evidence,
+                                **({"text_layout": spatial_layout} if spatial_layout is not None else {}),
                                 "rendered_bytes": len(image),
                                 **ocr_meta,
                                 "ocr_modes_attempted": ocr_attempts,
@@ -404,6 +474,14 @@ def _needs_activity_table_ocr(text: str) -> bool:
                 and re.search(r"\b(?:qty|quantity|atv)\b", normalized)
                 and re.search(r"\brate\b", normalized)
                 and re.search(r"\bamount\b", normalized))
+
+
+def _needs_party_layout(text: str) -> bool:
+    """Avoid a supplemental OCR pass unless flattened text suggests party ambiguity."""
+    normalized = re.sub(r"\s+", " ", text).casefold()
+    entities = re.findall(r"\b(?:gmbh|limited|ltd\.?|llc|plc|inc\.?|corp\.?|pte\.?|oü|as|b\.v\.|ag)\b", normalized)
+    labels = re.findall(r"\b(?:supplier|vendor|seller|issued by|bill to|buyer|customer|sold to|ship to|payee|remit to)\b", normalized)
+    return len(entities) > 1 or bool(labels and entities)
 
 
 def enumerate_pdfs(directory: Path) -> list[Path]:

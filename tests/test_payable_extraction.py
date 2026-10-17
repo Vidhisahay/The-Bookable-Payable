@@ -33,7 +33,9 @@ Reverse Charge"""
         self.assertEqual(candidate.invoice_number.value, "852566")
         self.assertEqual(candidate.invoice_date.value.isoformat(), "2026-02-02")
         self.assertEqual(candidate.due_date.value.isoformat(), "2026-02-12")
-        self.assertEqual(candidate.supplier_vat_id.value, "EE398766194")
+        self.assertEqual(candidate.supplier_vat_id.status, "ambiguous")
+        self.assertIsNone(candidate.supplier_vat_id.value)
+        self.assertIn("Vat ID: EE398766194", candidate.supplier_vat_id.evidence[0].text)
         self.assertEqual(candidate.currency.value, "EUR")
         self.assertEqual(candidate.printed_gross_total.value, Decimal("438.00"))
         self.assertEqual(candidate.printed_tax_total.value, Decimal("0.00"))
@@ -119,6 +121,134 @@ Invoice Total GBP 120.00"""
         # The explicit buyer block contradicts a naive "first legal name" rule;
         # without a role label or reliable VAT linkage, identity remains blank.
         self.assertEqual(candidate.supplier_name.status, "missing")
+
+    def test_footer_issuer_vat_does_not_inherit_customer_vat(self):
+        text = """Bill To: Cedar Customer Limited
+Delivery Address: 20 Market Street
+VAT Registration No.: GB111111111
+Credit Note No.: 5900366703
+Currency in: GBP
+Product Reference No. Quantity Unit VAT Unit Price Net Amount
+4582314 952-000091 1 20% 10.00 10.00
+Touch Controller Device
+Net Amount GBP 10.00
+VAT 20% 2.00
+Total Amount GBP 12.00
+Blackpine Consulting Limited Registered in England
+Registered Office: 50 Market Lane
+VAT:GB222222222 Account Number: 12345678"""
+        candidate = extract_payables(self.document(text, category="credit_memo")).candidates[0]
+        self.assertEqual(candidate.supplier_name.value, "Blackpine Consulting Limited")
+        self.assertEqual(candidate.supplier_vat_id.value, "GB222222222")
+        self.assertIn("VAT:GB222222222", candidate.supplier_vat_id.evidence[0].text)
+
+    def test_customer_vat_without_issuer_evidence_is_not_supplier_identity(self):
+        text = """Bill To: Cedar Customer Limited
+Delivery Address: 20 Market Street
+VAT Registration No.: GB111111111
+Invoice Number: Q-77
+Currency: GBP
+Description Quantity Net Unit Price Amount GBP
+Consulting Service 1 10.00 10.00
+Invoice Total GBP 10.00"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.supplier_name.status, "missing")
+        self.assertEqual(candidate.supplier_vat_id.status, "missing")
+
+    def test_addressee_in_header_is_not_supplier(self):
+        text = """Northwind Operations OU
+Herrn Alex Kask
+Market Road 15
+Invoice Number: R-830
+Invoice Date: 2026-02-02
+Dear Mr Kask,
+Description Quantity Net Unit Price Amount EUR
+Consulting Service 1 10.00 10.00
+Invoice Total EUR 10.00
+VAT ID: EE123456789"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.supplier_name.status, "missing")
+        self.assertEqual(candidate.supplier_vat_id.status, "ambiguous")
+        self.assertIsNone(candidate.supplier_vat_id.value)
+
+    def test_flattened_reference_is_not_part_of_supplier_address(self):
+        text = """Oakhaven Supply Ltd
+Market Road 8
+P.O. Box 14108, Nairobi 32917ALS55
+00400 KEN
+Invoice Number: Q-830
+Bill To: Cedar Customer Limited
+Description Quantity Net Unit Price Amount KES
+Handling Service 1 10.00 10.00
+Invoice Total KES 10.00"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.supplier_name.value, "Oakhaven Supply Ltd")
+        self.assertEqual(candidate.supplier_address.status, "missing")
+
+    def test_extended_amount_is_not_invented_as_unit_price_for_quantity_one(self):
+        text = """INVOICE
+Supplier: New Example LLC
+Invoice Number: Q-831
+Currency: USD
+ITEM DESCRIPTION QTY/ NO. OF USERS TAX EXTENDED AMOUNT
+1 Managed Cloud Service 1 N 91,580.50
+SUBTOTAL USD 91,580.50
+TOTAL(USD) 91,580.50"""
+        candidate = extract_payables(self.document(text)).candidates[0]
+        self.assertEqual(candidate.lines[0].quantity.value, Decimal("1"))
+        self.assertEqual(candidate.lines[0].printed_total.value, Decimal("91580.50"))
+        self.assertEqual(candidate.lines[0].unit_price.status, "missing")
+        _payable, diagnostics = generate_autodraft(candidate, MasterData())
+        self.assertEqual(diagnostics["reconciliation"]["status"], "unresolved")
+
+    def test_spatial_role_evidence_resolves_supplier_when_party_columns_are_swapped(self):
+        from ingestion.layout import normalized_words
+
+        words = []
+        # Buyer is on the left/top and seller on the right/bottom. Explicit
+        # labels, not reading order or page position, establish each role.
+        for block, line, text, box in [
+            (1, 1, "Bill To", (20, 40, 90, 52)),
+            (1, 1, "Northwind", (95, 40, 165, 52)),
+            (1, 1, "Services", (170, 40, 220, 52)),
+            (1, 1, "Ltd", (225, 40, 245, 52)),
+            (2, 2, "Supplier", (340, 180, 410, 192)),
+            (2, 2, "Silverbrook", (415, 180, 500, 192)),
+            (2, 2, "Media", (505, 180, 545, 192)),
+            (2, 2, "Limited", (550, 180, 600, 192)),
+        ]:
+            words.append({"text": text, "bbox": box, "block": block, "line": line, "confidence": 90})
+        spatial = {"page_number": 1, "source": "native", "page_width": 600, "page_height": 800,
+                   **normalized_words(words, 600, 800, source="native")}
+        page = PageRecord("spatial-fixture.pdf", 1,
+                          "Invoice number X-1\nInvoice date: 2026-01-01\nGross total EUR 10.00",
+                          "native_text", {"text_layout": spatial})
+        doc = DocumentRecord(page.filename, [page], DocumentClassification("invoice", 0.9, False))
+        candidate = extract_payables(doc).candidates[0]
+        self.assertEqual(candidate.supplier_name.value, "Silverbrook Media Limited")
+        self.assertEqual(candidate.supplier_name.status, "found")
+        self.assertEqual(candidate.printed_gross_total.value, Decimal("10.00"))
+
+    def test_conflicting_spatial_supplier_labels_do_not_override_as_a_guess(self):
+        from ingestion.layout import normalized_words
+
+        words = []
+        for line, row in enumerate([
+            [("Supplier", 20), ("Asteria", 90), ("Limited", 145)],
+            [("Supplier", 360), ("Beacon", 430), ("Trading", 485), ("LLC", 540)],
+        ], 1):
+            for text, x in row:
+                words.append({"text": text, "bbox": [x, line * 80, x + 48, line * 80 + 12],
+                              "block": line, "line": line, "confidence": 95})
+        spatial = {"page_number": 1, "source": "native", "page_width": 600, "page_height": 800,
+                   **normalized_words(words, 600, 800, source="native")}
+        page = PageRecord("ambiguous-layout.pdf", 1,
+                          "Invoice number X-2\nInvoice date: 2026-01-01\nGross total EUR 10.00",
+                          "native_text", {"text_layout": spatial})
+        doc = DocumentRecord(page.filename, [page], DocumentClassification("invoice", 0.9, False))
+        candidate = extract_payables(doc).candidates[0]
+        self.assertEqual(candidate.supplier_name.status, "ambiguous")
+        self.assertIsNone(candidate.supplier_name.value)
 
     def test_labelled_column_table_extracts_rows_and_preserves_line_tax_scope(self):
         text = """Invoice Number: TEST-744

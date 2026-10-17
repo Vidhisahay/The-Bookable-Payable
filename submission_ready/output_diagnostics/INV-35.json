@@ -1,0 +1,124 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": []
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-35.pdf",
+      "page_number": 1,
+      "text": "Zycus PO# 1000020040\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 17,
+        "ocr_attempted": false,
+        "text_layout": {
+          "page_number": 1,
+          "source": "native",
+          "page_width": 1276.0,
+          "page_height": 1651.0,
+          "coordinate_system": "normalized_page",
+          "words": [
+            {
+              "text": "Zycus",
+              "bbox": [
+                0.24148825044542271,
+                0.037998028483122205,
+                0.28720767221480703,
+                0.05563236654779537
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            },
+            {
+              "text": "PO#",
+              "bbox": [
+                0.2919732933881514,
+                0.037998028483122205,
+                0.3262757208653752,
+                0.05563236654779537
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            },
+            {
+              "text": "1000020040",
+              "bbox": [
+                0.3310413659553169,
+                0.037998028483122205,
+                0.42635438733713754,
+                0.05563236654779537
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            }
+          ],
+          "regions": [
+            {
+              "block": 0,
+              "text": "Zycus PO# 1000020040",
+              "bbox": [
+                0.24148825044542271,
+                0.037998028483122205,
+                0.42635438733713754,
+                0.05563236654779537
+              ]
+            }
+          ]
+        }
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

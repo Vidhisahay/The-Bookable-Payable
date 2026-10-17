@@ -62,7 +62,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "113463dcde6be70d30269f450f4198d57871d55d543f337f1274a0eada104c31"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     },
@@ -93,7 +94,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "cb8bcf271bf382bd3278ebc7f5fc9b6cfe689de8af1750e3dbd55dbee3b69249"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     },
@@ -124,7 +126,8 @@
         "ocr_cache": {
           "status": "hit",
           "key": "b7a8d7a983fe36f39ada376118c0e15056bc5cfd920d95332d4f8243fea20bbf"
-        }
+        },
+        "text_layout": null
       },
       "error": null
     }

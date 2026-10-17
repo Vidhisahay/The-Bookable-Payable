@@ -1,0 +1,367 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.72,
+    "uncertain": false,
+    "evidence": [
+      "factura",
+      "fatura"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.72,
+        "evidence": [
+          "factura",
+          "fatura"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-21.pdf",
+      "page_number": 1,
+      "text": "High Street 8\nOakhaven Partners LDA 2799-554 LINDA-A-VELHA\nContribuinte N° PT 059909082 Capital Social : 30.000.000 Euros, Nr. Registo SIRER: PT12964656\nIBAN: PT7669839155 1688438577388\nTIPO DE DOCUMENTO N° DE DOCUMENTO DOC. ORIGEM | N°CONTRIBUINTE | DATA FACTURA N° de pag.\nFATURA [OOO eseistaes OOP OOO ersesrisess [06/04/2026\nLOCAL DE ENTREGA EXMO(S). SR(S).\nNorthwind SUPPORT SERVICES PT, UNIPESSOAL LDA Northwind SUPPORT SERVICES PT, UNIPESSOAL LDA\nNorthfaisaritörio Norihtzisaritörio\nAvenida Central 224 Avenida Central 224\n1250-148 Lisboa 1250-148 Lisboa\nCLIENTE\nNorthwind SUPPORT SERVICES PT, UNIPESSOAL LDA\nSERVICO DE APOIO AO CLIENTE North@adritérlo\nLisboa TEL 89 7230833 Avenida Central 224\nMORADA: _ High Street 8 1250-148 Lisboa\nCOD. POSTAL 2799-554 LOCALIDADE Linda-a-Velha\nTa a a\no2ioaiaoz6 | Frossess [PTC Lisboa | 6679482 [ 200836565 | 200836565\nCOD. EAN ARTIGO DESCRICAO DO ARTIGO QUANT. | PREGO| DESCONTOS % VALOR\nVireo [U.vda [UND] UNIT.\n5601126039575 | 12422850 _| SICAL SUPER BAR Cate Grao 6x1kg NIPT 24,000 34,69] 51,00 407,95\nDesconto em Valor BEVERAGES SOLUTIONS 8,30-\n8445291766662 | 12616271 | Vireo Chocolate Quente 12(25x20g) Nt 1,000 10,01 10,01\n8445291894877 [12624778 _ | NESCAFE Acucar Std 1x2.8kg PT 1,000 8,30] 8,30\n054881000024. [14181244 [AHMAD Inf MentaHrtLim 6(20x1,5G)N1PT 3,000 2,94) 8,82\n054881000062 =| 14186288 —_ [AHMAD Inf Camomila 6(20x1.6g)N1PT 3,000 2,94] 8,82\nCOMENTARIOS:\nIMPOSTO SOBRE VALOR ACRESCENTADO DATA DE VENCIMENTO 06/05/2026 VALOR BRUTO 868,51\n% INCIDENCIA VALOR DESC. PROM./QNT 432,91\n10,19 CONDIGOES DE PAGAMENTO Desai PASEVKAD\nAté dia 06/05/2026 VA 100,19\n10,19 TOTAL A PAGAR 535,79\nprograma certificado n.°631/AT Os bens foram colocados A disposigäo do ad\na mencionada; IAL\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 1366,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 15023,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "4c90bf2de24df2fbe85453e0febae12bbf53a8d90869d26c33dafc322126d6af"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "High Street 8\nOakhaven Partners LDA 2799-554 LINDA-A-VELHA\nContribuinte N° PT 059909082 Capital Social : 30.000.000 Euros, Nr. Registo SIRER: PT12964656\nIBAN: PT7669839155 1688438577388\nTIPO DE DOCUMENTO N° DE DOCUMENTO DOC. ORIGEM | N°CONT"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "due_date": {
+            "value": "2026-05-06",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "IMPOSTO SOBRE VALOR ACRESCENTADO DATA DE VENCIMENTO 06/05/2026 VALOR BRUTO 868,51"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": "Oakhaven Partners LDA 2799-554 LINDA-A-VELHA",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "Oakhaven Partners LDA 2799-554 LINDA-A-VELHA Contribuinte N° PT 059909082 Capital Social : 30.000.000 Euros, Nr. Registo SIRER: PT12964656 IBAN: PT7669839155 1688438577388"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": "Contribuinte N° PT 059909082 Capital Social : 30.000.000 Euros, Nr. Registo SIRER: PT12964656",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "Contribuinte N° PT 059909082 Capital Social : 30.000.000 Euros, Nr. Registo SIRER: PT12964656"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_gross_total": {
+            "value": "535.79",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "10,19 TOTAL A PAGAR 535,79"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": "868.51",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-21.pdf",
+                "page_number": 1,
+                "text": "IMPOSTO SOBRE VALOR ACRESCENTADO DATA DE VENCIMENTO 06/05/2026 VALOR BRUTO 868,51"
+              }
+            ],
+            "alternatives": [],
+            "note": "Single printed header tax amount; no tax total label was present."
+          },
+          "purchase_order_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [
+            {
+              "scope": "header",
+              "kind": "tax",
+              "name": {
+                "value": "IMPOSTO",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-21.pdf",
+                    "page_number": 1,
+                    "text": "IMPOSTO SOBRE VALOR ACRESCENTADO DATA DE VENCIMENTO 06/05/2026 VALOR BRUTO 868,51"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "rate": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "868.51",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-21.pdf",
+                    "page_number": 1,
+                    "text": "IMPOSTO SOBRE VALOR ACRESCENTADO DATA DE VENCIMENTO 06/05/2026 VALOR BRUTO 868,51"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "charges": [
+            {
+              "kind": "discount",
+              "description": {
+                "value": "COD. EAN ARTIGO DESCRICAO DO ARTIGO QUANT. | PREGO| DESCONTOS % VALOR",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-21.pdf",
+                    "page_number": 1,
+                    "text": "COD. EAN ARTIGO DESCRICAO DO ARTIGO QUANT. | PREGO| DESCONTOS % VALOR"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            },
+            {
+              "kind": "discount",
+              "description": {
+                "value": "Desconto em Valor BEVERAGES SOLUTIONS 8,30-",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-21.pdf",
+                    "page_number": 1,
+                    "text": "Desconto em Valor BEVERAGES SOLUTIONS 8,30-"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": "8.30",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-21.pdf",
+                    "page_number": 1,
+                    "text": "Desconto em Valor BEVERAGES SOLUTIONS 8,30-"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": []
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "missing",
+            "matches": [],
+            "reason": "No exact payment-term alias was found; dates are not used to infer terms."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Header tax 1 has a type outside the permitted schema values."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "No explicit PO number was extracted.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": [
+            {
+              "code": "",
+              "status": "unmatched",
+              "reason": "Tax evidence does not uniquely identify a master code.",
+              "candidates": []
+            }
+          ]
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "No supported line components were extracted; the ERP total alone cannot establish the payable structure.",
+          "erp_gross": "",
+          "printed_gross": "535.79"
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "No supported line components were extracted; the ERP total alone cannot establish the payable structure."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

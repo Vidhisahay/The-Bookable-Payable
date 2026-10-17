@@ -1,0 +1,2265 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "invoice",
+    "confidence": 0.95,
+    "uncertain": false,
+    "evidence": [
+      "bill to",
+      "invoice",
+      "invoice no",
+      "subtotal"
+    ],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "invoice",
+        "confidence": 0.95,
+        "evidence": [
+          "invoice",
+          "bill to",
+          "invoice no",
+          "subtotal"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "INV-32.pdf",
+      "page_number": 1,
+      "text": "1 / 1\nBill To:\nAmerihealthcaritas Transportation\njblatt@amerihealthcaritas.com\nInvoice No:\n72\nDate:\n06/05/2018\nTerms:\nNET 14\nDue Date:\n06/19/2018\nDescription\nQuantity\nRate\nAmount\n5/31/18 1- 15 15 passenger van from Philly going to DC pick back up in DC coming back to to Philly . 8:30am to 5:30pm 9hr\n1\n$750.00\n$750.00*\n1\n$0.00\n$0.00\n*Indicates non-taxable item\nSubtotal\n$750.00\nIncludes TAX 0%\n$0.00\nTotal\n$750.00\nPAID\n$0.00\nBalance Due\n$750.00\nNotes\nHello you can make the check out to 215BEARS . 4613 Conshohocken Avenue Philadelphia PA 19131 . If invoice is not paid 30 days after services are rendered there \nwill be a $25 Late fee added every day starting on the 31st day after\n215B.E.A.R.S.\nInvoice\n4613 Conshohocken Avenue Philadelphia PA 19131\n267-767-4961\nReq#: 131530\nPO#: 30193\n",
+      "extraction_method": "native_text",
+      "evidence": {
+        "native_alphanumeric_chars": 606,
+        "ocr_attempted": false,
+        "text_layout": {
+          "page_number": 1,
+          "source": "native",
+          "page_width": 612.0,
+          "page_height": 792.0,
+          "coordinate_system": "normalized_page",
+          "words": [
+            {
+              "text": "1",
+              "bbox": [
+                0.48486926508884803,
+                0.9748484293619791,
+                0.49308592353770936,
+                0.9877272326536853
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            },
+            {
+              "text": "/",
+              "bbox": [
+                0.49690256555095996,
+                0.9748484293619791,
+                0.5030692106758068,
+                0.9877272326536853
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.5068859025543812,
+                0.9748484293619791,
+                0.5151025610032425,
+                0.9877272326536853
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 0,
+              "line": 0
+            },
+            {
+              "text": "Bill",
+              "bbox": [
+                0.043758171056610305,
+                0.2341604521780303,
+                0.06086911095513238,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 1,
+              "line": 0
+            },
+            {
+              "text": "To:",
+              "bbox": [
+                0.06404963349984362,
+                0.2341604521780303,
+                0.08146612628612643,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 1,
+              "line": 0
+            },
+            {
+              "text": "Amerihealthcaritas",
+              "bbox": [
+                0.18045752032909518,
+                0.2341604521780303,
+                0.28415094014086756,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "Transportation",
+              "bbox": [
+                0.2873314751519097,
+                0.2341604521780303,
+                0.36817785026201233,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 1,
+              "line": 1
+            },
+            {
+              "text": "jblatt@amerihealthcaritas.com",
+              "bbox": [
+                0.18045752032909518,
+                0.25090288875078914,
+                0.3489141526565053,
+                0.26163511565237335
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 2,
+              "line": 0
+            },
+            {
+              "text": "Invoice",
+              "bbox": [
+                0.7306699565812653,
+                0.2341604521780303,
+                0.7698223138946334,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 3,
+              "line": 0
+            },
+            {
+              "text": "No:",
+              "bbox": [
+                0.7730028239730137,
+                0.2341604521780303,
+                0.7917942720301011,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 3,
+              "line": 0
+            },
+            {
+              "text": "72",
+              "bbox": [
+                0.942549063489328,
+                0.2341604521780303,
+                0.9562432781543607,
+                0.2448926790796145
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 3,
+              "line": 1
+            },
+            {
+              "text": "Date:",
+              "bbox": [
+                0.7633823569304024,
+                0.25090288875078914,
+                0.7917848474839154,
+                0.26163511565237335
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 4,
+              "line": 0
+            },
+            {
+              "text": "06/05/2018",
+              "bbox": [
+                0.8912091224022161,
+                0.25090288875078914,
+                0.9562636232064441,
+                0.26163511565237335
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 4,
+              "line": 1
+            },
+            {
+              "text": "Terms:",
+              "bbox": [
+                0.7538398792541104,
+                0.26764524825895675,
+                0.7917839499080882,
+                0.27837747516054095
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 5,
+              "line": 0
+            },
+            {
+              "text": "NET",
+              "bbox": [
+                0.9166666666666666,
+                0.26764524825895675,
+                0.9393748364417381,
+                0.27837747516054095
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "14",
+              "bbox": [
+                0.9425553465201184,
+                0.26764524825895675,
+                0.9562495611851511,
+                0.27837747516054095
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 5,
+              "line": 1
+            },
+            {
+              "text": "Due",
+              "bbox": [
+                0.7390849792879391,
+                0.2843876848317156,
+                0.7602097754384957,
+                0.2951199117332998
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 6,
+              "line": 0
+            },
+            {
+              "text": "Date:",
+              "bbox": [
+                0.763390285516876,
+                0.2843876848317156,
+                0.7917927760703891,
+                0.2951199117332998
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 6,
+              "line": 0
+            },
+            {
+              "text": "06/19/2018",
+              "bbox": [
+                0.8912091224022161,
+                0.2843876848317156,
+                0.9562636232064441,
+                0.2951199117332998
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 6,
+              "line": 1
+            },
+            {
+              "text": "Description",
+              "bbox": [
+                0.043758171056610305,
+                0.33203606653695156,
+                0.12643392724928512,
+                0.34598799426146226
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 7,
+              "line": 0
+            },
+            {
+              "text": "Quantity",
+              "bbox": [
+                0.7497058943206188,
+                0.33203606653695156,
+                0.8105165070178462,
+                0.34598799426146226
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 7,
+              "line": 1
+            },
+            {
+              "text": "Rate",
+              "bbox": [
+                0.8445424597247754,
+                0.33203606653695156,
+                0.8771866941763684,
+                0.34598799426146226
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 7,
+              "line": 2
+            },
+            {
+              "text": "Amount",
+              "bbox": [
+                0.8997875537747652,
+                0.33203606653695156,
+                0.9562289169411254,
+                0.34598799426146226
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 7,
+              "line": 3
+            },
+            {
+              "text": "5/31/18",
+              "bbox": [
+                0.043758171056610305,
+                0.3661680125226878,
+                0.08827161477282157,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "1-",
+              "bbox": [
+                0.09145214355069828,
+                0.3661680125226878,
+                0.10174371058644813,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "15",
+              "bbox": [
+                0.10492423313115937,
+                0.3661680125226878,
+                0.11861854752683951,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "15",
+              "bbox": [
+                0.12179907007155076,
+                0.3661680125226878,
+                0.13549338446723092,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "passenger",
+              "bbox": [
+                0.13867390701194215,
+                0.3661680125226878,
+                0.19557612550024892,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "van",
+              "bbox": [
+                0.19875664804496018,
+                0.3661680125226878,
+                0.21804812063578688,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "from",
+              "bbox": [
+                0.22122865564682903,
+                0.3661680125226878,
+                0.24724227306889554,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "Philly",
+              "bbox": [
+                0.2504228080799377,
+                0.3661680125226878,
+                0.28013087253944546,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "going",
+              "bbox": [
+                0.28331140755048767,
+                0.3661680125226878,
+                0.31382499644958894,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "to",
+              "bbox": [
+                0.31700553146063115,
+                0.3661680125226878,
+                0.32806097292432596,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "DC",
+              "bbox": [
+                0.33124150793536816,
+                0.3661680125226878,
+                0.34701914569131687,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "pick",
+              "bbox": [
+                0.3501996807023591,
+                0.3661680125226878,
+                0.3728800256267872,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "back",
+              "bbox": [
+                0.37606056063782933,
+                0.3661680125226878,
+                0.40221307791915595,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "up",
+              "bbox": [
+                0.4053936129301981,
+                0.3661680125226878,
+                0.4189490025339563,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "in",
+              "bbox": [
+                0.4221295126123366,
+                0.3661680125226878,
+                0.43201830496195875,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "DC",
+              "bbox": [
+                0.435198815040339,
+                0.3661680125226878,
+                0.450976402930964,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "coming",
+              "bbox": [
+                0.45415691300934435,
+                0.3661680125226878,
+                0.49468425675934435,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "back",
+              "bbox": [
+                0.4978647668377247,
+                0.3661680125226878,
+                0.5240172841190512,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "to",
+              "bbox": [
+                0.5271977941974316,
+                0.3661680125226878,
+                0.5382532356611265,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "to",
+              "bbox": [
+                0.5414337457395068,
+                0.3661680125226878,
+                0.5524891872032016,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "Philly",
+              "bbox": [
+                0.5556696972815819,
+                0.3661680125226878,
+                0.5853776620104422,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": ".",
+              "bbox": [
+                0.5885581720888226,
+                0.3661680125226878,
+                0.5922109067829606,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "8:30am",
+              "bbox": [
+                0.5953914168613409,
+                0.3661680125226878,
+                0.6362660227258221,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "to",
+              "bbox": [
+                0.6394465328042024,
+                0.3661680125226878,
+                0.6505019742678972,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "5:30pm",
+              "bbox": [
+                0.6536824843462776,
+                0.3661680125226878,
+                0.6947515151079964,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "9hr",
+              "bbox": [
+                0.6979320251863766,
+                0.3661680125226878,
+                0.7156957489213133,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 0
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.8036601247351154,
+                0.3661680125226878,
+                0.8105072819329555,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 1
+            },
+            {
+              "text": "$750.00",
+              "bbox": [
+                0.8324183046428206,
+                0.3661680125226878,
+                0.8771536833320568,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 2
+            },
+            {
+              "text": "$750.00*",
+              "bbox": [
+                0.9055392196755004,
+                0.3661680125226878,
+                0.9562467687270221,
+                0.3769002201581242
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 8,
+              "line": 3
+            },
+            {
+              "text": "1",
+              "bbox": [
+                0.8036601247351154,
+                0.3990089339439315,
+                0.8105072819329555,
+                0.4097411415793679
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 9,
+              "line": 0
+            },
+            {
+              "text": "$0.00",
+              "bbox": [
+                0.8461274789049734,
+                0.3990089339439315,
+                0.8771686429291768,
+                0.4097411415793679
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 9,
+              "line": 1
+            },
+            {
+              "text": "$0.00",
+              "bbox": [
+                0.9252123863868464,
+                0.3990089339439315,
+                0.9562535504110499,
+                0.4097411415793679
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 9,
+              "line": 2
+            },
+            {
+              "text": "*Indicates",
+              "bbox": [
+                0.043758171056610305,
+                0.4254104151870265,
+                0.09995204950469772,
+                0.4361426228224629
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 10,
+              "line": 0
+            },
+            {
+              "text": "non-taxable",
+              "bbox": [
+                0.10313257204940895,
+                0.4254104151870265,
+                0.16696527269151476,
+                0.4361426228224629
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 10,
+              "line": 0
+            },
+            {
+              "text": "item",
+              "bbox": [
+                0.170145795236226,
+                0.4254104151870265,
+                0.19436777650920395,
+                0.4361426228224629
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 10,
+              "line": 0
+            },
+            {
+              "text": "Subtotal",
+              "bbox": [
+                0.6725000119676777,
+                0.4663068983289931,
+                0.718235689051011,
+                0.47703910596442944
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 11,
+              "line": 0
+            },
+            {
+              "text": "$750.00",
+              "bbox": [
+                0.9115033118553411,
+                0.4663068983289931,
+                0.9562386905445772,
+                0.47703910596442944
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 11,
+              "line": 1
+            },
+            {
+              "text": "Includes",
+              "bbox": [
+                0.6272058923260059,
+                0.4873296178952612,
+                0.6733859691744536,
+                0.4980618255306976
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 12,
+              "line": 0
+            },
+            {
+              "text": "TAX",
+              "bbox": [
+                0.676566479252834,
+                0.4873296178952612,
+                0.6994273865145016,
+                0.4980618255306976
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 12,
+              "line": 0
+            },
+            {
+              "text": "0%",
+              "bbox": [
+                0.7026078965928819,
+                0.4873296178952612,
+                0.7182327469969108,
+                0.4980618255306976
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 12,
+              "line": 0
+            },
+            {
+              "text": "$0.00",
+              "bbox": [
+                0.9252123863868464,
+                0.4873296178952612,
+                0.9562535504110499,
+                0.4980618255306976
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 12,
+              "line": 1
+            },
+            {
+              "text": "Total",
+              "bbox": [
+                0.690130695018893,
+                0.5083523374615293,
+                0.7182415232938879,
+                0.5190845450969658
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 13,
+              "line": 0
+            },
+            {
+              "text": "$750.00",
+              "bbox": [
+                0.9115033118553411,
+                0.5083523374615293,
+                0.9562386905445772,
+                0.5190845450969658
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 13,
+              "line": 1
+            },
+            {
+              "text": "PAID",
+              "bbox": [
+                0.6911601147620506,
+                0.5293750955600931,
+                0.7182431688495711,
+                0.5401073031955295
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 14,
+              "line": 0
+            },
+            {
+              "text": "$0.00",
+              "bbox": [
+                0.9252123863868464,
+                0.5293750955600931,
+                0.9562535504110499,
+                0.5401073031955295
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 14,
+              "line": 1
+            },
+            {
+              "text": "Balance",
+              "bbox": [
+                0.5890849493687449,
+                0.570337854250513,
+                0.672051174188751,
+                0.5907291450885811
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 15,
+              "line": 0
+            },
+            {
+              "text": "Due",
+              "bbox": [
+                0.6780942031760621,
+                0.570337854250513,
+                0.7182315003638174,
+                0.5907291450885811
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 15,
+              "line": 0
+            },
+            {
+              "text": "$750.00",
+              "bbox": [
+                0.8712582058376737,
+                0.5685323079427084,
+                0.9562564425998263,
+                0.5889235987807765
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 15,
+              "line": 1
+            },
+            {
+              "text": "Notes",
+              "bbox": [
+                0.043758171056610305,
+                0.6423864268293284,
+                0.08272483302097694,
+                0.655265191588739
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 16,
+              "line": 0
+            },
+            {
+              "text": "Hello",
+              "bbox": [
+                0.043758171056610305,
+                0.6680492824978299,
+                0.07218843971202576,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "you",
+              "bbox": [
+                0.075368962256737,
+                0.6680492824978299,
+                0.0948132097331527,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "can",
+              "bbox": [
+                0.09799373227786394,
+                0.6680492824978299,
+                0.11775742325128294,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "make",
+              "bbox": [
+                0.12093794579599418,
+                0.6680492824978299,
+                0.15078486024943832,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "the",
+              "bbox": [
+                0.15396538279414956,
+                0.6680492824978299,
+                0.1712568819133285,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "check",
+              "bbox": [
+                0.17443740445803974,
+                0.6680492824978299,
+                0.20668706706925935,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "out",
+              "bbox": [
+                0.2098675896139706,
+                0.6680492824978299,
+                0.22763128841624541,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "to",
+              "bbox": [
+                0.2308118234272876,
+                0.6680492824978299,
+                0.24186726489098243,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "215BEARS",
+              "bbox": [
+                0.2450477999020246,
+                0.6680492824978299,
+                0.30260278041066685,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": ".",
+              "bbox": [
+                0.30578331542170906,
+                0.6680492824978299,
+                0.3094360501158471,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "4613",
+              "bbox": [
+                0.3126165851268893,
+                0.6680492824978299,
+                0.3400052139182496,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "Conshohocken",
+              "bbox": [
+                0.34318574892929177,
+                0.6680492824978299,
+                0.42419882381663604,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "Avenue",
+              "bbox": [
+                0.42737933389501637,
+                0.6680492824978299,
+                0.4677262150384242,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "Philadelphia",
+              "bbox": [
+                0.47090672511680454,
+                0.6680492824978299,
+                0.5382532855264501,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "PA",
+              "bbox": [
+                0.5414337956048305,
+                0.6680492824978299,
+                0.5571281084048203,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "19131",
+              "bbox": [
+                0.5603086184832006,
+                0.6680492824978299,
+                0.594544404472401,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": ".",
+              "bbox": [
+                0.5977249145507812,
+                0.6680492824978299,
+                0.6013776492449193,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "If",
+              "bbox": [
+                0.6045581593232996,
+                0.6680492824978299,
+                0.6124191782832925,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "invoice",
+              "bbox": [
+                0.6155996883616728,
+                0.6680492824978299,
+                0.6544603833965227,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "is",
+              "bbox": [
+                0.657640893474903,
+                0.6680492824978299,
+                0.6671407861647263,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "not",
+              "bbox": [
+                0.6703212962431067,
+                0.6680492824978299,
+                0.6880850199780433,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "paid",
+              "bbox": [
+                0.6912655300564237,
+                0.6680492824978299,
+                0.7148347742417279,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "30",
+              "bbox": [
+                0.7180152843201083,
+                0.6680492824978299,
+                0.7317095987157884,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "days",
+              "bbox": [
+                0.7348901087941687,
+                0.6680492824978299,
+                0.7605287140490962,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "after",
+              "bbox": [
+                0.7637092241274765,
+                0.6680492824978299,
+                0.7895701289956086,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "services",
+              "bbox": [
+                0.792750639073989,
+                0.6680492824978299,
+                0.8381251914828431,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "are",
+              "bbox": [
+                0.8413057015612234,
+                0.6680492824978299,
+                0.8586805755016851,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "rendered",
+              "bbox": [
+                0.8618610855800654,
+                0.6680492824978299,
+                0.9102911855660233,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "there",
+              "bbox": [
+                0.9134716956444036,
+                0.6680492824978299,
+                0.9414853364034416,
+                0.6787815286655619
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 17,
+              "line": 0
+            },
+            {
+              "text": "will",
+              "bbox": [
+                0.043758171056610305,
+                0.6847917190705887,
+                0.06231353485506345,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "be",
+              "bbox": [
+                0.0654940573997747,
+                0.6847917190705887,
+                0.07884114084680097,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "a",
+              "bbox": [
+                0.0820216633915122,
+                0.6847917190705887,
+                0.08867437699261833,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "$25",
+              "bbox": [
+                0.09185489953732957,
+                0.6847917190705887,
+                0.11239636489768433,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "Late",
+              "bbox": [
+                0.11557688744239558,
+                0.6847917190705887,
+                0.13942386901456547,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "fee",
+              "bbox": [
+                0.1426043915592767,
+                0.6847917190705887,
+                0.1599931031270744,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "added",
+              "bbox": [
+                0.16317362567178564,
+                0.6847917190705887,
+                0.19699272454953662,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "every",
+              "bbox": [
+                0.20017324709424786,
+                0.6847917190705887,
+                0.22910351223415798,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "day",
+              "bbox": [
+                0.23228404724520016,
+                0.6847917190705887,
+                0.2516032948213465,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "starting",
+              "bbox": [
+                0.2547838298323887,
+                0.6847917190705887,
+                0.29689452227424173,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "on",
+              "bbox": [
+                0.3000750572852839,
+                0.6847917190705887,
+                0.31374157176298256,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "the",
+              "bbox": [
+                0.3169221067740247,
+                0.6847917190705887,
+                0.33421360589320365,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "31st",
+              "bbox": [
+                0.3373941409042458,
+                0.6847917190705887,
+                0.36150502223594516,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "day",
+              "bbox": [
+                0.3646855572469873,
+                0.6847917190705887,
+                0.3840048048231337,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "after",
+              "bbox": [
+                0.38718533983417586,
+                0.6847917190705887,
+                0.4130461948369843,
+                0.6955239652383207
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 18,
+              "line": 0
+            },
+            {
+              "text": "215B.E.A.R.S.",
+              "bbox": [
+                0.043758171056610305,
+                0.1817913440742878,
+                0.2936144062117034,
+                0.21559817381579466
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 19,
+              "line": 0
+            },
+            {
+              "text": "Invoice",
+              "bbox": [
+                0.875784281811683,
+                0.1685731675889757,
+                0.9562291164024204,
+                0.19003791038436119
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 19,
+              "line": 1
+            },
+            {
+              "text": "4613",
+              "bbox": [
+                0.674330069348703,
+                0.037758957255970345,
+                0.7017186981400633,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "Conshohocken",
+              "bbox": [
+                0.7048992082184437,
+                0.037758957255970345,
+                0.785912258173126,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "Avenue",
+              "bbox": [
+                0.7890927682515063,
+                0.037758957255970345,
+                0.8294396493949142,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "Philadelphia",
+              "bbox": [
+                0.8326201594732945,
+                0.037758957255970345,
+                0.8999666700176164,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "PA",
+              "bbox": [
+                0.9031471800959967,
+                0.037758957255970345,
+                0.9188413931653391,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "19131",
+              "bbox": [
+                0.9220219032437194,
+                0.037758957255970345,
+                0.9562574399063011,
+                0.0484911697079437
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 20,
+              "line": 0
+            },
+            {
+              "text": "267-767-4961",
+              "bbox": [
+                0.8808823130489175,
+                0.05450131676413796,
+                0.9562421811172386,
+                0.06523352921611131
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 21,
+              "line": 0
+            },
+            {
+              "text": "Req#:",
+              "bbox": [
+                0.36248203352385877,
+                0.02327145470513238,
+                0.4147957446528416,
+                0.044089640029753095
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 22,
+              "line": 0
+            },
+            {
+              "text": "131530",
+              "bbox": [
+                0.42025163438585067,
+                0.02327145470513238,
+                0.48566337036930657,
+                0.044089640029753095
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 22,
+              "line": 0
+            },
+            {
+              "text": "PO#:",
+              "bbox": [
+                0.36943463094873363,
+                0.06535604265001085,
+                0.4141208922940921,
+                0.08617422315809461
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 23,
+              "line": 0
+            },
+            {
+              "text": "30193",
+              "bbox": [
+                0.4195653379353043,
+                0.06535604265001085,
+                0.4740751179215176,
+                0.08617422315809461
+              ],
+              "source": "native",
+              "confidence": null,
+              "block": 23,
+              "line": 0
+            }
+          ],
+          "regions": [
+            {
+              "block": 22,
+              "text": "Req#: 131530",
+              "bbox": [
+                0.36248203352385877,
+                0.02327145470513238,
+                0.48566337036930657,
+                0.044089640029753095
+              ]
+            },
+            {
+              "block": 20,
+              "text": "4613 Conshohocken Avenue Philadelphia PA 19131",
+              "bbox": [
+                0.674330069348703,
+                0.037758957255970345,
+                0.9562574399063011,
+                0.0484911697079437
+              ]
+            },
+            {
+              "block": 21,
+              "text": "267-767-4961",
+              "bbox": [
+                0.8808823130489175,
+                0.05450131676413796,
+                0.9562421811172386,
+                0.06523352921611131
+              ]
+            },
+            {
+              "block": 23,
+              "text": "PO#: 30193",
+              "bbox": [
+                0.36943463094873363,
+                0.06535604265001085,
+                0.4740751179215176,
+                0.08617422315809461
+              ]
+            },
+            {
+              "block": 19,
+              "text": "Invoice\n215B.E.A.R.S.",
+              "bbox": [
+                0.043758171056610305,
+                0.1685731675889757,
+                0.9562291164024204,
+                0.21559817381579466
+              ]
+            },
+            {
+              "block": 1,
+              "text": "Bill To:\nAmerihealthcaritas Transportation",
+              "bbox": [
+                0.043758171056610305,
+                0.2341604521780303,
+                0.36817785026201233,
+                0.2448926790796145
+              ]
+            },
+            {
+              "block": 3,
+              "text": "Invoice No:\n72",
+              "bbox": [
+                0.7306699565812653,
+                0.2341604521780303,
+                0.9562432781543607,
+                0.2448926790796145
+              ]
+            },
+            {
+              "block": 2,
+              "text": "jblatt@amerihealthcaritas.com",
+              "bbox": [
+                0.18045752032909518,
+                0.25090288875078914,
+                0.3489141526565053,
+                0.26163511565237335
+              ]
+            },
+            {
+              "block": 4,
+              "text": "Date:\n06/05/2018",
+              "bbox": [
+                0.7633823569304024,
+                0.25090288875078914,
+                0.9562636232064441,
+                0.26163511565237335
+              ]
+            },
+            {
+              "block": 5,
+              "text": "Terms:\nNET 14",
+              "bbox": [
+                0.7538398792541104,
+                0.26764524825895675,
+                0.9562495611851511,
+                0.27837747516054095
+              ]
+            },
+            {
+              "block": 6,
+              "text": "Due Date:\n06/19/2018",
+              "bbox": [
+                0.7390849792879391,
+                0.2843876848317156,
+                0.9562636232064441,
+                0.2951199117332998
+              ]
+            },
+            {
+              "block": 7,
+              "text": "Description\nQuantity\nRate\nAmount",
+              "bbox": [
+                0.043758171056610305,
+                0.33203606653695156,
+                0.9562289169411254,
+                0.34598799426146226
+              ]
+            },
+            {
+              "block": 8,
+              "text": "5/31/18 1- 15 15 passenger van from Philly going to DC pick back up in DC coming back to to Philly . 8:30am to 5:30pm 9hr\n1\n$750.00\n$750.00*",
+              "bbox": [
+                0.043758171056610305,
+                0.3661680125226878,
+                0.9562467687270221,
+                0.3769002201581242
+              ]
+            },
+            {
+              "block": 9,
+              "text": "1\n$0.00\n$0.00",
+              "bbox": [
+                0.8036601247351154,
+                0.3990089339439315,
+                0.9562535504110499,
+                0.4097411415793679
+              ]
+            },
+            {
+              "block": 10,
+              "text": "*Indicates non-taxable item",
+              "bbox": [
+                0.043758171056610305,
+                0.4254104151870265,
+                0.19436777650920395,
+                0.4361426228224629
+              ]
+            },
+            {
+              "block": 11,
+              "text": "Subtotal\n$750.00",
+              "bbox": [
+                0.6725000119676777,
+                0.4663068983289931,
+                0.9562386905445772,
+                0.47703910596442944
+              ]
+            },
+            {
+              "block": 12,
+              "text": "Includes TAX 0%\n$0.00",
+              "bbox": [
+                0.6272058923260059,
+                0.4873296178952612,
+                0.9562535504110499,
+                0.4980618255306976
+              ]
+            },
+            {
+              "block": 13,
+              "text": "Total\n$750.00",
+              "bbox": [
+                0.690130695018893,
+                0.5083523374615293,
+                0.9562386905445772,
+                0.5190845450969658
+              ]
+            },
+            {
+              "block": 14,
+              "text": "PAID\n$0.00",
+              "bbox": [
+                0.6911601147620506,
+                0.5293750955600931,
+                0.9562535504110499,
+                0.5401073031955295
+              ]
+            },
+            {
+              "block": 15,
+              "text": "$750.00\nBalance Due",
+              "bbox": [
+                0.5890849493687449,
+                0.5685323079427084,
+                0.9562564425998263,
+                0.5907291450885811
+              ]
+            },
+            {
+              "block": 16,
+              "text": "Notes",
+              "bbox": [
+                0.043758171056610305,
+                0.6423864268293284,
+                0.08272483302097694,
+                0.655265191588739
+              ]
+            },
+            {
+              "block": 17,
+              "text": "Hello you can make the check out to 215BEARS . 4613 Conshohocken Avenue Philadelphia PA 19131 . If invoice is not paid 30 days after services are rendered there",
+              "bbox": [
+                0.043758171056610305,
+                0.6680492824978299,
+                0.9414853364034416,
+                0.6787815286655619
+              ]
+            },
+            {
+              "block": 18,
+              "text": "will be a $25 Late fee added every day starting on the 31st day after",
+              "bbox": [
+                0.043758171056610305,
+                0.6847917190705887,
+                0.4130461948369843,
+                0.6955239652383207
+              ]
+            },
+            {
+              "block": 0,
+              "text": "1 / 1",
+              "bbox": [
+                0.48486926508884803,
+                0.9748484293619791,
+                0.5151025610032425,
+                0.9877272326536853
+              ]
+            }
+          ]
+        }
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": null,
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [
+      "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+      "Supplier name was not explicitly labeled; no name was inferred from the header."
+    ],
+    "candidates": [
+      {
+        "fields": {
+          "document_type": {
+            "value": "invoice",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "1 / 1\nBill To:\nAmerihealthcaritas Transportation\njblatt@amerihealthcaritas.com\nInvoice No:\n72\nDate:\n06/05/2018\nTerms:\nNET 14\nDue Date:\n06/19/2018\nDescription\nQuantity\nRate\nAmount\n5/31/18 1- 15 15 passenger van from Philly going to DC pick b"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_number": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "invoice_date": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "Date: 06/05/2018"
+              }
+            ],
+            "alternatives": [
+              "06/05/2018"
+            ],
+            "note": "Day/month order cannot be determined."
+          },
+          "due_date": {
+            "value": "2018-06-19",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "Due Date: 06/19/2018"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_name": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_address": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "supplier_vat_id": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "currency": {
+            "value": null,
+            "status": "ambiguous",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$750.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$750.00*"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$0.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$0.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$750.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$0.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$750.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$0.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "$750.00"
+              },
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "will be a $25 Late fee added every day starting on the 31st day after"
+              }
+            ],
+            "alternatives": [
+              "USD",
+              "SGD",
+              "CAD",
+              "AUD"
+            ],
+            "note": "The dollar symbol does not identify a currency without a code or locale evidence."
+          },
+          "printed_gross_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_subtotal": {
+            "value": "750.00",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "Subtotal $750.00"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "printed_tax_total": {
+            "value": null,
+            "status": "missing",
+            "evidence": [],
+            "alternatives": [],
+            "note": null
+          },
+          "purchase_order_number": {
+            "value": "30193",
+            "status": "found",
+            "evidence": [
+              {
+                "filename": "INV-32.pdf",
+                "page_number": 1,
+                "text": "PO#: 30193"
+              }
+            ],
+            "alternatives": [],
+            "note": null
+          },
+          "lines": [],
+          "taxes": [],
+          "charges": [
+            {
+              "kind": "freight",
+              "description": {
+                "value": "Amerihealthcaritas Transportation",
+                "status": "found",
+                "evidence": [
+                  {
+                    "filename": "INV-32.pdf",
+                    "page_number": 1,
+                    "text": "Amerihealthcaritas Transportation"
+                  }
+                ],
+                "alternatives": [],
+                "note": null
+              },
+              "amount": {
+                "value": null,
+                "status": "missing",
+                "evidence": [],
+                "alternatives": [],
+                "note": null
+              }
+            }
+          ],
+          "pages": [
+            1
+          ],
+          "review_required": true,
+          "warnings": [
+            "One or more extracted fields have ambiguous, conflicting, or unreadable values.",
+            "Supplier name was not explicitly labeled; no name was inferred from the header."
+          ]
+        },
+        "master_hints": {
+          "buyer": {},
+          "payment_term": {
+            "status": "ambiguous",
+            "matches": [
+              "Net_14",
+              "Net_30"
+            ],
+            "reason": "Multiple explicit master terms appear."
+          }
+        },
+        "output_status": "unresolved_not_emitted",
+        "bookability": {
+          "status": "unresolved",
+          "reason": "Neither supplier name nor supplier VAT ID is established by source evidence; the payable is not emitted."
+        },
+        "matches": {
+          "supplier": {
+            "code": "",
+            "status": "unmatched",
+            "reason": "No defensible supplier match in master data.",
+            "candidates": []
+          },
+          "po": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "PO cannot be linked to supplier until supplier identity is resolved.",
+            "candidates": []
+          },
+          "payment_term": {
+            "code": "",
+            "status": "insufficient_evidence",
+            "reason": "Candidate model has no explicit payment-term text.",
+            "candidates": []
+          },
+          "buyer": {
+            "company_code": "",
+            "business_unit_code": "",
+            "location_code": ""
+          },
+          "taxes": []
+        },
+        "reconciliation": {
+          "status": "unresolved",
+          "reason": "Printed gross is missing, ambiguous, conflicting, or unreadable.",
+          "erp_gross": "",
+          "printed_gross": ""
+        }
+      }
+    ],
+    "unresolved_reasons": [
+      "Printed gross is missing, ambiguous, conflicting, or unreadable."
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}

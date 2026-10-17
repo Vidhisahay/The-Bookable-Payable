@@ -1,0 +1,87 @@
+{
+  "document_error": null,
+  "classification": {
+    "category": "uncertain",
+    "confidence": 0.0,
+    "uncertain": true,
+    "evidence": [],
+    "page_classifications": [
+      {
+        "page_number": 1,
+        "category": "uncertain",
+        "confidence": 0.0,
+        "evidence": [
+          "iva"
+        ]
+      }
+    ],
+    "mixed_document": false,
+    "possible_document_starts": [],
+    "potential_multiple_documents": false,
+    "multiple_document_evidence": []
+  },
+  "pages": [
+    {
+      "filename": "HLD-03.pdf",
+      "page_number": 1,
+      "text": "ZFI\nOriginal\nNota: Sobre estes produtos incidem ainda, os\n‘ 4 it ‘ Nort len\nLarkspur Print ou\ndo defomecimento, bem das demais > kaua\nSG ees ll Kadaka tee 224\nee mee ‘i CG 1250-148 Lisboa\n* Desconios Promocionaisrefereate 20 més em cumo. 1290-91? 1ASDOL\nNümero Data 02.12.2025 V/Ref.* N/Ref.* N° Contrib. N° IEC N° Cliente [9945708 Nos\n[ Ouantidades | Niquido [| DescontosPromosionais —— | DescontosdeOuantidade | IEC\nCX |TRINCA ALE T22 6X1500 CXE NTT 13,5 123,36 123,36 61,76 % 63,85 13,00 59,51\nEAN:5601012004984\n13.00 59.51 7.14 Descontos Promocionais 63,85-\nIVA 7,74\nIVA Adiantamento\n[Data de Vencimento 01.01.2026\ncorn na PÄ Pipeessado por programa cenificado n °2563/AT Vinora cots\npa ss äniane SELEFUNE FAX\n_ 4 6.500.000€ C.R.C. DE VAN. DE GAIA N° NIPC rroeizises  SIRER # Registo\npmo —\n",
+      "extraction_method": "ocr",
+      "evidence": {
+        "native_alphanumeric_chars": 0,
+        "ocr_attempted": false,
+        "ocr_alphanumeric_chars": 596,
+        "ocr_attempts": [
+          {
+            "attempt": 1,
+            "elapsed_ms": 7404,
+            "outcome": "success",
+            "psm_modes": [
+              6
+            ]
+          }
+        ],
+        "ocr_modes_attempted": [
+          6
+        ],
+        "ocr_page_segmentation_mode": 6,
+        "ocr_retry_count": 0,
+        "ocr_cache": {
+          "status": "hit",
+          "key": "a7c3818323876bda5cd045125a32d744a346f41d07a2386452b7dbb228de100e"
+        },
+        "text_layout": null
+      },
+      "error": null
+    }
+  ],
+  "extraction": {
+    "excluded_reason": "not_a_confirmed_payable_document:uncertain",
+    "review_required": true,
+    "page_scope": [
+      {
+        "page_number": 1,
+        "included": true,
+        "reason": "No explicit non-payable page boundary was classified."
+      }
+    ],
+    "warnings": [],
+    "candidates": [],
+    "unresolved_reasons": [
+      "not_a_confirmed_payable_document:uncertain"
+    ]
+  },
+  "run_configuration": {
+    "ocr_language": "eng+est",
+    "page_timeout_seconds": 60,
+    "ocr_retries": 1,
+    "ocr_psm": [
+      6,
+      11,
+      3
+    ],
+    "ocr_dpi": 160,
+    "ocr_cache_directory": ".cache\\ocr_pages",
+    "ocr_cache_version": 1,
+    "ocr_processing_version": "tesseract-page-selection-v1"
+  }
+}
